@@ -2,3 +2,4 @@ HEARTBEAT
 RUNSTATE.json
 STOP
 *.tmp
+events.jsonl
