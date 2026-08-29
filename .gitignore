@@ -3,3 +3,4 @@ RUNSTATE.json
 STOP
 *.tmp
 events.jsonl
+.env
