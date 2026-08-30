@@ -4,3 +4,4 @@ STOP
 *.tmp
 events.jsonl
 .env
+.codex-exec/
