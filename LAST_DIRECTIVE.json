@@ -1,0 +1,15 @@
+{
+ "directive_id": "D-801A",
+ "hypothesis_id": "H-004",
+ "target_order": 4,
+ "stages": [
+  4,
+  6
+ ],
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
+ "islands": 8,
+ "budget_minutes": 120,
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts at full Q15 dyadic resolution to gather balanced samples for H-004 and improve weak occupied cells without imposing untested structural restrictions."
+}
