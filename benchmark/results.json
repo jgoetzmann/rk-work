@@ -1,0 +1,1962 @@
+{
+ "adaptive_results": [
+  {
+   "atol": 0.0001220703125,
+   "error": 6.646035697686164e-06,
+   "integrator": "RK45",
+   "n_steps_accepted": 11,
+   "nfev": 68,
+   "per_step_median_s": 0.00017635454423725605,
+   "problem": "dahlquist",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0013226000010035932,
+    "median_s": 0.0019398999866098166,
+    "min_s": 0.001083599985577166,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.00041292598280447855,
+   "integrator": "RK45",
+   "n_steps_accepted": 44,
+   "nfev": 266,
+   "per_step_median_s": 0.0001732181805312972,
+   "problem": "damped_osc",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0029035000188741833,
+    "median_s": 0.007621599943377078,
+    "min_s": 0.005659899965394288,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.00048828125,
+   "error": 0.0023560368235458757,
+   "integrator": "RK45",
+   "n_steps_accepted": 36,
+   "nfev": 290,
+   "per_step_median_s": 0.00023307499941438437,
+   "problem": "vanderpol_mild",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.003610449959523976,
+    "median_s": 0.008390699978917837,
+    "min_s": 0.005717299995012581,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.006995393292092362,
+   "integrator": "RK45",
+   "n_steps_accepted": 82,
+   "nfev": 578,
+   "per_step_median_s": 0.00017245731702665004,
+   "problem": "pendulum",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0021712500019930303,
+    "median_s": 0.014141499996185303,
+    "min_s": 0.010298900015186518,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.000244140625,
+   "error": 5.847142296973543e-05,
+   "integrator": "RK45",
+   "n_steps_accepted": 15,
+   "nfev": 92,
+   "per_step_median_s": 0.00022269333324705562,
+   "problem": "dc_motor",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0015884000167716295,
+    "median_s": 0.003340399998705834,
+    "min_s": 0.002631999959703535,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 6.308108565883095e-05,
+   "integrator": "RK45",
+   "n_steps_accepted": 26,
+   "nfev": 182,
+   "per_step_median_s": 0.00023454230708571582,
+   "problem": "rc_thermal",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0013154000043869019,
+    "median_s": 0.006098099984228611,
+    "min_s": 0.005000100005418062,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.0002160452885556774,
+   "integrator": "RK45",
+   "n_steps_accepted": 15,
+   "nfev": 92,
+   "per_step_median_s": 0.000256113331609716,
+   "problem": "quaternion",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0024814999487716705,
+    "median_s": 0.0038416999741457403,
+    "min_s": 0.002162399992812425,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 2.3032194688600316e-07,
+   "integrator": "Radau",
+   "n_steps_accepted": 14,
+   "nfev": 100,
+   "per_step_median_s": 0.0006678714292190437,
+   "problem": "dahlquist",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.002949050016468391,
+    "median_s": 0.009350200009066612,
+    "min_s": 0.0067063000169582665,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 1.398832787899082e-05,
+   "integrator": "Radau",
+   "n_steps_accepted": 75,
+   "nfev": 527,
+   "per_step_median_s": 0.0005465786663504938,
+   "problem": "damped_osc",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.009234850003849715,
+    "median_s": 0.04099339997628704,
+    "min_s": 0.029925000038929284,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.00048828125,
+   "error": 1.3014003319652512e-05,
+   "integrator": "Radau",
+   "n_steps_accepted": 88,
+   "nfev": 795,
+   "per_step_median_s": 0.0007550829541287385,
+   "problem": "vanderpol_mild",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.022495499957585707,
+    "median_s": 0.06644729996332899,
+    "min_s": 0.05955150001682341,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 8.606329212933731e-05,
+   "integrator": "Radau",
+   "n_steps_accepted": 162,
+   "nfev": 1238,
+   "per_step_median_s": 0.0006034493828652265,
+   "problem": "pendulum",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.02134474995546043,
+    "median_s": 0.0977588000241667,
+    "min_s": 0.08781789999920875,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.000244140625,
+   "error": 8.05473256795067e-07,
+   "integrator": "Radau",
+   "n_steps_accepted": 17,
+   "nfev": 121,
+   "per_step_median_s": 0.0006069470580448123,
+   "problem": "dc_motor",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0026443999959155917,
+    "median_s": 0.010318099986761808,
+    "min_s": 0.007875100011005998,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 4.5979870976931254e-07,
+   "integrator": "Radau",
+   "n_steps_accepted": 17,
+   "nfev": 121,
+   "per_step_median_s": 0.0008868647068191101,
+   "problem": "rc_thermal",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.00337434999528341,
+    "median_s": 0.015076700015924871,
+    "min_s": 0.009407299978192896,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 1.6698298357153973e-05,
+   "integrator": "Radau",
+   "n_steps_accepted": 24,
+   "nfev": 176,
+   "per_step_median_s": 0.0006935000007312434,
+   "problem": "quaternion",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.005769749986939132,
+    "median_s": 0.016644000017549843,
+    "min_s": 0.011509399977512658,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 4.806239347709405e-06,
+   "integrator": "BDF",
+   "n_steps_accepted": 36,
+   "nfev": 76,
+   "per_step_median_s": 0.0003511999998914285,
+   "problem": "dahlquist",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.001562550023663789,
+    "median_s": 0.012643199996091425,
+    "min_s": 0.010266500001307577,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.0009536932927844234,
+   "integrator": "BDF",
+   "n_steps_accepted": 127,
+   "nfev": 256,
+   "per_step_median_s": 0.0003457007875600023,
+   "problem": "damped_osc",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.018371749989455566,
+    "median_s": 0.04390400002012029,
+    "min_s": 0.03121019998798147,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.00048828125,
+   "error": 0.0038121672470766877,
+   "integrator": "BDF",
+   "n_steps_accepted": 160,
+   "nfev": 466,
+   "per_step_median_s": 0.0004513806248723995,
+   "problem": "vanderpol_mild",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.013077550014713779,
+    "median_s": 0.07222089997958392,
+    "min_s": 0.060592700028792024,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.005901938102333601,
+   "integrator": "BDF",
+   "n_steps_accepted": 287,
+   "nfev": 626,
+   "per_step_median_s": 0.0004250860626189499,
+   "problem": "pendulum",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.024986899981740862,
+    "median_s": 0.12199969997163862,
+    "min_s": 0.09683770005358383,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.000244140625,
+   "error": 3.162743846841497e-05,
+   "integrator": "BDF",
+   "n_steps_accepted": 39,
+   "nfev": 80,
+   "per_step_median_s": 0.00032598461406544235,
+   "problem": "dc_motor",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.004116600000998005,
+    "median_s": 0.01271339994855225,
+    "min_s": 0.010311399993952364,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 4.798332236047679e-07,
+   "integrator": "BDF",
+   "n_steps_accepted": 49,
+   "nfev": 103,
+   "per_step_median_s": 0.0003709244905324767,
+   "problem": "rc_thermal",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0030832499905955046,
+    "median_s": 0.018175300036091357,
+    "min_s": 0.014265200006775558,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.0007537563611583753,
+   "integrator": "BDF",
+   "n_steps_accepted": 45,
+   "nfev": 92,
+   "per_step_median_s": 0.0003729777785742448,
+   "problem": "quaternion",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0018524500192143023,
+    "median_s": 0.016784000035841018,
+    "min_s": 0.015335100004449487,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 3.5799961734369674e-07,
+   "integrator": "LSODA",
+   "n_steps_accepted": 31,
+   "nfev": 65,
+   "per_step_median_s": 3.028064478008497e-05,
+   "problem": "dahlquist",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.00026439997600391507,
+    "median_s": 0.0009386999881826341,
+    "min_s": 0.0007377999718300998,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.0007902954096599626,
+   "integrator": "LSODA",
+   "n_steps_accepted": 114,
+   "nfev": 231,
+   "per_step_median_s": 3.221315758613249e-05,
+   "problem": "damped_osc",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0008425500127486885,
+    "median_s": 0.0036722999648191035,
+    "min_s": 0.002640700025949627,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.00048828125,
+   "error": 0.003009221087460447,
+   "integrator": "LSODA",
+   "n_steps_accepted": 130,
+   "nfev": 295,
+   "per_step_median_s": 3.648230788083031e-05,
+   "problem": "vanderpol_mild",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0020076000073459,
+    "median_s": 0.00474270002450794,
+    "min_s": 0.0027265999815426767,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.003076077095381297,
+   "integrator": "LSODA",
+   "n_steps_accepted": 228,
+   "nfev": 489,
+   "per_step_median_s": 3.299999981097419e-05,
+   "problem": "pendulum",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0012075499980710447,
+    "median_s": 0.0075239999569021165,
+    "min_s": 0.006295600032899529,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.000244140625,
+   "error": 1.2243117474572936e-06,
+   "integrator": "LSODA",
+   "n_steps_accepted": 39,
+   "nfev": 82,
+   "per_step_median_s": 4.215641036772957e-05,
+   "problem": "dc_motor",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0013397499860730022,
+    "median_s": 0.0016441000043414533,
+    "min_s": 0.0009855999960564077,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 2.0452492780278578e-05,
+   "integrator": "LSODA",
+   "n_steps_accepted": 58,
+   "nfev": 128,
+   "per_step_median_s": 4.6098275623958686e-05,
+   "problem": "rc_thermal",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0007467000104952604,
+    "median_s": 0.002673699986189604,
+    "min_s": 0.0017971000052057207,
+    "n": 15,
+    "warmup": 3
+   }
+  },
+  {
+   "atol": 0.0001220703125,
+   "error": 0.0006557925477864712,
+   "integrator": "LSODA",
+   "n_steps_accepted": 37,
+   "nfev": 77,
+   "per_step_median_s": 3.631351314283706e-05,
+   "problem": "quaternion",
+   "rtol": 3.0517578125e-05,
+   "status": "ok",
+   "timing": {
+    "iqr_s": 0.0003639500355347991,
+    "median_s": 0.0013435999862849712,
+    "min_s": 0.0008931999909691513,
+    "n": 15,
+    "warmup": 3
+   }
+  }
+ ],
+ "budget_cycles": 65536,
+ "caveats": [
+  "Adaptive scipy integrators choose their own step counts; their wall clock is reported for context and is never a same-work comparison with any fixed-step run.",
+  "All timings are Python-level wall clock on one desktop machine: the Q15 runs pay Python interpreter overhead per primitive while scipy runs compiled internals, so timings compare like against like only within a regime and do not transfer to microcontroller cycle counts.",
+  "Accuracy numbers are deterministic and reproducible; timing numbers are measured and vary run to run within the reported IQR.",
+  "The float baselines start from the exact physical initial state; the Q15 runs start from the quantized Q15 initial state, as on the target."
+ ],
+ "correlation": {
+  "median_s_per_cycle": 1.283237418744848e-06,
+  "n_points": 28,
+  "pearson_r": 0.971788337583173,
+  "x": "analytic cycles per step under m0plus_fast (stages, states and coefficient CSD weight all included; derivative evaluation excluded)",
+  "y": "measured median seconds per step of the Q15 fixed-step runs"
+ },
+ "cost_model": "m0plus_fast",
+ "environment": {
+  "cpu": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+  "implementation": "CPython",
+  "machine": "AMD64",
+  "numpy": "2.1.3",
+  "os": "Windows 11",
+  "perf_counter_resolution_s": 1e-07,
+  "python": "3.13.5",
+  "scipy": "1.14.1",
+  "thread_env": {
+   "MKL_NUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "timing_caveat": "All timings are Python-level wall clock on one desktop machine: the Q15 runs pay Python interpreter overhead per primitive while scipy runs compiled internals, so timings compare like against like only within a regime and do not transfer to microcontroller cycle counts."
+ },
+ "fixed_step_results": [
+  {
+   "cycles_per_step": 33,
+   "float_rk4": {
+    "error": 2.4470781846176737e-15,
+    "per_step_median_s": 9.835818641694726e-06,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.004250600002706051,
+     "median_s": 0.019524100003764033,
+     "min_s": 0.01291499997023493,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 1985,
+   "problem": "dahlquist",
+   "q15": {
+    "error": 0.00016747024226248486,
+    "max_abs_q": 8192,
+    "per_step_median_s": 4.0079244313953956e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.01167210002313368,
+     "median_s": 0.0795572999631986,
+     "min_s": 0.06970540003385395,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65505
+  },
+  {
+   "cycles_per_step": 66,
+   "float_rk4": {
+    "error": 1.702950602174788e-08,
+    "per_step_median_s": 1.2348891100226602e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0023924499982967973,
+     "median_s": 0.012250099971424788,
+     "min_s": 0.009739300003275275,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 992,
+   "problem": "damped_osc",
+   "q15": {
+    "error": 0.01592481589265515,
+    "max_abs_q": 8192,
+    "per_step_median_s": 7.9063205644601e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.00677540001925081,
+     "median_s": 0.07843069999944419,
+     "min_s": 0.06468300003325567,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 66,
+   "float_rk4": {
+    "error": 6.42795229458962e-08,
+    "per_step_median_s": 1.129999996450234e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0023263499897439033,
+     "median_s": 0.011209599964786321,
+     "min_s": 0.008589099976234138,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 992,
+   "problem": "vanderpol_mild",
+   "q15": {
+    "error": 0.10097267020647743,
+    "max_abs_q": 4534,
+    "per_step_median_s": 7.381965728962959e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.015381750039523467,
+     "median_s": 0.07322910003131256,
+     "min_s": 0.057001099979970604,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 66,
+   "float_rk4": {
+    "error": 4.929180156683776e-07,
+    "per_step_median_s": 1.2965120937048098e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0029608500190079212,
+     "median_s": 0.012861399969551712,
+     "min_s": 0.00769250001758337,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 992,
+   "problem": "pendulum",
+   "q15": {
+    "error": 0.0040323428220641975,
+    "max_abs_q": 8299,
+    "per_step_median_s": 9.114475811187614e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.010122549982042983,
+     "median_s": 0.09041560004698113,
+     "min_s": 0.07738819997757673,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 66,
+   "float_rk4": {
+    "error": 2.2081687946281242e-13,
+    "per_step_median_s": 1.0874899148362719e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.001351649989373982,
+     "median_s": 0.010787899955175817,
+     "min_s": 0.00847479997901246,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 992,
+   "problem": "dc_motor",
+   "q15": {
+    "error": 0.07635890248163581,
+    "max_abs_q": 7558,
+    "per_step_median_s": 8.825866937132236e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.015961249999236315,
+     "median_s": 0.08755260001635179,
+     "min_s": 0.06864489999134094,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 99,
+   "float_rk4": {
+    "error": 4.307369349361032e-14,
+    "per_step_median_s": 2.6659909163780634e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.004594949976308271,
+     "median_s": 0.017622199957259,
+     "min_s": 0.013118000002577901,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 661,
+   "problem": "rc_thermal",
+   "q15": {
+    "error": 0.15815914382342158,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.0001262774584080838,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.023018700012471527,
+     "median_s": 0.08346940000774339,
+     "min_s": 0.06320380000397563,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65439
+  },
+  {
+   "cycles_per_step": 132,
+   "float_rk4": {
+    "error": 1.4457901542641594e-10,
+    "per_step_median_s": 1.9263104824799924e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0017851500015240163,
+     "median_s": 0.009554499993100762,
+     "min_s": 0.006401900027412921,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "rk4",
+   "n_steps": 496,
+   "problem": "quaternion",
+   "q15": {
+    "error": 0.054056370405000886,
+    "max_abs_q": 8201,
+    "per_step_median_s": 0.00014498266130929903,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.010591450001811609,
+     "median_s": 0.07191140000941232,
+     "min_s": 0.061469400010537356,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 22,
+   "float_rk4": {
+    "error": 4.822260212672402e-16,
+    "per_step_median_s": 8.81077905446341e-06,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0036486500466708094,
+     "median_s": 0.026238500024192035,
+     "min_s": 0.02291439997497946,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 2978,
+   "problem": "dahlquist",
+   "q15": {
+    "error": 0.00019874069523751514,
+    "max_abs_q": 8192,
+    "per_step_median_s": 4.338824714107415e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.015631849964847788,
+     "median_s": 0.12921019998611882,
+     "min_s": 0.10804459999781102,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65516
+  },
+  {
+   "cycles_per_step": 44,
+   "float_rk4": {
+    "error": 3.3499731676223934e-09,
+    "per_step_median_s": 1.4179449292654116e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.004272699996363372,
+     "median_s": 0.021113199996761978,
+     "min_s": 0.014767299988307059,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 1489,
+   "problem": "damped_osc",
+   "q15": {
+    "error": 0.003939476715808808,
+    "max_abs_q": 8192,
+    "per_step_median_s": 6.279845530782683e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.015275649988325313,
+     "median_s": 0.09350689995335415,
+     "min_s": 0.07724549999693409,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65516
+  },
+  {
+   "cycles_per_step": 44,
+   "float_rk4": {
+    "error": 1.2706292575897284e-08,
+    "per_step_median_s": 1.2043250497628211e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.004257950000464916,
+     "median_s": 0.017932399990968406,
+     "min_s": 0.015233499987516552,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 1489,
+   "problem": "vanderpol_mild",
+   "q15": {
+    "error": 0.019468228198280157,
+    "max_abs_q": 4556,
+    "per_step_median_s": 6.529026194284824e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.020460449974052608,
+     "median_s": 0.09721720003290102,
+     "min_s": 0.07358640001621097,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65516
+  },
+  {
+   "cycles_per_step": 44,
+   "float_rk4": {
+    "error": 6.513433009582627e-08,
+    "per_step_median_s": 1.1369173924449288e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0028588499990291893,
+     "median_s": 0.01692869997350499,
+     "min_s": 0.01419209997402504,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 1489,
+   "problem": "pendulum",
+   "q15": {
+    "error": 0.004744384784578245,
+    "max_abs_q": 8219,
+    "per_step_median_s": 5.002343854219562e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.01541235001059249,
+     "median_s": 0.07448489998932928,
+     "min_s": 0.06873270001960918,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65516
+  },
+  {
+   "cycles_per_step": 44,
+   "float_rk4": {
+    "error": 4.338172399236173e-14,
+    "per_step_median_s": 1.3185426434270582e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.003685749979922548,
+     "median_s": 0.019633099960628897,
+     "min_s": 0.015952899993862957,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 1489,
+   "problem": "dc_motor",
+   "q15": {
+    "error": 0.027647584508691654,
+    "max_abs_q": 7953,
+    "per_step_median_s": 6.103075889381408e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0223643500066828,
+     "median_s": 0.09087479999288917,
+     "min_s": 0.0706042000092566,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65516
+  },
+  {
+   "cycles_per_step": 66,
+   "float_rk4": {
+    "error": 8.498861948124713e-15,
+    "per_step_median_s": 2.543306448299723e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0026328499952796847,
+     "median_s": 0.025229599967133254,
+     "min_s": 0.019548799959011376,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 992,
+   "problem": "rc_thermal",
+   "q15": {
+    "error": 0.046087531063901954,
+    "max_abs_q": 8192,
+    "per_step_median_s": 8.264425401472592e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.012537100003100932,
+     "median_s": 0.08198309998260811,
+     "min_s": 0.06914169999072328,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 88,
+   "float_rk4": {
+    "error": 1.9039769760809122e-11,
+    "per_step_median_s": 1.7691263506534478e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0027099999715574086,
+     "median_s": 0.013162300048861653,
+     "min_s": 0.010278599977027625,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "n_steps": 744,
+   "problem": "quaternion",
+   "q15": {
+    "error": 0.019105502156982923,
+    "max_abs_q": 8192,
+    "per_step_median_s": 9.74853494597639e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.01224474998889491,
+     "median_s": 0.07252909999806434,
+     "min_s": 0.05890120001276955,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65472
+  },
+  {
+   "cycles_per_step": 75,
+   "float_rk4": {
+    "error": 6.576021601171697e-14,
+    "per_step_median_s": 8.32130586278261e-06,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0024670499842613935,
+     "median_s": 0.007264500018209219,
+     "min_s": 0.005983900045976043,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 873,
+   "problem": "dahlquist",
+   "q15": {
+    "error": 0.00016747024226248486,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.00010699335623581607,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.029727199987974018,
+     "median_s": 0.09340519999386743,
+     "min_s": 0.07649349997518584,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65475
+  },
+  {
+   "cycles_per_step": 150,
+   "float_rk4": {
+    "error": 4.5878029394287815e-07,
+    "per_step_median_s": 1.568509182474072e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.004890250012977049,
+     "median_s": 0.006838700035586953,
+     "min_s": 0.003487600013613701,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 436,
+   "problem": "damped_osc",
+   "q15": {
+    "error": 0.004990720616643204,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.00020531995407275754,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.01623304997337982,
+     "median_s": 0.08951949997572228,
+     "min_s": 0.0703978999517858,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65400
+  },
+  {
+   "cycles_per_step": 150,
+   "float_rk4": {
+    "error": 1.698039365208005e-06,
+    "per_step_median_s": 1.3218348613008857e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0024930000072345138,
+     "median_s": 0.0057631999952718616,
+     "min_s": 0.003649399965070188,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 436,
+   "problem": "vanderpol_mild",
+   "q15": {
+    "error": 0.006756484162570551,
+    "max_abs_q": 4585,
+    "per_step_median_s": 0.0002301614678148693,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.028826649999246,
+     "median_s": 0.10035039996728301,
+     "min_s": 0.07755919999908656,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65400
+  },
+  {
+   "cycles_per_step": 150,
+   "float_rk4": {
+    "error": 2.9751161400248672e-05,
+    "per_step_median_s": 1.1927293615689107e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.002336599980480969,
+     "median_s": 0.005200300016440451,
+     "min_s": 0.004053899960126728,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 436,
+   "problem": "pendulum",
+   "q15": {
+    "error": 0.010297334050830016,
+    "max_abs_q": 8454,
+    "per_step_median_s": 0.00021326743117576344,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.026924900012090802,
+     "median_s": 0.09298459999263287,
+     "min_s": 0.07453099999111146,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65400
+  },
+  {
+   "cycles_per_step": 150,
+   "float_rk4": {
+    "error": 5.966055904095097e-12,
+    "per_step_median_s": 1.3200688061577806e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0014394499885383993,
+     "median_s": 0.0057554999948479235,
+     "min_s": 0.0037148999981582165,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 436,
+   "problem": "dc_motor",
+   "q15": {
+    "error": 0.032653977989815286,
+    "max_abs_q": 7917,
+    "per_step_median_s": 0.0001936417431869638,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.010903249989496544,
+     "median_s": 0.08442780002951622,
+     "min_s": 0.07169539999449626,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65400
+  },
+  {
+   "cycles_per_step": 225,
+   "float_rk4": {
+    "error": 1.1665591228163098e-12,
+    "per_step_median_s": 2.2899312658485062e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0018237999465782195,
+     "median_s": 0.0066636999836191535,
+     "min_s": 0.0051639999728649855,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 291,
+   "problem": "rc_thermal",
+   "q15": {
+    "error": 0.06271526930133506,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.0002508821306730976,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.01582639999105595,
+     "median_s": 0.0730067000258714,
+     "min_s": 0.059576300031039864,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65475
+  },
+  {
+   "cycles_per_step": 300,
+   "float_rk4": {
+    "error": 8.813648033623167e-09,
+    "per_step_median_s": 2.1866972370226994e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0024538000288885087,
+     "median_s": 0.004766999976709485,
+     "min_s": 0.0021428000181913376,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "n_steps": 218,
+   "problem": "quaternion",
+   "q15": {
+    "error": 0.02379282740021904,
+    "max_abs_q": 8226,
+    "per_step_median_s": 0.000327716054984394,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.018864250014303252,
+     "median_s": 0.0714420999865979,
+     "min_s": 0.05235499999253079,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65400
+  },
+  {
+   "cycles_per_step": 63,
+   "float_rk4": {
+    "error": 3.260015006426378e-14,
+    "per_step_median_s": 8.773846135367281e-06,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.002006049995543435,
+     "median_s": 0.009124799980781972,
+     "min_s": 0.007617700030095875,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 1040,
+   "problem": "dahlquist",
+   "q15": {
+    "error": 0.00016747024226248486,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.0001209166345898456,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.020683049981016666,
+     "median_s": 0.12575329997343943,
+     "min_s": 0.10744490002980456,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65520
+  },
+  {
+   "cycles_per_step": 126,
+   "float_rk4": {
+    "error": 2.2640707819146853e-07,
+    "per_step_median_s": 9.392692300025374e-06,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0009616499883122742,
+     "median_s": 0.004884199996013194,
+     "min_s": 0.003264400002080947,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 520,
+   "problem": "damped_osc",
+   "q15": {
+    "error": 0.0012190008321749843,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.0001437567307640655,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.016243849997408688,
+     "median_s": 0.07475349999731407,
+     "min_s": 0.06107300001895055,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65520
+  },
+  {
+   "cycles_per_step": 126,
+   "float_rk4": {
+    "error": 8.428862054091582e-07,
+    "per_step_median_s": 1.1965192299192915e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.002756749978289008,
+     "median_s": 0.006221899995580316,
+     "min_s": 0.004169800027739257,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 520,
+   "problem": "vanderpol_mild",
+   "q15": {
+    "error": 0.019472029462499565,
+    "max_abs_q": 4563,
+    "per_step_median_s": 0.00017500865382876678,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.008335900056408718,
+     "median_s": 0.09100449999095872,
+     "min_s": 0.08317310002166778,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65520
+  },
+  {
+   "cycles_per_step": 126,
+   "float_rk4": {
+    "error": 1.2355510572605607e-05,
+    "per_step_median_s": 1.04471153463237e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0011436499771662056,
+     "median_s": 0.005432499980088323,
+     "min_s": 0.004873200028669089,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 520,
+   "problem": "pendulum",
+   "q15": {
+    "error": 0.0005629306323545754,
+    "max_abs_q": 8276,
+    "per_step_median_s": 0.00017799249997971437,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.010186500003328547,
+     "median_s": 0.09255609998945147,
+     "min_s": 0.08103769994340837,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65520
+  },
+  {
+   "cycles_per_step": 126,
+   "float_rk4": {
+    "error": 2.94265162563278e-12,
+    "per_step_median_s": 1.1832499988556194e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0042602499888744205,
+     "median_s": 0.006152899994049221,
+     "min_s": 0.0036999000003561378,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 520,
+   "problem": "dc_motor",
+   "q15": {
+    "error": 0.023837547951596483,
+    "max_abs_q": 7985,
+    "per_step_median_s": 0.00014686480762275794,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.012216099974466488,
+     "median_s": 0.07636969996383414,
+     "min_s": 0.0685424999683164,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65520
+  },
+  {
+   "cycles_per_step": 189,
+   "float_rk4": {
+    "error": 5.807815323053994e-13,
+    "per_step_median_s": 2.3117051910705907e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.002131699991878122,
+     "median_s": 0.007998499961104244,
+     "min_s": 0.006278599961660802,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 346,
+   "problem": "rc_thermal",
+   "q15": {
+    "error": 0.11546576261132306,
+    "max_abs_q": 8192,
+    "per_step_median_s": 0.0002382736993923977,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.012255099951289594,
+     "median_s": 0.08244269998976961,
+     "min_s": 0.06709849997423589,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65394
+  },
+  {
+   "cycles_per_step": 252,
+   "float_rk4": {
+    "error": 3.652586233471311e-09,
+    "per_step_median_s": 2.0668846152078074e-05,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.0035943499533459544,
+     "median_s": 0.005373899999540299,
+     "min_s": 0.0030928999767638743,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "n_steps": 260,
+   "problem": "quaternion",
+   "q15": {
+    "error": 0.02573363352439728,
+    "max_abs_q": 8200,
+    "per_step_median_s": 0.0002695896154574047,
+    "status": "ok",
+    "timing": {
+     "iqr_s": 0.007662949996301904,
+     "median_s": 0.07009330001892522,
+     "min_s": 0.057765400037169456,
+     "n": 15,
+     "warmup": 3
+    }
+   },
+   "total_cycles": 65520
+  }
+ ],
+ "generated_from": {
+  "champion_hashes": [
+   "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03"
+  ],
+  "scipy": "1.14.1",
+  "validation_results": "rk-work/validation/results.json (methods[].tableau)"
+ },
+ "methods": [
+  {
+   "cycles_per_step": {
+    "dahlquist": 33,
+    "damped_osc": 66,
+    "dc_motor": 66,
+    "pendulum": 66,
+    "quaternion": 132,
+    "rc_thermal": 99,
+    "vanderpol_mild": 66
+   },
+   "kind": "classical",
+   "name_or_hash": "rk4",
+   "order": 4,
+   "roles": [
+    "anchor"
+   ],
+   "stages": 4,
+   "steps": {
+    "dahlquist": 1985,
+    "damped_osc": 992,
+    "dc_motor": 992,
+    "pendulum": 992,
+    "quaternion": 496,
+    "rc_thermal": 661,
+    "vanderpol_mild": 992
+   },
+   "tableau": {
+    "A": [
+     [
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "1/2",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "0/1",
+      "1/2",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "0/1",
+      "0/1",
+      "1/1",
+      "0/1"
+     ]
+    ],
+    "b": [
+     "1/6",
+     "1/3",
+     "1/3",
+     "1/6"
+    ],
+    "c": [
+     "0/1",
+     "1/2",
+     "1/2",
+     "1/1"
+    ]
+   }
+  },
+  {
+   "archive": {
+    "cycle_id": 33,
+    "heldout_error": 0.02861808365520825,
+    "search_error": 0.011468375122318679,
+    "tier": "unreplicated",
+    "verifier_hash": "de5bec229ffa404a85b9172fdc808ef6035716c3df8b308c816e90ffb54fd6e9"
+   },
+   "cycles_per_step": {
+    "dahlquist": 22,
+    "damped_osc": 44,
+    "dc_motor": 44,
+    "pendulum": 44,
+    "quaternion": 88,
+    "rc_thermal": 66,
+    "vanderpol_mild": 44
+   },
+   "kind": "discovered",
+   "name_or_hash": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+   "order": 2,
+   "roles": [
+    "champion",
+    "best_elite_order_2"
+   ],
+   "stages": 3,
+   "steps": {
+    "dahlquist": 2978,
+    "damped_osc": 1489,
+    "dc_motor": 1489,
+    "pendulum": 1489,
+    "quaternion": 744,
+    "rc_thermal": 992,
+    "vanderpol_mild": 1489
+   },
+   "tableau": {
+    "A": [
+     [
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "13/16",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "5/32",
+      "11/32",
+      "0/1"
+     ]
+    ],
+    "b": [
+     "0/1",
+     "0/1",
+     "1/1"
+    ],
+    "c": [
+     "0/1",
+     "13/16",
+     "1/2"
+    ]
+   }
+  },
+  {
+   "archive": {
+    "cycle_id": 632,
+    "heldout_error": 0.03765508267933201,
+    "search_error": 0.004850615658329626,
+    "tier": "heldout_verified",
+    "verifier_hash": "de5bec229ffa404a85b9172fdc808ef6035716c3df8b308c816e90ffb54fd6e9"
+   },
+   "cycles_per_step": {
+    "dahlquist": 75,
+    "damped_osc": 150,
+    "dc_motor": 150,
+    "pendulum": 150,
+    "quaternion": 300,
+    "rc_thermal": 225,
+    "vanderpol_mild": 150
+   },
+   "kind": "discovered",
+   "name_or_hash": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+   "order": 3,
+   "roles": [
+    "best_elite_order_3"
+   ],
+   "stages": 6,
+   "steps": {
+    "dahlquist": 873,
+    "damped_osc": 436,
+    "dc_motor": 436,
+    "pendulum": 436,
+    "quaternion": 218,
+    "rc_thermal": 291,
+    "vanderpol_mild": 436
+   },
+   "tableau": {
+    "A": [
+     [
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "11/16",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "-5/16",
+      "15/16",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "1/8",
+      "-3/16",
+      "7/8",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "9/8",
+      "-3/8",
+      "11/16",
+      "13/16",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "1/16",
+      "3/16",
+      "-1/8",
+      "0/1",
+      "17/16",
+      "0/1"
+     ]
+    ],
+    "b": [
+     "5497/22110",
+     "2183/4422",
+     "523/2010",
+     "-1/402",
+     "0/1",
+     "0/1"
+    ],
+    "c": [
+     "0/1",
+     "11/16",
+     "5/8",
+     "13/16",
+     "9/4",
+     "19/16"
+    ]
+   }
+  },
+  {
+   "archive": {
+    "cycle_id": 358,
+    "heldout_error": 0.06033885110984443,
+    "search_error": 0.011264604456723988,
+    "tier": "unreplicated",
+    "verifier_hash": "de5bec229ffa404a85b9172fdc808ef6035716c3df8b308c816e90ffb54fd6e9"
+   },
+   "cycles_per_step": {
+    "dahlquist": 63,
+    "damped_osc": 126,
+    "dc_motor": 126,
+    "pendulum": 126,
+    "quaternion": 252,
+    "rc_thermal": 189,
+    "vanderpol_mild": 126
+   },
+   "kind": "discovered",
+   "name_or_hash": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+   "order": 4,
+   "roles": [
+    "best_elite_order_4"
+   ],
+   "stages": 6,
+   "steps": {
+    "dahlquist": 1040,
+    "damped_osc": 520,
+    "dc_motor": 520,
+    "pendulum": 520,
+    "quaternion": 260,
+    "rc_thermal": 346,
+    "vanderpol_mild": 520
+   },
+   "tableau": {
+    "A": [
+     [
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "1/2",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "-1/2",
+      "1/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "0/1",
+      "1/2",
+      "1/2",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "5/16",
+      "-5/16",
+      "1/8",
+      "1/16",
+      "0/1",
+      "0/1"
+     ],
+     [
+      "0/1",
+      "-1/8",
+      "1/2",
+      "-1/8",
+      "3/4",
+      "0/1"
+     ]
+    ],
+    "b": [
+     "1/6",
+     "1/2",
+     "1/6",
+     "1/6",
+     "0/1",
+     "0/1"
+    ],
+    "c": [
+     "0/1",
+     "1/2",
+     "1/2",
+     "1/1",
+     "3/16",
+     "1/1"
+    ]
+   }
+  }
+ ],
+ "problems": [
+  {
+   "atol": 0.0001220703125,
+   "deriv_scale": 1.0,
+   "family": "linear",
+   "n_states": 1,
+   "name": "dahlquist",
+   "peak": 1.0,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.25,
+   "t_end": 10.0
+  },
+  {
+   "atol": 0.0001220703125,
+   "deriv_scale": 1.0,
+   "family": "oscillatory",
+   "n_states": 2,
+   "name": "damped_osc",
+   "peak": 1.0,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.25,
+   "t_end": 40.0
+  },
+  {
+   "atol": 0.00048828125,
+   "deriv_scale": 1.0,
+   "family": "nonlinear",
+   "n_states": 2,
+   "name": "vanderpol_mild",
+   "peak": 2.226469,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.0625,
+   "t_end": 20.0
+  },
+  {
+   "atol": 0.0001220703125,
+   "deriv_scale": 1.0,
+   "family": "nonlinear",
+   "n_states": 2,
+   "name": "pendulum",
+   "peak": 1.0,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.25,
+   "t_end": 60.0
+  },
+  {
+   "atol": 0.000244140625,
+   "deriv_scale": 1.0,
+   "family": "linear",
+   "n_states": 2,
+   "name": "dc_motor",
+   "peak": 1.996771,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.125,
+   "t_end": 5.0
+  },
+  {
+   "atol": 0.0001220703125,
+   "deriv_scale": 0.125,
+   "family": "stiff",
+   "n_states": 3,
+   "name": "rc_thermal",
+   "peak": 1.0,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.25,
+   "t_end": 4.0
+  },
+  {
+   "atol": 0.0001220703125,
+   "deriv_scale": 1.0,
+   "family": "geometric",
+   "n_states": 4,
+   "name": "quaternion",
+   "peak": 1.0,
+   "rtol": 3.0517578125e-05,
+   "scale": 0.25,
+   "t_end": 30.0
+  }
+ ],
+ "rounding": "floor (ASRS), per HANDOFF 4.2",
+ "schema": {
+  "adaptive_results": "table 1, one row per (scipy integrator, problem): accuracy at matched tolerance with wall clock. Fields: rtol, atol, status ok|failed|skipped (reason on non-ok), error (final-state error_metric, null when unavailable), n_steps_accepted, nfev, timing, per_step_median_s. Adaptive integrators choose their own steps, so these timings are never same-work comparisons against the fixed-step table",
+  "budget_cycles": "shared cycle budget that sets every fixed-step run's step count",
+  "caveats": "the reading rules: what these numbers do and do not support",
+  "correlation": "Pearson correlation between analytic cycles per step and measured seconds per step across the ok fixed-step Q15 runs, with the point count and median seconds per analytic cycle",
+  "cost_model": "cost model used for the budget to step-count mapping",
+  "environment": "timing environment: python/numpy/scipy versions, cpu and os via platform, perf_counter resolution, the thread caps exported before numpy loaded, and the like-against-like timing caveat",
+  "fixed_step_results": "table 2, one row per (Q15 method, problem) at the budgeted step count n_steps: like-for-like cells holding a q15 object (pinned solve_q15 run: status, error, max_abs_q, timing, per_step_median_s) and a float_rk4 object (hand-rolled float64 rk4 at the identical step count: status, error, timing, per_step_median_s), plus cycles_per_step and total_cycles from the analytic model",
+  "generated_from": "validation_results: file the method tableaus came from; champion_hashes: discovered tableau hashes carried over; scipy: version string, or null with scipy_error set when the import failed and the adaptive table was skipped",
+  "methods": "fixed-step methods under benchmark: classical rk4 plus every discovered method from the validation document, with kind, roles, order, stages, tableau (exact fraction strings), cycles_per_step and steps per problem, and archive provenance for discovered entries",
+  "problems": "the seven frozen scored problems: name, n_states, t_end, scale, deriv_scale, family, peak, and the matched rtol/atol",
+  "rounding": "Q15 multiply semantics of the pinned solver (floor / ASRS)",
+  "timing_protocol": "clock, warmup runs, and repeat count n behind every timing object; timing objects carry median_s, iqr_s (quartile 3 minus quartile 1), min_s, n and warmup",
+  "tolerance_rule": "how scipy rtol/atol were matched to the Q15 error scale",
+  "verdicts": "per_problem best library and best Q15 entries with error ratios, the two median ratios, and honest prose for the matched-tolerance table, the fixed-step table, the cycle model, and overall"
+ },
+ "timing_protocol": {
+  "clock": "time.perf_counter",
+  "n_repeats": 15,
+  "warmup": 3
+ },
+ "tolerance_rule": "rtol = 2**-15 and atol = 2**-15 / scale for every problem: one Q15 least significant bit as a relative tolerance, and one Q15 least significant bit converted to physical units (a Q15 state stores y * scale in steps of 2**-15) as the absolute tolerance. The library integrators are therefore asked for local error at the resolution the Q15 representation can hold.",
+ "verdicts": {
+  "cycle_model": "Across 28 fixed-step Q15 runs the Pearson correlation between analytic cycles per step and measured seconds per step is 0.972. The analytic model counts Cortex-M0+ arithmetic while the measurement is Python interpreter time, so the correlation speaks to ordering, not to absolute scale.",
+  "fixed_step": "At identical step counts implied by the 65536-cycle budget under m0plus_fast, the median ratio of Q15 error to float64 rk4 error is 1.9e+08, and the Q15 side has the lower error in 0 of 28 comparable cells. The gap between the two columns is the cost of 16-bit floor arithmetic (a -0.5 LSB bias per multiply in the pinned solver), not of the tableaus themselves.",
+  "fixed_step_cells_compared": 28,
+  "fixed_step_cells_where_q15_error_lower": 0,
+  "matched_tolerance": "At tolerances matched to one Q15 least significant bit, the median per-problem ratio of best Q15 error to best library error is 727 (above 1.0 means the library side is more accurate). Library wall clocks in the same table are informative but never same-work comparisons, because adaptive integrators choose their own step counts.",
+  "median_ratio_q15_over_float_rk4_at_matched_steps": 190466698.99164912,
+  "median_ratio_q15_over_library_at_matched_tolerance": 727.1136968348636,
+  "overall": "The float64 side holds the accuracy margin in both tables (median Q15-to-library error ratio 727 at matched tolerance; median Q15-to-float-rk4 error ratio 1.9e+08 at matched step counts). What the Q15 methods offer is not accuracy parity: they run in 16-bit integer arithmetic at a fixed, budgeted cycle cost, which no library measured here does. Within the Q15 regime the analytic cycle model and measured time agree on ordering to the extent the reported correlation shows.",
+  "per_problem": {
+   "dahlquist": {
+    "best_library": "Radau",
+    "best_library_error": 2.3032194688600316e-07,
+    "best_library_median_s": 0.009350200009066612,
+    "best_q15_error": 0.00016747024226248486,
+    "best_q15_median_s": 0.0795572999631986,
+    "best_q15_method": "rk4",
+    "ratio_q15_over_library": 727.1136968348636
+   },
+   "damped_osc": {
+    "best_library": "Radau",
+    "best_library_error": 1.398832787899082e-05,
+    "best_library_median_s": 0.04099339997628704,
+    "best_q15_error": 0.0012190008321749843,
+    "best_q15_median_s": 0.07475349999731407,
+    "best_q15_method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+    "ratio_q15_over_library": 87.1441420819004
+   },
+   "dc_motor": {
+    "best_library": "Radau",
+    "best_library_error": 8.05473256795067e-07,
+    "best_library_median_s": 0.010318099986761808,
+    "best_q15_error": 0.023837547951596483,
+    "best_q15_median_s": 0.07636969996383414,
+    "best_q15_method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+    "ratio_q15_over_library": 29594.462324478347
+   },
+   "pendulum": {
+    "best_library": "Radau",
+    "best_library_error": 8.606329212933731e-05,
+    "best_library_median_s": 0.0977588000241667,
+    "best_q15_error": 0.0005629306323545754,
+    "best_q15_median_s": 0.09255609998945147,
+    "best_q15_method": "196b1d17d0b708c06c798239ed34bd466fa7e9b6ba7e59797ec5d22645b2ab03",
+    "ratio_q15_over_library": 6.540891225827082
+   },
+   "quaternion": {
+    "best_library": "Radau",
+    "best_library_error": 1.6698298357153973e-05,
+    "best_library_median_s": 0.016644000017549843,
+    "best_q15_error": 0.019105502156982923,
+    "best_q15_median_s": 0.07252909999806434,
+    "best_q15_method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+    "ratio_q15_over_library": 1144.1586291214903
+   },
+   "rc_thermal": {
+    "best_library": "Radau",
+    "best_library_error": 4.5979870976931254e-07,
+    "best_library_median_s": 0.015076700015924871,
+    "best_q15_error": 0.046087531063901954,
+    "best_q15_median_s": 0.08198309998260811,
+    "best_q15_method": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033",
+    "ratio_q15_over_library": 100234.14612673601
+   },
+   "vanderpol_mild": {
+    "best_library": "Radau",
+    "best_library_error": 1.3014003319652512e-05,
+    "best_library_median_s": 0.06644729996332899,
+    "best_q15_error": 0.006756484162570551,
+    "best_q15_median_s": 0.10035039996728301,
+    "best_q15_method": "42863b93bf7d570f7f6fd94033452451bf70bb8adf803e7f2c965f612914472e",
+    "ratio_q15_over_library": 519.1703119029906
+   }
+  }
+ }
+}

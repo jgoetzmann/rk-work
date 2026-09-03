@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0808",
+ "directive_id": "D-0809",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (2 samples at 4 stages, 4 at 6 stages). Search both stage counts with Q15-friendly dyadics to gather matched evidence for H-004 and improve weak occupied cells."
+ "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6); target both stage counts to populate weak cells and gather balanced samples for the open slow-cost comparison."
 }

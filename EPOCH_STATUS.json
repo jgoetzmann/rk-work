@@ -1,0 +1,15 @@
+{
+ "epoch": 1,
+ "frozen_at": "2026-09-03T02:43:26.768407+00:00",
+ "reason": "epoch saturated: no archive progress past the 48h window since 2026-08-31, falsification concluded; graceful stop at cycle boundary",
+ "metrics": {
+  "n_accepted": 46496,
+  "n_cells": 14,
+  "last_new_cell_ts": "2026-08-31T11:53:49+00:00",
+  "last_improvement_ts": "2026-08-31T11:53:49+00:00",
+  "last_verified_ts": "2026-08-31T11:43:47+00:00",
+  "last_progress_ts": "2026-08-31T11:53:49+00:00",
+  "last_progress_kind": "new_cell",
+  "last_event_ts": "2026-09-03T02:43:11+00:00"
+ }
+}
