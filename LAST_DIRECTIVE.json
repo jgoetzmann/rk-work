@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0809",
+ "directive_id": "D-1146A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6); target both stage counts to populate weak cells and gather balanced samples for the open slow-cost comparison."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts to populate weak cells and gather balanced samples for the open slow-cost held-out comparison."
 }
