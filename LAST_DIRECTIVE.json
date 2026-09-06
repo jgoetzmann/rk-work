@@ -1,16 +1,12 @@
 {
- "directive_id": "D-1167",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1168",
+ "hypothesis_id": "H-378",
  "target_order": 4,
  "stages": [
-  4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (n=2 at 4 stages, n=4 at 6), so paired sampling directly advances H-004 while seeking improvements in weak occupied cells and adjacent empty cycle buckets."
+ "rationale": "Order-4 six-stage cells have only four samples and H-378 remains open; concentrate the full search on stage 6 to gather fast-cost search-error evidence and improve the weak occupied buckets or fill adjacent empty buckets."
 }
