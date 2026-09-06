@@ -1,13 +1,12 @@
 {
- "directive_id": "D-1148",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1149",
+ "hypothesis_id": "H-378",
  "target_order": 4,
  "stages": [
-  4,
   6
  ],
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (2 records at 4 stages, 4 at 6); broaden sampling across both stage counts to test H-004 and improve weak occupied cells."
+ "rationale": "Order-4 six-stage sampling is extremely sparse (n=4), while its bucket 3 cell is weak and H-378 remains open; concentrate all islands there to gather fast-cost search-error evidence and improve the current (6,3) cell."
 }
