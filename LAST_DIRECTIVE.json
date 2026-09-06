@@ -1,13 +1,16 @@
 {
- "directive_id": "D-1156",
+ "directive_id": "D-1157",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells have only six total archived samples across stages 4 and 6; expand both sparse populations to gather balanced evidence for H-004 and improve weak occupied cells."
+ "rationale": "Order-4 cells have only six total samples; jointly sample stages 4 and 6 to resolve H-004 while targeting their weak, sparsely occupied cells. Moderate dyadic resolution preserves Q15-friendly coefficients, and nonnegative weights narrow toward reduced floor-error amplification."
 }
