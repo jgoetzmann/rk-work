@@ -1,13 +1,34 @@
 {
- "directive_id": "D-1238P4",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1240",
+ "hypothesis_id": "H-480",
  "target_order": 4,
  "stages": [
-  4,
-  6
+  4
  ],
- "constraints": {},
+ "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 2,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (n=2 at four stages, n=4 at six), while H-004 remains open. Search both stage counts to gather balanced samples and strengthen weak occupied cells across their attainable cycle buckets."
+ "rationale": "Order-4 stage-4 has only two samples and one occupied cell. This sparse dyadic low-multiply family targets additional slow-model search-error samples for H-480 while testing a classical RK4-like structure."
 }
