@@ -1,15 +1,15 @@
 {
- "directive_id": "D-1152",
- "hypothesis_id": "H-028",
+ "directive_id": "D-1153",
+ "hypothesis_id": "H-378",
  "target_order": 4,
  "stages": [
-  4,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six). Search both stage counts at full Q15 dyadic resolution to gather balanced samples for the open fast-cost comparison and improve weak occupied cells."
+ "rationale": "Order-4 six-stage evidence is only n=4, leaving H-378 under-sampled. Search the full Q15 dyadic resolution with nonnegative weights to gather fast-cost search-error samples and improve the weak occupied cells at buckets 2 and 3."
 }
