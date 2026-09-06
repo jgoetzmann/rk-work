@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1169",
+ "directive_id": "D-1170",
  "hypothesis_id": "H-378",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage statistics have only four samples, while the matching order-3 six-stage population is large. Expand the weak order-4 cells to gather decisive search-error evidence for H-378 and potentially improve occupied buckets 2 and 3 or fill adjacent empty buckets."
+ "rationale": "Order-4 six-stage cells have only four samples, while H-378 remains open and directly compares six-stage order-4 versus order-3 search error under the fast cost model. Concentrate all islands on stage 6 to improve sampling and potentially strengthen the weak occupied buckets 2 and 3."
 }
