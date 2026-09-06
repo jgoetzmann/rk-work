@@ -1,34 +1,15 @@
 {
  "directive_id": "D-1240",
- "hypothesis_id": "H-480",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
-  4
+  4,
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 2,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
-  },
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-4 has only two samples and one occupied cell. This sparse dyadic low-multiply family targets additional slow-model search-error samples for H-480 while testing a classical RK4-like structure."
+ "rationale": "Order-4 has only six fast samples across stages 4 and 6, leaving H-004 unresolved and most cells empty. Search both stage counts with the full permitted Q15 dyadic resolution to gather balanced evidence and improve sparse archive cells."
 }
