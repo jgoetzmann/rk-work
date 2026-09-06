@@ -1,15 +1,13 @@
 {
- "directive_id": "D-1240",
+ "directive_id": "D-1241A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 has only six fast samples across stages 4 and 6, leaving H-004 unresolved and most cells empty. Search both stage counts with the full permitted Q15 dyadic resolution to gather balanced evidence and improve sparse archive cells."
+ "rationale": "Order-4 statistics are severely undersampled (n=2 at four stages and n=4 at six), while both stage counts have many empty cycle buckets. Search both to gather balanced evidence for H-004 and improve weak or empty order-4 cells."
 }
