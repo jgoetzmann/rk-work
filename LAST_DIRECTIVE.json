@@ -1,16 +1,13 @@
 {
- "directive_id": "D-1237A",
+ "directive_id": "D-1238P4",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (s4 n=2, s6 n=4); search both stage counts to gather balanced evidence for H-004 while targeting weak and empty cycle buckets."
+ "rationale": "Order-4 evidence is extremely sparse (n=2 at four stages, n=4 at six), while H-004 remains open. Search both stage counts to gather balanced samples and strengthen weak occupied cells across their attainable cycle buckets."
 }
