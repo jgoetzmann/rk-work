@@ -1,13 +1,16 @@
 {
- "directive_id": "D-1149A",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1151",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (2 four-stage and 4 six-stage fast records). Search both stage counts to gather balanced evidence for H-004 while improving weak occupied cells and potentially filling additional cycle buckets."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six); search both stage counts to gather balanced fast-cost samples for H-028 while allowing full Q15 dyadic resolution."
 }
