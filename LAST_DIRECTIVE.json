@@ -1,16 +1,13 @@
 {
- "directive_id": "D-1221",
+ "directive_id": "D-1221H004",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells have only six samples total, leaving H-004 unresolved. Search both four- and six-stage methods with Q15-friendly low-denominator dyadics and nonnegative exact weights to strengthen the comparison and seek lower-error occupants across their empty cycle buckets."
+ "rationale": "Gather the sparse order-4 samples needed to resolve H-004 while improving weak four-stage and six-stage cells; both have only a handful of observations, and the six-stage bucket-3 incumbent is weak."
 }
