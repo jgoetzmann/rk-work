@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1226P4",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1228",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (n=2 at four stages, n=4 at six), while many cells remain empty. Search both feasible stage counts broadly to gather balanced samples for H-004 and improve weak order-4 coverage."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, and their occupied cells remain weak. Search both stage counts broadly to improve coverage and gather balanced fast-cost samples for H-028."
 }
