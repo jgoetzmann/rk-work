@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1211A",
+ "directive_id": "D-1212A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics remain severely undersampled (4-stage n=2, 6-stage n=4). Search both stage counts with the full Q15 dyadic resolution to gather matched samples for H-004 and improve weak occupied cells."
+ "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6). Search both stage counts with the least restrictive allowed dyadic grid to gather samples for H-004 and improve weak or empty cells."
 }
