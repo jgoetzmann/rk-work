@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1210A",
+ "directive_id": "D-1211A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (4-stage n=2, 6-stage n=4). A broad high-resolution dyadic search across both stage counts gathers balanced samples for H-004 while targeting weak occupied cells and adjacent empty cycle buckets."
+ "rationale": "Order-4 statistics remain severely undersampled (4-stage n=2, 6-stage n=4). Search both stage counts with the full Q15 dyadic resolution to gather matched samples for H-004 and improve weak occupied cells."
 }
