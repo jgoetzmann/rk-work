@@ -1,15 +1,13 @@
 {
- "directive_id": "D-1195",
+ "directive_id": "D-1196A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are critically undersampled (n=2 at 4 stages, n=4 at 6 stages). Search both stage counts with full Q15 dyadic resolution and maximum multistart budget to gather balanced evidence for H-004 while improving weak occupied cells."
+ "rationale": "Order-4 cells have only 2 samples at four stages and 4 at six stages. Broad multistart sampling of both stage counts targets H-004 while improving the weak occupied cells and potentially filling their empty cycle buckets."
 }
