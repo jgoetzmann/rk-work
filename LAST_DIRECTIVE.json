@@ -1,14 +1,13 @@
 {
  "directive_id": "D-1159",
- "hypothesis_id": "H-378",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
+  4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage statistics have only four samples, while the stage-6 bucket-3 cell is weak and buckets 4-7 are empty. A broad Q15-denominator search should improve coverage and supply evidence for H-378."
+ "rationale": "Gather scarce order-4 samples for the open slow-cost comparison; only 2 four-stage and 4 six-stage records exist, and many cells remain empty."
 }
