@@ -1,12 +1,13 @@
 {
- "directive_id": "D-1170",
- "hypothesis_id": "H-378",
+ "directive_id": "D-1172",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
+  4,
   6
  ],
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage cells have only four samples, while H-378 remains open and directly compares six-stage order-4 versus order-3 search error under the fast cost model. Concentrate all islands on stage 6 to improve sampling and potentially strengthen the weak occupied buckets 2 and 3."
+ "rationale": "Order-4 evidence is severely undersampled (2 four-stage and 4 six-stage records). Search both stage counts to populate empty cycle buckets and gather balanced samples for the open slow-cost held-out comparison."
 }
