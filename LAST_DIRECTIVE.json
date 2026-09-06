@@ -1,15 +1,16 @@
 {
- "directive_id": "D-1165A",
- "hypothesis_id": "H-028",
+ "directive_id": "D-1167",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 samples at stage 4 and 4 at stage 6); sample both stage counts to resolve H-028 while improving weak or empty fast-cost cells."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at 4 stages, n=4 at 6), so paired sampling directly advances H-004 while seeking improvements in weak occupied cells and adjacent empty cycle buckets."
 }
