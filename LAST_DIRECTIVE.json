@@ -1,16 +1,15 @@
 {
- "directive_id": "D-1233A",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1234A",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, so both weak cells need depth to resolve H-004. Q15-compatible dyadics and nonnegative weights focus the search on implementable, internally stable candidates."
+ "rationale": "Order-4 evidence is sparse (2 four-stage and 4 six-stage samples), while H-028 directly compares their held-out error under the fast cost model. Search both stage counts with full Q15 dyadic resolution to gather balanced samples and improve weak occupied cells without imposing untested structural restrictions."
 }
