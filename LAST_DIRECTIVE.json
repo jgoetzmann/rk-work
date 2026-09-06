@@ -1,13 +1,15 @@
 {
- "directive_id": "D-1175",
+ "directive_id": "D-1176",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, respectively; search both to populate weak cells and gather balanced evidence for the open slow-cost held-out comparison."
+ "rationale": "Order-4 statistics remain extremely sparse at both stages (n=2 and n=4). Broad Q15-resolution sampling of stages 4 and 6 targets weak and empty cells while gathering balanced evidence for H-004."
 }
