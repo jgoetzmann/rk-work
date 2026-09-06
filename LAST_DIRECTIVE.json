@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1221H004",
+ "directive_id": "D-1223",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather the sparse order-4 samples needed to resolve H-004 while improving weak four-stage and six-stage cells; both have only a handful of observations, and the six-stage bucket-3 incumbent is weak."
+ "rationale": "Order-4 evidence is severely undersampled (2 four-stage and 4 six-stage records). Search both stage counts to populate empty cycle buckets and gather balanced samples for the open slow-cost held-out-error comparison."
 }
