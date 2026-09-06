@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1161",
+ "directive_id": "D-1162",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 are severely undersampled, with only 2 and 4 records; sample both to resolve H-004 and improve weak or empty cycle-bucket cells."
+ "rationale": "Order-4 evidence is extremely sparse (n=2 at four stages, n=4 at six), and both stage counts have many empty cycle buckets. Sample both to resolve H-004 while improving weak or empty cells."
 }
