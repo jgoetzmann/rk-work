@@ -1,16 +1,13 @@
 {
- "directive_id": "D-1223A",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1225",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely sample-starved (2 samples at 4 stages, 4 at 6), while H-004 remains open. Search both stage counts with full Q15 dyadic resolution to gather directly comparable slow-model samples and improve weak occupied cells."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six stages). Search both stage counts broadly to gather balanced fast-cost samples for H-028 and improve weak occupied cells or fill adjacent cycle buckets."
 }
