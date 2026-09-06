@@ -1,15 +1,13 @@
 {
- "directive_id": "D-1200",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1201",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, so the slow-model comparison in H-004 is severely undersampled; search both stage counts on the full Q15 dyadic grid."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at 4 stages, n=4 at 6 stages). Search both stage counts to gather balanced evidence for H-028 and improve their weak occupied cells."
 }
