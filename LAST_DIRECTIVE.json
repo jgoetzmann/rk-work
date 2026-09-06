@@ -1,13 +1,15 @@
 {
- "directive_id": "D-1228",
+ "directive_id": "D-1229",
  "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, and their occupied cells remain weak. Search both stage counts broadly to improve coverage and gather balanced fast-cost samples for H-028."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six), and H-028 remains open. Search both stage counts at full Q15 dyadic resolution to gather comparable samples and improve weak or empty cycle buckets."
 }
