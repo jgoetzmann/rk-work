@@ -1,16 +1,13 @@
 {
- "directive_id": "D-1215A",
- "hypothesis_id": "H-028",
+ "directive_id": "D-1217",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells have only 2 four-stage and 4 six-stage samples; search both stage counts to gather balanced evidence for H-028 while improving weak occupied cells. Nonnegative weights narrow toward Q15-robust candidates, and the full Q15 dyadic denominator preserves coefficient resolution."
+ "rationale": "Order-4 evidence is critically sparse (2 four-stage and 4 six-stage samples). Search both stage counts to gather balanced samples for H-004 while improving weak or empty cycle-bucket cells."
 }
