@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1241A",
+ "directive_id": "D-1242P4",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (n=2 at four stages and n=4 at six), while both stage counts have many empty cycle buckets. Search both to gather balanced evidence for H-004 and improve weak or empty order-4 cells."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, and most cells are empty. Concentrate the full run on both stage counts to gather balanced evidence for H-004 while improving sparse order-4 coverage."
 }
