@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1154A",
+ "directive_id": "D-1156",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is critically sparse (2 four-stage and 4 six-stage samples). Search both stage counts to populate empty cycle buckets and gather balanced samples for the open slow-cost held-out-error comparison."
+ "rationale": "Order-4 cells have only six total archived samples across stages 4 and 6; expand both sparse populations to gather balanced evidence for H-004 and improve weak occupied cells."
 }
