@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1183P4",
- "hypothesis_id": "H-004",
+ "directive_id": "D-1184",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells have only 2 four-stage and 4 six-stage samples; paired multistart sampling directly advances H-004 while seeking improvements in weak occupied cells and adjacent empty cycle buckets."
+ "rationale": "Order-4 cells have only 2 four-stage and 4 six-stage samples. Search both stage counts under native Q15 dyadics to gather balanced evidence for H-028 while improving the weak occupied cells and exploring their empty cycle buckets."
 }
