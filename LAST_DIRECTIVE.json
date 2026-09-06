@@ -1,34 +1,12 @@
 {
- "directive_id": "D-1168A",
- "hypothesis_id": "H-435",
+ "directive_id": "D-1169",
+ "hypothesis_id": "H-378",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
- "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
-  },
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-4 has only two samples and one occupied cell. Search the sparse midpoint/midpoint/endpoint family to gather evidence for H-435 while favoring low multiply count, exact dyadic A coefficients, and nonnegative solved weights."
+ "rationale": "Order-4 six-stage statistics have only four samples, while the matching order-3 six-stage population is large. Expand the weak order-4 cells to gather decisive search-error evidence for H-378 and potentially improve occupied buckets 2 and 3 or fill adjacent empty buckets."
 }
