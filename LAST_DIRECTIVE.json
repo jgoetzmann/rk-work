@@ -1,14 +1,13 @@
 {
- "directive_id": "D-1154",
- "hypothesis_id": "H-028",
+ "directive_id": "D-1154A",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
-  5,
   6
  ],
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is weakest: stages 4 and 6 have only 2 and 4 samples, while stage 5 is entirely empty. Search all three to gather evidence for H-028 and improve or fill sparse order-4 cells."
+ "rationale": "Order-4 evidence is critically sparse (2 four-stage and 4 six-stage samples). Search both stage counts to populate empty cycle buckets and gather balanced samples for the open slow-cost held-out-error comparison."
 }
