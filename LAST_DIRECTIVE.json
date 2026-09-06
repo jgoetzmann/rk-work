@@ -1,15 +1,16 @@
 {
- "directive_id": "D-1232A",
- "hypothesis_id": "H-474",
- "target_order": 3,
+ "directive_id": "D-1233A",
+ "hypothesis_id": "H-004",
+ "target_order": 4,
  "stages": [
   4,
-  5
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather samples for H-474 while targeting weak order-3 cells: the four-stage best held-out error is 6.724e-02, versus 5.874e-02 at five stages. A broad Q15 dyadic search preserves coefficient resolution and tests whether the AVR-approximate search-error ranking reverses at equal modeled cost."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, so both weak cells need depth to resolve H-004. Q15-compatible dyadics and nonnegative weights focus the search on implementable, internally stable candidates."
 }
