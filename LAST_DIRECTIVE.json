@@ -1,12 +1,13 @@
 {
- "directive_id": "D-2385",
- "hypothesis_id": null,
+ "directive_id": "D-2385A",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
-  5
+  4,
+  6
  ],
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4, five-stage cells are entirely empty despite strong sampling at orders 2 and 3; devote a full unconstrained multi-island search to establishing feasible coverage across cycle buckets."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, with many empty cycle buckets. Broaden sampling across both stage counts to populate weak cells and resolve H-004 under the slow cost model."
 }
