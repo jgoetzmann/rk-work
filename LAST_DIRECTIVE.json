@@ -1,15 +1,15 @@
 {
- "directive_id": "D-2504",
- "hypothesis_id": null,
+ "directive_id": "D-2504A",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
-  5
+  4,
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4, five-stage space has zero samples and all eight cycle buckets empty; a moderate dyadic grid with nonnegative weights targets this major archive gap."
+ "rationale": "Order-4 statistics remain severely undersampled (2 four-stage and 4 six-stage records). Search both stage counts with the full Q15 dyadic denominator range to gather matched evidence for H-004 and improve sparse or empty archive cells."
 }
