@@ -1,12 +1,14 @@
 {
- "directive_id": "D-2538",
+ "directive_id": "D-2539",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or filled cells; a broad stage-5 search targets the empty current cell and supplies evidence for its fast held-out comparison with stage 4."
+ "rationale": "Order-4 five-stage cells are entirely empty, blocking H-633 and many related open hypotheses. A broad Q15-resolution search maximizes the chance of finding feasible samples across cycle buckets."
 }
