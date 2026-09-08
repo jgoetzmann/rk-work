@@ -1,12 +1,14 @@
 {
- "directive_id": "D-2379",
- "hypothesis_id": null,
+ "directive_id": "D-2379A",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
-  5
+  4,
+  5,
+  6
  ],
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4, five-stage cells are entirely empty despite extra degrees of freedom over the sparsely sampled four-stage class; use multistart search to establish first feasible occupancy."
+ "rationale": "Order-4 is severely undersampled: stages 4 and 6 provide only six records total, while every stage-5 cell is empty. A broad multistart search can strengthen the fast-cost comparison in H-028 and potentially populate stage-5 cells."
 }
