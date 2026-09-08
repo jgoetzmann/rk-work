@@ -1,16 +1,12 @@
 {
- "directive_id": "D-2481A",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2483",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  6
+  5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six), while H-004 awaits a slow-model comparison. Search both stage counts with the full Q15 dyadic grid and nonnegative exact weights to gather comparable samples and improve weak or empty cycle buckets."
+ "rationale": "Order-4, five-stage space has no archived samples or occupied buckets; a broad multi-island search targets the largest unresolved coverage gap without repeating any refuted comparison."
 }
