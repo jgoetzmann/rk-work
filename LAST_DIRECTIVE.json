@@ -1,16 +1,12 @@
 {
- "directive_id": "D-2434",
- "hypothesis_id": "H-028",
+ "directive_id": "D-2435",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  6
+  5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather fast-model samples for sparse order-4 stage-4 and stage-6 cells; both have very low sample counts, while nonnegative weights favor stable Q15 accumulation."
+ "rationale": "Order-4, five-stage is the only searchable order-stage row with zero archive samples and all cycle buckets empty; maximize independent search effort to establish coverage without restricting feasible exact-order families."
 }
