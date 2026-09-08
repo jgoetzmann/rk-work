@@ -1,15 +1,13 @@
 {
- "directive_id": "D-2421A",
+ "directive_id": "D-2423",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6); broaden dyadic resolution across both stage counts to populate empty cells and gather samples for H-004."
+ "rationale": "Order-4 evidence is extremely sparse (2 samples at stage 4 and 4 at stage 6). Search both stage counts to fill empty cycle buckets and gather balanced samples for H-004."
 }
