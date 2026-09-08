@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2531",
+ "directive_id": "D-2532A",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking the new stage-5 hypotheses. A denominator cap of 16 emphasizes sparse shift/add-friendly Q15 coefficients while retaining broad structural freedom; nonnegative weights narrow toward stable candidates."
+ "rationale": "Order-4 five-stage cells are entirely empty while four- and six-stage cells exist. A coarse dyadic grid emphasizes sparse Q15 constants and may populate low-cycle buckets; samples directly test whether five stages improve fast-model held-out error over four stages."
 }
