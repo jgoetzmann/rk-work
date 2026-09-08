@@ -1,16 +1,13 @@
 {
- "directive_id": "D-2455",
+ "directive_id": "D-2456",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced order-4 samples for the open slow-cost comparison; both stage counts are severely undersampled, while low-denominator dyadics and nonnegative exact weights focus the search on Q15-friendly candidates."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples; broaden sampling of both to resolve H-004 and improve weak occupied cells."
 }
