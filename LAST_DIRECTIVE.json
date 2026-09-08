@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2511H622",
+ "directive_id": "D-2512A",
  "hypothesis_id": "H-622",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage 5 has no archived samples or occupied cells, blocking H-622. Search the broad Q15 dyadic stage-5 feasible set to establish coverage and gather held-out comparisons against the well-sampled order-3 stage-5 archive."
+ "rationale": "Order-4 stage-5 has no archived samples or filled cells. Search it broadly to populate this missing stage family and gather the first evidence for H-622 against the well-sampled order-3 stage-5 baseline."
 }
