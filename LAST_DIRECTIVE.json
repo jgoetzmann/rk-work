@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2557P4S5",
+ "directive_id": "D-2559",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "All order-4 five-stage cells are empty. An unconstrained, high-budget search supplies the missing samples needed to test H-633 against the populated four-stage cell."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stage-4 and stage-6 each have incumbents. Broad sampling at stage 5 directly supplies the missing evidence for H-633 and may fill one or more empty cycle buckets."
 }
