@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2529P4S5",
+ "directive_id": "D-2531",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 five-stage cells are entirely empty while four- and six-stage cells exist. Search stage 5 broadly to establish feasibility, fill a missing cycle bucket, and gather the fast-model held-out samples required for H-633."
+ "rationale": "Order-4, five-stage cells are entirely empty and have no samples, blocking H-633. Concentrate the full search allocation on stage 5 to establish fast-cost occupancy and compare held-out error with the populated four-stage cell."
 }
