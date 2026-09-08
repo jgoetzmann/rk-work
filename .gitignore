@@ -1,6 +1,7 @@
 HEARTBEAT
 RUNSTATE.json
 STOP
+ARCHIVE_CHECKPOINT.json
 *.tmp
 events.jsonl
 .env
