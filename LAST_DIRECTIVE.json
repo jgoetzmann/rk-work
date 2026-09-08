@@ -1,15 +1,13 @@
 {
- "directive_id": "D-2453",
+ "directive_id": "D-2454",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Broaden feasible Q15 dyadics within these stage counts to gather balanced samples for H-004 and improve weak or empty cells."
+ "rationale": "Order-4 coverage is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 remains open. Concentrate the maximum budget across both stage counts to obtain comparable samples and improve weak or empty order-4 cells."
 }
