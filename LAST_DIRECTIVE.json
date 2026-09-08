@@ -1,16 +1,13 @@
 {
- "directive_id": "D-2439",
+ "directive_id": "D-2439A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (n=2 at four stages, n=4 at six), and most cells are empty. Search both stage counts with nonnegative weights and moderate dyadic resolution to gather samples for H-004 while seeking lower held-out error and new cycle buckets."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six), so balanced high-budget sampling of both stage counts directly gathers evidence for H-004 while also seeking improvements in weak and empty cycle buckets."
 }
