@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2557",
+ "directive_id": "D-2557P4S5",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "All order-4 five-stage cells are empty. Search broadly to establish the missing p4s5 archive population and gather samples for its fast-model held-out comparison with p4s4."
+ "rationale": "All order-4 five-stage cells are empty. An unconstrained, high-budget search supplies the missing samples needed to test H-633 against the populated four-stage cell."
 }
