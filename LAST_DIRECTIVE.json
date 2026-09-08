@@ -1,21 +1,13 @@
 {
- "directive_id": "D-2403A",
- "hypothesis_id": null,
+ "directive_id": "D-2404P4",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
-  5
+  4,
+  6
  ],
- "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 is entirely empty. Search sparse nonnegative-weight methods with one late-stage zero to reduce cycle cost while retaining a moderate dyadic grid for Q15 accuracy."
+ "rationale": "Order-4 coverage is critically sparse (2 samples at 4 stages, 4 at 6), leaving H-004 unresolved. Search both stage counts broadly to gather comparable slow-cost samples while improving weak and empty cells."
 }
