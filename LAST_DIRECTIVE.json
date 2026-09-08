@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2526",
+ "directive_id": "D-2526A",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -10,5 +10,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archive records or occupied cells, while stages 4 and 6 have only 2 and 4 samples. A broad fine-dyadic search targets the missing stage-5 cells and gathers evidence for its fast-cost held-out comparison with stage 4."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells. A broad high-resolution dyadic search directly supplies the missing p4s5 evidence needed to test H-633 against the existing p4s4 fast-cost baseline."
 }
