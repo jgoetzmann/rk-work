@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2545",
+ "directive_id": "D-2546",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archive samples and every cycle bucket is empty; broad sampling directly supports the open held-out comparison with stage 4."
+ "rationale": "All order-4 five-stage cells are empty, leaving H-633 without samples; a broad five-stage search maximizes feasibility and can populate multiple cycle buckets while testing held-out error against four stages."
 }
