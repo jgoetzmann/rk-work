@@ -1,15 +1,12 @@
 {
- "directive_id": "D-2383A",
- "hypothesis_id": "H-028",
+ "directive_id": "D-2385",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  6
+  5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 is severely undersampled (2 four-stage and 4 six-stage records). Search both stage counts at full Q15 dyadic resolution to gather balanced samples for H-028 and improve weak occupied cells without imposing untested structural restrictions."
+ "rationale": "Order-4, five-stage cells are entirely empty despite strong sampling at orders 2 and 3; devote a full unconstrained multi-island search to establishing feasible coverage across cycle buckets."
 }
