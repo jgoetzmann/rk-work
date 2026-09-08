@@ -1,16 +1,21 @@
 {
- "directive_id": "D-2402P4",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2403A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts with nonnegative weights to gather stable held-out candidates for H-004 and improve weak occupied cells."
+ "rationale": "Order-4 stage-5 is entirely empty. Search sparse nonnegative-weight methods with one late-stage zero to reduce cycle cost while retaining a moderate dyadic grid for Q15 accuracy."
 }
