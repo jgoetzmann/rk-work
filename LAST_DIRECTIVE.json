@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2539A",
+ "directive_id": "D-2540A",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -10,5 +10,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archive samples or filled cells, while stage-4 and stage-6 do. A broad high-resolution dyadic search targets this gap and gathers the first samples needed to test H-633."
+ "rationale": "All order-4 five-stage cells are empty and no samples are recorded. A broad fine-dyadic search targets this missing stage class and gathers evidence for whether its fast-model held-out error can beat the four-stage cell."
 }
