@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2452",
+ "directive_id": "D-2453",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples; broaden matched sampling for H-004 while favoring Q15-friendly low-denominator A and nonnegative exact weights."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Broaden feasible Q15 dyadics within these stage counts to gather balanced samples for H-004 and improve weak or empty cells."
 }
