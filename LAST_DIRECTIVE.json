@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2495",
+ "directive_id": "D-2495A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 has only six samples across stages 4 and 6, leaving H-004 underpowered and most cells empty; broaden sampling across both stage counts."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples and sparse occupancy; broaden sampling across both stage counts to resolve H-004 and improve weak or empty cells."
 }
