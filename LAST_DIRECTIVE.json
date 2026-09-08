@@ -1,15 +1,33 @@
 {
- "directive_id": "D-2419A",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2421",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "force_zero": [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    3
+   ]
+  ],
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts with full Q15 dyadic resolution to populate empty cells and gather balanced samples for H-004."
+ "rationale": "All order-4 five-stage cells are empty. A zero final A row permits a redundant-stage extension of a feasible four-stage core, while denominator 16 retains classical dyadic nodes; exact b solving can assign zero weight to the redundant stage."
 }
