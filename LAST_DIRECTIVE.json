@@ -1,13 +1,15 @@
 {
- "directive_id": "D-2489",
+ "directive_id": "D-2489A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 directly compares these stage counts under the slow cost model. Search both to strengthen the comparison and improve weak or empty order-4 cells."
+ "rationale": "Order-4 has only six samples and sparse coverage. Broad high-resolution dyadic searches at stages 4 and 6 gather balanced evidence for H-004 while targeting empty cycle buckets and possible improvements to both occupied cells."
 }
