@@ -1,13 +1,16 @@
 {
- "directive_id": "D-2495A",
+ "directive_id": "D-2497",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples and sparse occupancy; broaden sampling across both stage counts to resolve H-004 and improve weak or empty cells."
+ "rationale": "Order-4 evidence is exceptionally sparse (n=2 at four stages, n=4 at six), while most cells are empty. Search both stage counts with full Q15 dyadic resolution to gather balanced samples for H-004; nonnegative weights narrow the search toward numerically robust tableaus."
 }
