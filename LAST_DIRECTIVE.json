@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2441H004",
+ "directive_id": "D-2443",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is critically sparse (2 four-stage and 4 six-stage samples). Search both stage counts to fill empty cells and gather balanced evidence for H-004."
+ "rationale": "Order-4 coverage is sparsest, with only 2 four-stage and 4 six-stage samples. Search both stage counts to strengthen the slow-cost held-out comparison for H-004 while targeting their many empty cells."
 }
