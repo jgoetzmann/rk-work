@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2416A",
+ "directive_id": "D-2418",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples; expand both sparse cells to resolve H-004 while allowing the finest permitted dyadic A grid."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts with the full Q15 dyadic denominator range to gather samples for H-004 and improve or fill their archive cells."
 }
