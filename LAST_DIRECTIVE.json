@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2500",
+ "directive_id": "D-2501",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 is entirely empty while stage-4 and stage-6 have incumbents. Search nonnegative-weight methods on a moderate dyadic lattice to establish stage-5 occupancy and explore the current (5,2) region."
+ "rationale": "Order-4 stage-5 is completely unrepresented while neighboring stage-4 and stage-6 cells are occupied. Explore nonnegative-weight Q15-friendly tableaus on a moderately fine dyadic grid to seed its empty cycle buckets."
 }
