@@ -1,15 +1,13 @@
 {
- "directive_id": "D-2474",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2475",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is sparse (2 four-stage and 4 six-stage samples). Search both stage counts with the full Q15 dyadic denominator range to gather balanced samples for H-004 and improve weak or empty cells."
+ "rationale": "Order-4 coverage is extremely sparse (2 samples at stage 4 and 4 at stage 6). Search both stage counts broadly to gather balanced fast-cost evidence for H-028 and improve their mostly empty archive rows."
 }
