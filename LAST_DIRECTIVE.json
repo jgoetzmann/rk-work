@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2419",
+ "directive_id": "D-2419A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 remains open. Search both stage counts broadly to populate empty cycle buckets and gather balanced slow-cost held-out comparisons."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts with full Q15 dyadic resolution to populate empty cells and gather balanced samples for H-004."
 }
