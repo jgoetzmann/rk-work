@@ -1,16 +1,16 @@
 {
- "directive_id": "D-2501A",
- "hypothesis_id": "H-028",
+ "directive_id": "D-2503",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 has only six total samples across stages 4 and 6, leaving H-028 unresolved and most cycle buckets empty. Search both stage counts with Q15-resolution dyadics and nonnegative weights to gather directly comparable fast-model held-out samples."
+ "rationale": "Order-4 cells are severely undersampled; paired 4- and 6-stage search gathers evidence for H-004 while targeting empty buckets. Moderate dyadic resolution and nonnegative weights retain classical feasible structure while narrowing the stalled search."
 }
