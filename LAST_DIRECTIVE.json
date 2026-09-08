@@ -1,12 +1,15 @@
 {
- "directive_id": "D-2528",
+ "directive_id": "D-2529",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stage 4 has only two samples. Concentrate all islands on stage 5 to establish its fast-cost held-out baseline and gather evidence for H-633."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stages 4 and 6 do. Search moderate dyadics with nonnegative weights to populate this missing stage family and gather evidence for its fast-model held-out comparison with stage 4."
 }
