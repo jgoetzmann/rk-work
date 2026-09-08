@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2459A",
+ "directive_id": "D-2460",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 samples are exceptionally sparse (2 at four stages, 4 at six), while H-004 remains open. A denominator cap of 32 narrows toward shift-friendly Q15 coefficients while searching both stage counts needed to resolve the slow-cost held-out comparison."
+ "rationale": "Order-4 cells are severely undersampled (2 samples at stage 4, 4 at stage 6). Search both stage counts with low-denominator dyadics to gather H-004 samples while favoring sparse shift-add constants and potentially filling empty cycle buckets."
 }
