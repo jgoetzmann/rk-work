@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2516",
- "hypothesis_id": "H-624",
+ "directive_id": "D-2517",
+ "hypothesis_id": "H-622",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 five-stage cells are entirely empty, leaving H-624 without samples. Search the full Q15 dyadic resolution across eight islands to establish a fast-cost baseline and potentially fill multiple cycle buckets."
+ "rationale": "Order-4 stage-5 has no archived records or occupied cells, while stage-3 order-5 evidence is abundant. Search the unrestricted stage-5 feasible set to populate this gap and gather samples for H-622."
 }
