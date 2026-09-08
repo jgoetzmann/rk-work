@@ -1,16 +1,15 @@
 {
  "directive_id": "D-2484",
- "hypothesis_id": "H-028",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather scarce order-4 samples for the open fast-cost held-out comparison; stages 4 and 6 have only 2 and 4 observations, and many cells remain empty. Full Q15 dyadic resolution preserves coefficient diversity while nonnegative weights narrow toward robust tableaux."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 remains open. Search both stage counts with full Q15 dyadic resolution to gather comparable samples and improve weak occupied cells without imposing untested structural restrictions."
 }
