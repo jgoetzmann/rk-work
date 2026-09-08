@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2463A",
+ "directive_id": "D-2465A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,9 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 256
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts on the finest permitted dyadic grid to populate empty cycle buckets and gather balanced samples for H-004 without imposing untested structural constraints."
+ "rationale": "Order-4 has only six archived samples across stages 4 and 6, leaving H-004 unresolved and most cells empty. A moderate dyadic cap narrows the search while retaining broad tableau diversity for Q15."
 }
