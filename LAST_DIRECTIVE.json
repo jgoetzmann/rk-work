@@ -1,15 +1,15 @@
 {
- "directive_id": "D-2449P4",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2451",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
  "constraints": {
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells have only 2 four-stage and 4 six-stage samples. Search both stage counts with nonnegative weights to gather balanced evidence for H-004 and improve sparse occupied cells."
+ "rationale": "Order-4 coverage has only 3 occupied cells and just 2 four-stage versus 4 six-stage samples. Search both stage counts on the finest Q15 dyadic grid to gather balanced fast-model evidence for H-028 and improve weak or empty cycle buckets."
 }
