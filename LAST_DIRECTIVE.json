@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2461A",
+ "directive_id": "D-2462",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (n=2 at four stages, n=4 at six); paired exploration gathers evidence for H-004 while seeking improvements in weak and empty cycle buckets. Denominator 16 narrows toward shift-friendly Q15 coefficients without imposing a sparsity pattern."
+ "rationale": "Order-4 sampling is extremely sparse (2 four-stage and 4 six-stage records). Search both stage counts with low-denominator dyadics to gather H-004 samples and favor sparse shift-add coefficients while targeting empty cells."
 }
