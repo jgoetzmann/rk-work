@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2456",
+ "directive_id": "D-2458",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6), while H-004 remains open. Search both stage counts under the same moderate dyadic cap to gather comparable slow-model samples and potentially improve weak occupied cells or fill adjacent empty cycle buckets."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples; search both to resolve H-004 while targeting many empty cells. A denominator cap of 32 favors sparse shift-add coefficients under the slow multiplier cost model."
 }
