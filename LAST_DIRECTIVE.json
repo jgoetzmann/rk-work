@@ -1,15 +1,12 @@
 {
- "directive_id": "D-2551P4S5",
+ "directive_id": "D-2553",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stage-4 has only two samples. Search the full Q15 dyadic resolution with nonnegative exact-order weights to populate stage-5 cells and gather evidence for H-633."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stage-4 is weak and sparsely sampled. Broad five-stage exploration can fill the current (5,3) cell and supply the missing evidence for H-633."
 }
