@@ -1,13 +1,15 @@
 {
- "directive_id": "D-2413",
+ "directive_id": "D-2414",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages and 4 at 6); broaden sampling across both stage counts to resolve H-004 and improve weak or empty cycle buckets."
+ "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6); search both stage counts to gather balanced samples for H-004 and improve or fill their weak and empty cycle-bucket cells."
 }
