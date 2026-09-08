@@ -10,5 +10,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no samples or occupied cells, while stage-4 and stage-6 do. Search the full Q15 dyadic range to populate its archive cells and gather evidence for H-633."
+ "rationale": "All order-4 five-stage cells are empty and lack samples. Broad high-resolution dyadic exploration targets this missing stage class and gathers evidence for H-633 without adding structural constraints that may make fourth-order feasibility unnecessarily rare."
 }
