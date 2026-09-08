@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2394",
+ "directive_id": "D-2395",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is sparse (2 four-stage and 4 six-stage samples). Search both stage counts with full Q15 dyadic resolution to strengthen weak cells and gather balanced samples for H-004."
+ "rationale": "Order-4 evidence is extremely sparse (n=2 at 4 stages, n=4 at 6), while the 6-stage bucket-3 incumbent is weak. Sample both stage counts under Q15-compatible dyadics to resolve H-004 and improve empty or weak cells."
 }
