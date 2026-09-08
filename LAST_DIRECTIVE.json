@@ -1,16 +1,15 @@
 {
- "directive_id": "D-2503",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2504",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 64,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled; paired 4- and 6-stage search gathers evidence for H-004 while targeting empty buckets. Moderate dyadic resolution and nonnegative weights retain classical feasible structure while narrowing the stalled search."
+ "rationale": "Order-4, five-stage space has zero samples and all eight cycle buckets empty; a moderate dyadic grid with nonnegative weights targets this major archive gap."
 }
