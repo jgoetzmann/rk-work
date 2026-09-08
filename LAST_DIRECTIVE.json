@@ -1,12 +1,15 @@
 {
- "directive_id": "D-2409A",
- "hypothesis_id": "H-512",
+ "directive_id": "D-2410A",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
+  4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage coverage has only four samples and its cycle-cost comparison remains open; concentrate all islands on feasible six-stage tableaus to gather evidence for H-512 and improve sparse or empty cycle buckets."
+ "rationale": "Order-4 evidence is sparse (2 four-stage and 4 six-stage samples); search both stage counts broadly to gather balanced samples for H-004 and improve weak or empty cells."
 }
