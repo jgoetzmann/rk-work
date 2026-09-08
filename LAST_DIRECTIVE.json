@@ -1,15 +1,12 @@
 {
- "directive_id": "D-2529",
+ "directive_id": "D-2529P4S5",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stages 4 and 6 do. Search moderate dyadics with nonnegative weights to populate this missing stage family and gather evidence for its fast-model held-out comparison with stage 4."
+ "rationale": "Order-4 five-stage cells are entirely empty while four- and six-stage cells exist. Search stage 5 broadly to establish feasibility, fill a missing cycle bucket, and gather the fast-model held-out samples required for H-633."
 }
