@@ -1,13 +1,16 @@
 {
- "directive_id": "D-2454",
+ "directive_id": "D-2455",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 remains open. Concentrate the maximum budget across both stage counts to obtain comparable samples and improve weak or empty order-4 cells."
+ "rationale": "Gather balanced order-4 samples for the open slow-cost comparison; both stage counts are severely undersampled, while low-denominator dyadics and nonnegative exact weights focus the search on Q15-friendly candidates."
 }
