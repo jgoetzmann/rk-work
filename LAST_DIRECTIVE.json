@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2468",
+ "directive_id": "D-2468A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 remains open. Search both stage counts broadly to increase matched slow-cost evidence and fill empty cycle buckets."
+ "rationale": "Order-4 coverage is critically sparse (2 samples at stage 4 and 4 at stage 6), leaving H-004 unresolved. Search both stage counts broadly to gather comparable slow-cost samples while improving weak and empty order-4 cells."
 }
