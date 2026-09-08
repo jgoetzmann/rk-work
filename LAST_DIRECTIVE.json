@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2432A",
+ "directive_id": "D-2434",
  "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 samples are exceptionally sparse (2 at four stages, 4 at six), while many cells remain empty. Search both stage counts at native Q15 dyadic resolution to gather balanced evidence for H-028 and improve weak archive coverage."
+ "rationale": "Gather fast-model samples for sparse order-4 stage-4 and stage-6 cells; both have very low sample counts, while nonnegative weights favor stable Q15 accumulation."
 }
