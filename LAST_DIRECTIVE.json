@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2547",
+ "directive_id": "D-2548",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stages 4 and 6 are represented. A broad high-resolution dyadic search directly supplies the missing samples needed to test H-633 and may fill stage-5 cycle buckets."
+ "rationale": "Order-4, five-stage cells are entirely empty despite extensive sampling at lower orders. Search the unrestricted five-stage feasible space to seed these cells and gather the missing samples needed to resolve H-633 against the existing four-stage incumbent."
 }
