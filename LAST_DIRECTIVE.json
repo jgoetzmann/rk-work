@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2445",
+ "directive_id": "D-2446",
  "hypothesis_id": "H-545",
  "target_order": 4,
  "stages": [
   4
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-4 has only 2 samples and one occupied bucket, so it is the clearest archive bottleneck for resolving H-545. A broad Q15-compatible dyadic grid and maximum island diversity target additional feasible tableaus and cycle buckets."
+ "rationale": "Order-4 stage-4 has only 2 samples and a single occupied bucket, so concentrated multi-island sampling can strengthen the archive and provide the missing evidence for the stage-matched cycle-cost comparison in H-545."
 }
