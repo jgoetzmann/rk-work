@@ -1,13 +1,16 @@
 {
- "directive_id": "D-2481",
+ "directive_id": "D-2481A",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is critically sparse (2 four-stage and 4 six-stage samples). Search both stage counts to populate empty cells and gather balanced samples for the open slow-cost held-out-error comparison."
+ "rationale": "Order-4 cells are severely undersampled (n=2 at four stages, n=4 at six), while H-004 awaits a slow-model comparison. Search both stage counts with the full Q15 dyadic grid and nonnegative exact weights to gather comparable samples and improve weak or empty cycle buckets."
 }
