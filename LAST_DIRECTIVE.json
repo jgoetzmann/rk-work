@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2556",
+ "directive_id": "D-2557",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "All order-4 five-stage cells are empty. Search the full Q15 dyadic lattice to obtain fast-model samples for H-633 and seed this missing stage row."
+ "rationale": "All order-4 five-stage cells are empty. Search broadly to establish the missing p4s5 archive population and gather samples for its fast-model held-out comparison with p4s4."
 }
