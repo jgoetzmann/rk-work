@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2406",
+ "directive_id": "D-2407",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples), while H-004 remains open. Search both stage counts broadly to gather balanced samples and improve weak or empty cycle-bucket cells."
+ "rationale": "Order-4 statistics are severely undersampled (n=2 at 4 stages, n=4 at 6), while most cells are empty. Search both stage counts to gather balanced evidence for H-004 and improve sparse order-4 archive cells."
 }
