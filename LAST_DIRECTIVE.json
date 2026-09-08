@@ -1,15 +1,13 @@
 {
- "directive_id": "D-2382",
+ "directive_id": "D-2382A",
  "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, so multistart search can strengthen both weak cells and gather evidence for H-028; the fine Q15-compatible dyadic grid preserves coefficient diversity."
+ "rationale": "Order-4 stage-4 and stage-6 cells have only 2 and 4 samples; broaden multistart coverage to resolve H-028 and improve weak occupied cells at equal cycle budgets."
 }
