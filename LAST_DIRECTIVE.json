@@ -6,10 +6,8 @@
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts with the full Q15 dyadic resolution to gather balanced samples for H-004 and improve their weak occupied cells."
+ "rationale": "Gather order-4 samples at stages 4 and 6 to resolve H-004; both stage rows are extremely sparse, and most cycle buckets remain empty."
 }
