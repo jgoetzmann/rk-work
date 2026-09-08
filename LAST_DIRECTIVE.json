@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2380A",
+ "directive_id": "D-2382",
  "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled, while current fast minima favor six stages over four. Multistart search across both stage counts gathers balanced samples for H-028 and may improve or fill their sparse cycle buckets."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples, so multistart search can strengthen both weak cells and gather evidence for H-028; the fine Q15-compatible dyadic grid preserves coefficient diversity."
 }
