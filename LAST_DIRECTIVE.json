@@ -1,15 +1,12 @@
 {
- "directive_id": "D-2537",
+ "directive_id": "D-2538",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or filled cells. A broad high-resolution dyadic search with nonnegative weights targets this gap and gathers evidence for H-633 against the weak stage-4 baseline."
+ "rationale": "Order-4 stage-5 has no archived samples or filled cells; a broad stage-5 search targets the empty current cell and supplies evidence for its fast held-out comparison with stage 4."
 }
