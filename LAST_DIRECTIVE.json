@@ -1,16 +1,15 @@
 {
- "directive_id": "D-2487",
- "hypothesis_id": "H-028",
+ "directive_id": "D-2487A",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (2 four-stage and 4 six-stage records). Search both stage counts under Q15-compatible dyadics to gather balanced held-out samples for the open fast-cost comparison and improve weak occupied cells."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts with the full allowed dyadic resolution to populate empty cells and gather balanced samples for H-004."
 }
