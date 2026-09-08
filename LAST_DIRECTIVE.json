@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2559A",
+ "directive_id": "D-2560P4S5",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells. Search its broad Q15 dyadic space to seed cells and gather evidence for its fast held-out comparison with stage 4."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stage-4 has an incumbent. A broad multi-island search supplies the missing p4s5 evidence needed to test H-633 and can populate one or more empty cycle buckets."
 }
