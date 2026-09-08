@@ -1,15 +1,13 @@
 {
- "directive_id": "D-2408",
+ "directive_id": "D-2409",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 statistics are severely undersampled (4-stage n=2, 6-stage n=4). Search both stage counts with fine dyadic resolution to gather balanced samples for H-004 and improve or fill their sparse archive cells."
+ "rationale": "Order-4 statistics are severely undersampled (2 four-stage and 4 six-stage records), and most cells are empty. Search both stage counts to gather balanced samples for H-004 while improving weak occupied cells and potentially filling adjacent cycle buckets."
 }
