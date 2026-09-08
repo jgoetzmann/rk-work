@@ -1,34 +1,13 @@
 {
  "directive_id": "D-2447",
- "hypothesis_id": "H-545",
+ "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
-  4
+  4,
+  6
  ],
- "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 32768,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
-  },
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-4 has only two samples and a weak bucket-2 incumbent. Search the classical-RK4-compatible sparse manifold to obtain feasible Q15 tableaus, improve the cell, and add evidence for the open p3s4 versus p4s4 cycle-cost hypothesis."
+ "rationale": "Order-4 stages 4 and 6 have only 2 and 4 samples; search both to populate empty cycle buckets and gather balanced evidence for H-004."
 }
