@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2391",
+ "directive_id": "D-2391P4",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (s4 n=2, s6 n=4). Search both stage counts with Q15-friendly low-denominator A and nonnegative exact b to gather balanced evidence for the open slow-cost held-out comparison and potentially improve or expand their occupied cycle buckets."
+ "rationale": "Order-4 evidence is extremely sparse (2 samples at 4 stages, 4 at 6), with most cells empty. Search both stage counts under a Q15-friendly dyadic cap to gather balanced samples for H-004 while improving weak occupied cells and exploring empty cycle buckets."
 }
