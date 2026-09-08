@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2521",
+ "directive_id": "D-2521A",
  "hypothesis_id": "H-622",
  "target_order": 4,
  "stages": [
@@ -10,5 +10,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "All order-4 five-stage cells are empty, so this targets the archive's largest stage-specific gap and gathers the missing p4s5 samples needed to resolve H-622."
+ "rationale": "Order-4 stage-5 has no archive samples or occupied cells, while H-622 awaits them. A broad Q15 dyadic search targets this missing stage class and can populate its empty cycle buckets."
 }
