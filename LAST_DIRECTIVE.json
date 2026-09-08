@@ -1,13 +1,15 @@
 {
- "directive_id": "D-2371",
+ "directive_id": "D-2373",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather order-4 samples at stages 4 and 6 to resolve H-004; both stage rows are extremely sparse, and most cycle buckets remain empty."
+ "rationale": "Order-4 cells have only six total samples across stages 4 and 6, leaving H-004 unresolved. Search both stage counts with the finest permitted dyadic grid to improve feasible coverage and gather the paired archive statistics needed by code."
 }
