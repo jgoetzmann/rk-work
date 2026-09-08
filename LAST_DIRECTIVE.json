@@ -1,15 +1,15 @@
 {
- "directive_id": "D-2499",
+ "directive_id": "D-2500",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or filled cells, while adjacent stage counts have only 2 and 4 samples. Explore moderate dyadic resolution with nonnegative exact-order weights to open this missing row and assess its attainable error-cycle cells."
+ "rationale": "Order-4 stage-5 is entirely empty while stage-4 and stage-6 have incumbents. Search nonnegative-weight methods on a moderate dyadic lattice to establish stage-5 occupancy and explore the current (5,2) region."
 }
