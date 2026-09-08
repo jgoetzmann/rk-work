@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1255",
- "hypothesis_id": "H-004",
+ "directive_id": "D-2369",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
   4,
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 cells are severely undersampled (n=2 at 4 stages, n=4 at 6). Broaden dyadic resolution across both stage counts to gather matched samples for H-004 and improve weak or empty cycle buckets."
+ "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples). Search both stage counts to gather balanced fast-cost samples for H-028 and improve weak or empty archive cells."
 }
