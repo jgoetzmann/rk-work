@@ -1,12 +1,14 @@
 {
- "directive_id": "D-2514P4S5",
- "hypothesis_id": "H-622",
+ "directive_id": "D-2516",
+ "hypothesis_id": "H-624",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archive samples or occupied cells, while H-622 directly requires p4s5 evidence against the well-sampled p3s5 baseline. Use broad multistart coverage to establish feasibility and populate its cycle bucket without imposing an unsupported structural restriction."
+ "rationale": "Order-4 five-stage cells are entirely empty, leaving H-624 without samples. Search the full Q15 dyadic resolution across eight islands to establish a fast-cost baseline and potentially fill multiple cycle buckets."
 }
