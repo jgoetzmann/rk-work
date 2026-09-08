@@ -1,13 +1,16 @@
 {
- "directive_id": "D-2430A",
+ "directive_id": "D-2431",
  "hypothesis_id": "H-004",
  "target_order": 4,
  "stages": [
   4,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 evidence is extremely sparse (2 four-stage and 4 six-stage samples), while many cells remain empty. Concentrate maximum parallel budget on stages 4 and 6 to populate weak cells and resolve H-004 without imposing constraints that may exclude feasible fourth-order tableaus."
+ "rationale": "Order-4 evidence is sparse: only 2 four-stage and 4 six-stage samples. Search both stage counts under identical broad Q15-compatible dyadic and nonnegative-weight constraints to populate empty cells and gather balanced samples for H-004."
 }
