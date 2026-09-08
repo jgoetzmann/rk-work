@@ -1,12 +1,16 @@
 {
- "directive_id": "D-2483",
- "hypothesis_id": null,
+ "directive_id": "D-2484",
+ "hypothesis_id": "H-028",
  "target_order": 4,
  "stages": [
-  5
+  4,
+  6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4, five-stage space has no archived samples or occupied buckets; a broad multi-island search targets the largest unresolved coverage gap without repeating any refuted comparison."
+ "rationale": "Gather scarce order-4 samples for the open fast-cost held-out comparison; stages 4 and 6 have only 2 and 4 observations, and many cells remain empty. Full Q15 dyadic resolution preserves coefficient diversity while nonnegative weights narrow toward robust tableaux."
 }
