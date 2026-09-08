@@ -1,12 +1,34 @@
 {
- "directive_id": "D-2446",
+ "directive_id": "D-2447",
  "hypothesis_id": "H-545",
  "target_order": 4,
  "stages": [
   4
  ],
- "constraints": {},
+ "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 32768,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-4 has only 2 samples and a single occupied bucket, so concentrated multi-island sampling can strengthen the archive and provide the missing evidence for the stage-matched cycle-cost comparison in H-545."
+ "rationale": "Order-4 stage-4 has only two samples and a weak bucket-2 incumbent. Search the classical-RK4-compatible sparse manifold to obtain feasible Q15 tableaus, improve the cell, and add evidence for the open p3s4 versus p4s4 cycle-cost hypothesis."
 }
