@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2602P4S5",
- "hypothesis_id": "H-633",
+ "directive_id": "D-2604",
+ "hypothesis_id": "H-624",
  "target_order": 4,
  "stages": [
   5
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 five-stage cells are entirely empty despite extensive lower-order sampling. Search the unconstrained five-stage family to establish fast-cost occupancy and gather the first samples for comparison with the weak four-stage cell."
+ "rationale": "Order-4 five-stage cells are entirely empty, leaving H-624 without samples. Concentrate the full search on stage 5 without extra coefficient restrictions to maximize the chance of finding feasible exact-order tableaus and populate its cycle buckets."
 }
