@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2607",
+ "directive_id": "D-2607A",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 five-stage cells are entirely empty while stages 4 and 6 have incumbents. Focus the full search budget on establishing the missing five-stage baseline and gathering samples for its fast-model held-out comparison with four stages."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking H-633. A broad five-stage search with maximum island diversity targets this missing stratum and tests whether it can beat the weak order-4 stage-4 held-out result."
 }
