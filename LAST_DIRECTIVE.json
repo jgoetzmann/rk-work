@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2608A",
+ "directive_id": "D-2609P4S5",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied buckets, while H-633 remains open. Use the full Q15 dyadic denominator range and all islands to maximize feasible exact-order coverage and gather the missing fast-model evidence."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking H-633 and many related open hypotheses. Use broad stage-5 exploration to establish its first fast-cost held-out baseline and populate an empty cycle bucket."
 }
