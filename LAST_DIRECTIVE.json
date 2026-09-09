@@ -1,12 +1,14 @@
 {
- "directive_id": "D-2607A",
+ "directive_id": "D-2608A",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking H-633. A broad five-stage search with maximum island diversity targets this missing stratum and tests whether it can beat the weak order-4 stage-4 held-out result."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied buckets, while H-633 remains open. Use the full Q15 dyadic denominator range and all islands to maximize feasible exact-order coverage and gather the missing fast-model evidence."
 }
