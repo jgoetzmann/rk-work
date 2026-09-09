@@ -1,12 +1,14 @@
 {
- "directive_id": "D-2569P4S5",
- "hypothesis_id": "H-622",
+ "directive_id": "D-2570",
+ "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage 5 has no archive records and all eight cycle buckets are empty; a broad multi-island search supplies the missing samples needed to test H-622 against the well-sampled order-3 stage-5 cell."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stages 4 and 6 do. A broad high-resolution dyadic search targets this missing stage family and gathers evidence for H-633."
 }
