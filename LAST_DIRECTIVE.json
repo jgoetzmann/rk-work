@@ -1,15 +1,12 @@
 {
- "directive_id": "D-2606",
+ "directive_id": "D-2607",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 is entirely empty, blocking H-633. Search its broad Q15 dyadic space with nonnegative exact weights to populate cycle buckets and obtain held-out samples against the sparse stage-4 cell."
+ "rationale": "Order-4 five-stage cells are entirely empty while stages 4 and 6 have incumbents. Focus the full search budget on establishing the missing five-stage baseline and gathering samples for its fast-model held-out comparison with four stages."
 }
