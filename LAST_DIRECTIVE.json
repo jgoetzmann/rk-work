@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2584",
+ "directive_id": "D-2585A",
  "hypothesis_id": "H-684",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "All order-4 five-stage cells are empty, leaving H-684 unsampled. A broad multistart search at stage 5 maximizes the chance of finding feasible Q15 tableaus and filling one or more cycle buckets for comparison with order-3 six-stage methods."
+ "rationale": "All order-4 five-stage cells are empty despite extensive lower-order sampling. A broad multistart search supplies the missing p4s5 samples needed to test H-684 against the strong order-3 six-stage archive."
 }
