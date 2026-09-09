@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2575",
+ "directive_id": "D-2576",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
@@ -10,5 +10,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells. Broad dyadic resolution and maximum parallel budget target feasibility and gather evidence for H-633 against the existing stage-4 baseline."
+ "rationale": "Order-4 stage-5 has no archived samples or filled cells. Broad Q15 dyadic coverage targets this missing stage count and supplies the samples needed to test H-633 against the existing weak stage-4 cell."
 }
