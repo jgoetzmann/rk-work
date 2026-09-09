@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2589",
+ "directive_id": "D-2589A",
  "hypothesis_id": "H-684",
  "target_order": 4,
  "stages": [
@@ -8,5 +8,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells. A broad multistart search targets this missing family and gathers evidence for its held-out comparison with the strong order-3 stage-6 cell under the slow cost model."
+ "rationale": "Order-4 five-stage cells are entirely empty despite strong coverage at lower orders. Use maximal multistart effort on the unconstrained five-stage family to establish feasible samples and test H-684 against the strong order-3 six-stage archive."
 }
