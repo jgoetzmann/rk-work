@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2586",
+ "directive_id": "D-2586A",
  "hypothesis_id": "H-684",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking H-684. Use maximum Q15 dyadic resolution and broad multistart coverage to seek feasible tableaus and compare held-out error with order-3 stage-6."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied buckets. Broad multistart search targets the current stage-5 cell and supplies the missing samples needed to test H-684 against the strong order-3 six-stage incumbent."
 }
