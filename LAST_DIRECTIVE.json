@@ -5,8 +5,10 @@
  "stages": [
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived cell or samples, while stages 4 and 6 are populated. Broad stage-5 exploration directly supplies the missing samples needed to test H-633 and may fill multiple empty cycle buckets."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells. A broad Q15-resolution search directly supplies the missing samples needed to test H-633 against the existing stage-4 baseline."
 }
