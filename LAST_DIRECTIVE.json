@@ -1,14 +1,12 @@
 {
- "directive_id": "D-2576",
+ "directive_id": "D-2577",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or filled cells. Broad Q15 dyadic coverage targets this missing stage count and supplies the samples needed to test H-633 against the existing weak stage-4 cell."
+ "rationale": "Order-4 stage-5 has no archived cell or samples, while stages 4 and 6 are populated. Broad stage-5 exploration directly supplies the missing samples needed to test H-633 and may fill multiple empty cycle buckets."
 }
