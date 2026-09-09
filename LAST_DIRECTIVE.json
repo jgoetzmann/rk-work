@@ -1,15 +1,12 @@
 {
- "directive_id": "D-2596",
+ "directive_id": "D-2597",
  "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking H-633. A moderate dyadic cap and nonnegative weights narrow the search toward Q15-friendly candidates while preserving enough freedom to satisfy fourth-order conditions."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while stage-4 and stage-6 are sparsely represented. A broad stage-5 search directly supplies the missing samples needed to test H-633 and may fill multiple empty cycle buckets."
 }
