@@ -1,15 +1,15 @@
 {
- "directive_id": "D-2595",
- "hypothesis_id": "H-624",
+ "directive_id": "D-2596",
+ "hypothesis_id": "H-633",
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while neighboring stage-4 and stage-6 cells exist. Search the broad Q15 dyadic space with nonnegative exact-order weights to populate this missing stage class and resolve its fast-cost held-out comparison with order-3 stage-5."
+ "rationale": "Order-4 stage-5 has no archived samples or occupied cells, blocking H-633. A moderate dyadic cap and nonnegative weights narrow the search toward Q15-friendly candidates while preserving enough freedom to satisfy fourth-order conditions."
 }
