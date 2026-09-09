@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2578P4S5",
+ "directive_id": "D-2579A",
  "hypothesis_id": "H-622",
  "target_order": 4,
  "stages": [
@@ -10,5 +10,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stage-5 has no archived samples or occupied cells, while H-622 awaits this missing population. Use the finest allowed dyadic grid and maximum parallel budget to prioritize feasibility and fill stage-5 cycle buckets."
+ "rationale": "Order-4 five-stage cells are entirely empty and block many open hypotheses. A broad high-resolution dyadic search maximizes the chance of finding feasible tableaux and directly gathers samples for H-622."
 }
