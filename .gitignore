@@ -6,3 +6,13 @@ ARCHIVE_CHECKPOINT.json
 events.jsonl
 .env
 .codex-exec/
+
+# Lane search: the per-day record files only. They are the search log, 18 KB a record and
+# over a gigabyte a day, and single files already past GitHub's 100 MB limit. A lanesearch
+# record is a pure function of code, candidate and parameters, so a dropped one regenerates
+# exactly. ledger.jsonl and elites.json stay tracked: the ledger is the identity and summary
+# of every candidate at 392 bytes each, and elites.json is a published traceability source
+# (DECISIONS.md D40), so a number on a page has to trace to a committed artifact. The git
+# boundary is the same one D40 drew for the traceability list.
+adaptive_archive/20*.jsonl
+implicit_archive/20*.jsonl
