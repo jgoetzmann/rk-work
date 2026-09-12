@@ -1,0 +1,2243 @@
+{
+ "accuracy": {
+  "does_not_establish": [
+   "wall clock time on any physical part",
+   "memory system behaviour: flash wait states, bus contention, buffering",
+   "interrupt or RTOS overhead",
+   "anything about a chip other than the one the TRM table describes"
+  ],
+  "establishes": [
+   "the compiled Q15 step executes the instruction mix the analytic model assumes, or differs from it in a way this document names",
+   "whether dyadic coefficients compile to shifts and adds rather than to multiplies or library calls",
+   "relative ordering and ratios between methods under the TRM table",
+   "that the C agrees with the pinned Python evaluator bit for bit, including where the Q15 primitives raise"
+  ],
+  "statement": "The emulator is instruction accurate and NOT cycle accurate. It reports which instructions execute and in what order. Every cycle count here comes from applying the Cortex-M0+ TRM table to that instruction stream offline, under the assumptions below. No number here was measured on any physical part."
+ },
+ "assumptions": {
+  "bl_cycles": 4,
+  "branch_not_taken_cycles": 1,
+  "branch_taken_cycles": 3,
+  "bus": "no contention",
+  "data_processing_cycles": 1,
+  "flash": "zero wait state",
+  "interrupts": "none",
+  "load_cycles": 2,
+  "muls_cycles_fast_variant": 1,
+  "muls_cycles_small_variant": 32,
+  "multi_register_cycles": "1 + N for N registers, plus 2 more when the register list contains PC, which is the same pipeline refill that makes a taken branch cost 3",
+  "store_cycles": 2
+ },
+ "cases": {
+  "crosscheck": [
+   {
+    "id": "dahlquist_48",
+    "kind": "solve",
+    "problem": "dahlquist",
+    "steps": 48
+   },
+   {
+    "id": "dahlquist_96",
+    "kind": "solve",
+    "problem": "dahlquist",
+    "steps": 96
+   },
+   {
+    "id": "dahlquist_144",
+    "kind": "solve",
+    "problem": "dahlquist",
+    "steps": 144
+   },
+   {
+    "id": "damped_osc_48",
+    "kind": "solve",
+    "problem": "damped_osc",
+    "steps": 48
+   },
+   {
+    "id": "damped_osc_96",
+    "kind": "solve",
+    "problem": "damped_osc",
+    "steps": 96
+   },
+   {
+    "id": "damped_osc_144",
+    "kind": "solve",
+    "problem": "damped_osc",
+    "steps": 144
+   },
+   {
+    "h_q": 32767,
+    "id": "dahlquist_rail",
+    "kind": "overflow_probe",
+    "problem": "dahlquist",
+    "steps": 2,
+    "y0": [
+     32000
+    ]
+   },
+   {
+    "h_q": 32767,
+    "id": "damped_osc_rail",
+    "kind": "overflow_probe",
+    "problem": "damped_osc",
+    "steps": 2,
+    "y0": [
+     32000,
+     -32000
+    ]
+   }
+  ],
+  "linearity_steps": [
+   4,
+   12
+  ],
+  "trace": [
+   {
+    "h_q": 2048,
+    "id": "trace_n1",
+    "problem": "dahlquist",
+    "y0": [
+     1000
+    ]
+   },
+   {
+    "h_q": 2048,
+    "id": "trace_n2",
+    "problem": "damped_osc",
+    "y0": [
+     1000,
+     500
+    ]
+   }
+  ]
+ },
+ "correlation": {
+  "inversions_fast": [
+   {
+    "analytic": {
+     "rk38": 36,
+     "rk4": 33
+    },
+    "cheaper_analytic": "rk4",
+    "cheaper_traced": "rk38",
+    "note": "the analytic model puts rk4 below rk38 and the trace puts rk38 below the other",
+    "pair": [
+     "rk4",
+     "rk38"
+    ],
+    "traced": {
+     "rk38": 130,
+     "rk4": 139
+    }
+   }
+  ],
+  "inversions_model_scope_fast": [
+   {
+    "analytic": {
+     "rk38": 36,
+     "rk4": 33
+    },
+    "cheaper_analytic": "rk4",
+    "cheaper_traced": "rk38",
+    "note": "the analytic model puts rk4 below rk38 and the trace puts rk38 below the other",
+    "pair": [
+     "rk4",
+     "rk38"
+    ],
+    "traced": {
+     "rk38": 59,
+     "rk4": 67
+    }
+   }
+  ],
+  "inversions_slow": [],
+  "n_methods": 6,
+  "spearman_analytic_vs_traced_fast": 0.9428571428571428,
+  "spearman_analytic_vs_traced_model_scope_fast": 0.9428571428571428,
+  "spearman_analytic_vs_traced_slow": 1.0
+ },
+ "cost_models": {
+  "m0plus_fast": {
+   "add": 1,
+   "load": 2,
+   "mul": 1,
+   "shift": 1,
+   "store": 2
+  },
+  "m0plus_slow": {
+   "add": 1,
+   "load": 2,
+   "mul": 32,
+   "shift": 1,
+   "store": 2
+  }
+ },
+ "generated_from": {
+  "emitter": "rk_harness.costmodel.emit_c, used verbatim and never edited",
+  "methods": [
+   "euler",
+   "midpoint",
+   "heun2",
+   "11e898cb",
+   "rk4",
+   "rk38"
+  ],
+  "n_states": 1,
+  "script": "rk_harness/tracecheck.py",
+  "trace_hash": "17a003370fb873009105d247add264d56acc8acf63889ddf79168c1025b62a0f",
+  "trace_hash_pinned": "17a003370fb873009105d247add264d56acc8acf63889ddf79168c1025b62a0f",
+  "verifier_hash": "de5bec229ffa404a85b9172fdc808ef6035716c3df8b308c816e90ffb54fd6e9"
+ },
+ "methods": [
+  {
+   "c_sha256": {
+    "n1": {
+     "driver": "15c357bdaa1f1566685dbdf0072093d4dd438ece2ae23d383103d16cba571545",
+     "step": "ea8db0f7dc268e9585bb9db326e23a1cc5d5805342c8cc0a22b51111118fc4f9"
+    },
+    "n2": {
+     "driver": "e80ae46708b5025fd9c0da3f17336fe00bf3612ffcbc7421316bac17930d1c03",
+     "step": "ed78b766019d56a4f11ea24eb97b3c2e8328a7c36b220ae4e03b58ea89db1a59"
+    }
+   },
+   "coefficient_applications": 1,
+   "crosscheck": {
+    "cases": 8,
+    "comparable": 8,
+    "matched": 8,
+    "not_comparable": 0,
+    "overflow_cases": 4,
+    "trap_index_matched": 4
+   },
+   "crosscheck_cases": [
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_48",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_96",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_144",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_rail",
+     "kind": "overflow_probe",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -11453,
+      28049
+     ],
+     "c_checked_trap_op": 42,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_48",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 42,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      23703,
+      -26993
+     ],
+     "c_checked_trap_op": 204,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_96",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 204,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -15641,
+      30137
+     ],
+     "c_checked_trap_op": 780,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_144",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 780,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000,
+      -32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_rail",
+     "kind": "overflow_probe",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    }
+   ],
+   "cycles_analytic": {
+    "m0plus_fast": 5,
+    "m0plus_slow": 5
+   },
+   "cycles_by_region": {
+    "m0plus_fast": {
+     "frame": 16,
+     "hscale": 5,
+     "rhs_call": 6,
+     "store": 5
+    },
+    "m0plus_slow": {
+     "frame": 16,
+     "hscale": 36,
+     "rhs_call": 6,
+     "store": 5
+    }
+   },
+   "cycles_traced": {
+    "m0plus_fast": 32,
+    "m0plus_slow": 63
+   },
+   "cycles_traced_model_scope": {
+    "m0plus_fast": 5,
+    "m0plus_slow": 5
+   },
+   "instructions_by_region": {
+    "frame": 6,
+    "hscale": 4,
+    "rhs_call": 3,
+    "store": 3
+   },
+   "instructions_per_step": 16,
+   "muls_in_model_scope": 0,
+   "muls_per_step": 1,
+   "name": "euler",
+   "opcode_histogram": {
+    "add": 2,
+    "adds": 1,
+    "asrs": 1,
+    "bl": 1,
+    "ldrh": 1,
+    "ldrsh": 1,
+    "movs": 4,
+    "muls": 1,
+    "pop": 1,
+    "push": 1,
+    "strh": 1,
+    "sub": 1
+   },
+   "opcode_histogram_model_scope": {
+    "adds": 1,
+    "ldrh": 1,
+    "strh": 1
+   },
+   "origin": "classical",
+   "ratio": {
+    "m0plus_fast": 6.4,
+    "m0plus_slow": 12.6
+   },
+   "ratio_model_scope": {
+    "m0plus_fast": 1.0,
+    "m0plus_slow": 1.0
+   },
+   "relative_gap": {
+    "m0plus_fast": 0.84375,
+    "m0plus_slow": 0.9206349206349206
+   },
+   "relative_gap_model_scope": {
+    "m0plus_fast": 0.0,
+    "m0plus_slow": 0.0
+   },
+   "stages": 1,
+   "state_scaling": {
+    "n1": {
+     "cycles_analytic": {
+      "m0plus_fast": 5,
+      "m0plus_slow": 5
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 32,
+      "m0plus_slow": 63
+     },
+     "instructions_per_step": 16
+    },
+    "n2": {
+     "cycles_analytic": {
+      "m0plus_fast": 10,
+      "m0plus_slow": 10
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 41,
+      "m0plus_slow": 103
+     },
+     "instructions_per_step": 24
+    }
+   },
+   "tableau_hash": "ff5d6ff6768ca543f76e1311813e3f39263a2e4c630c0b5980e14def29e3021b"
+  },
+  {
+   "c_sha256": {
+    "n1": {
+     "driver": "cb3de3571b11955fc52606e6d5475cc773ed989b437bba1363cc328c591bfd79",
+     "step": "dd8f1dc83c541d17efa0a0a31d337a0558f16e5671b1131f43bbd46fa96ba8b7"
+    },
+    "n2": {
+     "driver": "9ba1b1f344ec9f2e75a3a90754fb7031a549dbc0ef8d42d82f844fbd0747452e",
+     "step": "0cfdb127032480c2d744f8a8befb621aba290036257722dc80f6721e717f6442"
+    }
+   },
+   "coefficient_applications": 2,
+   "crosscheck": {
+    "cases": 8,
+    "comparable": 8,
+    "matched": 8,
+    "not_comparable": 0,
+    "overflow_cases": 1,
+    "trap_index_matched": 1
+   },
+   "crosscheck_cases": [
+    {
+     "c_checked_final": [
+      1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_48",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_96",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_144",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      8000
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      8000
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_rail",
+     "kind": "overflow_probe",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      8000
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      842,
+      -227
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      842,
+      -227
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_48",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      842,
+      -227
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -154,
+      23
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -154,
+      23
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_96",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -154,
+      23
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -118,
+      -71
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -118,
+      -71
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_144",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -118,
+      -71
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000,
+      -32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_rail",
+     "kind": "overflow_probe",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    }
+   ],
+   "cycles_analytic": {
+    "m0plus_fast": 11,
+    "m0plus_slow": 11
+   },
+   "cycles_by_region": {
+    "m0plus_fast": {
+     "coeff": 3,
+     "frame": 14,
+     "hscale": 11,
+     "load": 3,
+     "rhs_call": 11,
+     "store": 8
+    },
+    "m0plus_slow": {
+     "coeff": 3,
+     "frame": 14,
+     "hscale": 73,
+     "load": 3,
+     "rhs_call": 11,
+     "store": 8
+    }
+   },
+   "cycles_traced": {
+    "m0plus_fast": 50,
+    "m0plus_slow": 112
+   },
+   "cycles_traced_model_scope": {
+    "m0plus_fast": 14,
+    "m0plus_slow": 14
+   },
+   "instructions_by_region": {
+    "coeff": 3,
+    "frame": 6,
+    "hscale": 9,
+    "load": 2,
+    "rhs_call": 5,
+    "store": 5
+   },
+   "instructions_per_step": 30,
+   "muls_in_model_scope": 0,
+   "muls_per_step": 2,
+   "name": "midpoint",
+   "opcode_histogram": {
+    "add": 3,
+    "adds": 2,
+    "asrs": 2,
+    "bl": 2,
+    "ldrh": 1,
+    "ldrsh": 3,
+    "lsls": 1,
+    "mov": 4,
+    "movs": 5,
+    "muls": 2,
+    "pop": 1,
+    "push": 1,
+    "strh": 2,
+    "sub": 1
+   },
+   "opcode_histogram_model_scope": {
+    "adds": 2,
+    "asrs": 1,
+    "ldrh": 1,
+    "ldrsh": 1,
+    "lsls": 1,
+    "mov": 1,
+    "movs": 1,
+    "strh": 2
+   },
+   "origin": "classical",
+   "ratio": {
+    "m0plus_fast": 4.545454545454546,
+    "m0plus_slow": 10.181818181818182
+   },
+   "ratio_model_scope": {
+    "m0plus_fast": 1.2727272727272727,
+    "m0plus_slow": 1.2727272727272727
+   },
+   "relative_gap": {
+    "m0plus_fast": 0.78,
+    "m0plus_slow": 0.9017857142857143
+   },
+   "relative_gap_model_scope": {
+    "m0plus_fast": 0.21428571428571427,
+    "m0plus_slow": 0.21428571428571427
+   },
+   "stages": 2,
+   "state_scaling": {
+    "n1": {
+     "cycles_analytic": {
+      "m0plus_fast": 11,
+      "m0plus_slow": 11
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 50,
+      "m0plus_slow": 112
+     },
+     "instructions_per_step": 30
+    },
+    "n2": {
+     "cycles_analytic": {
+      "m0plus_fast": 22,
+      "m0plus_slow": 22
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 74,
+      "m0plus_slow": 198
+     },
+     "instructions_per_step": 46
+    }
+   },
+   "tableau_hash": "5bbff5a88c0924e50f2e32401966c76205b2dae85d282a78ec50eac38408c896"
+  },
+  {
+   "c_sha256": {
+    "n1": {
+     "driver": "0d574e5fda39da5c764f659e0b16962cb518cb04443ea265884cb653cc3d0a29",
+     "step": "e9d11174dd25015a0f83d6d3ac72aef38fdc8a43aaa9a170396a122c8db34ec6"
+    },
+    "n2": {
+     "driver": "4a8bc0d94989a2ae83387ac95d23dc6c31baca5094f131f88845fbfa219ca42b",
+     "step": "59f8564bbc7c785019db1f1b1052f64f71c18475e1f7aa8b7cd3c3b69428e029"
+    }
+   },
+   "coefficient_applications": 3,
+   "crosscheck": {
+    "cases": 8,
+    "comparable": 8,
+    "matched": 8,
+    "not_comparable": 0,
+    "overflow_cases": 1,
+    "trap_index_matched": 1
+   },
+   "crosscheck_cases": [
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_48",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_96",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      0
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      0
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_144",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      0
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      8000
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      8000
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_rail",
+     "kind": "overflow_probe",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      8000
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      839,
+      -233
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      839,
+      -233
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_48",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      839,
+      -233
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -157,
+      24
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -157,
+      24
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_96",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -157,
+      24
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -121,
+      -68
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -121,
+      -68
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_144",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -121,
+      -68
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000,
+      -32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_rail",
+     "kind": "overflow_probe",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    }
+   ],
+   "cycles_analytic": {
+    "m0plus_fast": 13,
+    "m0plus_slow": 13
+   },
+   "cycles_by_region": {
+    "m0plus_fast": {
+     "coeff": 6,
+     "frame": 16,
+     "hscale": 11,
+     "load": 3,
+     "rhs_call": 11,
+     "store": 8
+    },
+    "m0plus_slow": {
+     "coeff": 6,
+     "frame": 16,
+     "hscale": 73,
+     "load": 3,
+     "rhs_call": 11,
+     "store": 8
+    }
+   },
+   "cycles_traced": {
+    "m0plus_fast": 55,
+    "m0plus_slow": 117
+   },
+   "cycles_traced_model_scope": {
+    "m0plus_fast": 17,
+    "m0plus_slow": 17
+   },
+   "instructions_by_region": {
+    "coeff": 6,
+    "frame": 6,
+    "hscale": 9,
+    "load": 2,
+    "rhs_call": 5,
+    "store": 5
+   },
+   "instructions_per_step": 33,
+   "muls_in_model_scope": 0,
+   "muls_per_step": 2,
+   "name": "heun2",
+   "opcode_histogram": {
+    "add": 3,
+    "adds": 3,
+    "asrs": 3,
+    "bl": 2,
+    "ldrh": 1,
+    "ldrsh": 3,
+    "lsls": 1,
+    "mov": 4,
+    "movs": 5,
+    "muls": 2,
+    "pop": 1,
+    "push": 1,
+    "strh": 2,
+    "sub": 1,
+    "sxth": 1
+   },
+   "opcode_histogram_model_scope": {
+    "adds": 3,
+    "asrs": 2,
+    "ldrh": 1,
+    "ldrsh": 1,
+    "lsls": 1,
+    "mov": 1,
+    "movs": 1,
+    "strh": 2,
+    "sxth": 1
+   },
+   "origin": "classical",
+   "ratio": {
+    "m0plus_fast": 4.230769230769231,
+    "m0plus_slow": 9.0
+   },
+   "ratio_model_scope": {
+    "m0plus_fast": 1.3076923076923077,
+    "m0plus_slow": 1.3076923076923077
+   },
+   "relative_gap": {
+    "m0plus_fast": 0.7636363636363637,
+    "m0plus_slow": 0.8888888888888888
+   },
+   "relative_gap_model_scope": {
+    "m0plus_fast": 0.23529411764705882,
+    "m0plus_slow": 0.23529411764705882
+   },
+   "stages": 2,
+   "state_scaling": {
+    "n1": {
+     "cycles_analytic": {
+      "m0plus_fast": 13,
+      "m0plus_slow": 13
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 55,
+      "m0plus_slow": 117
+     },
+     "instructions_per_step": 33
+    },
+    "n2": {
+     "cycles_analytic": {
+      "m0plus_fast": 26,
+      "m0plus_slow": 26
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 92,
+      "m0plus_slow": 216
+     },
+     "instructions_per_step": 60
+    }
+   },
+   "tableau_hash": "205fa13b1cf02de0b783c05ca2fa47967a78ed39a2bfa7358f4c586e59b2d003"
+  },
+  {
+   "c_sha256": {
+    "n1": {
+     "driver": "e0625a1b9726ba8461b6e1e622ad39ed5155d0d9b170bf182818225ce4429943",
+     "step": "d6e6d89d7529152d988acd6f3107449022b1bca8a757f42517d9930cd2c71c23"
+    },
+    "n2": {
+     "driver": "5852cb840cdd7cb53f764d5f1928b99ff0503f11ce00531adb632d70380e0667",
+     "step": "d1d11bd1d84a0ecb84b158eaf6f8fa4aa3573083d7ca40b6285cb64cefad281b"
+    }
+   },
+   "coefficient_applications": 4,
+   "crosscheck": {
+    "cases": 8,
+    "comparable": 8,
+    "matched": 8,
+    "not_comparable": 0,
+    "overflow_cases": 1,
+    "trap_index_matched": 1
+   },
+   "crosscheck_cases": [
+    {
+     "c_checked_final": [
+      2
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      2
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_48",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      2
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      2
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      2
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_96",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      2
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      2
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      2
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_144",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      2
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      1560
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      1560
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_rail",
+     "kind": "overflow_probe",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      1560
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      8,
+      9
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      8,
+      9
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_48",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      8,
+      9
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      47,
+      -112
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      47,
+      -112
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_96",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      47,
+      -112
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -11,
+      -142
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -11,
+      -142
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_144",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -11,
+      -142
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000,
+      -32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_rail",
+     "kind": "overflow_probe",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    }
+   ],
+   "cycles_analytic": {
+    "m0plus_fast": 22,
+    "m0plus_slow": 29
+   },
+   "cycles_by_region": {
+    "m0plus_fast": {
+     "coeff": 18,
+     "frame": 16,
+     "hscale": 18,
+     "load": 6,
+     "rhs_call": 17,
+     "store": 11
+    },
+    "m0plus_slow": {
+     "coeff": 18,
+     "frame": 16,
+     "hscale": 111,
+     "load": 6,
+     "rhs_call": 17,
+     "store": 11
+    }
+   },
+   "cycles_traced": {
+    "m0plus_fast": 86,
+    "m0plus_slow": 179
+   },
+   "cycles_traced_model_scope": {
+    "m0plus_fast": 35,
+    "m0plus_slow": 35
+   },
+   "instructions_by_region": {
+    "coeff": 18,
+    "frame": 6,
+    "hscale": 15,
+    "load": 4,
+    "rhs_call": 8,
+    "store": 7
+   },
+   "instructions_per_step": 58,
+   "muls_in_model_scope": 0,
+   "muls_per_step": 3,
+   "name": "11e898cb",
+   "opcode_histogram": {
+    "add": 4,
+    "adds": 9,
+    "asrs": 6,
+    "bl": 3,
+    "ldrh": 1,
+    "ldrsh": 5,
+    "lsls": 5,
+    "mov": 7,
+    "movs": 7,
+    "muls": 3,
+    "pop": 1,
+    "push": 1,
+    "strh": 3,
+    "sub": 1,
+    "sxth": 2
+   },
+   "opcode_histogram_model_scope": {
+    "adds": 9,
+    "asrs": 3,
+    "ldrh": 1,
+    "ldrsh": 2,
+    "lsls": 5,
+    "mov": 2,
+    "movs": 2,
+    "strh": 3,
+    "sxth": 2
+   },
+   "origin": "discovered",
+   "ratio": {
+    "m0plus_fast": 3.909090909090909,
+    "m0plus_slow": 6.172413793103448
+   },
+   "ratio_model_scope": {
+    "m0plus_fast": 1.5909090909090908,
+    "m0plus_slow": 1.206896551724138
+   },
+   "relative_gap": {
+    "m0plus_fast": 0.7441860465116279,
+    "m0plus_slow": 0.8379888268156425
+   },
+   "relative_gap_model_scope": {
+    "m0plus_fast": 0.37142857142857144,
+    "m0plus_slow": 0.17142857142857143
+   },
+   "stages": 3,
+   "state_scaling": {
+    "n1": {
+     "cycles_analytic": {
+      "m0plus_fast": 22,
+      "m0plus_slow": 29
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 86,
+      "m0plus_slow": 179
+     },
+     "instructions_per_step": 58
+    },
+    "n2": {
+     "cycles_analytic": {
+      "m0plus_fast": 44,
+      "m0plus_slow": 58
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 144,
+      "m0plus_slow": 330
+     },
+     "instructions_per_step": 103
+    }
+   },
+   "tableau_hash": "11e898cbab591a7f432670d4040b788f4c00cc646a005d4f967505578e2c0033"
+  },
+  {
+   "c_sha256": {
+    "n1": {
+     "driver": "ec63562892071d0026b3c1001e3f4e613a8ef0df0097bdb20cc368ca2f3aff09",
+     "step": "0eed444e9060e69e73feed680752c3d079da1c69d3052ffc97d07ba9403cca4a"
+    },
+    "n2": {
+     "driver": "319ec41f1de60e3960bd6413240e732252c6c3c618ed88f658f2eed3ee1a4514",
+     "step": "c45947b65a255f0ea2b047aec1603a7abec695d18176b251dead3399cc8bf6e8"
+    }
+   },
+   "coefficient_applications": 7,
+   "crosscheck": {
+    "cases": 8,
+    "comparable": 8,
+    "matched": 8,
+    "not_comparable": 0,
+    "overflow_cases": 1,
+    "trap_index_matched": 1
+   },
+   "crosscheck_cases": [
+    {
+     "c_checked_final": [
+      -1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_48",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      -1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_96",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      -1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_144",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      -1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      4498
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      4498
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_rail",
+     "kind": "overflow_probe",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      4498
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -35,
+      -137
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -35,
+      -137
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_48",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -35,
+      -137
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -53,
+      -131
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -53,
+      -131
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_96",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -53,
+      -131
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -52,
+      -133
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -52,
+      -133
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_144",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -52,
+      -133
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000,
+      -32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_rail",
+     "kind": "overflow_probe",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    }
+   ],
+   "cycles_analytic": {
+    "m0plus_fast": 33,
+    "m0plus_slow": 85
+   },
+   "cycles_by_region": {
+    "m0plus_fast": {
+     "coeff": 44,
+     "frame": 28,
+     "hscale": 20,
+     "load": 9,
+     "rhs_call": 24,
+     "store": 14
+    },
+    "m0plus_slow": {
+     "coeff": 44,
+     "frame": 28,
+     "hscale": 144,
+     "load": 9,
+     "rhs_call": 24,
+     "store": 14
+    }
+   },
+   "cycles_traced": {
+    "m0plus_fast": 139,
+    "m0plus_slow": 263
+   },
+   "cycles_traced_model_scope": {
+    "m0plus_fast": 67,
+    "m0plus_slow": 67
+   },
+   "instructions_by_region": {
+    "coeff": 44,
+    "frame": 12,
+    "hscale": 16,
+    "load": 6,
+    "rhs_call": 12,
+    "store": 9
+   },
+   "instructions_per_step": 99,
+   "muls_in_model_scope": 0,
+   "muls_per_step": 4,
+   "name": "rk4",
+   "opcode_histogram": {
+    "add": 4,
+    "adds": 17,
+    "asrs": 10,
+    "bl": 4,
+    "ldrh": 1,
+    "ldrsh": 7,
+    "lsls": 12,
+    "mov": 14,
+    "movs": 13,
+    "muls": 4,
+    "pop": 2,
+    "push": 2,
+    "strh": 4,
+    "sub": 1,
+    "sxth": 4
+   },
+   "opcode_histogram_model_scope": {
+    "add": 2,
+    "adds": 17,
+    "asrs": 6,
+    "ldrh": 1,
+    "ldrsh": 3,
+    "lsls": 12,
+    "mov": 7,
+    "movs": 3,
+    "strh": 4,
+    "sxth": 4
+   },
+   "origin": "classical",
+   "ratio": {
+    "m0plus_fast": 4.212121212121212,
+    "m0plus_slow": 3.0941176470588236
+   },
+   "ratio_model_scope": {
+    "m0plus_fast": 2.0303030303030303,
+    "m0plus_slow": 0.788235294117647
+   },
+   "relative_gap": {
+    "m0plus_fast": 0.762589928057554,
+    "m0plus_slow": 0.6768060836501901
+   },
+   "relative_gap_model_scope": {
+    "m0plus_fast": 0.5074626865671642,
+    "m0plus_slow": 0.26865671641791045
+   },
+   "stages": 4,
+   "state_scaling": {
+    "n1": {
+     "cycles_analytic": {
+      "m0plus_fast": 33,
+      "m0plus_slow": 85
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 139,
+      "m0plus_slow": 263
+     },
+     "instructions_per_step": 99
+    },
+    "n2": {
+     "cycles_analytic": {
+      "m0plus_fast": 66,
+      "m0plus_slow": 170
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 256,
+      "m0plus_slow": 504
+     },
+     "instructions_per_step": 190
+    }
+   },
+   "tableau_hash": "9e77874726d61a21f880b9c5caca1634c0c9c5fbb445b114e80a8ad0cb5e0f13"
+  },
+  {
+   "c_sha256": {
+    "n1": {
+     "driver": "60d74dc10c6285db3d980eb79dce9dc079031fb563065bc032c9a3bd78b63e44",
+     "step": "5bb4dd713866afd7821aa36b14debb999f3473560db45f519018302149ad9990"
+    },
+    "n2": {
+     "driver": "907de992ab9a7abac549c8a6b54fb29dd6c7c457db1bc4726ef235addd16ce1c",
+     "step": "187c19ef08298286af20555490ca46c142cd5824cce892333144a62158a3aa81"
+    }
+   },
+   "coefficient_applications": 10,
+   "crosscheck": {
+    "cases": 8,
+    "comparable": 8,
+    "matched": 8,
+    "not_comparable": 0,
+    "overflow_cases": 2,
+    "trap_index_matched": 2
+   },
+   "crosscheck_cases": [
+    {
+     "c_checked_final": [
+      -1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_48",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      -1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_96",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      -1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -1
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -1
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "dahlquist_144",
+     "kind": "solve",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": [
+      -1
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "dahlquist_rail",
+     "kind": "overflow_probe",
+     "problem": "dahlquist",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -44,
+      -135
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -44,
+      -135
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_48",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -44,
+      -135
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 48,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -67,
+      -128
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -67,
+      -128
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_96",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -67,
+      -128
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 96,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      -76,
+      -123
+     ],
+     "c_checked_trap_op": 0,
+     "c_plain_final": [
+      -76,
+      -123
+     ],
+     "c_plain_stage_input_mismatch": 0,
+     "case": "damped_osc_144",
+     "kind": "solve",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": [
+      -76,
+      -123
+     ],
+     "python_status": "ok",
+     "python_trap_op": 0,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 144,
+     "verdict": "match"
+    },
+    {
+     "c_checked_final": [
+      32000,
+      -32000
+     ],
+     "c_checked_trap_op": 6,
+     "c_plain_note": "the reference C from emit_c has no range check, so it cannot report this condition; its int32 intermediate truncates at the store and a value comes back",
+     "c_plain_trapped": false,
+     "case": "damped_osc_rail",
+     "kind": "overflow_probe",
+     "problem": "damped_osc",
+     "problems": [],
+     "python_final": null,
+     "python_status": "overflow",
+     "python_trap_op": 6,
+     "shift_is_arithmetic": true,
+     "stage_input_mismatch": 0,
+     "steps": 2,
+     "verdict": "match"
+    }
+   ],
+   "cycles_analytic": {
+    "m0plus_fast": 36,
+    "m0plus_slow": 64
+   },
+   "cycles_by_region": {
+    "m0plus_fast": {
+     "coeff": 36,
+     "frame": 28,
+     "hscale": 19,
+     "load": 12,
+     "rhs_call": 24,
+     "store": 11
+    },
+    "m0plus_slow": {
+     "coeff": 36,
+     "frame": 28,
+     "hscale": 143,
+     "load": 12,
+     "rhs_call": 24,
+     "store": 11
+    }
+   },
+   "cycles_traced": {
+    "m0plus_fast": 130,
+    "m0plus_slow": 254
+   },
+   "cycles_traced_model_scope": {
+    "m0plus_fast": 59,
+    "m0plus_slow": 59
+   },
+   "instructions_by_region": {
+    "coeff": 36,
+    "frame": 12,
+    "hscale": 15,
+    "load": 8,
+    "rhs_call": 12,
+    "store": 7
+   },
+   "instructions_per_step": 90,
+   "muls_in_model_scope": 0,
+   "muls_per_step": 4,
+   "name": "rk38",
+   "opcode_histogram": {
+    "add": 6,
+    "adds": 10,
+    "asrs": 9,
+    "bl": 4,
+    "ldrsh": 8,
+    "lsls": 6,
+    "mov": 15,
+    "movs": 14,
+    "muls": 4,
+    "negs": 1,
+    "pop": 2,
+    "push": 2,
+    "strh": 4,
+    "sub": 1,
+    "subs": 1,
+    "sxth": 3
+   },
+   "opcode_histogram_model_scope": {
+    "add": 4,
+    "adds": 10,
+    "asrs": 6,
+    "ldrsh": 4,
+    "lsls": 6,
+    "mov": 8,
+    "movs": 4,
+    "negs": 1,
+    "strh": 4,
+    "subs": 1,
+    "sxth": 3
+   },
+   "origin": "classical",
+   "ratio": {
+    "m0plus_fast": 3.611111111111111,
+    "m0plus_slow": 3.96875
+   },
+   "ratio_model_scope": {
+    "m0plus_fast": 1.6388888888888888,
+    "m0plus_slow": 0.921875
+   },
+   "relative_gap": {
+    "m0plus_fast": 0.7230769230769231,
+    "m0plus_slow": 0.7480314960629921
+   },
+   "relative_gap_model_scope": {
+    "m0plus_fast": 0.3898305084745763,
+    "m0plus_slow": 0.0847457627118644
+   },
+   "stages": 4,
+   "state_scaling": {
+    "n1": {
+     "cycles_analytic": {
+      "m0plus_fast": 36,
+      "m0plus_slow": 64
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 130,
+      "m0plus_slow": 254
+     },
+     "instructions_per_step": 90
+    },
+    "n2": {
+     "cycles_analytic": {
+      "m0plus_fast": 72,
+      "m0plus_slow": 128
+     },
+     "cycles_per_step": {
+      "m0plus_fast": 235,
+      "m0plus_slow": 483
+     },
+     "instructions_per_step": 177
+    }
+   },
+   "tableau_hash": "05ef8dc28c8266b20b2ee188b8fc4628c6bfd6db0c076f32cdc4a33ee80447ea"
+  }
+ ],
+ "mnemonic_class": {
+  "from_cost_model": {
+   "ADDS": "add",
+   "ASRS": "shift",
+   "LDR": "load",
+   "LSLS": "shift",
+   "LSRS": "shift",
+   "MULS": "mul",
+   "STR": "store",
+   "SUBS": "add"
+  },
+  "note": "The five classes the cost model prices are taken from it unchanged, so load, store, mul, shift and add cost the same on both sides. The extension covers mnemonics a compiler emits that the pinned ten-line fixture does not contain; alu is one cycle, branch and multi-register transfers follow the assumptions block.",
+  "trace_extension": {
+   "ADCS": "alu",
+   "ADD": "alu",
+   "ADR": "alu",
+   "ANDS": "alu",
+   "ASR": "alu",
+   "B": "branch",
+   "BICS": "alu",
+   "BL": "call",
+   "BLX": "call",
+   "BX": "branch",
+   "CMN": "alu",
+   "CMP": "alu",
+   "EORS": "alu",
+   "LDM": "multi",
+   "LDMIA": "multi",
+   "LDRB": "load",
+   "LDRH": "load",
+   "LDRSB": "load",
+   "LDRSH": "load",
+   "LSL": "alu",
+   "LSR": "alu",
+   "MOV": "alu",
+   "MOVS": "alu",
+   "MULS.W": "mul",
+   "MVNS": "alu",
+   "NEGS": "alu",
+   "NOP": "alu",
+   "ORRS": "alu",
+   "POP": "multi",
+   "PUSH": "multi",
+   "RORS": "alu",
+   "RSBS": "alu",
+   "SBCS": "alu",
+   "STM": "multi",
+   "STMIA": "multi",
+   "STRB": "store",
+   "STRH": "store",
+   "SUB": "alu",
+   "SXTB": "alu",
+   "SXTH": "alu",
+   "TST": "alu",
+   "UXTB": "alu",
+   "UXTH": "alu"
+  }
+ },
+ "schema": {
+  "crosscheck": "agreement with the pinned Python evaluator: exact final int16 state, every stage input, and the operation index at which an overflow trapped",
+  "cycles_analytic": "costmodel.cycle_count for this tableau at n_states = 1, unchanged",
+  "cycles_traced": "TRM-priced cycles for every instruction executed inside rk_step in one step, excluding the derivative routine's own body",
+  "cycles_traced_model_scope": "the same pricing restricted to the instructions the analytic model prices: the load, the coefficient terms, the adds and the store",
+  "instructions_by_region": "executed instructions per step by what the source line does: load, coeff, store are the model's scope; hscale is the h times k product the model excludes; rhs_call is the call to the derivative; loop is loop control; frame is the stack frame",
+  "muls_in_model_scope": "of those, the ones applying a tableau coefficient",
+  "muls_per_step": "MULS instructions executed per step inside rk_step",
+  "opcode_histogram": "executed mnemonics per step inside rk_step",
+  "ratio": "cycles_traced / cycles_analytic",
+  "ratio_model_scope": "cycles_traced_model_scope / cycles_analytic",
+  "relative_gap": "|cycles_analytic - cycles_traced| / cycles_traced",
+  "state_scaling": "the same counts at one and at two states, so the model's linear scaling in state dimension can be read rather than assumed"
+ },
+ "toolchain": {
+  "access": "wsl.exe bridge to arm-none-eabi-gcc",
+  "compiler": "arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009",
+  "debug_flag_note": "-g adds a line table and no instructions; the region attribution reads it",
+  "emulator": "unicorn 2.1.4",
+  "flags": [
+   "-mcpu=cortex-m0plus",
+   "-mthumb",
+   "-O2",
+   "-ffreestanding",
+   "-nostdlib",
+   "-g"
+  ],
+  "linker_script": "text, data and bss placed contiguously from 0x0; a flat image",
+  "objdump": "GNU objdump (2.42-1ubuntu1+23) 2.42"
+ },
+ "verdicts": {
+  "crosscheck": "48 of 48 comparable cases agree with the pinned Python evaluator on the exact final int16 state and on every stage input. 10 of them are cases where the Q15 primitives raise, and on those the checked C traps at the same operation index. The reference C from emit_c keeps int32 intermediates and truncates at the store, so it returns a value instead of trapping; that is why a checked entry point exists and why the comparison reads the overflow verdict and not only the state.",
+  "inversions": [
+   {
+    "analytic": {
+     "rk38": 36,
+     "rk4": 33
+    },
+    "cheaper_analytic": "rk4",
+    "cheaper_traced": "rk38",
+    "note": "the analytic model puts rk4 below rk38 and the trace puts rk38 below the other",
+    "pair": [
+     "rk4",
+     "rk38"
+    ],
+    "traced": {
+     "rk38": 130,
+     "rk4": 139
+    }
+   }
+  ],
+  "ordering": "Spearman rank correlation between the analytic and the traced cycles per step across 6 methods is 0.9429 under m0plus_fast. 1 pair(s) rank differently: rk4 against rk38, analytic 33 and 36, traced 139 and 130.",
+  "ratio_range_fast": [
+   3.611111111111111,
+   6.4
+  ],
+  "ratio_range_model_scope_fast": [
+   1.0,
+   2.0303030303030303
+  ],
+  "ratio_range_model_scope_slow": [
+   0.788235294117647,
+   1.3076923076923077
+  ],
+  "scope": "The analytic model prices the stage and b combinations only. It prices no derivative call, no h times k product, no loop control and no stack frame, so the whole-step traced number is larger by construction. Both are published: ratio is whole step, ratio_model_scope is the matched scope.",
+  "widest_model_scope_gap": {
+   "method": "rk4",
+   "relative_gap": 0.5074626865671642
+  }
+ }
+}
