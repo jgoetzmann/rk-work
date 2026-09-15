@@ -23,6 +23,8 @@ every cycle. People do not edit it.
 | `schedule/` | The lane rotation's own records, one row per cycle. |
 | `prototypes/` | Output of the early adaptive and SDIRK prototypes. |
 | `LAST_DIRECTIVE.json`, `saturation_state.json` | The most recent search directive and the epoch saturation state. |
+| `epochs/1/` | The frozen epoch-1 run state, moved byte-identical at the D45 boundary with a sha256 manifest. Root paths always mean the current epoch. |
+| `EPOCH.json` | The current epoch number, its verifier hash, and the frozen-epoch block with the archive site and tag. |
 
 Some files exist only on the machine running the container and are gitignored: the event stream
 (`events.jsonl`), run state, the heartbeat, the archive checkpoint, and the per-day lane record

@@ -16,3 +16,6 @@ events.jsonl
 # artifact. The git boundary is the same one D40 drew for the traceability list.
 adaptive_archive/20*.jsonl
 implicit_archive/20*.jsonl
+# Frozen epochs: the relocated per-day record files. Ledger and elites stay tracked.
+epochs/*/adaptive_archive/20*.jsonl
+epochs/*/implicit_archive/20*.jsonl
