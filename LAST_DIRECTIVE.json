@@ -1,0 +1,16 @@
+{
+ "directive_id": "D-044A",
+ "hypothesis_id": null,
+ "target_order": 4,
+ "stages": [
+  4,
+  5
+ ],
+ "constraints": {
+  "dyadic_denominator_max": 32,
+  "b_nonneg": true
+ },
+ "islands": 8,
+ "budget_minutes": 120,
+ "rationale": "Order-4 coverage is weakest, with only one occupied cell. Search 4 and 5 stages using moderate dyadic resolution and nonnegative exact weights to target empty cycle buckets while exploring a less-sampled stage count."
+}
