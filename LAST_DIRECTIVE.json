@@ -1,5 +1,5 @@
 {
- "directive_id": "D-419A",
+ "directive_id": "D-422A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite ample higher-stage order-3 feasibility; search both stage counts at native Q15 dyadic resolution to populate empty order-4 cycle buckets."
+ "rationale": "Order 4 is severely underexplored: only one cell is occupied and stages 5\u20136 have no archived samples. Search both stage counts with nonnegative weights and a moderate dyadic grid to seek feasible Q15 tableaus across empty cycle buckets."
 }
