@@ -1,5 +1,5 @@
 {
- "directive_id": "D-194A",
+ "directive_id": "D-209A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both higher-stage families with moderate dyadic resolution and nonnegative exact-solved weights to populate empty cycle buckets and improve Q15 robustness."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages; search both higher-stage families broadly while retaining Q15-resolution dyadics and nonnegative weights."
 }
