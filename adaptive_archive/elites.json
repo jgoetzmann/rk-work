@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 439,
-  "generated_ts": "2026-09-23T23:30:36Z",
+  "generated_cycle": 442,
+  "generated_ts": "2026-09-23T23:36:48Z",
   "lane": "adaptive",
   "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
-  "n_input": 139,
-  "n_measured": 13530,
-  "n_ranked": 139,
+  "n_input": 168,
+  "n_measured": 13666,
+  "n_ranked": 168,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -1736,6 +1736,106 @@
   },
   {
    "controller": {
+    "alpha": "1/8",
+    "beta": "0",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "15/16",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 442,
+   "index": 15294,
+   "key": "90e58cbab546a185",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "1",
+      "1/2",
+      "0"
+     ]
+    ],
+    "b": [
+     "1/12",
+     "8/9",
+     "-1/8",
+     "11/72"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "2",
+     "2"
+    ],
+    "d": [
+     "1/12",
+     "-1/9",
+     "-1/8",
+     "11/72"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "3b1854ecf136577d",
+   "results_digest": "412cae32dc7eb3c6",
+   "score": {
+    "best_achieved_error": 2.3705773813288194e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 4191.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T23:36:48Z"
+  },
+  {
+   "controller": {
     "alpha": "1/4",
     "beta": "1/8",
     "clamp_hi": "2",
@@ -2033,6 +2133,106 @@
    },
    "shell": 0,
    "ts": "2026-09-23T23:05:19Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/8",
+    "beta": "0",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "15/16",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 442,
+   "index": 15236,
+   "key": "e24f52b432530479",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "1",
+      "1/2",
+      "0"
+     ]
+    ],
+    "b": [
+     "967/702",
+     "-569/702",
+     "118/351",
+     "34/351"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "3/2",
+     "-1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1",
+     "-3/2",
+     "2"
+    ],
+    "d": [
+     "-43/351",
+     "-109/351",
+     "118/351",
+     "34/351"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "fc758f865efb950e",
+   "results_digest": "dd6df414f8483519",
+   "score": {
+    "best_achieved_error": 0.0001146050020202137,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 4224.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 7,
+    "targets_reached": 30,
+    "targets_total": 32,
+    "worst_status": "never_reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T23:36:48Z"
   },
   {
    "controller": {
@@ -3033,208 +3233,8 @@
    },
    "shell": 0,
    "ts": "2026-09-23T05:31:05Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 148,
-   "index": 339,
-   "key": "f4fa8dfd89794ecf",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "-1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "56/81",
-     "65/162",
-     "-14/81",
-     "13/162"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "-3/2",
-     "-2"
-    ],
-    "d": [
-     "31/162",
-     "-8/81",
-     "-14/81",
-     "13/162"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "96e000d8b5eca16e",
-   "results_digest": "0795a628369a5188",
-   "score": {
-    "best_achieved_error": 2.3034086251433896e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4313.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T05:19:50Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 193,
-   "index": 2750,
-   "key": "7924019c170895b3",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1/2",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "23/144",
-     "53/72",
-     "-7/144",
-     "11/72"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "2",
-     "3/2"
-    ],
-    "d": [
-     "23/144",
-     "-19/72",
-     "-7/144",
-     "11/72"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "c0c1f5dc10b5b62b",
-   "results_digest": "eb62ef328fc7ff68",
-   "score": {
-    "best_achieved_error": 2.053423208753825e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4313.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T15:17:21Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The adaptive lane archive holds 13530 measured candidates under the current code hash, of which this document ranked 139. The leading candidate shows a median of 3490 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The adaptive lane archive holds 13666 measured candidates under the current code hash, of which this document ranked 168. The leading candidate shows a median of 3490 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
