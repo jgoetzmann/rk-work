@@ -1,5 +1,5 @@
 {
- "directive_id": "D-281A",
+ "directive_id": "D-284A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A broad high-resolution dyadic search targets these empty rows while preserving maximal feasible coefficient diversity."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A broad high-resolution dyadic search with nonnegative weights targets these entirely empty rows while preserving diversity across eight islands."
 }
