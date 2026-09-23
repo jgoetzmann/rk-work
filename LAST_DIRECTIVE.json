@@ -1,5 +1,5 @@
 {
- "directive_id": "D-329A",
+ "directive_id": "D-344A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells; moderate dyadic resolution and nonnegative exact-order weights target stable Q15 candidates while sampling multiple cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A broad high-resolution dyadic search targets these empty cells while preserving diversity across cycle buckets."
 }
