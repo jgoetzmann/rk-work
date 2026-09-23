@@ -1,5 +1,5 @@
 {
- "directive_id": "D-389A",
+ "directive_id": "D-404A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
+  "dyadic_denominator_max": 256
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 is severely underexplored, with only one occupied cell and no samples at 5 or 6 stages. Search both stage counts with moderate dyadic resolution and nonnegative weights to target empty cells while allowing cycle-bucket diversity."
+ "rationale": "Order-4 coverage is only 1/24, with every five- and six-stage cell empty. Search both higher-stage families with moderate dyadic resolution to target feasible exact-order solutions across unfilled cycle buckets."
 }
