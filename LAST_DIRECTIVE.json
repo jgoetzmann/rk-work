@@ -1,5 +1,5 @@
 {
- "directive_id": "D-212O4",
+ "directive_id": "D-224A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts broadly to populate empty cycle buckets and establish held-out baselines."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Broad Q15-resolution search with nonnegative exact weights targets these empty rows while allowing cycle-bucket diversity."
 }
