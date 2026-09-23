@@ -32,6 +32,15 @@ files (`*_archive/20*.jsonl`). The per-day lane files run to a few hundred megab
 single files already pass GitHub's 100 MB limit. Every record in them can be regenerated from
 code and parameters.
 
+What the container commits, and when: every cycle, whatever it changed among the paths above,
+except today's archive file and the two lane `ledger.jsonl` files. `EPOCH.json` and `epochs/` are
+written by hand at an epoch boundary. Today's archive file goes in once its UTC day has closed.
+The ledgers grow by several megabytes a day, so they go in with the first cycle of each UTC day
+and after each container start. No file the runner stages by name is staged at 95 MiB or more,
+because GitHub refuses a push carrying a file of 100 MiB or more and every later push would fail
+on it. The runner logs `commit_skipped_oversize` instead and the file stays on disk. See
+`rk-harness/docs/DECISIONS.md` D46.
+
 ## What the public sites read
 
 The findings pages read `archive/`, `validation/results.json`, `benchmark/results.json`,
