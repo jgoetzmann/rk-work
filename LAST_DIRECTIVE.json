@@ -1,5 +1,5 @@
 {
- "directive_id": "D-371A",
+ "directive_id": "D-374A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one filled cell and no samples at 5 or 6 stages. Search both under the least restrictive allowed dyadic grid to maximize feasibility and populate empty cycle buckets."
+ "rationale": "Order-4 coverage is weakest: all five- and six-stage cells are empty. Search both stage counts with the broadest permitted dyadic grid to maximize feasible exact-order discoveries across cycle buckets."
 }
