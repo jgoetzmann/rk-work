@@ -1,5 +1,5 @@
 {
- "directive_id": "D-254O4",
+ "directive_id": "D-257A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no archived 5- or 6-stage candidates; search both stage counts broadly to fill empty cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families with low-denominator dyadic A and nonnegative exact b to target the empty mid-cycle cells, including the current (6,4) cell."
 }
