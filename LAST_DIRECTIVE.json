@@ -1,13 +1,16 @@
 {
- "directive_id": "D-362A",
+ "directive_id": "D-365A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1 of 24 cells; five- and six-stage rows are entirely empty. Search both stage counts broadly to maximize chances of filling new cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells; search moderate dyadic A coefficients with nonnegative exact-order weights to seed these sparse archive rows across cycle buckets."
 }
