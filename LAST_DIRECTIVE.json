@@ -1,5 +1,5 @@
 {
- "directive_id": "D-149A",
+ "directive_id": "D-164A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both under nonnegative weights with moderate dyadic resolution to populate empty higher-stage cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts with a moderate dyadic grid and nonnegative weights to fill this sparse frontier."
 }
