@@ -1,5 +1,5 @@
 {
- "directive_id": "D-269A",
+ "directive_id": "D-272A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; broad high-resolution dyadic searches maximize the chance of filling multiple empty cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families with moderate dyadic resolution and nonnegative weights to target the many empty cells while retaining broad tableau freedom."
 }
