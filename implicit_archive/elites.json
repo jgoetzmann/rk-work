@@ -21,13 +21,13 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 317,
-  "generated_ts": "2026-09-23T19:29:48Z",
+  "generated_cycle": 320,
+  "generated_ts": "2026-09-23T19:35:23Z",
   "lane": "implicit",
   "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
   "n_input": 86,
-  "n_measured": 2444,
+  "n_measured": 2498,
   "n_ranked": 86,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
@@ -88,6 +88,110 @@
   },
   {
    "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3186,
+   "key": "fa97537319554fa4",
+   "method": {
+    "a21": "3/16",
+    "arithmetic": "float64",
+    "b": [
+     "10/3",
+     "-7/3"
+    ],
+    "c": [
+     "15/16",
+     "9/8"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-137/384",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "013cd5f109bb8c65",
+   "results_digest": "fe4103ab3a01c739",
+   "score": {
+    "best_achieved_error": 7.791475846550165e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3194,
+   "key": "86ac7bbe1a248f56",
+   "method": {
+    "a21": "11/16",
+    "arithmetic": "float64",
+    "b": [
+     "18/11",
+     "-7/11"
+    ],
+    "c": [
+     "15/16",
+     "13/8"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-221/384",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "10ccfbfdaa433c1e",
+   "results_digest": "1219c4a374eb138e",
+   "score": {
+    "best_achieved_error": 9.394002089775739e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
    "cycle": 242,
    "index": 1753,
    "key": "133fec9793a988ee",
@@ -137,6 +241,58 @@
     "r_at_infinity": "-127/225"
    },
    "ts": "2026-09-23T16:57:48Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3195,
+   "key": "60b0436d36617396",
+   "method": {
+    "a21": "3/4",
+    "arithmetic": "float64",
+    "b": [
+     "19/12",
+     "-7/12"
+    ],
+    "c": [
+     "15/16",
+     "27/16"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-463/768",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "2306efabd62a73ef",
+   "results_digest": "564265f902fa9d2a",
+   "score": {
+    "best_achieved_error": 9.394002089776762e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
   },
   {
    "cost_basis": "design_estimate_div32",
@@ -504,6 +660,58 @@
   },
   {
    "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3189,
+   "key": "a4a5cdbfa1eaeadf",
+   "method": {
+    "a21": "3/8",
+    "arithmetic": "float64",
+    "b": [
+     "13/6",
+     "-7/6"
+    ],
+    "c": [
+     "15/16",
+     "21/16"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-337/768",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "56a0be3bab904884",
+   "results_digest": "292e2cd91544b706",
+   "score": {
+    "best_achieved_error": 9.394002089774458e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
    "cycle": 242,
    "index": 1765,
    "key": "c640e1d13370469f",
@@ -605,6 +813,58 @@
     "r_at_infinity": "-127/225"
    },
    "ts": "2026-09-23T16:57:48Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3198,
+   "key": "ca397992e7ffb4da",
+   "method": {
+    "a21": "15/16",
+    "arithmetic": "float64",
+    "b": [
+     "22/15",
+     "-7/15"
+    ],
+    "c": [
+     "15/16",
+     "15/8"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-263/384",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "63ea36254bd90e85",
+   "results_digest": "35982e5620d67195",
+   "score": {
+    "best_achieved_error": 9.394002089736397e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
   },
   {
    "cost_basis": "design_estimate_div32",
@@ -764,6 +1024,110 @@
   },
   {
    "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3196,
+   "key": "aaf0b2d1d018b8b6",
+   "method": {
+    "a21": "13/16",
+    "arithmetic": "float64",
+    "b": [
+     "20/13",
+     "-7/13"
+    ],
+    "c": [
+     "15/16",
+     "7/4"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-121/192",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "73599fa49f2c4690",
+   "results_digest": "534bfe91985b5667",
+   "score": {
+    "best_achieved_error": 9.394002089696544e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3199,
+   "key": "1d24071e5cf2164e",
+   "method": {
+    "a21": "1",
+    "arithmetic": "float64",
+    "b": [
+     "23/16",
+     "-7/16"
+    ],
+    "c": [
+     "15/16",
+     "31/16"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-547/768",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "78bd4d7b46badb44",
+   "results_digest": "60a84dc2fd5698be",
+   "score": {
+    "best_achieved_error": 9.394002089695521e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
    "cycle": 242,
    "index": 1774,
    "key": "67d8369692bf20ae",
@@ -813,6 +1177,58 @@
     "r_at_infinity": "-127/225"
    },
    "ts": "2026-09-23T16:57:48Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3201,
+   "key": "5ff83a5d5fd5c897",
+   "method": {
+    "a21": "9/8",
+    "arithmetic": "float64",
+    "b": [
+     "25/18",
+     "-7/18"
+    ],
+    "c": [
+     "15/16",
+     "33/16"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-589/768",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "88047def337b61c9",
+   "results_digest": "019e8e81fe2d32b5",
+   "score": {
+    "best_achieved_error": 9.394002089795536e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
   },
   {
    "cost_basis": "design_estimate_div32",
@@ -1024,6 +1440,58 @@
   },
   {
    "cost_basis": "design_estimate_div32",
+   "cycle": 320,
+   "index": 3191,
+   "key": "328cf24f7f2db553",
+   "method": {
+    "a21": "1/2",
+    "arithmetic": "float64",
+    "b": [
+     "15/8",
+     "-7/8"
+    ],
+    "c": [
+     "15/16",
+     "23/16"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "15/16",
+    "jacobian": "finite_difference",
+    "newton_iters": 2,
+    "order": 2,
+    "order3_residuals": [
+     "-379/768",
+     "-443/768"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "a750a62a128f2c6e",
+   "results_digest": "7780710f57e2513d",
+   "score": {
+    "best_achieved_error": 9.394002089715576e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 2292.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 2,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "-127/225"
+   },
+   "ts": "2026-09-23T19:35:23Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
    "cycle": 242,
    "index": 1764,
    "key": "d579a4d8915cc7b3",
@@ -1128,37 +1596,37 @@
   },
   {
    "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1754,
-   "key": "8e1e4203541ac897",
+   "cycle": 320,
+   "index": 3188,
+   "key": "e475e0dfa88b6b09",
    "method": {
-    "a21": "11/16",
+    "a21": "5/16",
     "arithmetic": "float64",
     "b": [
-     "18/11",
-     "-7/11"
+     "12/5",
+     "-7/5"
     ],
     "c": [
      "15/16",
-     "13/8"
+     "5/4"
     ],
     "div_cycles": 32,
     "family": "sdirk2_dyadic_gamma",
     "gamma": "15/16",
-    "jacobian": "analytic",
+    "jacobian": "finite_difference",
     "newton_iters": 2,
     "order": 2,
     "order3_residuals": [
-     "-221/384",
+     "-79/192",
      "-443/768"
     ],
     "stages": 2,
     "stiffly_accurate": false
    },
-   "record_hash": "bf34558b317fded2",
-   "results_digest": "08b14e9a07f40ff6",
+   "record_hash": "b83b563a64a06a77",
+   "results_digest": "e2ec86c9993f1d81",
    "score": {
-    "best_achieved_error": 9.394002089775739e-05,
+    "best_achieved_error": 9.394002089855699e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
     "median_cycles_at_target": 2292.0,
@@ -1176,41 +1644,41 @@
     "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
     "r_at_infinity": "-127/225"
    },
-   "ts": "2026-09-23T16:57:48Z"
+   "ts": "2026-09-23T19:35:23Z"
   },
   {
    "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1750,
-   "key": "5a46f709007862d9",
+   "cycle": 320,
+   "index": 3193,
+   "key": "a2b431639429e220",
    "method": {
-    "a21": "7/16",
+    "a21": "5/8",
     "arithmetic": "float64",
     "b": [
-     "2",
-     "-1"
+     "17/10",
+     "-7/10"
     ],
     "c": [
      "15/16",
-     "11/8"
+     "25/16"
     ],
     "div_cycles": 32,
     "family": "sdirk2_dyadic_gamma",
     "gamma": "15/16",
-    "jacobian": "analytic",
+    "jacobian": "finite_difference",
     "newton_iters": 2,
     "order": 2,
     "order3_residuals": [
-     "-179/384",
+     "-421/768",
      "-443/768"
     ],
     "stages": 2,
     "stiffly_accurate": false
    },
-   "record_hash": "c3ff38d531c17072",
-   "results_digest": "13c3f8d2a67a64ba",
+   "record_hash": "bc5500aff68ef207",
+   "results_digest": "20c04f38153e966f",
    "score": {
-    "best_achieved_error": 9.394002089756451e-05,
+    "best_achieved_error": 9.394002089756964e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
     "median_cycles_at_target": 2292.0,
@@ -1228,477 +1696,9 @@
     "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
     "r_at_infinity": "-127/225"
    },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1749,
-   "key": "e254d445e588d820",
-   "method": {
-    "a21": "3/8",
-    "arithmetic": "float64",
-    "b": [
-     "13/6",
-     "-7/6"
-    ],
-    "c": [
-     "15/16",
-     "21/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-337/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "f0eca29ca721c2ea",
-   "results_digest": "814c401603aa06d7",
-   "score": {
-    "best_achieved_error": 9.394002089774458e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1771,
-   "key": "0662bf5b7134da69",
-   "method": {
-    "a21": "7/4",
-    "arithmetic": "float64",
-    "b": [
-     "5/4",
-     "-1/4"
-    ],
-    "c": [
-     "15/16",
-     "43/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-799/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "f19df906a7bb8e61",
-   "results_digest": "0248846297ebb2d5",
-   "score": {
-    "best_achieved_error": 9.394002089736653e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1767,
-   "key": "7d0d9224e3df2c7b",
-   "method": {
-    "a21": "3/2",
-    "arithmetic": "float64",
-    "b": [
-     "31/24",
-     "-7/24"
-    ],
-    "c": [
-     "15/16",
-     "39/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-715/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "f5403890ba58cfb5",
-   "results_digest": "bc45264a9a435153",
-   "score": {
-    "best_achieved_error": 9.39400208977625e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1769,
-   "key": "47e84b809fd58d77",
-   "method": {
-    "a21": "13/8",
-    "arithmetic": "float64",
-    "b": [
-     "33/26",
-     "-7/26"
-    ],
-    "c": [
-     "15/16",
-     "41/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-757/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "f699b664f8ac106d",
-   "results_digest": "21e2e6938c0a7f04",
-   "score": {
-    "best_achieved_error": 9.394002089795025e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1775,
-   "key": "aa1328f93b91d4a4",
-   "method": {
-    "a21": "2",
-    "arithmetic": "float64",
-    "b": [
-     "39/32",
-     "-7/32"
-    ],
-    "c": [
-     "15/16",
-     "47/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-883/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "f7fca477f3a888dd",
-   "results_digest": "3c4863872224a855",
-   "score": {
-    "best_achieved_error": 9.394002089756196e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 239,
-   "index": 1745,
-   "key": "5181211475a446e4",
-   "method": {
-    "a21": "1/8",
-    "arithmetic": "float64",
-    "b": [
-     "9/2",
-     "-7/2"
-    ],
-    "c": [
-     "15/16",
-     "17/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-253/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "fc4d6e4efea9453c",
-   "results_digest": "70998bca67da7f71",
-   "score": {
-    "best_achieved_error": 7.904723075365688e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:50:17Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 239,
-   "index": 1747,
-   "key": "b07fdefaf6ac342d",
-   "method": {
-    "a21": "1/4",
-    "arithmetic": "float64",
-    "b": [
-     "11/4",
-     "-7/4"
-    ],
-    "c": [
-     "15/16",
-     "19/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-295/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "fcf2b49d87e35db8",
-   "results_digest": "e446cdeb3b43c43a",
-   "score": {
-    "best_achieved_error": 9.394002089656181e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:50:17Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1762,
-   "key": "f2c8a5e4fd809a5b",
-   "method": {
-    "a21": "19/16",
-    "arithmetic": "float64",
-    "b": [
-     "26/19",
-     "-7/19"
-    ],
-    "c": [
-     "15/16",
-     "17/8"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-305/384",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "fddc684a651026ba",
-   "results_digest": "735c9e8b281f8714",
-   "score": {
-    "best_achieved_error": 9.394002089796303e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 242,
-   "index": 1773,
-   "key": "8abdfe67508fdb2f",
-   "method": {
-    "a21": "15/8",
-    "arithmetic": "float64",
-    "b": [
-     "37/30",
-     "-7/30"
-    ],
-    "c": [
-     "15/16",
-     "45/16"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "15/16",
-    "jacobian": "analytic",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "-841/768",
-     "-443/768"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "ffac0845fc930d26",
-   "results_digest": "53e241a396fb1ae1",
-   "score": {
-    "best_achieved_error": 9.394002089716343e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 2292.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 2,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "-127/225"
-   },
-   "ts": "2026-09-23T16:57:48Z"
+   "ts": "2026-09-23T19:35:23Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The implicit lane archive holds 2444 measured candidates under the current code hash, of which this document ranked 86. The leading candidate shows a median of 2292 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The implicit lane archive holds 2498 measured candidates under the current code hash, of which this document ranked 86. The leading candidate shows a median of 2292 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
