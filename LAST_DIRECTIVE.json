@@ -1,21 +1,13 @@
 {
- "directive_id": "D-410A",
+ "directive_id": "D-413O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
+  5,
   6
  ],
- "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage cells are entirely empty. A single late-stage zero narrows the search toward lower-cycle realizations while retaining substantial tableau freedom; multiple islands address the nonconvex feasible set."
+ "rationale": "Order 4 has only one occupied cell and no samples at five or six stages; broad multi-island search targets 16 empty cells, including the current six-stage bucket 4 cell."
 }
