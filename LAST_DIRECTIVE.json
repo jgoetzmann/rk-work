@@ -1,5 +1,5 @@
 {
- "directive_id": "D-266A",
+ "directive_id": "D-269A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells, while only two order-4 samples exist overall. Search both stage counts with moderate dyadic resolution and nonnegative weights to target robust Q15 candidates across empty cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; broad high-resolution dyadic searches maximize the chance of filling multiple empty cycle buckets."
 }
