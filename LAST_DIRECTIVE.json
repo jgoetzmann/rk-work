@@ -1,15 +1,13 @@
 {
- "directive_id": "D-299H005",
- "hypothesis_id": "H-005",
+ "directive_id": "D-0302",
+ "hypothesis_id": "H-006",
  "target_order": 3,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced five- and six-stage samples for H-005 at the current six-stage bucket-4 frontier. The finest allowed dyadic grid preserves broad tableau freedom while exact order conditions determine b, testing whether the observed six-stage held-out advantage persists across measured cycle buckets."
+ "rationale": "Gather matched five- and six-stage samples to resolve H-006 under the fixed evaluator and cost models; both stage counts have strong incumbents but sparse coverage, especially beyond cycle bucket 4."
 }
