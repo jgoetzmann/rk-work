@@ -1,13 +1,15 @@
 {
- "directive_id": "D-290H002",
- "hypothesis_id": "H-002",
+ "directive_id": "D-293H003",
+ "hypothesis_id": "H-003",
  "target_order": 3,
  "stages": [
   5,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced 5- and 6-stage samples for H-002. Both have strong fast incumbents, but their slow-cost comparison remains unresolved; unconstrained search preserves the tableau freedom needed to distinguish stage-count effects under the fixed evaluator."
+ "rationale": "Gather balanced five- and six-stage samples for H-003. Six-stage currently has lower best held-out error, but both stage counts have sparse bucket coverage; full Q15 dyadic resolution avoids imposing an unrelated structural bias."
 }
