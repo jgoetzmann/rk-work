@@ -1,13 +1,15 @@
 {
- "directive_id": "D-0305",
- "hypothesis_id": "H-007",
+ "directive_id": "D-0308",
+ "hypothesis_id": "H-008",
  "target_order": 3,
  "stages": [
   4,
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced additional samples for the open fast-versus-slow cost ranking hypothesis; both stage counts have occupied but weakly sampled archive regions, especially four stages."
+ "rationale": "Gather balanced samples for H-008 while targeting the weak order-3 four-stage and five-stage cells. The least restrictive Q15-compatible dyadic grid preserves tableau diversity and may improve occupied cells or fill adjacent cycle buckets."
 }
