@@ -1,5 +1,5 @@
 {
- "directive_id": "D-257A",
+ "directive_id": "D-260A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families with low-denominator dyadic A and nonnegative exact b to target the empty mid-cycle cells, including the current (6,4) cell."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both under a moderate dyadic cap with nonnegative exact weights to populate empty cycle buckets and establish whether added stages improve held-out error."
 }
