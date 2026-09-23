@@ -1,5 +1,5 @@
 {
- "directive_id": "D-164A",
+ "directive_id": "D-179A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts with a moderate dyadic grid and nonnegative weights to fill this sparse frontier."
+ "rationale": "Order-4 coverage is only 1/24 cells, with no samples at 5 or 6 stages. Search both stage counts using moderate dyadic resolution and nonnegative exact weights to target stable Q15 candidates across currently empty cycle buckets."
 }
