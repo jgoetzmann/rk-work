@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0434A",
+ "directive_id": "D-0449",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells; low-denominator dyadic A coefficients narrow the search toward shift-add-friendly Q15 implementations while nonnegative exact b weights prioritize stable candidates."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty. Search moderate-denominator dyadic A coefficients with nonnegative exact-order weights to populate these cells, including the current six-stage cycle region."
 }
