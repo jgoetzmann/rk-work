@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 146,
-  "generated_ts": "2026-09-23T05:14:19Z",
+  "generated_cycle": 149,
+  "generated_ts": "2026-09-23T05:21:02Z",
   "lane": "implicit",
   "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
-  "n_input": 74,
-  "n_measured": 120,
-  "n_ranked": 74,
+  "n_input": 68,
+  "n_measured": 156,
+  "n_ranked": 68,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -1492,6 +1492,58 @@
   },
   {
    "cost_basis": "design_estimate_div32",
+   "cycle": 149,
+   "index": 121,
+   "key": "9b9ad0b0310f5f14",
+   "method": {
+    "a21": "1/2",
+    "arithmetic": "float64",
+    "b": [
+     "1/2",
+     "1/2"
+    ],
+    "c": [
+     "1/4",
+     "3/4"
+    ],
+    "div_cycles": 32,
+    "family": "sdirk2_dyadic_gamma",
+    "gamma": "1/4",
+    "jacobian": "finite_difference",
+    "newton_iters": 4,
+    "order": 2,
+    "order3_residuals": [
+     "-1/48",
+     "-5/48"
+    ],
+    "stages": 2,
+    "stiffly_accurate": false
+   },
+   "record_hash": "6872831737106538",
+   "results_digest": "df0a23e1e3e5841a",
+   "score": {
+    "best_achieved_error": 2.399804973018751e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 4058.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "stability": {
+    "a_stable": true,
+    "a_stable_exact": true,
+    "l_stable": false,
+    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
+    "r_at_infinity": "1"
+   },
+   "ts": "2026-09-23T05:21:02Z"
+  },
+  {
+   "cost_basis": "design_estimate_div32",
    "cycle": 140,
    "index": 31,
    "key": "b3fd7705c1ad58b2",
@@ -1645,60 +1697,8 @@
     "r_at_infinity": "1"
    },
    "ts": "2026-09-23T04:57:40Z"
-  },
-  {
-   "cost_basis": "design_estimate_div32",
-   "cycle": 146,
-   "index": 99,
-   "key": "f4eae239ae62061c",
-   "method": {
-    "a21": "1",
-    "arithmetic": "float64",
-    "b": [
-     "3/4",
-     "1/4"
-    ],
-    "c": [
-     "1/4",
-     "5/4"
-    ],
-    "div_cycles": 32,
-    "family": "sdirk2_dyadic_gamma",
-    "gamma": "1/4",
-    "jacobian": "finite_difference",
-    "newton_iters": 2,
-    "order": 2,
-    "order3_residuals": [
-     "5/48",
-     "-5/48"
-    ],
-    "stages": 2,
-    "stiffly_accurate": false
-   },
-   "record_hash": "2da939f185f85222",
-   "results_digest": "9c763f0a843df340",
-   "score": {
-    "best_achieved_error": 4.661412118150516e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4104.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "stability": {
-    "a_stable": true,
-    "a_stable_exact": true,
-    "l_stable": false,
-    "note": "no dyadic gamma is L-stable, because R at infinity vanishing needs 1/2 - 2g + g*g = 0 and that root is irrational; r_at_infinity is the margin and a_stable is the gate that is reachable",
-    "r_at_infinity": "1"
-   },
-   "ts": "2026-09-23T05:14:19Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The implicit lane archive holds 120 measured candidates under the current code hash, of which this document ranked 74. The leading candidate shows a median of 2874 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The implicit lane archive holds 156 measured candidates under the current code hash, of which this document ranked 68. The leading candidate shows a median of 2874 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
