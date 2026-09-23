@@ -1,6 +1,6 @@
 {
- "directive_id": "D-287H001",
- "hypothesis_id": "H-001",
+ "directive_id": "D-290H002",
+ "hypothesis_id": "H-002",
  "target_order": 3,
  "stages": [
   5,
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced five- and six-stage samples to resolve H-001 under the unchanged fast and slow cost models. Both stage counts have occupied but weakly sampled comparison cells, and six stages currently has the lower fast held-out minimum."
+ "rationale": "Gather balanced 5- and 6-stage samples for H-002. Both have strong fast incumbents, but their slow-cost comparison remains unresolved; unconstrained search preserves the tableau freedom needed to distinguish stage-count effects under the fixed evaluator."
 }
