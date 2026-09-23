@@ -1,16 +1,13 @@
 {
- "directive_id": "D-284A",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-287H001",
+ "hypothesis_id": "H-001",
+ "target_order": 3,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A broad high-resolution dyadic search with nonnegative weights targets these entirely empty rows while preserving diversity across eight islands."
+ "rationale": "Gather balanced five- and six-stage samples to resolve H-001 under the unchanged fast and slow cost models. Both stage counts have occupied but weakly sampled comparison cells, and six stages currently has the lower fast held-out minimum."
 }
