@@ -1,15 +1,16 @@
 {
- "directive_id": "D-0308",
- "hypothesis_id": "H-008",
- "target_order": 3,
+ "directive_id": "D-314P4",
+ "hypothesis_id": null,
+ "target_order": 4,
  "stages": [
-  4,
-  5
+  5,
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced samples for H-008 while targeting the weak order-3 four-stage and five-stage cells. The least restrictive Q15-compatible dyadic grid preserves tableau diversity and may improve occupied cells or fill adjacent cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both stage counts with Q15-friendly dyadic A coefficients and nonnegative exact b weights to target empty cells, including the current stage-5 region."
 }
