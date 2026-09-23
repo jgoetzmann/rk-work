@@ -1,5 +1,5 @@
 {
- "directive_id": "D-224A",
+ "directive_id": "D-239A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Broad Q15-resolution search with nonnegative exact weights targets these empty rows while allowing cycle-bucket diversity."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells, while higher-stage order-3 methods achieve the best held-out errors. Search moderately fine dyadic A coefficients with nonnegative exact b across multiple islands to seed empty order-4 cells."
 }
