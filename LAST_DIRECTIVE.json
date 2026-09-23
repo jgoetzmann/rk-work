@@ -1,16 +1,13 @@
 {
- "directive_id": "D-365A",
+ "directive_id": "D-368A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells; search moderate dyadic A coefficients with nonnegative exact-order weights to seed these sparse archive rows across cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no archived samples or occupied cells; broad multi-island search targets the largest unexplored region, including current cell (6,3)."
 }
