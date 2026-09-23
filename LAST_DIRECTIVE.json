@@ -1,15 +1,21 @@
 {
- "directive_id": "D-404A",
+ "directive_id": "D-410A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24, with every five- and six-stage cell empty. Search both higher-stage families with moderate dyadic resolution to target feasible exact-order solutions across unfilled cycle buckets."
+ "rationale": "Order-4 six-stage cells are entirely empty. A single late-stage zero narrows the search toward lower-cycle realizations while retaining substantial tableau freedom; multiple islands address the nonconvex feasible set."
 }
