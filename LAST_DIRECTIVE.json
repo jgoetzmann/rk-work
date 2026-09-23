@@ -1,5 +1,5 @@
 {
- "directive_id": "D-347A",
+ "directive_id": "D-350A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both under a moderate dyadic cap with nonnegative weights to populate empty cells."
+ "rationale": "Order 4 is severely underfilled, with no archived 5- or 6-stage cells. Search both stage counts on a moderate dyadic grid to pursue new cycle buckets while retaining coefficient diversity."
 }
