@@ -1,16 +1,13 @@
 {
- "directive_id": "D-359A",
+ "directive_id": "D-362A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one filled cell and no samples at stages 5 or 6. Search both under a moderate dyadic grid with nonnegative weights to target the broadest high-order archive gap."
+ "rationale": "Order-4 coverage is only 1 of 24 cells; five- and six-stage rows are entirely empty. Search both stage counts broadly to maximize chances of filling new cycle buckets."
 }
