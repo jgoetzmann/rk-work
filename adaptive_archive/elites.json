@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 139,
-  "generated_ts": "2026-09-23T04:56:24Z",
+  "generated_cycle": 142,
+  "generated_ts": "2026-09-23T05:03:34Z",
   "lane": "adaptive",
-  "lanesearch_code_hash": "e0e49bdbf8199f8b",
+  "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
-  "n_input": 141,
-  "n_measured": 141,
-  "n_ranked": 141,
+  "n_input": 144,
+  "n_measured": 144,
+  "n_ranked": 144,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -54,7 +54,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 66,
    "key": "9b128e90f5a1462a",
    "method": {
@@ -118,7 +118,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "bb2119b20af4aed4",
+   "record_hash": "33d7cdc7f18b3e7b",
    "results_digest": "707f43dbd230fbda",
    "score": {
     "best_achieved_error": 3.515007336011569e-05,
@@ -132,7 +132,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -154,7 +154,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 70,
    "key": "b13ec87df131aa6b",
    "method": {
@@ -218,7 +218,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "d40d18768bc08298",
+   "record_hash": "8b182e095e3ba657",
    "results_digest": "588e57c6e35f85f0",
    "score": {
     "best_achieved_error": 3.370537778108939e-05,
@@ -232,7 +232,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -254,7 +254,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 139,
    "key": "5aa2886e2913cd0b",
    "method": {
@@ -318,7 +318,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "b0c0447a51b5fbda",
+   "record_hash": "3c972e0b769f1c7e",
    "results_digest": "a920811fded557eb",
    "score": {
     "best_achieved_error": 5.700937285102589e-05,
@@ -332,7 +332,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -354,7 +354,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 7,
    "key": "4e2bbdb03a209e40",
    "method": {
@@ -418,7 +418,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "bc9dff303ac5d264",
+   "record_hash": "dbb969349dbc28c4",
    "results_digest": "d5913eaf662799f2",
    "score": {
     "best_achieved_error": 7.251353796911419e-05,
@@ -432,7 +432,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -454,7 +454,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 15,
    "key": "67bbec9d07270428",
    "method": {
@@ -518,7 +518,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "02d8e527e73f375f",
+   "record_hash": "1ff716d8f1749359",
    "results_digest": "e2017aaa9c9d3ba5",
    "score": {
     "best_achieved_error": 6.551840392475362e-05,
@@ -532,7 +532,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -554,7 +554,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 95,
    "key": "a922cf3f3332d8c0",
    "method": {
@@ -618,7 +618,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "26b08de6d1fd3021",
+   "record_hash": "5aa0bc6817792801",
    "results_digest": "a98877511ddde1f7",
    "score": {
     "best_achieved_error": 6.138496312653196e-05,
@@ -632,7 +632,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -654,7 +654,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 129,
    "key": "a92abf92c5e22aa3",
    "method": {
@@ -718,7 +718,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "6cfce2fd1b82499a",
+   "record_hash": "8cceb7b52014ac06",
    "results_digest": "8271f70979e262f1",
    "score": {
     "best_achieved_error": 7.48677329667705e-05,
@@ -732,7 +732,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -754,7 +754,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 49,
    "key": "7a1b73546942fdbf",
    "method": {
@@ -818,7 +818,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "5b76af597920787c",
+   "record_hash": "0d5fe67500cdadc2",
    "results_digest": "716cd02dd1981a12",
    "score": {
     "best_achieved_error": 3.1503412713815014e-05,
@@ -832,7 +832,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -854,7 +854,107 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
+   "index": 146,
+   "key": "db23d4f80bf56011",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "-1/9",
+     "13/12",
+     "-1/9",
+     "5/36"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "-3/2",
+     "-3/2"
+    ],
+    "d": [
+     "-1/9",
+     "1/12",
+     "-1/9",
+     "5/36"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "0a5fd06de76966f6",
+   "results_digest": "89afec56335d4046",
+   "score": {
+    "best_achieved_error": 1.9182221380631946e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6370.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T05:03:34Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 142,
    "index": 81,
    "key": "3d79373193dad26f",
    "method": {
@@ -918,7 +1018,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "4e58ef56e5a5725c",
+   "record_hash": "35dc23fa2fd02b05",
    "results_digest": "457cf4217fa1e471",
    "score": {
     "best_achieved_error": 7.933078849383545e-06,
@@ -932,7 +1032,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -954,7 +1054,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 93,
    "key": "a0b6e836ead1aa5e",
    "method": {
@@ -1018,7 +1118,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "d9d6426eab587e7f",
+   "record_hash": "8a75e72f941c1bfd",
    "results_digest": "5263bd8b293576c2",
    "score": {
     "best_achieved_error": 3.572193354614184e-05,
@@ -1032,7 +1132,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1054,7 +1154,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 127,
    "key": "c603ab36afd5dc61",
    "method": {
@@ -1118,7 +1218,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "864677de1871f3ac",
+   "record_hash": "03ebcd6762eec213",
    "results_digest": "52d4a47d4753340d",
    "score": {
     "best_achieved_error": 6.836188544988066e-05,
@@ -1132,7 +1232,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1154,7 +1254,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 21,
    "key": "21f95b330882790b",
    "method": {
@@ -1218,7 +1318,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "54974148438ee217",
+   "record_hash": "c0157ce299ba5036",
    "results_digest": "047a8c72c7f9dced",
    "score": {
     "best_achieved_error": 1.290275507159051e-05,
@@ -1232,7 +1332,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1254,7 +1354,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 2,
    "key": "f0bed20888cd8202",
    "method": {
@@ -1318,7 +1418,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "c634442e15c134ed",
+   "record_hash": "43e1201d7b187d70",
    "results_digest": "53721a6d02ebc9ae",
    "score": {
     "best_achieved_error": 5.9878589538049615e-05,
@@ -1332,7 +1432,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1354,7 +1454,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 115,
    "key": "b73e3a693b794b7c",
    "method": {
@@ -1418,7 +1518,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "489aa80fc738be0c",
+   "record_hash": "dc5da21555dce716",
    "results_digest": "b19ecf22ac5989ec",
    "score": {
     "best_achieved_error": 0.00010178948777065614,
@@ -1432,7 +1532,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1454,7 +1554,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 71,
    "key": "91d56d4951281f14",
    "method": {
@@ -1518,7 +1618,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "1dc1d4ea4b39c631",
+   "record_hash": "ef4b95aee4fb9e14",
    "results_digest": "a4dc67b1c8448927",
    "score": {
     "best_achieved_error": 7.109422058001662e-05,
@@ -1532,7 +1632,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1554,7 +1654,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 19,
    "key": "ded210a93cddcea2",
    "method": {
@@ -1618,7 +1718,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "dc59c55facfac96a",
+   "record_hash": "a68e8fb7ef664573",
    "results_digest": "994da3b676a7e78a",
    "score": {
     "best_achieved_error": 1.4092974247227754e-05,
@@ -1632,7 +1732,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1654,7 +1754,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 6,
    "key": "bb237b374227e464",
    "method": {
@@ -1718,7 +1818,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "1e3a56911435a50e",
+   "record_hash": "83e2c33633e8f605",
    "results_digest": "ff28c37a7044b858",
    "score": {
     "best_achieved_error": 1.3916458544262762e-05,
@@ -1732,7 +1832,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1754,7 +1854,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 63,
    "key": "3f2e91b5e3b49e4e",
    "method": {
@@ -1818,7 +1918,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "da91aebf8f2a5a26",
+   "record_hash": "5a833fa8a344f579",
    "results_digest": "1574ab6c4e28903f",
    "score": {
     "best_achieved_error": 2.3918428590892953e-05,
@@ -1832,7 +1932,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1854,7 +1954,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 35,
    "key": "63d536d974b98e74",
    "method": {
@@ -1918,7 +2018,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "90c0d61cb72170ea",
+   "record_hash": "3aa78fe8ee4430c5",
    "results_digest": "8ffa047456af7ae4",
    "score": {
     "best_achieved_error": 4.5262380115744587e-05,
@@ -1932,7 +2032,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -1954,7 +2054,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 23,
    "key": "5d105a6f3f460345",
    "method": {
@@ -2018,7 +2118,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "76a69a2ec4c23a90",
+   "record_hash": "5ebc385cb06204bd",
    "results_digest": "4c45a5447af784ae",
    "score": {
     "best_achieved_error": 4.55866859646163e-06,
@@ -2032,7 +2132,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2054,7 +2154,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 12,
    "key": "1abd6294a924da14",
    "method": {
@@ -2118,7 +2218,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "0bcd672ad92dce7c",
+   "record_hash": "194e0ada00c22fae",
    "results_digest": "92103e4f919059ef",
    "score": {
     "best_achieved_error": 3.4207488312313646e-05,
@@ -2132,7 +2232,7 @@
     "worst_status": "never_reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2154,7 +2254,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 123,
    "key": "a1250276a756e6f7",
    "method": {
@@ -2218,7 +2318,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "930476c2bb134789",
+   "record_hash": "212edee0445d6e1f",
    "results_digest": "abc120bd994c9825",
    "score": {
     "best_achieved_error": 1.007810580459736e-05,
@@ -2232,7 +2332,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2254,7 +2354,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 138,
    "key": "adbae5997cb5c64a",
    "method": {
@@ -2318,7 +2418,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "99cb17924dcf88ff",
+   "record_hash": "283d63eeff54fb31",
    "results_digest": "0f830391adfac9b2",
    "score": {
     "best_achieved_error": 7.324420490838214e-05,
@@ -2332,7 +2432,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2354,7 +2454,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 3,
    "key": "a9d586ad60348d7a",
    "method": {
@@ -2418,7 +2518,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "327708657554d590",
+   "record_hash": "23ffd3d3342ca0e3",
    "results_digest": "5c939ca8ce431210",
    "score": {
     "best_achieved_error": 1.1159187190630502e-05,
@@ -2432,7 +2532,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2454,7 +2554,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 111,
    "key": "d1dd9a0a4c8b0573",
    "method": {
@@ -2518,7 +2618,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "c0f3448e36343b0a",
+   "record_hash": "4f14870944ded432",
    "results_digest": "b7598cd9e9e876d1",
    "score": {
     "best_achieved_error": 8.738720615131239e-05,
@@ -2532,7 +2632,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2554,107 +2654,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
-   "index": 59,
-   "key": "98f214cf9287e6ec",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "-1",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "427/666",
-     "59/222",
-     "38/333",
-     "-7/333"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "3/2",
-     "-3"
-    ],
-    "d": [
-     "47/333",
-     "-26/111",
-     "38/333",
-     "-7/333"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "1686787fd60f195d",
-   "results_digest": "b6f4e928f2928621",
-   "score": {
-    "best_achieved_error": 4.571077446706943e-06,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 7260.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 74,
    "key": "c18e76c62a04bc5b",
    "method": {
@@ -2718,7 +2718,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "336ab73f41007862",
+   "record_hash": "49200760a57a867c",
    "results_digest": "e5a26ba7a8cb9bb4",
    "score": {
     "best_achieved_error": 8.738736839223961e-05,
@@ -2732,7 +2732,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2754,7 +2754,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 99,
    "key": "cd84e9391c40bf56",
    "method": {
@@ -2818,7 +2818,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "36333fa51585b581",
+   "record_hash": "62a414d7a7f5e817",
    "results_digest": "0f895a4ac6413f63",
    "score": {
     "best_achieved_error": 7.819859899175364e-06,
@@ -2832,7 +2832,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2854,7 +2854,107 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
+   "index": 59,
+   "key": "98f214cf9287e6ec",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "427/666",
+     "59/222",
+     "38/333",
+     "-7/333"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "3/2",
+     "-3"
+    ],
+    "d": [
+     "47/333",
+     "-26/111",
+     "38/333",
+     "-7/333"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "f528479ed82cbf42",
+   "results_digest": "b6f4e928f2928621",
+   "score": {
+    "best_achieved_error": 4.571077446706943e-06,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7260.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T05:03:34Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 142,
    "index": 8,
    "key": "fc5409958306328e",
    "method": {
@@ -2918,7 +3018,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "2780d4dad037976d",
+   "record_hash": "0d1d90afda2d807f",
    "results_digest": "8d54808d808a9c88",
    "score": {
     "best_achieved_error": 4.9619829943916164e-05,
@@ -2932,7 +3032,7 @@
     "worst_status": "never_reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -2954,7 +3054,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 87,
    "key": "fbc7eadea1e99f8a",
    "method": {
@@ -3018,7 +3118,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "bfa938d516b8cf8d",
+   "record_hash": "7fd5740f49680462",
    "results_digest": "26c90680d6612d1a",
    "score": {
     "best_achieved_error": 1.7349437978403395e-05,
@@ -3032,7 +3132,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   },
   {
    "controller": {
@@ -3054,7 +3154,7 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
+   "cycle": 142,
    "index": 122,
    "key": "8bf4d830f2bb79b1",
    "method": {
@@ -3118,7 +3218,7 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "40b0b745eb154fc4",
+   "record_hash": "c80de7782c34fe90",
    "results_digest": "b8a7fbd8e3d60b2c",
    "score": {
     "best_achieved_error": 1.0067801620935156e-05,
@@ -3132,109 +3232,9 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 139,
-   "index": 126,
-   "key": "26b5a9e6f4e3a0b6",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "-1",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "19/30",
-     "5/18",
-     "7/54",
-     "-11/270"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "2",
-     "-5/2"
-    ],
-    "d": [
-     "19/30",
-     "-13/18",
-     "7/54",
-     "-11/270"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "ef0720c2c04b92d7",
-   "results_digest": "7c87a60a603c4b76",
-   "score": {
-    "best_achieved_error": 1.6730953762515473e-06,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 7410.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T04:56:24Z"
+   "ts": "2026-09-23T05:03:34Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The adaptive lane archive holds 141 measured candidates under the current code hash, of which this document ranked 141. The leading candidate shows a median of 5120 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The adaptive lane archive holds 144 measured candidates under the current code hash, of which this document ranked 144. The leading candidate shows a median of 5120 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
