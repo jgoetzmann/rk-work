@@ -1,8 +1,8 @@
 {
  "_meta": {
   "cycles_schema": "schedule-cycles/1",
-  "generated_cycle": 193,
-  "generated_ts": "2026-09-23T15:18:38Z",
+  "generated_cycle": 194,
+  "generated_ts": "2026-09-23T15:19:57Z",
   "lane_max_seconds": 72.0,
   "lanes": [
    "explicit",
@@ -14,10 +14,10 @@
   "measured_not_intended": "every number under 'lanes' comes from recorded per-cycle evidence; when no cycle has been recorded the shares are zero and 'cycles' is zero, and the scheduled split is never substituted for a measurement",
   "nonfinite_written_as_null": 0,
   "not_a_public_page_source": "the traceability rule lists key_findings.json, validation/results.json, benchmark/results.json, the side-track ledger with its artifacts, and each lane's elites.json; this artifact is not on that list, and the lane split it records is internal by CLAUDE.md rule 10",
-  "rows_counted": 193,
+  "rows_counted": 194,
   "rows_discarded": 0,
   "rows_discarded_by_reason": {},
-  "rows_read": 193,
+  "rows_read": 194,
   "rows_without_productive_seconds": 64,
   "schedule": "EAI",
   "schema": "schedule-shares/1",
@@ -29,9 +29,9 @@
   "window_cycles": 200
  },
  "drift": {
-  "adaptive": -0.1743945135277654,
-  "explicit": 0.30595251552254515,
-  "implicit": -0.1315580019947797
+  "adaptive": -0.17478091977660476,
+  "explicit": 0.3043983071353514,
+  "implicit": -0.12961738735874656
  },
  "lanes": {
   "adaptive": {
@@ -41,7 +41,7 @@
    "productive_seconds": 4710.719802093983,
    "records_appended": 0,
    "seconds": 5168.226948882861,
-   "share": 0.15893881980556793
+   "share": 0.15855241355672856
   },
   "explicit": {
    "cycles": 64,
@@ -50,16 +50,16 @@
    "productive_seconds": 0.0,
    "records_appended": 8689,
    "seconds": 20787.711624750984,
-   "share": 0.6392858488558785
+   "share": 0.6377316404686847
   },
   "implicit": {
-   "cycles": 64,
-   "lane_records_appended": 2161,
+   "cycles": 65,
+   "lane_records_appended": 2199,
    "points_measured": 0,
-   "productive_seconds": 6129.155447528814,
+   "productive_seconds": 6202.00838144077,
    "records_appended": 0,
-   "seconds": 6561.145391159807,
-   "share": 0.2017753313385536
+   "seconds": 6640.392399490811,
+   "share": 0.20371594597458675
   }
  },
  "scheduled_share": {
@@ -67,13 +67,13 @@
   "explicit": 0.3333333333333333,
   "implicit": 0.3333333333333333
  },
- "statement": "Over 193 recorded cycles and 32517.1 recorded seconds the measured split was explicit 63.9286, adaptive 15.8939, implicit 20.1775 percent. The schedule 'EAI' asks for explicit 33.3333, adaptive 33.3333, implicit 33.3333 percent.",
+ "statement": "Over 194 recorded cycles and 32596.3 recorded seconds the measured split was explicit 63.7732, adaptive 15.8552, implicit 20.3716 percent. The schedule 'EAI' asks for explicit 33.3333, adaptive 33.3333, implicit 33.3333 percent.",
  "window": {
   "first_cycle": 1,
   "first_ts": "2026-09-17T17:55:53Z",
-  "last_cycle": 193,
-  "last_ts": "2026-09-23T15:18:38Z",
-  "span_seconds": 508965.0,
-  "wall_seconds": 32517.083964793652
+  "last_cycle": 194,
+  "last_ts": "2026-09-23T15:19:57Z",
+  "span_seconds": 509044.0,
+  "wall_seconds": 32596.330973124655
  }
 }
