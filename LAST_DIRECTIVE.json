@@ -1,5 +1,5 @@
 {
- "directive_id": "D-239A",
+ "directive_id": "D-254O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells, while higher-stage order-3 methods achieve the best held-out errors. Search moderately fine dyadic A coefficients with nonnegative exact b across multiple islands to seed empty order-4 cells."
+ "rationale": "Order 4 has only one occupied cell and no archived 5- or 6-stage candidates; search both stage counts broadly to fill empty cycle buckets."
 }
