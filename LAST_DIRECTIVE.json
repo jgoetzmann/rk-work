@@ -1,5 +1,5 @@
 {
- "directive_id": "D-413O4",
+ "directive_id": "D-416A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at five or six stages; broad multi-island search targets 16 empty cells, including the current six-stage bucket 4 cell."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both stage counts with maximum island diversity to find feasible exact-order tableaus and populate empty cycle buckets."
 }
