@@ -1,5 +1,5 @@
 {
- "directive_id": "D-431A",
+ "directive_id": "D-0434A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite broad archive sparsity; search nonnegative-weight dyadic tableaus to populate these stage rows while allowing the evaluator's fixed cost model to assign cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells; low-denominator dyadic A coefficients narrow the search toward shift-add-friendly Q15 implementations while nonnegative exact b weights prioritize stable candidates."
 }
