@@ -1,5 +1,5 @@
 {
- "directive_id": "D-263A",
+ "directive_id": "D-266A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty; a moderate dyadic cap and nonnegative exact weights focus the search on Q15-friendly tableaus while preserving enough coefficient diversity to populate multiple cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells, while only two order-4 samples exist overall. Search both stage counts with moderate dyadic resolution and nonnegative weights to target robust Q15 candidates across empty cycle buckets."
 }
