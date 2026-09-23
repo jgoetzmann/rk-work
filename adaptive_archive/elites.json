@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 136,
-  "generated_ts": "2026-09-23T04:49:04Z",
+  "generated_cycle": 139,
+  "generated_ts": "2026-09-23T04:56:24Z",
   "lane": "adaptive",
-  "lanesearch_code_hash": "229c1559200c21e5",
+  "lanesearch_code_hash": "e0e49bdbf8199f8b",
   "n_elites": 32,
-  "n_input": 173,
-  "n_measured": 4865,
-  "n_ranked": 173,
+  "n_input": 141,
+  "n_measured": 141,
+  "n_ranked": 141,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -54,9 +54,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 106,
-   "index": 3898,
-   "key": "1adcafbcd4826177",
+   "cycle": 139,
+   "index": 66,
+   "key": "9b128e90f5a1462a",
    "method": {
     "A": [
      [
@@ -72,23 +72,23 @@
       "0"
      ],
      [
-      "1/2",
-      "1",
+      "-1",
+      "-1",
       "0",
       "0"
      ],
      [
+      "-1/2",
       "-1",
-      "1",
-      "1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "3/22",
-     "25/33",
-     "1/33",
-     "5/66"
+     "1/30",
+     "89/90",
+     "-1/10",
+     "7/90"
     ],
     "b_exact": false,
     "b_hat": [
@@ -101,14 +101,14 @@
     "c": [
      "0",
      "1/2",
-     "3/2",
-     "1"
+     "-2",
+     "-5/2"
     ],
     "d": [
-     "3/22",
-     "-8/33",
-     "1/33",
-     "5/66"
+     "1/30",
+     "-1/90",
+     "-1/10",
+     "7/90"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -118,13 +118,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "6454e831429d0e5e",
-   "results_digest": "9c1abaafbab7fb39",
+   "record_hash": "bb2119b20af4aed4",
+   "results_digest": "707f43dbd230fbda",
    "score": {
-    "best_achieved_error": 1.3916643950338294e-05,
+    "best_achieved_error": 3.515007336011569e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4072.0,
+    "median_cycles_at_target": 5120.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -132,7 +132,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:10:07Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -154,9 +154,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 82,
-   "index": 3006,
-   "key": "b1aa4d85f8abc57b",
+   "cycle": 139,
+   "index": 70,
+   "key": "b13ec87df131aa6b",
    "method": {
     "A": [
      [
@@ -168,247 +168,47 @@
      [
       "1/2",
       "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "1/12",
-     "8/9",
-     "-1/8",
-     "11/72"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "2",
-     "2"
-    ],
-    "d": [
-     "1/12",
-     "-1/9",
-     "-1/8",
-     "11/72"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "69fa313d528cb5ad",
-   "results_digest": "b76ba626c60fd35e",
-   "score": {
-    "best_achieved_error": 2.0534232087536516e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4106.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T03:35:24Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 79,
-   "index": 2927,
-   "key": "cf6c8c02d003e7b7",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
       "0",
       "0"
      ],
      [
       "-1/2",
-      "1",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "7/18",
-     "85/126",
-     "-2/9",
-     "10/63"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "3/2",
-     "1"
-    ],
-    "d": [
-     "-1/9",
-     "11/63",
-     "-2/9",
-     "10/63"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "de0479002f45d4de",
-   "results_digest": "25fe74c8d5f2ed97",
-   "score": {
-    "best_achieved_error": 5.1946230961613984e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4106.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T03:30:17Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 94,
-   "index": 3347,
-   "key": "b7082fb519687350",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
       "-1",
-      "-1/2",
       "0",
       "0"
      ],
      [
-      "-1",
       "-1/2",
-      "1",
+      "-1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "235/342",
-     "143/342",
-     "-5/171",
-     "-13/171"
+     "17/81",
+     "143/162",
+     "-14/81",
+     "13/162"
     ],
     "b_exact": false,
     "b_hat": [
-     "1/2",
-     "1/2",
+     "0",
+     "1",
      "0",
      "0"
     ],
     "b_hat_exact": true,
     "c": [
      "0",
-     "1",
+     "1/2",
      "-3/2",
-     "-1/2"
+     "-5/2"
     ],
     "d": [
-     "32/171",
-     "-14/171",
-     "-5/171",
-     "-13/171"
+     "17/81",
+     "-19/162",
+     "-14/81",
+     "13/162"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -418,13 +218,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "994e6e951f6585f9",
-   "results_digest": "94bf3a735028ec30",
+   "record_hash": "d40d18768bc08298",
+   "results_digest": "588e57c6e35f85f0",
    "score": {
-    "best_achieved_error": 1.670086561892297e-05,
+    "best_achieved_error": 3.370537778108939e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4141.0,
+    "median_cycles_at_target": 5280.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -432,7 +232,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T03:54:38Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -454,309 +254,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 4,
-   "index": 183,
-   "key": "7be462fcf9627d5f",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "-1",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "29/54",
-     "7/18",
-     "1/9",
-     "-1/27"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "1/2",
-     "-3/2"
-    ],
-    "d": [
-     "1/27",
-     "-1/9",
-     "1/9",
-     "-1/27"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "072e94ceae0c5bc0",
-   "results_digest": "352fe1acc1cb5d91",
-   "score": {
-    "best_achieved_error": 3.7163873260926087e-06,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4175.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T17:57:17Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 13,
-   "index": 506,
-   "key": "2b6ba4affd5a6949",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "7/23",
-     "95/138",
-     "11/138",
-     "-5/69"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "3/2",
-     "-1/2"
-    ],
-    "d": [
-     "7/23",
-     "-43/138",
-     "11/138",
-     "-5/69"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "f37fa8cef0b9e115",
-   "results_digest": "8e1de8965e5cbbe2",
-   "score": {
-    "best_achieved_error": 2.0407834716173246e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4175.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T18:47:44Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 91,
-   "index": 3246,
-   "key": "61d2b841e34b5760",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "-1",
-      "1",
-      "0"
-     ]
-    ],
-    "b": [
-     "1/9",
-     "49/72",
-     "1/18",
-     "11/72"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "3/2",
-     "1/2"
-    ],
-    "d": [
-     "1/9",
-     "-23/72",
-     "1/18",
-     "11/72"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "f483d3f1bf601833",
-   "results_digest": "5cf7dc547894260d",
-   "score": {
-    "best_achieved_error": 2.053423208753825e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4175.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T03:49:28Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 76,
-   "index": 2891,
-   "key": "66f7ac19aab94da2",
+   "cycle": 139,
+   "index": 139,
+   "key": "5aa2886e2913cd0b",
    "method": {
     "A": [
      [
@@ -778,17 +278,17 @@
       "0"
      ],
      [
-      "-1/2",
-      "1",
       "1/2",
+      "-1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "5/6",
-     "25/54",
-     "-2/9",
-     "-2/27"
+     "125/162",
+     "65/162",
+     "-13/81",
+     "-1/81"
     ],
     "b_exact": false,
     "b_hat": [
@@ -802,13 +302,13 @@
      "0",
      "1",
      "-1/2",
-     "1"
+     "-3/2"
     ],
     "d": [
-     "1/3",
-     "-1/27",
-     "-2/9",
-     "-2/27"
+     "22/81",
+     "-8/81",
+     "-13/81",
+     "-1/81"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -818,13 +318,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "6b9028c88a6b73b3",
-   "results_digest": "e9fdd4b378337344",
+   "record_hash": "b0c0447a51b5fbda",
+   "results_digest": "a920811fded557eb",
    "score": {
-    "best_achieved_error": 3.7163873260926087e-06,
+    "best_achieved_error": 5.700937285102589e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4210.0,
+    "median_cycles_at_target": 5535.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -832,7 +332,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T03:25:24Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -854,9 +354,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 4,
-   "index": 239,
-   "key": "b11a9878e9b49d4a",
+   "cycle": 139,
+   "index": 7,
+   "key": "4e2bbdb03a209e40",
    "method": {
     "A": [
      [
@@ -872,123 +372,23 @@
       "0"
      ],
      [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "29/46",
-     "65/138",
-     "-2/69",
-     "-5/69"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "3/2",
-     "-1"
-    ],
-    "d": [
-     "3/23",
-     "-2/69",
-     "-2/69",
-     "-5/69"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "2d57f9204531d9c7",
-   "results_digest": "eb56eccedab7112e",
-   "score": {
-    "best_achieved_error": 2.0407834716537873e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4244.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T17:57:17Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 19,
-   "index": 723,
-   "key": "9ea7e8b6d3aaafbc",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
       "-1/2",
+      "-1",
       "0",
       "0"
      ],
      [
-      "1",
-      "1/2",
+      "-1",
+      "-1",
       "-1",
       "0"
      ]
     ],
     "b": [
-     "199/354",
-     "143/354",
-     "-7/177",
-     "13/177"
+     "55/74",
+     "83/222",
+     "-50/333",
+     "11/333"
     ],
     "b_exact": false,
     "b_hat": [
@@ -1002,13 +402,13 @@
      "0",
      "1",
      "-3/2",
-     "1/2"
+     "-3"
     ],
     "d": [
-     "11/177",
-     "-17/177",
-     "-7/177",
-     "13/177"
+     "9/37",
+     "-14/111",
+     "-50/333",
+     "11/333"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -1018,13 +418,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "a9c968c98781db7b",
-   "results_digest": "76dcc9bf1b79255f",
+   "record_hash": "bc9dff303ac5d264",
+   "results_digest": "d5913eaf662799f2",
    "score": {
-    "best_achieved_error": 1.0221874396983778e-05,
+    "best_achieved_error": 7.251353796911419e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4244.5,
+    "median_cycles_at_target": 5750.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -1032,7 +432,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T19:04:09Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -1054,9 +454,1009 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 4,
-   "index": 263,
-   "key": "f93332ea5461fde0",
+   "cycle": 139,
+   "index": 15,
+   "key": "67bbec9d07270428",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "17/24",
+     "11/24",
+     "-11/72",
+     "-1/72"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "0",
+     "-3"
+    ],
+    "d": [
+     "5/24",
+     "-1/24",
+     "-11/72",
+     "-1/72"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "02d8e527e73f375f",
+   "results_digest": "e2017aaa9c9d3ba5",
+   "score": {
+    "best_achieved_error": 6.551840392475362e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 5852.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 95,
+   "key": "a922cf3f3332d8c0",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "41/57",
+     "32/57",
+     "-29/114",
+     "-1/38"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "1/2",
+     "-5/2"
+    ],
+    "d": [
+     "25/114",
+     "7/114",
+     "-29/114",
+     "-1/38"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "26b08de6d1fd3021",
+   "results_digest": "a98877511ddde1f7",
+   "score": {
+    "best_achieved_error": 6.138496312653196e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 5852.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 129,
+   "key": "a92abf92c5e22aa3",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "421/162",
+     "-293/162",
+     "29/162",
+     "5/162"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "2",
+     "-1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1/2",
+     "-2",
+     "-3/2"
+    ],
+    "d": [
+     "97/162",
+     "-131/162",
+     "29/162",
+     "5/162"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "6cfce2fd1b82499a",
+   "results_digest": "8271f70979e262f1",
+   "score": {
+    "best_achieved_error": 7.48677329667705e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6110.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 49,
+   "key": "7a1b73546942fdbf",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "119/45",
+     "-22/15",
+     "-23/90",
+     "7/90"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "2",
+     "-1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1/2",
+     "0",
+     "-3"
+    ],
+    "d": [
+     "29/45",
+     "-7/15",
+     "-23/90",
+     "7/90"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "5b76af597920787c",
+   "results_digest": "716cd02dd1981a12",
+   "score": {
+    "best_achieved_error": 3.1503412713815014e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6120.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 81,
+   "key": "3d79373193dad26f",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "55/21",
+     "-157/84",
+     "4/21",
+     "5/84"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "2",
+     "-1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1/2",
+     "-3/2",
+     "-5/2"
+    ],
+    "d": [
+     "13/21",
+     "-73/84",
+     "4/21",
+     "5/84"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "4e58ef56e5a5725c",
+   "results_digest": "457cf4217fa1e471",
+   "score": {
+    "best_achieved_error": 7.933078849383545e-06,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6392.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 93,
+   "key": "a0b6e836ead1aa5e",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "13/15",
+     "-7/12",
+     "2/3",
+     "1/20"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "2",
+     "-1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1/2",
+     "1/2",
+     "-5/2"
+    ],
+    "d": [
+     "-17/15",
+     "5/12",
+     "2/3",
+     "1/20"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "d9d6426eab587e7f",
+   "results_digest": "5263bd8b293576c2",
+   "score": {
+    "best_achieved_error": 3.572193354614184e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6486.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 127,
+   "key": "c603ab36afd5dc61",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "121/177",
+     "101/354",
+     "23/354",
+     "-2/59"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "2",
+     "-5/2"
+    ],
+    "d": [
+     "65/354",
+     "-38/177",
+     "23/354",
+     "-2/59"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "864677de1871f3ac",
+   "results_digest": "52d4a47d4753340d",
+   "score": {
+    "best_achieved_error": 6.836188544988066e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6566.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 21,
+   "key": "21f95b330882790b",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "47/18",
+     "-2",
+     "1/3",
+     "1/18"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "2",
+     "-1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1/2",
+     "-1",
+     "-3"
+    ],
+    "d": [
+     "11/18",
+     "-1",
+     "1/3",
+     "1/18"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "54974148438ee217",
+   "results_digest": "047a8c72c7f9dced",
+   "score": {
+    "best_achieved_error": 1.290275507159051e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6579.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 2,
+   "key": "f0bed20888cd8202",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "8/51",
+     "46/51",
+     "-13/102",
+     "7/102"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "-2",
+     "-3"
+    ],
+    "d": [
+     "8/51",
+     "-5/51",
+     "-13/102",
+     "7/102"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "c634442e15c134ed",
+   "results_digest": "53721a6d02ebc9ae",
+   "score": {
+    "best_achieved_error": 5.9878589538049615e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6604.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 115,
+   "key": "b73e3a693b794b7c",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "44/105",
+     "19/42",
+     "31/210",
+     "-2/105"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "0",
+     "-5/2"
+    ],
+    "d": [
+     "-17/210",
+     "-1/21",
+     "31/210",
+     "-2/105"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "489aa80fc738be0c",
+   "results_digest": "b19ecf22ac5989ec",
+   "score": {
+    "best_achieved_error": 0.00010178948777065614,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6708.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 71,
+   "key": "91d56d4951281f14",
    "method": {
     "A": [
      [
@@ -1078,17 +1478,17 @@
       "0"
      ],
      [
-      "-1",
       "-1/2",
+      "-1",
       "-1",
       "0"
      ]
     ],
     "b": [
-     "209/300",
-     "119/300",
-     "-13/100",
-     "11/300"
+     "121/170",
+     "199/510",
+     "-37/255",
+     "11/255"
     ],
     "b_exact": false,
     "b_hat": [
@@ -1105,10 +1505,10 @@
      "-5/2"
     ],
     "d": [
-     "59/300",
-     "-31/300",
-     "-13/100",
-     "11/300"
+     "18/85",
+     "-28/255",
+     "-37/255",
+     "11/255"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -1118,13 +1518,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "c664ece207b4761c",
-   "results_digest": "bc95d2e992bc5fee",
+   "record_hash": "1dc1d4ea4b39c631",
+   "results_digest": "a4dc67b1c8448927",
    "score": {
-    "best_achieved_error": 5.737647231105857e-06,
+    "best_achieved_error": 7.109422058001662e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4244.5,
+    "median_cycles_at_target": 6733.5,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -1132,7 +1532,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T17:57:17Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -1154,9 +1554,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 13,
-   "index": 519,
-   "key": "232db335f2d2ccce",
+   "cycle": 139,
+   "index": 19,
+   "key": "ded210a93cddcea2",
    "method": {
     "A": [
      [
@@ -1172,23 +1572,23 @@
       "0"
      ],
      [
-      "-1/2",
       "-1",
+      "-1/2",
       "0",
       "0"
      ],
      [
       "-1",
-      "1/2",
+      "-1",
       "-1",
       "0"
      ]
     ],
     "b": [
-     "11/18",
-     "13/30",
-     "-23/270",
-     "11/270"
+     "335/378",
+     "13/42",
+     "-50/189",
+     "13/189"
     ],
     "b_exact": false,
     "b_hat": [
@@ -1202,13 +1602,13 @@
      "0",
      "1",
      "-3/2",
-     "-3/2"
+     "-3"
     ],
     "d": [
-     "1/9",
-     "-1/15",
-     "-23/270",
-     "11/270"
+     "73/189",
+     "-4/21",
+     "-50/189",
+     "13/189"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -1218,13 +1618,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "cbec9bda6dfc97ca",
-   "results_digest": "9a58aa1a2c711b78",
+   "record_hash": "dc59c55facfac96a",
+   "results_digest": "994da3b676a7e78a",
    "score": {
-    "best_achieved_error": 5.250289398591936e-05,
+    "best_achieved_error": 1.4092974247227754e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4244.5,
+    "median_cycles_at_target": 6784.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -1232,7 +1632,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T18:47:44Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -1254,9 +1654,109 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 106,
-   "index": 3915,
-   "key": "6a4036c7af53fb77",
+   "cycle": 139,
+   "index": 6,
+   "key": "bb237b374227e464",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "23/66",
+     "26/33",
+     "-20/99",
+     "13/198"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "-3/2",
+     "-3"
+    ],
+    "d": [
+     "23/66",
+     "-7/33",
+     "-20/99",
+     "13/198"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "1e3a56911435a50e",
+   "results_digest": "ff28c37a7044b858",
+   "score": {
+    "best_achieved_error": 1.3916458544262762e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6864.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 63,
+   "key": "3f2e91b5e3b49e4e",
    "method": {
     "A": [
      [
@@ -1272,23 +1772,123 @@
       "0"
      ],
      [
-      "1/2",
-      "-1",
+      "1",
+      "1",
       "0",
       "0"
      ],
      [
-      "-1/2",
-      "1",
-      "1",
+      "-1",
+      "-1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "41/54",
-     "25/54",
-     "-5/27",
-     "-1/27"
+     "25/36",
+     "1/4",
+     "1/12",
+     "-1/36"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "2",
+     "-3"
+    ],
+    "d": [
+     "7/36",
+     "-1/4",
+     "1/12",
+     "-1/36"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "da91aebf8f2a5a26",
+   "results_digest": "1574ab6c4e28903f",
+   "score": {
+    "best_achieved_error": 2.3918428590892953e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 6888.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 35,
+   "key": "63d536d974b98e74",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "55/306",
+     "169/306",
+     "46/153",
+     "-5/153"
     ],
     "b_exact": false,
     "b_hat": [
@@ -1302,13 +1902,13 @@
      "0",
      "1",
      "-1/2",
-     "3/2"
+     "-3"
     ],
     "d": [
-     "7/27",
-     "-1/27",
-     "-5/27",
-     "-1/27"
+     "-49/153",
+     "8/153",
+     "46/153",
+     "-5/153"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -1318,13 +1918,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "dcfb43083fd5c503",
-   "results_digest": "3b1004dfc0d7e4b8",
+   "record_hash": "90c0d61cb72170ea",
+   "results_digest": "8ffa047456af7ae4",
    "score": {
-    "best_achieved_error": 3.716387326079064e-06,
+    "best_achieved_error": 4.5262380115744587e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4244.5,
+    "median_cycles_at_target": 6944.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -1332,7 +1932,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T04:10:07Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -1354,9 +1954,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 34,
-   "index": 1207,
-   "key": "464e660ea2e569a2",
+   "cycle": 139,
+   "index": 23,
+   "key": "5d105a6f3f460345",
    "method": {
     "A": [
      [
@@ -1373,22 +1973,22 @@
      ],
      [
       "-1/2",
-      "1",
+      "-1/2",
       "0",
       "0"
      ],
      [
-      "1/2",
       "-1",
-      "-1/2",
+      "-1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "11/18",
-     "7/18",
-     "2/27",
-     "-2/27"
+     "1",
+     "7/24",
+     "-1/3",
+     "1/24"
     ],
     "b_exact": false,
     "b_hat": [
@@ -1401,14 +2001,14 @@
     "c": [
      "0",
      "1",
-     "1/2",
-     "-1"
+     "-1",
+     "-3"
     ],
     "d": [
-     "1/9",
-     "-1/9",
-     "2/27",
-     "-2/27"
+     "1/2",
+     "-5/24",
+     "-1/3",
+     "1/24"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -1418,13 +2018,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "fd3bce4c0c53b465",
-   "results_digest": "1634f9052e4ad90d",
+   "record_hash": "76a69a2ec4c23a90",
+   "results_digest": "4c45a5447af784ae",
    "score": {
-    "best_achieved_error": 3.7163873260926087e-06,
+    "best_achieved_error": 4.55866859646163e-06,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4244.5,
+    "median_cycles_at_target": 6985.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -1432,7 +2032,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T20:45:18Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -1454,9 +2054,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 61,
-   "index": 2323,
-   "key": "e0e6443513fbf870",
+   "cycle": 139,
+   "index": 12,
+   "key": "1abd6294a924da14",
    "method": {
     "A": [
      [
@@ -1466,949 +2066,49 @@
       "0"
      ],
      [
+      "-1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
       "1",
-      "0",
+      "-1",
       "0",
       "0"
      ],
      [
       "-1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
       "-1",
-      "-1/2",
-      "1/2",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "251/354",
-     "143/354",
-     "2/59",
-     "-26/177"
+     "7/4",
+     "-11/12",
+     "1/36",
+     "5/36"
     ],
     "b_exact": false,
     "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "-3/2",
-     "-1"
-    ],
-    "d": [
-     "37/177",
-     "-17/177",
-     "2/59",
-     "-26/177"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "485b2a0f33553c2a",
-   "results_digest": "89d7dacaee7b25ff",
-   "score": {
-    "best_achieved_error": 1.0221874396989092e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4279.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T22:07:28Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 100,
-   "index": 3642,
-   "key": "a8247015672fda06",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "1/2",
-      "1",
-      "0"
-     ]
-    ],
-    "b": [
-     "1/9",
-     "95/126",
-     "1/18",
-     "5/63"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
      "3/2",
-     "1/2"
-    ],
-    "d": [
-     "1/9",
-     "-31/126",
-     "1/18",
-     "5/63"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "569570acc2ef8007",
-   "results_digest": "40426a98c843f8ae",
-   "score": {
-    "best_achieved_error": 4.366225184181623e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4279.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T04:03:04Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 64,
-   "index": 2478,
-   "key": "2a630167053c66ad",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "-1/2",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "1/9",
-     "19/36",
-     "1/18",
-     "11/36"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
+     "-1/2",
      "0",
      "0"
     ],
     "b_hat_exact": true,
     "c": [
      "0",
-     "1/2",
-     "3/2",
-     "1/2"
+     "-1",
+     "0",
+     "-3"
     ],
     "d": [
-     "1/9",
-     "-17/36",
-     "1/18",
-     "11/36"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "c0e09126b01a6238",
-   "results_digest": "a51e0cef068e91f0",
-   "score": {
-    "best_achieved_error": 2.0534232087536516e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4279.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T02:20:43Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 7,
-   "index": 339,
-   "key": "f4fa8dfd89794ecf",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "-1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "56/81",
-     "65/162",
-     "-14/81",
-     "13/162"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "-3/2",
-     "-2"
-    ],
-    "d": [
-     "31/162",
-     "-8/81",
-     "-14/81",
-     "13/162"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "0393d1fd076970d9",
-   "results_digest": "0795a628369a5188",
-   "score": {
-    "best_achieved_error": 2.3034086251433896e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4313.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T17:59:49Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 76,
-   "index": 2863,
-   "key": "5b76d6663b758c93",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "1",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "47/138",
-     "95/138",
-     "-4/23",
-     "10/69"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "3/2",
-     "1/2"
-    ],
-    "d": [
-     "-11/69",
-     "13/69",
-     "-4/23",
-     "10/69"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "5b99588db462b750",
-   "results_digest": "44dca38d995e9dde",
-   "score": {
-    "best_achieved_error": 2.0407834716355558e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4313.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T03:25:24Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 70,
-   "index": 2750,
-   "key": "7924019c170895b3",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1/2",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "23/144",
-     "53/72",
-     "-7/144",
-     "11/72"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "2",
-     "3/2"
-    ],
-    "d": [
-     "23/144",
-     "-19/72",
-     "-7/144",
-     "11/72"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "a515a506f9e8cb9b",
-   "results_digest": "eb62ef328fc7ff68",
-   "score": {
-    "best_achieved_error": 2.053423208753825e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4313.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T02:29:35Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 16,
-   "index": 659,
-   "key": "6db7bc20e505f283",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "97/180",
-     "13/30",
-     "-2/45",
-     "13/180"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "-3/2",
-     "0"
-    ],
-    "d": [
-     "7/180",
-     "-1/15",
-     "-2/45",
-     "13/180"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "d5df3124172af874",
-   "results_digest": "10d08d3a49c08869",
-   "score": {
-    "best_achieved_error": 2.290759532435132e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4313.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T18:55:58Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 97,
-   "index": 3539,
-   "key": "7b40405e65862734",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1/2",
-      "1",
-      "0"
-     ]
-    ],
-    "b": [
-     "61/114",
-     "65/114",
-     "-5/171",
-     "-13/171"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "-3/2",
-     "3/2"
-    ],
-    "d": [
-     "2/57",
-     "4/57",
-     "-5/171",
-     "-13/171"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "4c9ff9a6ae5e786e",
-   "results_digest": "8e9d4386795d4be5",
-   "score": {
-    "best_achieved_error": 1.670086561892297e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4348.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T03:59:00Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 103,
-   "index": 3807,
-   "key": "5d99a0a2d0ba5095",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "1",
-      "0"
-     ]
-    ],
-    "b": [
-     "49/78",
-     "73/78",
-     "-19/39",
-     "-1/13"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "1/2",
-     "5/2"
-    ],
-    "d": [
-     "5/39",
-     "17/39",
-     "-19/39",
-     "-1/13"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "8c94c32d8c89e0ed",
-   "results_digest": "3009681223ccd315",
-   "score": {
-    "best_achieved_error": 2.6146697463415395e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4348.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T04:06:50Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 16,
-   "index": 638,
-   "key": "e557e3856344cfe7",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "41/96",
-     "7/12",
-     "19/288",
-     "-11/144"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "2",
-     "-1"
-    ],
-    "d": [
-     "41/96",
+     "1/4",
      "-5/12",
-     "19/288",
-     "-11/144"
+     "1/36",
+     "5/36"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -2418,21 +2118,21 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "fe6a0e50b151bcf6",
-   "results_digest": "ca1752e6e84d2068",
+   "record_hash": "0bcd672ad92dce7c",
+   "results_digest": "92103e4f919059ef",
    "score": {
-    "best_achieved_error": 2.0534232087534785e-05,
+    "best_achieved_error": 3.4207488312313646e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4389.0,
+    "median_cycles_at_target": 6985.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
-    "targets_reached": 32,
+    "targets_reached": 31,
     "targets_total": 32,
-    "worst_status": "reached"
+    "worst_status": "never_reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T18:55:58Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -2454,9 +2154,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 43,
-   "index": 1455,
-   "key": "b1ced1c87e1a2d08",
+   "cycle": 139,
+   "index": 123,
+   "key": "a1250276a756e6f7",
    "method": {
     "A": [
      [
@@ -2472,23 +2172,23 @@
       "0"
      ],
      [
-      "1",
       "1/2",
+      "1",
       "0",
       "0"
      ],
      [
-      "1/2",
       "-1/2",
-      "-1/2",
+      "-1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "89/126",
-     "65/126",
-     "-4/63",
-     "-10/63"
+     "329/510",
+     "29/102",
+     "5/51",
+     "-7/255"
     ],
     "b_exact": false,
     "b_hat": [
@@ -2502,13 +2202,13 @@
      "0",
      "1",
      "3/2",
-     "-1/2"
+     "-5/2"
     ],
     "d": [
-     "13/63",
-     "1/63",
-     "-4/63",
-     "-10/63"
+     "37/255",
+     "-11/51",
+     "5/51",
+     "-7/255"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -2518,13 +2218,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "7aa932bd0b56a4d9",
-   "results_digest": "249f4e9a56f535b9",
+   "record_hash": "930476c2bb134789",
+   "results_digest": "abc120bd994c9825",
    "score": {
-    "best_achieved_error": 1.1417605917833374e-05,
+    "best_achieved_error": 1.007810580459736e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4417.0,
+    "median_cycles_at_target": 7040.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -2532,7 +2232,7 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T21:25:00Z"
+   "ts": "2026-09-23T04:56:24Z"
   },
   {
    "controller": {
@@ -2554,9 +2254,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 55,
-   "index": 2030,
-   "key": "3655b7e0f20b0559",
+   "cycle": 139,
+   "index": 138,
+   "key": "adbae5997cb5c64a",
    "method": {
     "A": [
      [
@@ -2567,306 +2267,6 @@
      ],
      [
       "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1",
-      "-1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "1/9",
-     "5/6",
-     "13/36",
-     "-11/36"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "3/2",
-     "3/2"
-    ],
-    "d": [
-     "1/9",
-     "-1/6",
-     "13/36",
-     "-11/36"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "92bb29b776144a39",
-   "results_digest": "ac070ace455ca66e",
-   "score": {
-    "best_achieved_error": 2.0534232087536516e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4417.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T21:53:03Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 100,
-   "index": 3566,
-   "key": "7180e5b05a782465",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1/2",
-      "1",
-      "0"
-     ]
-    ],
-    "b": [
-     "1/9",
-     "5/6",
-     "-7/72",
-     "11/72"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "0",
-     "1",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1/2",
-     "3/2",
-     "3/2"
-    ],
-    "d": [
-     "1/9",
-     "-1/6",
-     "-7/72",
-     "11/72"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "a5922af024373d27",
-   "results_digest": "51c38c8218bfc559",
-   "score": {
-    "best_achieved_error": 2.0534232087534785e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4417.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T04:03:04Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 64,
-   "index": 2391,
-   "key": "3bf6d70fcd0b554a",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "-1/2",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "61/78",
-     "31/78",
-     "-1/39",
-     "-2/13"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "-1",
-     "-1/2"
-    ],
-    "d": [
-     "11/39",
-     "-4/39",
-     "-1/39",
-     "-2/13"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "fe96abee3e84ba3c",
-   "results_digest": "c50c87df451b6d21",
-   "score": {
-    "best_achieved_error": 2.6146697463416628e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4417.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T02:20:43Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 109,
-   "index": 3977,
-   "key": "f0473529b65818bd",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
       "0",
       "0",
       "0"
@@ -2879,336 +2279,36 @@
      ],
      [
       "1/2",
-      "1",
-      "1",
+      "-1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "23/15",
-     "-11/10",
-     "22/45",
-     "7/90"
+     "1/3",
+     "11/12",
+     "-1/3",
+     "1/12"
     ],
     "b_exact": false,
     "b_hat": [
-     "2",
-     "-1",
+     "0",
+     "1",
      "0",
      "0"
     ],
     "b_hat_exact": true,
     "c": [
      "0",
+     "1/2",
      "-1/2",
-     "-1/2",
-     "5/2"
-    ],
-    "d": [
-     "-7/15",
-     "-1/10",
-     "22/45",
-     "7/90"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "3f4487f5e4effb7f",
-   "results_digest": "e8441b0b43ad8a35",
-   "score": {
-    "best_achieved_error": 3.283908720357408e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4420.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T04:13:51Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 7,
-   "index": 379,
-   "key": "b30b91b4369d338c",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1",
-      "0",
-      "0"
-     ],
-     [
-      "-1/2",
-      "-1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "119/180",
-     "13/45",
-     "4/45",
-     "-7/180"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "3/2",
-     "-2"
-    ],
-    "d": [
-     "29/180",
-     "-19/90",
-     "4/45",
-     "-7/180"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "baa703ad8beb4985",
-   "results_digest": "06f5eb77352d586c",
-   "score": {
-    "best_achieved_error": 3.515007336011569e-05,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4420.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-17T17:59:49Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 73,
-   "index": 2783,
-   "key": "3ae7129c2e629083",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1/2",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "49/78",
-     "85/78",
-     "-22/39",
-     "-2/13"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "1/2",
-     "2"
-    ],
-    "d": [
-     "5/39",
-     "23/39",
-     "-22/39",
-     "-2/13"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "66bffb983b6f71bd",
-   "results_digest": "b05fb1c29be681b0",
-   "score": {
-    "best_achieved_error": 5.329155647877324e-06,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4451.5,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 8,
-    "targets_reached": 32,
-    "targets_total": 32,
-    "worst_status": "reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-23T02:35:07Z"
-  },
-  {
-   "controller": {
-    "alpha": "1/4",
-    "beta": "1/8",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "7/8",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 13,
-   "index": 559,
-   "key": "acf988ced24f603a",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "1/2",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "1/2",
-      "-1",
-      "0"
-     ]
-    ],
-    "b": [
-     "11/14",
-     "5/42",
-     "11/63",
-     "-5/63"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "1/2",
-     "1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "1",
-     "3/2",
      "-3/2"
     ],
     "d": [
-     "2/7",
-     "-8/21",
-     "11/63",
-     "-5/63"
+     "1/3",
+     "-1/12",
+     "-1/3",
+     "1/12"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -3218,13 +2318,13 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "17c1ce1ed899bdbe",
-   "results_digest": "47eb5e418825f150",
+   "record_hash": "99cb17924dcf88ff",
+   "results_digest": "0f830391adfac9b2",
    "score": {
-    "best_achieved_error": 3.1461052783672326e-05,
+    "best_achieved_error": 7.324420490838214e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4454.0,
+    "median_cycles_at_target": 7049.0,
     "problems_at_elite_target": 8,
     "reached_at_elite_target": 8,
     "targets_reached": 32,
@@ -3232,9 +2332,909 @@
     "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-17T18:47:44Z"
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 3,
+   "key": "a9d586ad60348d7a",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "73/108",
+     "43/108",
+     "-13/108",
+     "5/108"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "-2",
+     "-3"
+    ],
+    "d": [
+     "19/108",
+     "-11/108",
+     "-13/108",
+     "5/108"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "327708657554d590",
+   "results_digest": "5c939ca8ce431210",
+   "score": {
+    "best_achieved_error": 1.1159187190630502e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7112.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 111,
+   "key": "d1dd9a0a4c8b0573",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "7/10",
+     "1/6",
+     "1/6",
+     "-1/30"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "3/2",
+     "-5/2"
+    ],
+    "d": [
+     "1/5",
+     "-1/3",
+     "1/6",
+     "-1/30"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "c0f3448e36343b0a",
+   "results_digest": "b7598cd9e9e876d1",
+   "score": {
+    "best_achieved_error": 8.738720615131239e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7205.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 59,
+   "key": "98f214cf9287e6ec",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "427/666",
+     "59/222",
+     "38/333",
+     "-7/333"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "3/2",
+     "-3"
+    ],
+    "d": [
+     "47/333",
+     "-26/111",
+     "38/333",
+     "-7/333"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "1686787fd60f195d",
+   "results_digest": "b6f4e928f2928621",
+   "score": {
+    "best_achieved_error": 4.571077446706943e-06,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7260.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 74,
+   "key": "c18e76c62a04bc5b",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "7/15",
+     "5/6",
+     "-1/3",
+     "1/30"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "-1/2",
+     "-5/2"
+    ],
+    "d": [
+     "7/15",
+     "-1/6",
+     "-1/3",
+     "1/30"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "336ab73f41007862",
+   "results_digest": "e5a26ba7a8cb9bb4",
+   "score": {
+    "best_achieved_error": 8.738736839223961e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7260.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 99,
+   "key": "cd84e9391c40bf56",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "25/114",
+     "61/114",
+     "11/38",
+     "-5/114"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "-1/2",
+     "-5/2"
+    ],
+    "d": [
+     "-16/57",
+     "2/57",
+     "11/38",
+     "-5/114"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "36333fa51585b581",
+   "results_digest": "0f895a4ac6413f63",
+   "score": {
+    "best_achieved_error": 7.819859899175364e-06,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7260.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 8,
+   "key": "fc5409958306328e",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "61/34",
+     "-91/102",
+     "-2/51",
+     "7/51"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "3/2",
+     "-1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "-1",
+     "-1/2",
+     "-3"
+    ],
+    "d": [
+     "5/17",
+     "-20/51",
+     "-2/51",
+     "7/51"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "2780d4dad037976d",
+   "results_digest": "8d54808d808a9c88",
+   "score": {
+    "best_achieved_error": 4.9619829943916164e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7260.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 31,
+    "targets_total": 32,
+    "worst_status": "never_reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 87,
+   "key": "fbc7eadea1e99f8a",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "29/30",
+     "13/42",
+     "-1/3",
+     "2/35"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "1/2",
+     "1/2",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1",
+     "-1",
+     "-5/2"
+    ],
+    "d": [
+     "7/15",
+     "-4/21",
+     "-1/3",
+     "2/35"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "bfa938d516b8cf8d",
+   "results_digest": "26c90680d6612d1a",
+   "score": {
+    "best_achieved_error": 1.7349437978403395e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7315.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 122,
+   "key": "8bf4d830f2bb79b1",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "49/81",
+     "35/162",
+     "17/81",
+     "-5/162"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "3/2",
+     "-5/2"
+    ],
+    "d": [
+     "49/81",
+     "-127/162",
+     "17/81",
+     "-5/162"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "40b0b745eb154fc4",
+   "results_digest": "b8a7fbd8e3d60b2c",
+   "score": {
+    "best_achieved_error": 1.0067801620935156e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7353.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
+  },
+  {
+   "controller": {
+    "alpha": "1/4",
+    "beta": "1/8",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "7/8",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 139,
+   "index": 126,
+   "key": "26b5a9e6f4e3a0b6",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "19/30",
+     "5/18",
+     "7/54",
+     "-11/270"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "2",
+     "-5/2"
+    ],
+    "d": [
+     "19/30",
+     "-13/18",
+     "7/54",
+     "-11/270"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "ef0720c2c04b92d7",
+   "results_digest": "7c87a60a603c4b76",
+   "score": {
+    "best_achieved_error": 1.6730953762515473e-06,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 7410.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-23T04:56:24Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The adaptive lane archive holds 4865 measured candidates under the current code hash, of which this document ranked 173. The leading candidate shows a median of 4072 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The adaptive lane archive holds 141 measured candidates under the current code hash, of which this document ranked 141. The leading candidate shows a median of 5120 cycles at the elite target over 8 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
