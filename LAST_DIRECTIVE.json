@@ -1,5 +1,5 @@
 {
- "directive_id": "D-428A",
+ "directive_id": "D-431A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24 cells, with no five- or six-stage entries. Search both stage counts across multiple islands; a 1/256 dyadic cap narrows the discrete space while retaining substantially finer A resolution than the existing sparse archive demonstrates."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite broad archive sparsity; search nonnegative-weight dyadic tableaus to populate these stage rows while allowing the evaluator's fixed cost model to assign cycle buckets."
 }
