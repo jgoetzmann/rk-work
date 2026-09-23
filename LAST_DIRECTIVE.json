@@ -1,5 +1,5 @@
 {
- "directive_id": "D-275A",
+ "directive_id": "D-278A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both stage counts with moderate dyadic resolution and nonnegative weights to populate empty cells while favoring Q15-stable candidates."
+ "rationale": "Order 4 has only one occupied cell; search stages 5 and 6 to fill empty cells, using the widest allowed dyadic grid while requiring nonnegative weights for fixed-point robustness."
 }
