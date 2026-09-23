@@ -13,7 +13,7 @@ every cycle. People do not edit it.
 | Path | What it holds |
 | --- | --- |
 | `archive/YYYY-MM-DD.jsonl` | The scored archive for the explicit class. One record per accepted tableau, appended and never rewritten. Each record carries the verifier hash that scored it. |
-| `adaptive_archive/`, `implicit_archive/` | The two lane archives. `ledger.jsonl` is one line per candidate the lane search measured; `elites.json` is the capped, ranked list the findings site publishes. Nothing in them is scored against the pinned checker. |
+| `adaptive_archive/`, `implicit_archive/` | The two lane archives. `ledger/YYYY-MM-DD.jsonl` is one line per candidate the lane search measured, by UTC day (`ledger.jsonl` holds the lines written before the 2026-09-23 split); `elites.json` is the capped, ranked list the findings site publishes. Nothing in them is scored against the pinned checker. |
 | `sidetrack/` | The side-track measurement ledger (`ledger.jsonl`) and one JSON artifact per measured point, grouped by job. Each artifact states its own arithmetic. |
 | `validation/results.json` | The practical validation suite: Q15 and float64 error for each method on each application problem. |
 | `benchmark/results.json` | Library comparisons, matched-accuracy tables for the three classes, and measured time per step. |
@@ -33,13 +33,12 @@ single files already pass GitHub's 100 MB limit. Every record in them can be reg
 code and parameters.
 
 What the container commits, and when: every cycle, whatever it changed among the paths above,
-except today's archive file and the two lane `ledger.jsonl` files. `EPOCH.json` and `epochs/` are
-written by hand at an epoch boundary. Today's archive file goes in once its UTC day has closed.
-The ledgers grow by several megabytes a day, so they go in with the first cycle of each UTC day
-and after each container start. No file the runner stages by name is staged at 95 MiB or more,
+except today's archive file and today's lane ledger files, which go in once their UTC day has
+closed. `EPOCH.json` and `epochs/` are written by hand at an epoch boundary. No file the runner
+stages by name is staged at 95 MiB or more,
 because GitHub refuses a push carrying a file of 100 MiB or more and every later push would fail
 on it. The runner logs `commit_skipped_oversize` instead and the file stays on disk. See
-`rk-harness/docs/DECISIONS.md` D46.
+`rk-harness/docs/DECISIONS.md` D46 and D47.
 
 ## What the public sites read
 
