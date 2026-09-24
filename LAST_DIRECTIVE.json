@@ -1,24 +1,16 @@
 {
- "directive_id": "D-1079A",
+ "directive_id": "D-1094",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  5,
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 256,
-  "c_fixed": {
-   "1": "1/2"
-  },
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Target the empty order-4 five-stage cells, including current cell (5,3). A dyadic midpoint second stage and one forced zero narrow the search toward Q15-friendly tableaus with fewer coefficient multiplies; nonnegative weights favor robust fixed-point accumulation."
+ "rationale": "Order 4 has only one filled cell and none at 5 or 6 stages; search both stage counts broadly under native Q15 dyadic resolution, with nonnegative exact-order weights to favor robust fixed-point behavior."
 }
