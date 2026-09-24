@@ -1,15 +1,14 @@
 {
- "directive_id": "D-965A",
+ "directive_id": "D-974O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
+  4,
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1 of 24 cells; stages 5 and 6 are entirely empty. A moderate dyadic denominator cap narrows the search toward Q15-friendly coefficients while retaining enough flexibility to satisfy fourth-order conditions exactly."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search all feasible stage counts without additional restrictions to maximize coverage and potentially fill the current (6,3) cell."
 }
