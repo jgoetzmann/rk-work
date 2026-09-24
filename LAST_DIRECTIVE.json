@@ -1,5 +1,5 @@
 {
- "directive_id": "D-872A",
+ "directive_id": "D-875O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one filled cell and no samples at stages 5 or 6. Search both under a moderate dyadic grid with nonnegative weights to target the many empty cells while preserving broad tableau diversity."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts with moderate dyadic resolution and nonnegative weights to target their empty cycle buckets."
 }
