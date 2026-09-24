@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1139",
+ "directive_id": "D-1142",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells; high-resolution dyadic A and nonnegative exact b target feasible, stable tableaus across their empty cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples; a broad high-resolution dyadic search with nonnegative weights targets this major archive gap, including the current six-stage region."
 }
