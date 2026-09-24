@@ -1,14 +1,13 @@
 {
- "directive_id": "D-884A",
+ "directive_id": "D-899",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  5,
+  6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 at five stages is entirely empty; a high dyadic denominator preserves coefficient resolution while targeting the current five-stage region."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts broadly to fill empty cells and establish their attainable held-out error across cycle buckets."
 }
