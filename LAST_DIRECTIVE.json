@@ -1,16 +1,13 @@
 {
- "directive_id": "D-989A",
+ "directive_id": "D-1004A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells. A small dyadic grid favors low-cost Q15 coefficients, while nonnegative exact b narrows toward stable candidates; multiple islands address the rarity of feasible fourth-order tableaus."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families broadly to fill empty cycle buckets and establish held-out baselines without imposing unsupported coefficient structure."
 }
