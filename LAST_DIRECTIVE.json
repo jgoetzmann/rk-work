@@ -1,5 +1,5 @@
 {
- "directive_id": "D-767A",
+ "directive_id": "D-770A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite substantial order-3 yield. Explore nonnegative-weight, low-denominator dyadic tableaus to seed empty order-4 cells across cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty; search a tractable low-denominator, nonnegative-weight subset for Q15 candidates across multiple cycle buckets."
 }
