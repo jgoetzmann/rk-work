@@ -1,16 +1,13 @@
 {
- "directive_id": "D-467O4",
+ "directive_id": "D-470A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both higher-stage rows with moderate dyadic resolution and nonnegative weights to target their empty cycle buckets."
+ "rationale": "Order-4 coverage is only 1/24 cells, with no five- or six-stage records. Search both stage counts broadly to fill empty cells and establish whether added stages improve held-out error at comparable cycle buckets."
 }
