@@ -1,13 +1,14 @@
 {
- "directive_id": "D-878H17",
- "hypothesis_id": "H-017",
- "target_order": 3,
+ "directive_id": "D-884A",
+ "hypothesis_id": null,
+ "target_order": 4,
  "stages": [
-  4,
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather additional matched four- and five-stage order-3 samples to resolve H-017 while improving weak or empty cycle-bucket cells."
+ "rationale": "Order 4 at five stages is entirely empty; a high dyadic denominator preserves coefficient resolution while targeting the current five-stage region."
 }
