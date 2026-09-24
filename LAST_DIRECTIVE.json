@@ -1,5 +1,5 @@
 {
- "directive_id": "D-569A",
+ "directive_id": "D-0584",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24 cells, with no five- or six-stage cells filled. Search both stage counts using moderately fine dyadic A coefficients and nonnegative exact b weights to target feasible, robust tableaus across empty cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells, while only two order-4 stage-4 samples exist. Search higher-stage nonnegative-weight tableaus at full Q15 dyadic resolution to populate empty cells and reduce deterministic accumulation from sign-mixed final weights."
 }
