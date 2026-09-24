@@ -1,13 +1,16 @@
 {
- "directive_id": "D-482O4",
+ "directive_id": "D-485A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts broadly to fill empty cells and establish higher-stage baselines."
+ "rationale": "Order 4 has only one occupied cell and just two archived samples. Search 5- and 6-stage methods with full Q15 dyadic resolution; nonnegative weights narrow the space toward numerically stable candidates while targeting entirely empty stage rows."
 }
