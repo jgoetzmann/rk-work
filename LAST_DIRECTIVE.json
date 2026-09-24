@@ -1,15 +1,15 @@
 {
- "directive_id": "D-809H016",
- "hypothesis_id": "H-016",
- "target_order": 3,
+ "directive_id": "D-824A",
+ "hypothesis_id": null,
+ "target_order": 4,
  "stages": [
-  4,
-  5
+  5,
+  6
  ],
  "constraints": {
   "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather additional order-3 four- versus five-stage samples for H-016 while allowing broad dyadic resolution; both stage counts have competitive incumbents, and five stages currently has lower held-out error."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite extra degrees of freedom beyond the order conditions. A broad high-resolution dyadic search with maximum multistart budget targets these entirely empty rows while preserving Q15-compatible A coefficients."
 }
