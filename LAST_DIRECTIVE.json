@@ -1,5 +1,5 @@
 {
- "directive_id": "D-917A",
+ "directive_id": "D-920A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite extensive order-3 coverage. Search nonnegative-weight, full-Q15-dyadic A tableaus across both stage counts to fill empty order-4 cells and exploit extra stages for lower held-out fixed-point error."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite the lone stage-4 result being weak. Search both higher-stage families with a moderate dyadic grid and nonnegative exact weights to pursue lower held-out Q15 error across empty cycle buckets."
 }
