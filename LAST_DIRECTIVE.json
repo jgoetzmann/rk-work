@@ -1,5 +1,5 @@
 {
- "directive_id": "D-620A",
+ "directive_id": "D-623A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples; extra stages provide degrees of freedom to satisfy exact order conditions while optimizing Q15 held-out error across cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at five or six stages. Search both stage counts with moderate dyadic resolution and nonnegative weights to populate empty cells while limiting Q15 coefficient complexity."
 }
