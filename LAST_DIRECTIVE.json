@@ -1,5 +1,5 @@
 {
- "directive_id": "D-824A",
+ "directive_id": "D-839A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite extra degrees of freedom beyond the order conditions. A broad high-resolution dyadic search with maximum multistart budget targets these entirely empty rows while preserving Q15-compatible A coefficients."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty; search moderate-denominator dyadic A coefficients with nonnegative exact-order weights to populate comparable cycle buckets, including the current six-stage bucket-4 region."
 }
