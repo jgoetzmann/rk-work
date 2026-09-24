@@ -1,16 +1,13 @@
 {
- "directive_id": "D-875O4",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-878H17",
+ "hypothesis_id": "H-017",
+ "target_order": 3,
  "stages": [
-  5,
-  6
+  4,
+  5
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts with moderate dyadic resolution and nonnegative weights to target their empty cycle buckets."
+ "rationale": "Gather additional matched four- and five-stage order-3 samples to resolve H-017 while improving weak or empty cycle-bucket cells."
 }
