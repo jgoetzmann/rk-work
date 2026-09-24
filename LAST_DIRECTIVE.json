@@ -1,5 +1,5 @@
 {
- "directive_id": "D-626A",
+ "directive_id": "D-629A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no archived samples or occupied cells; search moderate-denominator nonnegative-weight tableaus to establish coverage across their cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty; search moderate-denominator nonnegative-weight tableaus to populate these cells and limit Q15 coefficient complexity."
 }
