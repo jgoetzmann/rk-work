@@ -1,5 +1,5 @@
 {
- "directive_id": "D-899",
+ "directive_id": "D-911A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts broadly to fill empty cells and establish their attainable held-out error across cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts broadly to fill empty cells and improve coverage after the prolonged stall."
 }
