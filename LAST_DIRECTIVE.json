@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0449",
+ "directive_id": "D-464O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty. Search moderate-denominator dyadic A coefficients with nonnegative exact-order weights to populate these cells, including the current six-stage cycle region."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both empty stage rows with broad Q15-compatible dyadic resolution; nonnegative weights narrow the space toward stable candidates while preserving multiple cycle buckets."
 }
