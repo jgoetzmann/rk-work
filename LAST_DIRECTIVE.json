@@ -1,6 +1,6 @@
 {
- "directive_id": "D-803H014",
- "hypothesis_id": "H-014",
+ "directive_id": "D-806H015",
+ "hypothesis_id": "H-015",
  "target_order": 3,
  "stages": [
   4,
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather matched fast- and slow-cost samples for the open five-stage versus four-stage order-3 comparison; both stage counts have established feasible cells, while several higher cycle buckets remain empty."
+ "rationale": "Gather balanced additional samples for open H-015 while improving the weak order-3 four-stage cells and the current best-performing five-stage region."
 }
