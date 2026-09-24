@@ -1,13 +1,13 @@
 {
- "directive_id": "D-635P4",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-638H010",
+ "hypothesis_id": "H-010",
+ "target_order": 3,
  "stages": [
-  5,
-  6
+  4,
+  5
  ],
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families broadly to fill empty cycle buckets and test whether added stages improve held-out error over the weak four-stage incumbent."
+ "rationale": "Gather matched order-3 four- and five-stage samples to resolve H-010; the five-stage best held-out error is lower, while both stage counts retain empty cycle buckets."
 }
