@@ -1,5 +1,5 @@
 {
- "directive_id": "D-923A",
+ "directive_id": "D-929A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A coarse dyadic grid and nonnegative weights narrow the search toward Q15-friendly tableaus while exploring the empty higher-stage cells."
+ "rationale": "Order 4 is severely underfilled, with every searchable five- and six-stage cell empty. Search both stage counts with the full Q15 dyadic resolution and no structural sign or sparsity restrictions to maximize the chance of finding feasible tableaus across cycle buckets."
 }
