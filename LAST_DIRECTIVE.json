@@ -1,17 +1,30 @@
 {
- "directive_id": "D-0524A",
+ "directive_id": "D-527A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
   5,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24, with stages 5 and 6 entirely empty and stage 4 supported by just two samples. Search dyadic, nonnegative-weight tableaus across all feasible order-4 stage counts to improve the weak occupied cell and populate empty cycle buckets."
+ "rationale": "Order 4 is nearly empty beyond four stages. Search sparse five- and six-stage tableaus to populate moderate-cycle cells; three forced zeros reduce multiply cost, while denominator 256 retains useful dyadic resolution and nonnegative weights favor Q15 robustness."
 }
