@@ -1,5 +1,5 @@
 {
- "directive_id": "D-659A",
+ "directive_id": "D-674A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at five or six stages. Search both stage counts with the full Q15 dyadic denominator range to maximize the chance of filling empty cells, including the current five-stage cycle region."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty. A moderate dyadic cap favors shift-friendly Q15 coefficients while exact order-condition solving and nonnegative weights constrain the search toward stable, implementable tableaux."
 }
