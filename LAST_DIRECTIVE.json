@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1028A",
+ "directive_id": "D-1031A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is nearly empty, with no archived 5- or 6-stage cells. Search both higher-stage families using the native Q15 dyadic grid and nonnegative weights; their extra degrees of freedom may reduce held-out error while multiple islands address the nonconvex search."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells. A moderate dyadic grid and nonnegative exact b weights narrow the search toward Q15-friendly tableaus while allowing multiple cycle buckets to be reached."
 }
