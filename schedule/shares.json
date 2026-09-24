@@ -1,8 +1,8 @@
 {
  "_meta": {
   "cycles_schema": "schedule-cycles/1",
-  "generated_cycle": 836,
-  "generated_ts": "2026-09-24T12:52:45Z",
+  "generated_cycle": 837,
+  "generated_ts": "2026-09-24T12:55:47Z",
   "lane_max_seconds": 72.0,
   "lanes": [
    "explicit",
@@ -18,7 +18,7 @@
   "rows_discarded": 0,
   "rows_discarded_by_reason": {},
   "rows_read": 200,
-  "rows_without_productive_seconds": 66,
+  "rows_without_productive_seconds": 67,
   "schedule": "EAI",
   "schema": "schedule-shares/1",
   "schema_doc": "'lanes' is what happened, aggregated from rk-work/schedule/cycles.jsonl over the last window_cycles rows; 'scheduled_share' is what the schedule string asks for; 'drift' is the scheduled share subtracted from the measured one, per lane. Shares are fractions of the recorded wall seconds in the window, not of the day. Rows that cannot be counted are discarded and counted by reason in _meta, never averaged in",
@@ -29,28 +29,28 @@
   "window_cycles": 200
  },
  "drift": {
-  "adaptive": -0.09163356796213404,
-  "explicit": 0.18228633815978063,
-  "implicit": -0.09065277019764656
+  "adaptive": -0.0960858647976357,
+  "explicit": 0.18766884493326635,
+  "implicit": -0.09158298013563065
  },
  "lanes": {
   "adaptive": {
-   "cycles": 67,
-   "lane_records_appended": 25203,
+   "cycles": 66,
+   "lane_records_appended": 25050,
    "points_measured": 0,
-   "productive_seconds": 4856.1169394501485,
+   "productive_seconds": 4783.524510385119,
    "records_appended": 0,
-   "seconds": 5938.359196863021,
-   "share": 0.24169976537119928
+   "seconds": 5851.398803631077,
+   "share": 0.23724746853569761
   },
   "explicit": {
-   "cycles": 66,
+   "cycles": 67,
    "lane_records_appended": 0,
    "points_measured": 0,
    "productive_seconds": 0.0,
-   "records_appended": 6277,
-   "seconds": 12668.340052346117,
-   "share": 0.5156196714931139
+   "records_appended": 6389,
+   "seconds": 12849.837941009086,
+   "share": 0.5210021782665997
   },
   "implicit": {
    "cycles": 67,
@@ -59,7 +59,7 @@
    "productive_seconds": 4876.282143792952,
    "records_appended": 0,
    "seconds": 5962.456569965812,
-   "share": 0.24268056313568676
+   "share": 0.24175035319770266
   }
  },
  "scheduled_share": {
@@ -67,13 +67,13 @@
   "explicit": 0.3333333333333333,
   "implicit": 0.3333333333333333
  },
- "statement": "Over 200 recorded cycles and 24569.2 recorded seconds the measured split was explicit 51.5620, adaptive 24.1700, implicit 24.2681 percent. The schedule 'EAI' asks for explicit 33.3333, adaptive 33.3333, implicit 33.3333 percent.",
+ "statement": "Over 200 recorded cycles and 24663.7 recorded seconds the measured split was explicit 52.1002, adaptive 23.7247, implicit 24.1750 percent. The schedule 'EAI' asks for explicit 33.3333, adaptive 33.3333, implicit 33.3333 percent.",
  "window": {
-  "first_cycle": 637,
-  "first_ts": "2026-09-24T06:03:19Z",
-  "last_cycle": 836,
-  "last_ts": "2026-09-24T12:52:45Z",
-  "span_seconds": 24566.0,
-  "wall_seconds": 24569.15581917495
+  "first_cycle": 638,
+  "first_ts": "2026-09-24T06:04:47Z",
+  "last_cycle": 837,
+  "last_ts": "2026-09-24T12:55:47Z",
+  "span_seconds": 24660.0,
+  "wall_seconds": 24663.693314605975
  }
 }
