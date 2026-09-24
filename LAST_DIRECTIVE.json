@@ -1,16 +1,15 @@
 {
- "directive_id": "D-797A",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-0800",
+ "hypothesis_id": "H-013",
+ "target_order": 3,
  "stages": [
-  5,
-  6
+  4,
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is nearly empty, with no archived 5- or 6-stage cells. Search both stage counts using coarse dyadic A coefficients and nonnegative exact b weights to target Q15-friendly tableaus across currently empty cycle buckets."
+ "rationale": "Gather additional order-3 four- and five-stage samples to resolve H-013 while allowing the broadest permitted dyadic A grid; both stage counts have populated but improvable fast cells and several empty cycle buckets."
 }
