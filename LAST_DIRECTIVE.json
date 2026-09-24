@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1019A",
+ "directive_id": "D-1022A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite offering extra degrees of freedom beyond the weak 4-stage incumbent; broad Q15 dyadic search with multiple islands targets new cycle buckets and lower held-out error."
+ "rationale": "Order 4 is severely underexplored: only one cell is filled and neither 5- nor 6-stage candidates exist. Search both higher-stage families at full dyadic resolution with multiple islands to expose feasible tableaus and fill weak or empty cycle buckets."
 }
