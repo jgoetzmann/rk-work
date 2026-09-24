@@ -1,5 +1,5 @@
 {
- "directive_id": "D-539A",
+ "directive_id": "D-542O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families with Q15-friendly dyadic A coefficients and nonnegative exact b weights to populate empty cycle buckets and improve robustness."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples. Search nonnegative-weight dyadic tableaus across both stage counts to populate this sparse frontier and compare attainable held-out error at equal cycle buckets."
 }
