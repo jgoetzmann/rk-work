@@ -1,5 +1,5 @@
 {
- "directive_id": "D-605A",
+ "directive_id": "D-608A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty; extra stages provide degrees of freedom to reduce held-out fixed-point error while Q15 dyadic snapping preserves the deployment coefficient grid."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty; extra stages provide degrees of freedom to reduce Q15 held-out error, while a 256 dyadic cap and nonnegative weights narrow the search toward quantization-friendly tableaus."
 }
