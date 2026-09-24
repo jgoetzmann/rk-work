@@ -1,16 +1,13 @@
 {
- "directive_id": "D-1142",
+ "directive_id": "D-1145",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples; a broad high-resolution dyadic search with nonnegative weights targets this major archive gap, including the current six-stage region."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; a broad multi-island search targets these empty cells without imposing unsupported structural restrictions."
 }
