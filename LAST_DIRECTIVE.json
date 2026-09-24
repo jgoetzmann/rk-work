@@ -1,5 +1,5 @@
 {
- "directive_id": "D-869A",
+ "directive_id": "D-872A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells; search nonnegative-weight tableaus on a moderate dyadic grid to seed these empty archive rows across cycle buckets."
+ "rationale": "Order 4 has only one filled cell and no samples at stages 5 or 6. Search both under a moderate dyadic grid with nonnegative weights to target the many empty cells while preserving broad tableau diversity."
 }
