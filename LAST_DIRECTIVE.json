@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0764",
+ "directive_id": "D-767A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one filled cell and no samples at stages 5 or 6. Search both higher-stage families with broad Q15-compatible dyadic resolution; nonnegative weights narrow the space toward stable candidates while targeting entirely empty archive rows."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite substantial order-3 yield. Explore nonnegative-weight, low-denominator dyadic tableaus to seed empty order-4 cells across cycle buckets."
 }
