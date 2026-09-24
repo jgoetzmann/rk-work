@@ -1,15 +1,13 @@
 {
- "directive_id": "D-0800",
- "hypothesis_id": "H-013",
+ "directive_id": "D-803H014",
+ "hypothesis_id": "H-014",
  "target_order": 3,
  "stages": [
   4,
   5
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather additional order-3 four- and five-stage samples to resolve H-013 while allowing the broadest permitted dyadic A grid; both stage counts have populated but improvable fast cells and several empty cycle buckets."
+ "rationale": "Gather matched fast- and slow-cost samples for the open five-stage versus four-stage order-3 comparison; both stage counts have established feasible cells, while several higher cycle buckets remain empty."
 }
