@@ -1,5 +1,5 @@
 {
- "directive_id": "D-554P4",
+ "directive_id": "D-569A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,9 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 32,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is weakest: only one cell is filled, while stages 5 and 6 have no archived cells. Search both higher-stage families at full Q15 dyadic resolution to target empty cells, including the current (6,4) cell."
+ "rationale": "Order-4 coverage is only 1/24 cells, with no five- or six-stage cells filled. Search both stage counts using moderately fine dyadic A coefficients and nonnegative exact b weights to target feasible, robust tableaus across empty cycle buckets."
 }
