@@ -1,5 +1,5 @@
 {
- "directive_id": "D-857A",
+ "directive_id": "D-860O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both under the native Q15 dyadic ceiling with nonnegative weights to target the many empty higher-stage cycle buckets and improve numerical robustness."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite the weak 4-stage incumbent. Search nonnegative-weight, low-denominator dyadic families to populate new cycle buckets while favoring Q15-friendly coefficients."
 }
