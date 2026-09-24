@@ -1,5 +1,5 @@
 {
- "directive_id": "D-686A",
+ "directive_id": "D-689A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A denominator cap of 16 favors shift-friendly Q15 coefficients, while nonnegative weights narrow the search toward stable candidates for empty cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells. A denominator cap of 16 emphasizes shift-friendly Q15 coefficients, while nonnegative exact b weights narrow the search toward stable candidates; eight islands address the prolonged stall."
 }
