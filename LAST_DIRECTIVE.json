@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1094",
+ "directive_id": "D-1109A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -8,9 +8,14 @@
  ],
  "constraints": {
   "dyadic_denominator_max": 32768,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one filled cell and none at 5 or 6 stages; search both stage counts broadly under native Q15 dyadic resolution, with nonnegative exact-order weights to favor robust fixed-point behavior."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty. Fixing the first three abscissae to the dyadic classical RK4 pattern preserves a known feasible order-4 backbone while leaving later stages and exact b weights available to improve held-out error and populate new cycle buckets."
 }
