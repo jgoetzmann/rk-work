@@ -1,5 +1,5 @@
 {
- "directive_id": "D-851O4",
+ "directive_id": "D-0854",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families with moderate dyadic resolution and nonnegative exact weights to populate empty cycle buckets and improve fixed-point robustness."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A moderate dyadic grid and nonnegative exact weights narrow the search toward stable Q15 tableaus while allowing the evaluator to discover multiple cycle buckets."
 }
