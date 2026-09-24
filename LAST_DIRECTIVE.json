@@ -1,5 +1,5 @@
 {
- "directive_id": "D-464O4",
+ "directive_id": "D-467O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both empty stage rows with broad Q15-compatible dyadic resolution; nonnegative weights narrow the space toward stable candidates while preserving multiple cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both higher-stage rows with moderate dyadic resolution and nonnegative weights to target their empty cycle buckets."
 }
