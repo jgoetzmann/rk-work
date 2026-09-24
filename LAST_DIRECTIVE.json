@@ -1,15 +1,16 @@
 {
- "directive_id": "D-1040",
+ "directive_id": "D-1043",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
+  5,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage cells are entirely empty, including the current (6,4) cell. A moderate dyadic grid with nonnegative exact weights narrows the search toward Q15-friendly tableaus while retaining substantially more freedom than the sparsely sampled four-stage family."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both stage counts with moderately fine dyadic A coefficients and nonnegative exact-order weights to populate empty cells and seek lower held-out error across cycle buckets."
 }
