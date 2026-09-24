@@ -1,5 +1,5 @@
 {
- "directive_id": "D-677A",
+ "directive_id": "D-680A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite extensive order-3 sampling. Search nonnegative-weight tableaux on a shift-friendly dyadic grid to populate these empty cells across cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples. A denominator cap of 16 emphasizes shift-friendly Q15 coefficients, while nonnegative exact weights narrow the search toward stable candidates across empty cycle buckets."
 }
