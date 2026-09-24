@@ -1,6 +1,6 @@
 {
- "directive_id": "D-641H011",
- "hypothesis_id": "H-011",
+ "directive_id": "D-0644",
+ "hypothesis_id": "H-012",
  "target_order": 3,
  "stages": [
   4,
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced additional samples for the open fast-versus-slow cost-model ranking hypothesis comparing order-3 four- and five-stage methods; the five-stage archive currently has lower best held-out error."
+ "rationale": "Gather matched four- and five-stage order-3 samples to resolve H-012 while improving weak or empty cycle buckets for both stage counts."
 }
