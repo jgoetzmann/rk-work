@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1133",
+ "directive_id": "D-1136",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -8,12 +8,9 @@
  ],
  "constraints": {
   "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2"
-  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty. A low dyadic cap and midpoint second stage focus the search on Q15-exact, low-cost coefficients, while nonnegative exact-solved weights limit quantization-driven stage-error amplification."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty. A coarse dyadic lattice includes common half-step and quarter-step structures, while nonnegative exact b weights narrow the search toward stable Q15 candidates across multiple cycle buckets."
 }
