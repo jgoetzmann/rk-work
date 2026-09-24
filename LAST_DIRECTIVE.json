@@ -1,5 +1,5 @@
 {
- "directive_id": "D-680A",
+ "directive_id": "D-683A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples. A denominator cap of 16 emphasizes shift-friendly Q15 coefficients, while nonnegative exact weights narrow the search toward stable candidates across empty cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both with low-denominator dyadic A coefficients to favor shift-based Q15 schedules while exact nonnegative b solutions limit cancellation and rounding amplification."
 }
