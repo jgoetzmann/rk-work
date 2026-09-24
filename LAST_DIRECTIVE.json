@@ -1,5 +1,5 @@
 {
- "directive_id": "D-689A",
+ "directive_id": "D-0704",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,28 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    3
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells. A denominator cap of 16 emphasizes shift-friendly Q15 coefficients, while nonnegative exact b weights narrow the search toward stable candidates; eight islands address the prolonged stall."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty, including current cell (6,3). Sparse dyadic A targets lower-cycle buckets while exact order-condition solving for nonnegative b preserves feasibility and broadens coverage beyond the weak two-sample stage-4 baseline."
 }
