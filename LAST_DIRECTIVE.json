@@ -1,5 +1,5 @@
 {
- "directive_id": "D-488O4",
+ "directive_id": "D-491A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both higher-stage families with fine dyadic resolution; nonnegative weights narrow the space toward stable Q15 candidates that can populate currently empty cells."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty. A low dyadic cap and nonnegative exact weights narrow the search toward Q15-friendly tableaus while using multiple islands to explore both stage counts."
 }
