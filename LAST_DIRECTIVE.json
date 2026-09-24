@@ -1,15 +1,13 @@
 {
- "directive_id": "D-782A",
+ "directive_id": "D-785A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite extensive order-3 sampling; use broad dyadic resolution and maximum parallel budget to seek the first feasible higher-stage order-4 entries across cycle buckets."
+ "rationale": "Order-4 coverage is only 1 of 24 cells, with no archived five- or six-stage methods. Search both stage counts broadly to populate empty cells and improve the chance of feasible exact-order tableaus."
 }
