@@ -1,26 +1,25 @@
 {
- "directive_id": "D-1049P4",
+ "directive_id": "D-1052",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5,
   6
  ],
  "constraints": {
   "force_zero": [
    [
-    4,
+    2,
     0
    ],
    [
-    5,
-    0
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 256,
+  "dyadic_denominator_max": 64,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells. Sparse first-column couplings can reduce Q15 multiply cost and explore lower cycle buckets, while denominator 256 and nonnegative exact weights focus the stalled search on implementable stable candidates."
+ "rationale": "Order-4 stage-6 is entirely empty, including the current cycle bucket 3. Two forced zeros reduce A-side multiply cost, while denominator 64 retains a useful dyadic coefficient grid and nonnegative exact b weights favor Q15 stability."
 }
