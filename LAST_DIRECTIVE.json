@@ -1,21 +1,16 @@
 {
- "directive_id": "D-533A",
+ "directive_id": "D-536A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
+  5,
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32768,
-  "b_nonneg": false
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 six-stage cells are entirely empty, including the current (6,4) cell. A single late-stage zero narrows the search toward lower-cycle tableaus while retaining Q15 dyadic resolution and allowing signed exact order-condition solutions for b."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells, while only the 4-stage bucket-2 cell is filled. Search both higher-stage families with broad dyadic resolution and nonnegative exact-order weights to maximize the chance of filling new cycle buckets."
 }
