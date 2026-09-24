@@ -1,5 +1,5 @@
 {
- "directive_id": "D-944A",
+ "directive_id": "D-0956",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24 cells, with no archived five- or six-stage tableau. Search both higher-stage families broadly to populate empty cells and test whether added stages can reduce Q15 held-out error within the existing cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; concentrate the stalled search on these empty stage rows with maximal island diversity."
 }
