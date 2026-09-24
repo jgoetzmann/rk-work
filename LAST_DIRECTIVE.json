@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1109A",
+ "directive_id": "D-1124",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -8,14 +8,9 @@
  ],
  "constraints": {
   "dyadic_denominator_max": 32768,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
-  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty. Fixing the first three abscissae to the dyadic classical RK4 pattern preserves a known feasible order-4 backbone while leaving later stages and exact b weights available to improve held-out error and populate new cycle buckets."
+ "rationale": "Order 4 is nearly empty, with no archived five- or six-stage cells. A broad high-resolution dyadic search with nonnegative solved weights targets this largest coverage gap while allowing both stage counts to compete across cycle buckets."
 }
