@@ -1,5 +1,5 @@
 {
- "directive_id": "D-614A",
+ "directive_id": "D-0617",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells; extra stages provide degrees of freedom to satisfy exact order conditions while optimizing Q15 held-out error across cycle buckets."
+ "rationale": "Order-4 coverage is only 1/24 cells; five- and six-stage cells are entirely empty. Extra stages provide degrees of freedom to reduce Q15 rounding and held-out error while the broad dyadic grid preserves diversity across cycle buckets."
 }
