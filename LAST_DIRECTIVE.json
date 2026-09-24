@@ -1,5 +1,5 @@
 {
- "directive_id": "D-629A",
+ "directive_id": "D-632A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty; search moderate-denominator nonnegative-weight tableaus to populate these cells and limit Q15 coefficient complexity."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells, while stage 4 has only one weak cell. Search nonnegative-weight methods on a moderate dyadic grid to populate these sparse rows and potentially improve held-out Q15 error at comparable cycle buckets."
 }
