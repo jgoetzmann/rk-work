@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0704",
+ "directive_id": "D-719A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -14,15 +14,15 @@
    ],
    [
     3,
-    1
+    0
    ],
    [
     4,
-    2
+    0
    ],
    [
     5,
-    3
+    0
    ]
   ],
   "dyadic_denominator_max": 32,
@@ -30,5 +30,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty, including current cell (6,3). Sparse dyadic A targets lower-cycle buckets while exact order-condition solving for nonnegative b preserves feasibility and broadens coverage beyond the weak two-sample stage-4 baseline."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty. Sparse first-column structure targets lower cycle buckets, including current cell (6,3), while denominator 32 preserves useful dyadic resolution and nonnegative weights favor Q15 robustness."
 }
