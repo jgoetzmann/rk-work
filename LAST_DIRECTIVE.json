@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0854",
+ "directive_id": "D-857A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 32768,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A moderate dyadic grid and nonnegative exact weights narrow the search toward stable Q15 tableaus while allowing the evaluator to discover multiple cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both under the native Q15 dyadic ceiling with nonnegative weights to target the many empty higher-stage cycle buckets and improve numerical robustness."
 }
