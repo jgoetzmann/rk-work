@@ -1,5 +1,5 @@
 {
- "directive_id": "D-527A",
+ "directive_id": "D-530A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,24 +7,10 @@
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ],
-   [
-    5,
-    1
-   ]
-  ],
   "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 is nearly empty beyond four stages. Search sparse five- and six-stage tableaus to populate moderate-cycle cells; three forced zeros reduce multiply cost, while denominator 256 retains useful dyadic resolution and nonnegative weights favor Q15 robustness."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families with a moderate dyadic grid and nonnegative exact weights to target their empty cycle buckets."
 }
