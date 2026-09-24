@@ -1,5 +1,5 @@
 {
- "directive_id": "D-794A",
+ "directive_id": "D-797A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one filled cell and no records at stages 5 or 6; broad high-resolution dyadic searches with nonnegative weights target these empty rows."
+ "rationale": "Order-4 coverage is nearly empty, with no archived 5- or 6-stage cells. Search both stage counts using coarse dyadic A coefficients and nonnegative exact b weights to target Q15-friendly tableaus across currently empty cycle buckets."
 }
