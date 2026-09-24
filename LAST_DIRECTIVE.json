@@ -1,5 +1,5 @@
 {
- "directive_id": "D-542O4",
+ "directive_id": "D-545A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples. Search nonnegative-weight dyadic tableaus across both stage counts to populate this sparse frontier and compare attainable held-out error at equal cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty; search nonnegative-weight dyadic tableaus to populate those cells, with emphasis on the current six-stage region."
 }
