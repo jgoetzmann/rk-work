@@ -1,5 +1,5 @@
 {
- "directive_id": "D-599A",
+ "directive_id": "D-605A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 is sparsest, with every searchable 5- and 6-stage cell empty. Extra stages leave degrees of freedom to reduce Q15 held-out error; the full Q15 dyadic denominator avoids prematurely excluding useful coefficients."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty; extra stages provide degrees of freedom to reduce held-out fixed-point error while Q15 dyadic snapping preserves the deployment coefficient grid."
 }
