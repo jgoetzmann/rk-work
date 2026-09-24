@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1127O4",
+ "directive_id": "D-1130",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24; stages 5 and 6 are entirely empty, including current cell (6,4). Search full Q15 dyadic resolution with nonnegative exact-order weights, using broad island diversity to address the prolonged stall."
+ "rationale": "Order 4 has only one filled cell and no samples at stages 5 or 6. Search both under fine Q15-compatible dyadic snapping; nonnegative weights narrow the space toward reduced error amplification while allowing multiple cycle buckets."
 }
