@@ -1,5 +1,5 @@
 {
- "directive_id": "D-470A",
+ "directive_id": "D-473A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is only 1/24 cells, with no five- or six-stage records. Search both stage counts broadly to fill empty cells and establish whether added stages improve held-out error at comparable cycle buckets."
+ "rationale": "Order 4 is severely underfilled, with only one occupied cell and no samples at 5 or 6 stages. Search both higher-stage families broadly to maximize the chance of filling empty cycle buckets and establishing competitive held-out baselines."
 }
