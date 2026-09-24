@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1043",
+ "directive_id": "D-1046",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both stage counts with moderately fine dyadic A coefficients and nonnegative exact-order weights to populate empty cells and seek lower held-out error across cycle buckets."
+ "rationale": "Order 4 has only one filled cell and no samples at stages 5 or 6; search both under a moderate dyadic grid with nonnegative exact weights to populate empty cells across cycle buckets."
 }
