@@ -1,15 +1,17 @@
 {
- "directive_id": "D-509A",
+ "directive_id": "D-0524A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
+  4,
   5,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at 5 or 6 stages. Search both stage counts with the full Q15 dyadic resolution to maximize feasibility under the exact order conditions and populate currently empty cycle buckets."
+ "rationale": "Order-4 coverage is only 1/24, with stages 5 and 6 entirely empty and stage 4 supported by just two samples. Search dyadic, nonnegative-weight tableaus across all feasible order-4 stage counts to improve the weak occupied cell and populate empty cycle buckets."
 }
