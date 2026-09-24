@@ -1,8 +1,8 @@
 {
  "_meta": {
   "cycles_schema": "schedule-cycles/1",
-  "generated_cycle": 498,
-  "generated_ts": "2026-09-24T01:28:35Z",
+  "generated_cycle": 499,
+  "generated_ts": "2026-09-24T01:30:00Z",
   "lane_max_seconds": 72.0,
   "lanes": [
    "explicit",
@@ -29,19 +29,19 @@
   "window_cycles": 200
  },
  "drift": {
-  "adaptive": -0.10265238393931914,
-  "explicit": 0.2009566127210149,
-  "implicit": -0.09830422878169573
+  "adaptive": -0.0991112519954267,
+  "explicit": 0.20088188226087095,
+  "implicit": -0.10177063026544425
  },
  "lanes": {
   "adaptive": {
-   "cycles": 66,
-   "lane_records_appended": 8820,
+   "cycles": 67,
+   "lane_records_appended": 8966,
    "points_measured": 0,
-   "productive_seconds": 4783.719875212875,
+   "productive_seconds": 4855.98948911787,
    "records_appended": 0,
-   "seconds": 5432.53836109105,
-   "share": 0.23068094939401418
+   "seconds": 5516.703663491062,
+   "share": 0.23422208133790662
   },
   "explicit": {
    "cycles": 67,
@@ -50,16 +50,16 @@
    "productive_seconds": 0.0,
    "records_appended": 6499,
    "seconds": 12582.532868493698,
-   "share": 0.5342899460543482
+   "share": 0.5342152155942043
   },
   "implicit": {
-   "cycles": 67,
-   "lane_records_appended": 3127,
+   "cycles": 66,
+   "lane_records_appended": 3087,
    "points_measured": 0,
-   "productive_seconds": 4876.019531125785,
+   "productive_seconds": 4803.893260255805,
    "records_appended": 0,
-   "seconds": 5534.937452805461,
-   "share": 0.23502910455163759
+   "seconds": 5454.066521164379,
+   "share": 0.23156270306788906
   }
  },
  "scheduled_share": {
@@ -67,13 +67,13 @@
   "explicit": 0.3333333333333333,
   "implicit": 0.3333333333333333
  },
- "statement": "Over 200 recorded cycles and 23550.0 recorded seconds the measured split was explicit 53.4290, adaptive 23.0681, implicit 23.5029 percent. The schedule 'EAI' asks for explicit 33.3333, adaptive 33.3333, implicit 33.3333 percent.",
+ "statement": "Over 200 recorded cycles and 23553.3 recorded seconds the measured split was explicit 53.4215, adaptive 23.4222, implicit 23.1563 percent. The schedule 'EAI' asks for explicit 33.3333, adaptive 33.3333, implicit 33.3333 percent.",
  "window": {
-  "first_cycle": 299,
-  "first_ts": "2026-09-23T18:56:15Z",
-  "last_cycle": 498,
-  "last_ts": "2026-09-24T01:28:35Z",
-  "span_seconds": 23540.0,
-  "wall_seconds": 23550.00868239021
+  "first_cycle": 300,
+  "first_ts": "2026-09-23T18:59:44Z",
+  "last_cycle": 499,
+  "last_ts": "2026-09-24T01:30:00Z",
+  "span_seconds": 23416.0,
+  "wall_seconds": 23553.30305314914
  }
 }
