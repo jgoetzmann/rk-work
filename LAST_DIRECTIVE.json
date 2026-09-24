@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1124",
+ "directive_id": "D-1127O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 is nearly empty, with no archived five- or six-stage cells. A broad high-resolution dyadic search with nonnegative solved weights targets this largest coverage gap while allowing both stage counts to compete across cycle buckets."
+ "rationale": "Order-4 coverage is only 1/24; stages 5 and 6 are entirely empty, including current cell (6,4). Search full Q15 dyadic resolution with nonnegative exact-order weights, using broad island diversity to address the prolonged stall."
 }
