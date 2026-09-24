@@ -1,5 +1,5 @@
 {
- "directive_id": "D-719A",
+ "directive_id": "D-734O4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,28 +7,9 @@
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty. Sparse first-column structure targets lower cycle buckets, including current cell (6,3), while denominator 32 preserves useful dyadic resolution and nonnegative weights favor Q15 robustness."
+ "rationale": "Order-4 coverage is only 1/24; stages 5 and 6 are entirely empty. Search both to populate reachable cycle buckets while retaining fine Q15-compatible dyadic resolution."
 }
