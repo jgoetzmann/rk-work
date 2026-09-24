@@ -1,5 +1,5 @@
 {
- "directive_id": "D-839A",
+ "directive_id": "D-845A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty; search moderate-denominator dyadic A coefficients with nonnegative exact-order weights to populate comparable cycle buckets, including the current six-stage bucket-4 region."
+ "rationale": "Order-4 stages 5 and 6 have no archived cells or samples. Search moderate-denominator dyadic A with nonnegative exact-order weights to populate these empty stage rows, including the current six-stage cycle bucket."
 }
