@@ -1,5 +1,5 @@
 {
- "directive_id": "D-611A",
+ "directive_id": "D-614A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -11,5 +11,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "All order-4 cells for stages 5 and 6 are empty; extra stages provide degrees of freedom to reduce Q15 held-out error while exploring multiple cycle buckets."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells; extra stages provide degrees of freedom to satisfy exact order conditions while optimizing Q15 held-out error across cycle buckets."
 }
