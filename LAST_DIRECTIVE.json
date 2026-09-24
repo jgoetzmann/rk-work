@@ -1,5 +1,5 @@
 {
- "directive_id": "D-779A",
+ "directive_id": "D-782A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32768
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. A broad high-resolution dyadic search with nonnegative solved weights targets both unexplored stage rows while avoiding the refuted cross-cost order-3 claim."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite extensive order-3 sampling; use broad dyadic resolution and maximum parallel budget to seek the first feasible higher-stage order-4 entries across cycle buckets."
 }
