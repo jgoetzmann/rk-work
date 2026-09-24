@@ -1,15 +1,13 @@
 {
- "directive_id": "D-1034",
+ "directive_id": "D-1037A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 32768
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells or samples, while order-4 stage 4 has only two samples and one filled cell. Broad Q15-resolution dyadic search prioritizes filling the most underexplored feasible region."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells despite the archive containing only one order-4 cell overall; broad multi-island coverage targets this underexplored region after the prolonged stall."
 }
