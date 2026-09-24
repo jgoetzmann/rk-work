@@ -1,16 +1,21 @@
 {
- "directive_id": "D-491A",
+ "directive_id": "D-494A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5,
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty. A low dyadic cap and nonnegative exact weights narrow the search toward Q15-friendly tableaus while using multiple islands to explore both stage counts."
+ "rationale": "Target the empty order-4 six-stage region near the current cycle bucket; one late-stage zero reduces multiply cost while retaining broad coupling, and denominator 256 gives useful Q15 resolution with nonnegative solved weights."
 }
