@@ -1,13 +1,16 @@
 {
- "directive_id": "D-0956",
+ "directive_id": "D-0959",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 256,
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; concentrate the stalled search on these empty stage rows with maximal island diversity."
+ "rationale": "Order-4 stages 5 and 6 have no occupied cells; search dyadic A coefficients with nonnegative exact-order weights to populate these sparse rows, including the current six-stage bucket region."
 }
