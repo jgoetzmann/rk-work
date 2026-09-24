@@ -1,13 +1,15 @@
 {
- "directive_id": "D-806H015",
- "hypothesis_id": "H-015",
+ "directive_id": "D-809H016",
+ "hypothesis_id": "H-016",
  "target_order": 3,
  "stages": [
   4,
   5
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather balanced additional samples for open H-015 while improving the weak order-3 four-stage cells and the current best-performing five-stage region."
+ "rationale": "Gather additional order-3 four- versus five-stage samples for H-016 while allowing broad dyadic resolution; both stage counts have competitive incumbents, and five stages currently has lower held-out error."
 }
