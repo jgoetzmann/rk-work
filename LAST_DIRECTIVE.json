@@ -1,16 +1,13 @@
 {
- "directive_id": "D-632A",
+ "directive_id": "D-635P4",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells, while stage 4 has only one weak cell. Search nonnegative-weight methods on a moderate dyadic grid to populate these sparse rows and potentially improve held-out Q15 error at comparable cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6. Search both higher-stage families broadly to fill empty cycle buckets and test whether added stages improve held-out error over the weak four-stage incumbent."
 }
