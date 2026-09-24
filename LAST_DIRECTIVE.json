@@ -1,5 +1,5 @@
 {
- "directive_id": "D-0962",
+ "directive_id": "D-965A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,9 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 have no occupied cells despite broad order-3 coverage. Search the full Q15 dyadic lattice with nonnegative exact-order weights to fill these unexplored cells and prioritize held-out stability."
+ "rationale": "Order-4 coverage is only 1 of 24 cells; stages 5 and 6 are entirely empty. A moderate dyadic denominator cap narrows the search toward Q15-friendly coefficients while retaining enough flexibility to satisfy fourth-order conditions exactly."
 }
