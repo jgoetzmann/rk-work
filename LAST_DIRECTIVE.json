@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1304",
+ "directive_id": "D-1315",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -17,5 +17,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Pinned-node five-stage searches are still producing new order-4 elites. Explore a finer dyadic grid to improve the weak (5,3) cell and potentially fill an empty adjacent cycle bucket."
+ "rationale": "Five-stage order-4 searches with fixed nodes have produced new elites. Pinning these nodes preserves an exact order-4 construction, while the finer dyadic grid and unconstrained A entries explore alternatives for the empty five-stage bucket-4 cell."
 }
