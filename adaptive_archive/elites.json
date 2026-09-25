@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 1202,
-  "generated_ts": "2026-09-25T03:44:18Z",
+  "generated_cycle": 1205,
+  "generated_ts": "2026-09-25T03:49:39Z",
   "lane": "adaptive",
   "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
-  "n_input": 103,
-  "n_measured": 64922,
-  "n_ranked": 103,
+  "n_input": 152,
+  "n_measured": 65042,
+  "n_ranked": 152,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -3236,5 +3236,5 @@
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The adaptive lane archive holds 64922 measured candidates under the current code hash, of which this document ranked 103. The leading candidate shows a median of 3490 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The adaptive lane archive holds 65042 measured candidates under the current code hash, of which this document ranked 152. The leading candidate shows a median of 3490 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
