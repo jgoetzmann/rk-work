@@ -1,14 +1,14 @@
 {
- "directive_id": "D-1295",
+ "directive_id": "D-1297A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    4,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "This six-stage shape has produced order-4 candidates. A finer dyadic grid varies its spent settings and may improve the weak (6,3) cell or fill the empty (6,4) cell."
+ "budget_minutes": 120,
+ "rationale": "Five-stage searches with fixed nodes have reached order 4 and produced elites. Vary the dyadic grid and remove one stage coefficient to seek a lower-cycle tableau; the five-stage order-4 grid has only one filled cell."
 }
