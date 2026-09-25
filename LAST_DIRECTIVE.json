@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1387",
+ "directive_id": "D-1388",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -23,5 +17,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The pinned six-stage shape has reached order 4 and produced new elites. A denominator of 32 expands its coefficient grid to seek a better six-stage cell or fill an empty cycle bucket."
+ "rationale": "The pinned nodes have produced order-4 candidates. Allowing finer dyadic A entries and removing the forced zero varies the spent six-stage setting, with a chance to improve its bucket-3 elite or fill bucket 4."
 }
