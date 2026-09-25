@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1555",
+ "directive_id": "D-1556",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The five-stage order-4 bucket 4 cell is empty, and its bucket 3 held-out error is weaker than the six-stage result. Pinning dyadic stage nodes gives the exact order solver a feasible fourth-order structure while allowing A to vary."
+ "rationale": "The order-4 five-stage bucket-3 cell is weak. These pinned nodes admit a feasible fourth-order tableau, while a[4][0]=0 can reduce cycle cost. Search for a lower held-out error in that cell or a new cost bucket."
 }
