@@ -1,18 +1,12 @@
 {
- "directive_id": "D-1229",
+ "directive_id": "D-1238",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "This six-stage constraint shape has reached order 4 and produced new elites. Order 4 has only one filled six-stage cell, so further search can improve it or fill another cycle bucket."
+ "budget_minutes": 60,
+ "rationale": "Six-stage searches with these fixed nodes have reached order 4, but the previous settings have gone 80 islands without a new elite. A finer dyadic grid and an unconstrained A[5][0] may find a lower-error tableau or fill an empty cycle bucket."
 }
