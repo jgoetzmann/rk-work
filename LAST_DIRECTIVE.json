@@ -1,7 +1,7 @@
 {
- "directive_id": "D-1499A",
+ "directive_id": "D-1505A",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   5
  ],
@@ -12,13 +12,16 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-2 bucket-3 cell has held-out error 3.179e-02, well above bucket 2 at 1.356e-02. This changes the five-stage constraints after its recent search stalled; the zero entry may also reduce cycle cost."
+ "budget_minutes": 75,
+ "rationale": "The order-4 five-stage bucket-3 cell has held-out error 3.944e-02 and bucket 4 is empty. These nodes admit a fourth-order tableau; the sparse final row and finer dyadic grid explore new coefficients at nearby cycle costs."
 }
