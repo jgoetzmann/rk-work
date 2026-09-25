@@ -1,28 +1,21 @@
 {
- "directive_id": "D-1544",
+ "directive_id": "D-1555",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2"
+  },
+  "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The six-stage order-2 search just produced a new elite, while its cycle bucket 2 is empty. Sparse later rows may reduce cycle cost enough to reach that bucket."
+ "budget_minutes": 90,
+ "rationale": "The five-stage order-4 bucket 4 cell is empty, and its bucket 3 held-out error is weaker than the six-stage result. Pinning dyadic stage nodes gives the exact order solver a feasible fourth-order structure while allowing A to vary."
 }
