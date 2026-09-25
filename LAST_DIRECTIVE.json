@@ -1,29 +1,15 @@
 {
- "directive_id": "D-1579A",
- "hypothesis_id": "H-029",
+ "directive_id": "D-1580",
+ "hypothesis_id": "H-026",
  "target_order": 2,
  "stages": [
-  4
+  2
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2",
-   "3": "1"
-  },
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
- "islands": 6,
- "budget_minutes": 45,
- "rationale": "Gather samples for H-029 in the four-stage, order-2 cells. Sparse A rows reduce coefficient arithmetic while leaving the second-stage node and exact b weights free to improve held-out error."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Only 17 two-stage order-2 candidates have reached the archive. A finer dyadic grid can sample stage nodes near 2/3 and may improve the weak two-stage cells or fill an empty cycle bucket. These samples also test H-026."
 }
