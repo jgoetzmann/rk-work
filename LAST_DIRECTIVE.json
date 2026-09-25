@@ -1,21 +1,28 @@
 {
- "directive_id": "D-1291",
+ "directive_id": "D-1292",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "Pinned nodes have produced order-4 six-stage candidates. Allowing a[5][0] and a finer dyadic grid explores new tableaus that may fill the empty six-stage cycle bucket 4 or improve bucket 3."
+ "budget_minutes": 60,
+ "rationale": "The prior six-stage order-4 shape produced candidates but has gone 136 islands without a new elite. Pinning stage 4 at 1/2 and allowing denominator 32 explores a different feasible family for the empty six-stage bucket-4 cell."
 }
