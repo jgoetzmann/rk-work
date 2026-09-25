@@ -1,27 +1,27 @@
 {
- "directive_id": "D-1340",
+ "directive_id": "D-1342A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    4,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage pinned-node shape has produced order-4 elites. Expanding its dyadic grid from 16 to 32 varies that setting and may reach the empty six-stage cycle bucket 4 or improve bucket 3."
+ "budget_minutes": 120,
+ "rationale": "The five-stage order-4 bucket-2 cell is empty. These dyadic nodes admit a fourth-order tableau; a[4][0]=0 and the denominator limit steer the search toward lower-cycle candidates."
 }
