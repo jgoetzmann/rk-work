@@ -1,19 +1,25 @@
 {
- "directive_id": "D-1409",
+ "directive_id": "D-1419A",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2",
-   "3": "1"
-  },
+  "force_zero": [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-2 four-stage bucket-3 cell has held-out error 0.03623, versus 0.01582 in bucket 2. Four-stage order-2 searches recently produced 15 new elites, with only 8 islands since the latest. Pinning two nodes keeps the search focused while leaving A and the exact b solve room to improve this weak cell."
+ "rationale": "The five-stage order-2 cells have only two candidates and weak held-out error. Search sparse five-stage tableaus to improve those cells and reach an empty lower-cycle bucket."
 }
