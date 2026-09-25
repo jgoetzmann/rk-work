@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1299A",
+ "directive_id": "D-1301",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -16,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "A related six-stage shape reached order 4 and produced new elites. Vary its dyadic grid and free a[5][0] while retaining the fixed nodes; the six-stage order-4 bucket 4 cell is empty."
+ "budget_minutes": 120,
+ "rationale": "The pinned-node six-stage family has produced order-4 elites, while its current settings have stalled. A finer dyadic grid and a free A[5][0] vary that family and may fill the empty six-stage cycle bucket 4."
 }
