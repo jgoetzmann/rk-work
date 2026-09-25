@@ -1,27 +1,34 @@
 {
- "directive_id": "D-1239A",
+ "directive_id": "D-1241",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The pinned six-stage shape has reached order 4 and produced elites, but has gone 88 islands without a new one. Expanding the dyadic grid from 16 to 32 explores new coefficients while retaining the node constraints that enabled order-4 candidates; the six-stage bucket-4 cell is empty."
+ "rationale": "No five-stage order-4 cell is filled. These constraints fix the first four stages to a dyadic RK4 structure with an exact nonnegative order-4 b solution, while leaving the fifth stage available to improve held-out error."
 }
