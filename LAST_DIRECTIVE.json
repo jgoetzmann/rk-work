@@ -1,27 +1,29 @@
 {
- "directive_id": "D-1424",
+ "directive_id": "D-1435",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    3,
     0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage shape with these fixed nodes previously reached order 4 and produced new elites. Increasing the dyadic denominator from 16 to 32 explores nearby coefficients for the empty six-stage order-4 bucket 4 cell."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-2 shape just produced new elites, while its lower-cycle buckets remain empty. Sparse later stages may reduce cycles enough to reach those cells."
 }
