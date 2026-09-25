@@ -1,27 +1,21 @@
 {
- "directive_id": "D-1329A",
+ "directive_id": "D-1334",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "Five-stage order-4 candidates have reached the archive, but only one cycle bucket is filled. These fixed nodes retain a feasible RK4 core; zeroing A[4][0] may reduce cycle cost while the fifth stage offers room to improve held-out error."
+ "budget_minutes": 60,
+ "rationale": "The six-stage pinned-node shape has reached order 4 and produced new elites. A finer dyadic grid and an unconstrained a[5][0] explore nearby tableaus for the empty six-stage bucket 4 cell."
 }
