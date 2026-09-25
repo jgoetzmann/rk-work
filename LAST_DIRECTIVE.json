@@ -1,27 +1,28 @@
 {
- "directive_id": "D-1567A",
+ "directive_id": "D-1568",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "4": "3/4",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 cells remain weak, with held-out errors of 0.06057 and 0.03944. These dyadic nodes retain a feasible classical RK4 structure while allowing the fifth stage and exact b solve to improve Q15 error."
+ "budget_minutes": 90,
+ "rationale": "A related six-stage shape reached order 4 and produced new elites. Pinning the fourth stage at 3/4 and allowing denominator 32 explores a different dyadic structure for the empty order-4 six-stage bucket-4 cell."
 }
