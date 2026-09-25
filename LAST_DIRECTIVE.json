@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1209",
+ "directive_id": "D-1214",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -23,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "This pinned six-stage shape has produced order-4 candidates and six new elites. Search it further to improve the occupied cell and fill an empty order-4 six-stage cycle bucket."
+ "rationale": "This six-stage constraint shape has produced order-4 candidates and new elites. Search it further to improve the weak (6,3) cell or fill an empty six-stage cycle bucket."
 }
