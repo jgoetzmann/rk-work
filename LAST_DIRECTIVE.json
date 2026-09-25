@@ -1,27 +1,25 @@
 {
- "directive_id": "D-1261",
+ "directive_id": "D-1262",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
-  6
+  3,
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 120,
- "rationale": "Pinned six-stage nodes have produced order-4 candidates. A finer dyadic grid changes the spent search setting and may improve the weak six-stage bucket-3 cell or fill the empty bucket-4 cell."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "The three- and four-stage order-3 cells are still producing new elites. Pinning the first node at 1/2 and removing a[2][0] explores a lower-cost family while retaining feasible third-order tableaus."
 }
