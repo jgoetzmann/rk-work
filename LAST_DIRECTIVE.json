@@ -1,21 +1,28 @@
 {
- "directive_id": "D-1334",
+ "directive_id": "D-1335",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage pinned-node shape has reached order 4 and produced new elites. A finer dyadic grid and an unconstrained a[5][0] explore nearby tableaus for the empty six-stage bucket 4 cell."
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. A related pinned-node shape has reached order 4; fixing the remaining node and allowing denominator 32 explores new coefficients after the denominator-16 setting stopped producing elites."
 }
