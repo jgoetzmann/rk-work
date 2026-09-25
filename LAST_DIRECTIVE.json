@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1361",
+ "directive_id": "D-1363",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -16,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. Keep the node pins from a shape that reached order 4, while allowing a denser A and a finer dyadic grid to explore higher-cycle candidates."
+ "budget_minutes": 60,
+ "rationale": "The pinned nodes have produced order-4 six-stage candidates. A finer dyadic grid and an unrestricted A[5][0] vary the spent settings and may fill the empty six-stage cycle bucket 4."
 }
