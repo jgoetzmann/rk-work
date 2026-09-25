@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1484",
+ "directive_id": "D-1489",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
@@ -20,17 +20,14 @@
     0
    ],
    [
-    4,
-    1
+    5,
+    0
    ]
   ],
   "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2"
-  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-2 search recently produced new elites. Sparse A rows may reduce cycles enough to fill its empty bucket-1 cell while retaining enough freedom to solve the order conditions."
+ "budget_minutes": 45,
+ "rationale": "Every six-stage order-2 cell is empty. Zeroing four A entries reduces coefficient operations while leaving ample freedom to satisfy the order-2 conditions and explore cycle buckets."
 }
