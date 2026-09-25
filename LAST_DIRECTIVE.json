@@ -1,29 +1,28 @@
 {
- "directive_id": "D-1509",
+ "directive_id": "D-1511",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Five-stage order-2 searches without fixed nodes have recently produced new elites. Sparse A rows may reduce cycle cost and improve the weak five-stage bucket-2 cell, whose best held-out error is 1.356e-02."
+ "budget_minutes": 90,
+ "rationale": "The six-stage, fourth-order cell has a held-out best of 2.953e-02. A related pinned-node shape produced fourth-order candidates and new elites; fixing stage 4 at 1/2 explores a different family, while denominator 32 allows finer Q15 coefficients."
 }
