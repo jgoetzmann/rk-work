@@ -1,12 +1,34 @@
 {
- "directive_id": "D-1454",
+ "directive_id": "D-1465RK4",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  5
+  4
  ],
- "constraints": {},
- "islands": 8,
- "budget_minutes": 45,
- "rationale": "Five-stage order-2 searches produced 12 new elites in 128 islands, including the latest island. Continue this productive shape to improve the weak five-stage cells at cycle buckets 2 and 3."
+ "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
+  "b_nonneg": true
+ },
+ "islands": 1,
+ "budget_minutes": 10,
+ "rationale": "These constraints fix the classical four-stage RK4 A tableau. Exact order conditions determine b. Evaluate its held-out error and cycle bucket against the weak occupied four-stage order-4 cell and the empty cells."
 }
