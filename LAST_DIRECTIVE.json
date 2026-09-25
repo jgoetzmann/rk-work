@@ -1,12 +1,18 @@
 {
- "directive_id": "D-1645",
+ "directive_id": "D-1646",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 64,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -15,6 +21,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The order-4 four-stage cell has only four samples and weak held-out error. These dyadic stage nodes admit the classical fourth-order tableau; search them to improve the cell and gather samples for H-032."
+ "budget_minutes": 60,
+ "rationale": "The order-4 four-stage bucket-2 cell has only four samples and held-out error 6.976e-02. Search a finer dyadic grid around the classical order-4 stage nodes to improve this weak cell and gather samples for H-032."
 }
