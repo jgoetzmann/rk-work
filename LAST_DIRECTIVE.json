@@ -1,7 +1,7 @@
 {
- "directive_id": "D-1561",
+ "directive_id": "D-1562",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   4
  ],
@@ -21,9 +21,14 @@
    ]
   ],
   "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 45,
- "rationale": "The four-stage order-2 bucket 0 cell is empty. Sparse stage coupling may reduce cycle cost enough to reach it; bucket 1 also has room to improve its held-out error."
+ "islands": 4,
+ "budget_minutes": 20,
+ "rationale": "These constraints specify the classical four-stage RK4 A coefficients. Test whether its sparse Q15 implementation improves the weak order-4 four-stage cell or fills a lower-cycle bucket."
 }
