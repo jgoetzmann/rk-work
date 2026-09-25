@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1563",
+ "directive_id": "D-1565",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has reached its target order and has an empty bucket 4. A finer dyadic grid changes the previously productive shape while preserving its fixed nodes and sparse entry."
+ "budget_minutes": 90,
+ "rationale": "Six-stage searches with these fixed nodes have reached order 4, but the current shape has stalled and its cycle bucket 4 is empty. A finer dyadic grid and an unconstrained a[5][0] may yield new tableaus in that cell."
 }
