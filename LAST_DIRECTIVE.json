@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1513",
+ "directive_id": "D-1514",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
@@ -18,12 +18,19 @@
    [
     4,
     0
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
    ]
   ],
-  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The five-stage order-2 search has produced 19 new elites and its bucket-1 cell is empty. Sparse dyadic A may reduce cycle cost enough to reach that cell while also exploring alternatives to the bucket-2 elite."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-2 search recently produced elites, while its cycle bucket 2 is empty. Sparse A rows may reduce cycle cost enough to reach that bucket; nonnegative b retains a feasible order-2 family."
 }
