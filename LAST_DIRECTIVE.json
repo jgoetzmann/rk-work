@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1565",
+ "directive_id": "D-1567A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "Six-stage searches with these fixed nodes have reached order 4, but the current shape has stalled and its cycle bucket 4 is empty. A finer dyadic grid and an unconstrained a[5][0] may yield new tableaus in that cell."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 cells remain weak, with held-out errors of 0.06057 and 0.03944. These dyadic nodes retain a feasible classical RK4 structure while allowing the fifth stage and exact b solve to improve Q15 error."
 }
