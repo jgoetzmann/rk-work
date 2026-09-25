@@ -1,16 +1,13 @@
 {
- "directive_id": "D-1154A",
+ "directive_id": "D-1157",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5,
   6
  ],
- "constraints": {
-  "dyadic_denominator_max": 256,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 stages 5 and 6 are entirely empty, while the sole order-4 cell has weak held-out error. Search moderate-resolution dyadic A coefficients with nonnegative exact-order weights to populate these cells across cycle buckets."
+ "rationale": "Order 4 is severely underexplored: stages 5 and 6 have no occupied cells, while only two stage-4 samples exist. Search both higher-stage families broadly to maximize the chance of filling empty cycle buckets after the prolonged stall."
 }
