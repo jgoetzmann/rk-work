@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1439",
+ "directive_id": "D-1449A",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -10,11 +10,16 @@
    [
     4,
     0
+   ],
+   [
+    4,
+    1
    ]
   ],
-  "dyadic_denominator_max": 16
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "Five-stage order-2 searches are still producing new elites. The stage-5 bucket-2 and bucket-3 cells remain weaker than the best four-stage cell; removing one A multiply may also reach the empty stage-5 bucket-1 cell."
+ "rationale": "Five-stage order-2 searches produced a new elite recently. Sparse final-stage coupling may lower cycles and improve the weak five-stage bucket-2 cell while retaining enough freedom to satisfy order 2."
 }
