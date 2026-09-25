@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1524A",
+ "directive_id": "D-1529",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. This pinned-node shape previously reached order 4; a denominator of 32 explores additional dyadic A values while retaining its feasible structure and zero coefficient."
+ "budget_minutes": 90,
+ "rationale": "The pinned-node six-stage shape has reached order 4, but its current settings have gone 368 islands without a new elite. A finer dyadic grid and removal of the forced zero broaden the search for a better six-stage cell, including the empty cycle bucket 4."
 }
