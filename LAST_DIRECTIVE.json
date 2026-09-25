@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1157",
+ "directive_id": "D-1160A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,5 +9,5 @@
  "constraints": {},
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 is severely underexplored: stages 5 and 6 have no occupied cells, while only two stage-4 samples exist. Search both higher-stage families broadly to maximize the chance of filling empty cycle buckets after the prolonged stall."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts broadly to fill empty cells, including the current six-stage cycle bucket."
 }
