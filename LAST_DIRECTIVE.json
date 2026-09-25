@@ -1,8 +1,9 @@
 {
- "directive_id": "D-1646",
- "hypothesis_id": "H-032",
- "target_order": 4,
+ "directive_id": "D-1648",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
+  3,
   4
  ],
  "constraints": {
@@ -12,15 +13,14 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "2": "3/4"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage bucket-2 cell has only four samples and held-out error 6.976e-02. Search a finer dyadic grid around the classical order-4 stage nodes to improve this weak cell and gather samples for H-032."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "The three-stage constraints admit an exact order-3 tableau with only two nonzero A entries and nonnegative b. Search for a lower-cycle candidate in the empty three-stage buckets 0\u20131, while allowing four-stage variants."
 }
