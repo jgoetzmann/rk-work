@@ -1,25 +1,12 @@
 {
- "directive_id": "D-1449A",
+ "directive_id": "D-1454",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
   5
  ],
- "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ],
-   [
-    4,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "Five-stage order-2 searches produced a new elite recently. Sparse final-stage coupling may lower cycles and improve the weak five-stage bucket-2 cell while retaining enough freedom to satisfy order 2."
+ "rationale": "Five-stage order-2 searches produced 12 new elites in 128 islands, including the latest island. Continue this productive shape to improve the weak five-stage cells at cycle buckets 2 and 3."
 }
