@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1225",
+ "directive_id": "D-1229",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "This six-stage shape has produced order-4 candidates and new elites. Search it further to improve the weak order-4 six-stage cell and potentially fill an empty cycle bucket."
+ "budget_minutes": 90,
+ "rationale": "This six-stage constraint shape has reached order 4 and produced new elites. Order 4 has only one filled six-stage cell, so further search can improve it or fill another cycle bucket."
 }
