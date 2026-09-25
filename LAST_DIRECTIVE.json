@@ -1,22 +1,34 @@
 {
- "directive_id": "D-1285",
+ "directive_id": "D-1288",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 4,
  "stages": [
-  4,
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 45,
- "rationale": "Four- and five-stage order-3 searches have produced recent elites, while their bucket-2 cells remain weak. Setting a[3][0]=0 can reduce coefficient work; the dyadic grid keeps the search focused on low-cost Q15 tableaus."
+ "islands": 2,
+ "budget_minutes": 30,
+ "rationale": "The four-stage order-4 archive has only two candidates and a weak best cell. These constraints specify classical RK4's dyadic A; solving b exactly gives a feasible order-4 tableau for evaluation in the fixed cycle grid."
 }
