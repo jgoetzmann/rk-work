@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1388",
+ "directive_id": "D-1390",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -16,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The pinned nodes have produced order-4 candidates. Allowing finer dyadic A entries and removing the forced zero varies the spent six-stage setting, with a chance to improve its bucket-3 elite or fill bucket 4."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 bucket-4 cell is empty. The pinned nodes have produced order-4 candidates; a finer dyadic grid and an unconstrained A[5][0] explore tableaus beyond the spent 16-denominator shape."
 }
