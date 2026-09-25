@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1489",
+ "directive_id": "D-1495A",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -18,16 +18,11 @@
    [
     4,
     0
-   ],
-   [
-    5,
-    0
    ]
   ],
-  "dyadic_denominator_max": 16,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Every six-stage order-2 cell is empty. Zeroing four A entries reduces coefficient operations while leaving ample freedom to satisfy the order-2 conditions and explore cycle buckets."
+ "budget_minutes": 60,
+ "rationale": "Five-stage order-2 searches have recently produced new elites. Removing three A products may reach the empty low-cycle cell or improve the existing stage-5 cells while retaining room to solve the order conditions."
 }
