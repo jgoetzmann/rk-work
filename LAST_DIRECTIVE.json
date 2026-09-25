@@ -1,22 +1,29 @@
 {
- "directive_id": "D-1508",
+ "directive_id": "D-1509",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
-  },
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. Recent six-stage settings have stalled; pinning the fourth stage at 1/2 and allowing denominator 32 explores a different feasible family."
+ "rationale": "Five-stage order-2 searches without fixed nodes have recently produced new elites. Sparse A rows may reduce cycle cost and improve the weak five-stage bucket-2 cell, whose best held-out error is 1.356e-02."
 }
