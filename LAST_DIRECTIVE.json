@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1148A",
+ "directive_id": "D-1151A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,5 +12,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 coverage is nearly empty beyond four stages; search five- and six-stage nonnegative-weight methods to populate empty cells and exploit extra stages for lower Q15 held-out error across cycle buckets."
+ "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts with a broad Q15-compatible dyadic grid and nonnegative exact weights to target the empty cells."
 }
