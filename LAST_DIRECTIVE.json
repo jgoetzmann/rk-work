@@ -1,16 +1,26 @@
 {
- "directive_id": "D-1364",
+ "directive_id": "D-1375",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 4,
  "stages": [
-  3,
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Recent unpinned order-3 searches at stages 3 and 4 produced 5 new elites, with only 16 islands since the latest. The four-stage bucket-2 cell remains weak, and buckets 4\u20137 are empty. A dyadic denominator of 32 keeps the search focused on low-cost coefficients."
+ "rationale": "The four-stage order-4 archive has only three candidates and a best held-out error of 0.07645. Standard dyadic stage nodes and one sparse A entry provide a feasible structure while leaving other A entries to search."
 }
