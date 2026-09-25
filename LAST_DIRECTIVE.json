@@ -1,34 +1,28 @@
 {
- "directive_id": "D-1255",
+ "directive_id": "D-1257",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 15,
- "rationale": "The four-stage order-4 archive has only two candidates and weak held-out error. These constraints select the classical RK4 stage structure with dyadic A coefficients, giving the exact b solver a feasible order-4 tableau to evaluate."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The prior six-stage pinned-node shape reached order 4 and added elites. Pinning the remaining node at 1/2 and allowing denominator 32 explores a different feasible region; the six-stage order-4 grid still has many empty cells."
 }
