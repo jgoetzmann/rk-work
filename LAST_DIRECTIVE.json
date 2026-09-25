@@ -1,26 +1,22 @@
 {
- "directive_id": "D-1274",
+ "directive_id": "D-1285",
  "hypothesis_id": null,
  "target_order": 3,
  "stages": [
-  3,
-  4
+  4,
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    3,
     0
    ]
   ],
   "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "3/4"
-  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "The order-3 four-stage bucket-2 cell is weak, and recent three- and four-stage searches still produced new elites. These dyadic nodes and one zero A entry admit an exact three-stage order-3 solution while reducing coefficient cost."
+ "rationale": "Four- and five-stage order-3 searches have produced recent elites, while their bucket-2 cells remain weak. Setting a[3][0]=0 can reduce coefficient work; the dyadic grid keeps the search focused on low-cost Q15 tableaus."
 }
