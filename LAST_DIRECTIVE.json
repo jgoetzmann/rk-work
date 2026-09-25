@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1384",
+ "directive_id": "D-1385",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -8,7 +8,7 @@
  "constraints": {
   "force_zero": [
    [
-    5,
+    4,
     0
    ]
   ],
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "A six-stage shape with these pinned nodes previously reached order 4 and produced new elites. A denominator of 32 varies its dyadic grid; the six-stage bucket 4 cell remains empty."
+ "budget_minutes": 120,
+ "rationale": "The order-4 six-stage bucket-4 cell is empty, and the existing bucket-3 elite has the best order-4 held-out error. Retain node values from a shape that reached order 4, use a finer dyadic grid, and move the forced zero to explore different six-stage tableaus."
 }
