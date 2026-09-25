@@ -1,13 +1,15 @@
 {
- "directive_id": "D-1166",
- "hypothesis_id": "H-021",
+ "directive_id": "D-1169",
+ "hypothesis_id": "H-022",
  "target_order": 3,
  "stages": [
-  4,
-  5
+  3,
+  4
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32768
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Gather paired order-3 four- and five-stage samples to resolve H-021; both stage counts have occupied cells but their best held-out errors differ only modestly, warranting additional sampling across cycle buckets."
+ "rationale": "Gather balanced additional samples for open H-022 across three- and four-stage order-3 searches. Both stage counts have weak or empty lower-cost cells, and the broad dyadic bound preserves diversity while remaining a valid narrowing constraint."
 }
