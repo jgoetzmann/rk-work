@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1375",
+ "directive_id": "D-1379",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -12,7 +12,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -22,5 +22,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 archive has only three candidates and a best held-out error of 0.07645. Standard dyadic stage nodes and one sparse A entry provide a feasible structure while leaving other A entries to search."
+ "rationale": "The five-stage order-4 search has produced elites, but its cycle bucket 4 is empty. These node values and a[2][0]=0 admit the classical fourth-order core; leaving the fifth node free and using a finer dyadic grid explores additional tableaus."
 }
