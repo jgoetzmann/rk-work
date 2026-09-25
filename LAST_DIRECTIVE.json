@@ -1,33 +1,21 @@
 {
- "directive_id": "D-1537A",
+ "directive_id": "D-1539A",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-2 search produced a recent elite, while its cycle bucket 2 is empty and bucket 3 has weak held-out error. Sparse A rows and a small dyadic denominator may reduce cycle cost and improve these cells."
+ "budget_minutes": 120,
+ "rationale": "Order-4 six-stage bucket 4 is empty. Fixed nodes have produced order-4 candidates; a finer dyadic grid and fewer forced zeros vary the spent search shape and allow tableaus with different cycle costs."
 }
