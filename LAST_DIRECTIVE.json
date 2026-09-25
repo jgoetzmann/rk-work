@@ -1,29 +1,18 @@
 {
- "directive_id": "D-1392A",
+ "directive_id": "D-1394",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
- "islands": 6,
- "budget_minutes": 45,
- "rationale": "Order-2 four-stage search has only 11 candidates and one filled cell. Sparse A entries may reduce cycles enough to fill its empty lower-cost cells while the fixed nodes retain feasible order-2 weights."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The recent four-stage order-2 search produced two new elites from 38 candidates, with no islands since the latest elite. Continue exploring this productive stage count to improve its occupied cycle buckets."
 }
