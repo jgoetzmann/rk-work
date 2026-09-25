@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1297A",
+ "directive_id": "D-1298",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -23,5 +17,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Five-stage searches with fixed nodes have reached order 4 and produced elites. Vary the dyadic grid and remove one stage coefficient to seek a lower-cycle tableau; the five-stage order-4 grid has only one filled cell."
+ "rationale": "Five-stage searches with fixed nodes have reached order 4 and produced new elites. These nodes retain a feasible RK4 construction, while the finer dyadic grid may improve the weak five-stage cell."
 }
