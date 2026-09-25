@@ -1,20 +1,27 @@
 {
- "directive_id": "D-1344A",
+ "directive_id": "D-1349",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket-3 cell has held-out error 3.944e-02, and pinned-node five-stage searches are still producing new elites. Search a finer dyadic grid while retaining nodes compatible with a fourth-order core."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "Five-stage order-4 searches have recently produced new elites, while their bucket 4 cell is empty. Pinned nodes support feasible fourth-order solutions; the finer dyadic grid allows additional A choices, and the zero entry removes one multiply."
 }
