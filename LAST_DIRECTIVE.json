@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1559A",
+ "directive_id": "D-1561",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
@@ -18,19 +18,12 @@
    [
     3,
     1
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    4,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16
+  "dyadic_denominator_max": 16,
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "The five-stage order-2 bucket-1 cell is empty. Sparse A rows may lower cycle cost enough to reach it; the remaining coefficients leave room to satisfy second-order conditions."
+ "rationale": "The four-stage order-2 bucket 0 cell is empty. Sparse stage coupling may reduce cycle cost enough to reach it; bucket 1 also has room to improve its held-out error."
 }
