@@ -1,34 +1,28 @@
 {
- "directive_id": "D-1288",
+ "directive_id": "D-1289A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 30,
- "rationale": "The four-stage order-4 archive has only two candidates and a weak best cell. These constraints specify classical RK4's dyadic A; solving b exactly gives a feasible order-4 tableau for evaluation in the fixed cycle grid."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Vary the six-stage family that has produced order-4 elites by pinning c4 and allowing a finer dyadic grid. Seek an elite in the empty six-stage cycle bucket 4 or improve bucket 3."
 }
