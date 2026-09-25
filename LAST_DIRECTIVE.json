@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1262",
+ "directive_id": "D-1269",
  "hypothesis_id": null,
  "target_order": 3,
  "stages": [
@@ -13,13 +13,13 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 6,
- "budget_minutes": 45,
- "rationale": "The three- and four-stage order-3 cells are still producing new elites. Pinning the first node at 1/2 and removing a[2][0] explores a lower-cost family while retaining feasible third-order tableaus."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Recent 3- and 4-stage order-3 searches still produced new elites. Pinning c1 and removing a[2][0] focuses the search on sparse, reachable order-3 tableaus that may improve the weak 4-stage bucket-2 cell."
 }
