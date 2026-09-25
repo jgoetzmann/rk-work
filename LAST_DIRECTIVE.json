@@ -1,28 +1,21 @@
 {
- "directive_id": "D-1292",
+ "directive_id": "D-1294",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The prior six-stage order-4 shape produced candidates but has gone 136 islands without a new elite. Pinning stage 4 at 1/2 and allowing denominator 32 explores a different feasible family for the empty six-stage bucket-4 cell."
+ "rationale": "Five-stage order-4 has only one occupied cell. These dyadic stage nodes admit a four-stage RK4 tableau with an additional stage, providing a feasible starting structure while searching for lower held-out error in empty cycle buckets."
 }
