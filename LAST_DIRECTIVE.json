@@ -1,21 +1,16 @@
 {
- "directive_id": "D-1363",
+ "directive_id": "D-1364",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
-  6
+  3,
+  4
  ],
  "constraints": {
   "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The pinned nodes have produced order-4 six-stage candidates. A finer dyadic grid and an unrestricted A[5][0] vary the spent settings and may fill the empty six-stage cycle bucket 4."
+ "rationale": "Recent unpinned order-3 searches at stages 3 and 4 produced 5 new elites, with only 16 islands since the latest. The four-stage bucket-2 cell remains weak, and buckets 4\u20137 are empty. A dyadic denominator of 32 keeps the search focused on low-cost coefficients."
 }
