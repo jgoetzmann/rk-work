@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1151A",
+ "directive_id": "D-1154A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,10 @@
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32768,
+  "dyadic_denominator_max": 256,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and no samples at stages 5 or 6; search both stage counts with a broad Q15-compatible dyadic grid and nonnegative exact weights to target the empty cells."
+ "rationale": "Order-4 stages 5 and 6 are entirely empty, while the sole order-4 cell has weak held-out error. Search moderate-resolution dyadic A coefficients with nonnegative exact-order weights to populate these cells across cycle buckets."
 }
