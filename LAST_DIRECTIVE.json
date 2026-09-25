@@ -1,11 +1,17 @@
 {
- "directive_id": "D-1238",
+ "directive_id": "D-1239A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -17,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Six-stage searches with these fixed nodes have reached order 4, but the previous settings have gone 80 islands without a new elite. A finer dyadic grid and an unconstrained A[5][0] may find a lower-error tableau or fill an empty cycle bucket."
+ "rationale": "The pinned six-stage shape has reached order 4 and produced elites, but has gone 88 islands without a new one. Expanding the dyadic grid from 16 to 32 explores new coefficients while retaining the node constraints that enabled order-4 candidates; the six-stage bucket-4 cell is empty."
 }
