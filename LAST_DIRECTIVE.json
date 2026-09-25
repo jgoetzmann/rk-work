@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1495A",
+ "directive_id": "D-1499A",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -8,21 +8,17 @@
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
     4,
     0
    ]
   ],
-  "dyadic_denominator_max": 32
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2"
+  },
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Five-stage order-2 searches have recently produced new elites. Removing three A products may reach the empty low-cycle cell or improve the existing stage-5 cells while retaining room to solve the order conditions."
+ "rationale": "The five-stage order-2 bucket-3 cell has held-out error 3.179e-02, well above bucket 2 at 1.356e-02. This changes the five-stage constraints after its recent search stalled; the zero entry may also reduce cycle cost."
 }
