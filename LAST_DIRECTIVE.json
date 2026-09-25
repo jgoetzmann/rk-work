@@ -1,21 +1,36 @@
 {
- "directive_id": "D-1558A",
+ "directive_id": "D-1559A",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
-   "3": "1/2",
-   "4": "1"
-  },
-  "b_nonneg": true
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket 4 is empty. Fixed stage nodes have produced order-4 candidates; the quarter-step node gives this search a different constraint pattern while preserving a feasible fourth-order tableau."
+ "budget_minutes": 45,
+ "rationale": "The five-stage order-2 bucket-1 cell is empty. Sparse A rows may lower cycle cost enough to reach it; the remaining coefficients leave room to satisfy second-order conditions."
 }
