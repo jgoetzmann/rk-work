@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1507",
+ "directive_id": "D-1508",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -24,5 +18,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 cell at bucket 3 is weak. The earlier pinned-node shape reached order 4 but has gone 320 islands without a new elite; fixing node 4 at 1/2 and allowing denominator 32 explores a different feasible subset."
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. Recent six-stage settings have stalled; pinning the fourth stage at 1/2 and allowing denominator 32 explores a different feasible family."
 }
