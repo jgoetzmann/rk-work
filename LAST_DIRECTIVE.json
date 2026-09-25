@@ -1,28 +1,29 @@
 {
- "directive_id": "D-1511",
+ "directive_id": "D-1513",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
-  },
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage, fourth-order cell has a held-out best of 2.953e-02. A related pinned-node shape produced fourth-order candidates and new elites; fixing stage 4 at 1/2 explores a different family, while denominator 32 allows finer Q15 coefficients."
+ "budget_minutes": 45,
+ "rationale": "The five-stage order-2 search has produced 19 new elites and its bucket-1 cell is empty. Sparse dyadic A may reduce cycle cost enough to reach that cell while also exploring alternatives to the bucket-2 elite."
 }
