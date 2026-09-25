@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1335",
+ "directive_id": "D-1337A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -23,6 +23,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. A related pinned-node shape has reached order 4; fixing the remaining node and allowing denominator 32 explores new coefficients after the denominator-16 setting stopped producing elites."
+ "budget_minutes": 120,
+ "rationale": "The pinned six-stage shape has reached order 4 and produced elites. Fixing the remaining node at 1/2 and allowing denominator 32 explores a new constrained region for the weak six-stage bucket 3 cell and empty bucket 4 cell."
 }
