@@ -1,25 +1,36 @@
 {
- "directive_id": "D-1573",
- "hypothesis_id": "H-024",
+ "directive_id": "D-1574",
+ "hypothesis_id": "H-025",
  "target_order": 2,
  "stages": [
-  4
+  5,
+  6
  ],
  "constraints": {
   "force_zero": [
    [
     2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "3": "1"
-  },
-  "b_nonneg": true
+   "1": "1/2"
+  }
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-2 four-stage archive has only one prior directive and a strong held-out result in bucket 2. Explore a sparse, pinned-node variant to gather samples for H-024 and seek a lower-cost or lower-error elite."
+ "rationale": "Sample both stage counts for H-025. Sparse first-column entries may reduce cycles and reach the empty five-stage bucket 1 or six-stage bucket 2 cells; fixing the first node at 1/2 keeps its coefficient inexpensive."
 }
