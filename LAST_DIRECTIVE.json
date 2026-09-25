@@ -1,14 +1,14 @@
 {
- "directive_id": "D-1570",
+ "directive_id": "D-1571",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 search has produced elites, but its bucket-4 cell is empty. Try a different pinned-node pattern on a finer dyadic grid; a[2][0]=0 can reduce cycle cost."
+ "budget_minutes": 120,
+ "rationale": "This pinned-node six-stage shape has reached order 4 and produced new elites. A denominator of 32 explores coefficients between the previous sixteenth-grid values, aiming to improve the filled bucket 3 cell or fill empty bucket 4."
 }
