@@ -1,14 +1,27 @@
 {
- "directive_id": "D-1184",
+ "directive_id": "D-1199",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4,
-  5,
   6
  ],
- "constraints": {},
+ "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
+  },
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order 4 has only one occupied cell and just two fast samples, while stages 5 and 6 are entirely unexplored. Search all feasible order-4 stage counts to fill empty cycle buckets and improve the weak stage-4 incumbent."
+ "rationale": "The six-stage order-4 cells are empty. This constrained shape previously produced four order-4 candidates and two new elites; repeat it to seek a six-stage order-4 cell."
 }
