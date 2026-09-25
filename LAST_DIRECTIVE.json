@@ -1,34 +1,25 @@
 {
- "directive_id": "D-1465RK4",
+ "directive_id": "D-1469",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    4,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 10,
- "rationale": "These constraints fix the classical four-stage RK4 A tableau. Exact order conditions determine b. Evaluate its held-out error and cycle bucket against the weak occupied four-stage order-4 cell and the empty cells."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-2 search is still producing new elites, while its bucket-2 cell has held-out error 2.702e-02. Fixing the first and final nodes and removing a[4][0] explores a sparse variant for that weak cell."
 }
