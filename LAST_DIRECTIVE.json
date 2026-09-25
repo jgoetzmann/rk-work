@@ -1,20 +1,26 @@
 {
- "directive_id": "D-1358",
+ "directive_id": "D-1359",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "Five-stage searches with fixed nodes have reached order 4 and produced new elites. Leave the fifth node free and use a finer dyadic grid to explore the empty cycle buckets and improve the weak five-stage bucket-3 cell."
+ "budget_minutes": 60,
+ "rationale": "Five-stage searches with fixed nodes have reached order 4 and recently produced new elites. Leave the fourth stage node free to explore alternatives, while a zero coefficient in the final stage may reduce cycle cost."
 }
