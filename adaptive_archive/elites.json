@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 1631,
-  "generated_ts": "2026-09-25T23:22:37Z",
+  "generated_cycle": 1634,
+  "generated_ts": "2026-09-25T23:26:18Z",
   "lane": "adaptive",
   "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
-  "n_input": 202,
-  "n_measured": 91861,
-  "n_ranked": 202,
+  "n_input": 194,
+  "n_measured": 92023,
+  "n_ranked": 194,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -1636,6 +1636,106 @@
   },
   {
    "controller": {
+    "alpha": "1/4",
+    "beta": "0",
+    "clamp_hi": "2",
+    "clamp_lo": "1/4",
+    "fixed": [
+     "clamp_lo",
+     "clamp_hi",
+     "table_bits"
+    ],
+    "safety": "3/4",
+    "searched": [
+     "alpha",
+     "beta",
+     "safety"
+    ],
+    "table_bits": 14
+   },
+   "cost_basis": "float_trajectory_q15_attempt_cost",
+   "cycle": 1634,
+   "index": 103254,
+   "key": "a2d1d9ba0c96f2b6",
+   "method": {
+    "A": [
+     [
+      "0",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "1/2",
+      "0",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "-1/2",
+      "0",
+      "0"
+     ],
+     [
+      "-1/2",
+      "1",
+      "-1",
+      "0"
+     ]
+    ],
+    "b": [
+     "-16/57",
+     "131/114",
+     "1/57",
+     "13/114"
+    ],
+    "b_exact": false,
+    "b_hat": [
+     "0",
+     "1",
+     "0",
+     "0"
+    ],
+    "b_hat_exact": true,
+    "c": [
+     "0",
+     "1/2",
+     "-1",
+     "-1/2"
+    ],
+    "d": [
+     "-16/57",
+     "17/114",
+     "1/57",
+     "13/114"
+    ],
+    "d_exact": false,
+    "family": "embedded_pair_s4_dyadic",
+    "fsal": false,
+    "nonzero_d_terms": 4,
+    "order": 3,
+    "order_hat": 2,
+    "stages": 4
+   },
+   "record_hash": "5e11311be6326359",
+   "results_digest": "eb5f359907d307fb",
+   "score": {
+    "best_achieved_error": 2.9268582845766078e-05,
+    "elite_target": 0.0009765625,
+    "elite_target_key": "0.0009765625",
+    "median_cycles_at_target": 3870.0,
+    "problems_at_elite_target": 8,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
+    "targets_total": 32,
+    "worst_status": "reached"
+   },
+   "shell": 0,
+   "ts": "2026-09-25T23:26:18Z"
+  },
+  {
+   "controller": {
     "alpha": "1/8",
     "beta": "0",
     "clamp_hi": "2",
@@ -3133,108 +3233,8 @@
    },
    "shell": 0,
    "ts": "2026-09-25T05:47:17Z"
-  },
-  {
-   "controller": {
-    "alpha": "3/16",
-    "beta": "0",
-    "clamp_hi": "2",
-    "clamp_lo": "1/4",
-    "fixed": [
-     "clamp_lo",
-     "clamp_hi",
-     "table_bits"
-    ],
-    "safety": "15/16",
-    "searched": [
-     "alpha",
-     "beta",
-     "safety"
-    ],
-    "table_bits": 14
-   },
-   "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 1039,
-   "index": 64396,
-   "key": "e77f564368a74a1d",
-   "method": {
-    "A": [
-     [
-      "0",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "-1",
-      "0",
-      "0",
-      "0"
-     ],
-     [
-      "1",
-      "-1",
-      "0",
-      "0"
-     ],
-     [
-      "1/2",
-      "1",
-      "1/2",
-      "0"
-     ]
-    ],
-    "b": [
-     "7/9",
-     "-2/9",
-     "11/36",
-     "5/36"
-    ],
-    "b_exact": false,
-    "b_hat": [
-     "3/2",
-     "-1/2",
-     "0",
-     "0"
-    ],
-    "b_hat_exact": true,
-    "c": [
-     "0",
-     "-1",
-     "0",
-     "2"
-    ],
-    "d": [
-     "-13/18",
-     "5/18",
-     "11/36",
-     "5/36"
-    ],
-    "d_exact": false,
-    "family": "embedded_pair_s4_dyadic",
-    "fsal": false,
-    "nonzero_d_terms": 4,
-    "order": 3,
-    "order_hat": 2,
-    "stages": 4
-   },
-   "record_hash": "5b30d5020b73dff5",
-   "results_digest": "1b54d4c24224d53a",
-   "score": {
-    "best_achieved_error": 0.0001497228211464613,
-    "elite_target": 0.0009765625,
-    "elite_target_key": "0.0009765625",
-    "median_cycles_at_target": 4000.0,
-    "problems_at_elite_target": 8,
-    "reached_at_elite_target": 7,
-    "targets_reached": 30,
-    "targets_total": 32,
-    "worst_status": "never_reached"
-   },
-   "shell": 0,
-   "ts": "2026-09-24T20:08:09Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The adaptive lane archive holds 91861 measured candidates under the current code hash, of which this document ranked 202. The leading candidate shows a median of 3400 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The adaptive lane archive holds 92023 measured candidates under the current code hash, of which this document ranked 194. The leading candidate shows a median of 3400 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
