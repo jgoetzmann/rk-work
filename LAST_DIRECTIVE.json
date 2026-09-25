@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1382",
+ "directive_id": "D-1384",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket-4 cell is empty. Pinned dyadic stage nodes preserve a feasible route to order 4; the finer A grid explores coefficients beyond the spent settings that produced the existing five-stage elites."
+ "rationale": "A six-stage shape with these pinned nodes previously reached order 4 and produced new elites. A denominator of 32 varies its dyadic grid; the six-stage bucket 4 cell remains empty."
 }
