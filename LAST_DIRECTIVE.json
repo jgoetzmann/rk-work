@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1479A",
+ "directive_id": "D-1484",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -16,19 +16,21 @@
     0
    ],
    [
-    3,
+    4,
+    0
+   ],
+   [
+    4,
     1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 35,
- "rationale": "The four-stage order-4 archive has only three candidates and one occupied cell. These constraints define the sparse classical RK4 stage structure on a Q15-compatible dyadic grid, giving the search a feasible route to a lower-cycle cell."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-2 search recently produced new elites. Sparse A rows may reduce cycles enough to fill its empty bucket-1 cell while retaining enough freedom to solve the order conditions."
 }
