@@ -1,27 +1,19 @@
 {
- "directive_id": "D-1589A",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-1600",
+ "hypothesis_id": "H-026",
+ "target_order": 2,
  "stages": [
-  4,
-  5
+  2,
+  3
  ],
  "constraints": {
-  "force_zero": [
-   [
-    3,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 75,
- "rationale": "The order-4 four-stage cell has only 3 archived candidates and weak held-out error; five-stage order-4 cells are also sparse. These dyadic stage nodes admit classical RK4, while leaving other coefficients free to search for lower held-out error and cycle cost."
+ "budget_minutes": 45,
+ "rationale": "The two-stage shape just produced a new elite, and the three-stage shape has produced two recently. Sampling both with a fixed half-step node tests H-026 while seeking better held-out error in their occupied low-cycle cells."
 }
