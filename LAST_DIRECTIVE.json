@@ -1,28 +1,21 @@
 {
- "directive_id": "D-1289A",
+ "directive_id": "D-1291",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Vary the six-stage family that has produced order-4 elites by pinning c4 and allowing a finer dyadic grid. Seek an elite in the empty six-stage cycle bucket 4 or improve bucket 3."
+ "budget_minutes": 120,
+ "rationale": "Pinned nodes have produced order-4 six-stage candidates. Allowing a[5][0] and a finer dyadic grid explores new tableaus that may fill the empty six-stage cycle bucket 4 or improve bucket 3."
 }
