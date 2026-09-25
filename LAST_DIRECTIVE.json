@@ -1,21 +1,33 @@
 {
- "directive_id": "D-1529",
+ "directive_id": "D-1537A",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The pinned-node six-stage shape has reached order 4, but its current settings have gone 368 islands without a new elite. A finer dyadic grid and removal of the forced zero broaden the search for a better six-stage cell, including the empty cycle bucket 4."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-2 search produced a recent elite, while its cycle bucket 2 is empty and bucket 3 has weak held-out error. Sparse A rows and a small dyadic denominator may reduce cycle cost and improve these cells."
 }
