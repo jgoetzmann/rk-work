@@ -1,20 +1,27 @@
 {
- "directive_id": "D-1319",
+ "directive_id": "D-1329A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 archive has only two candidates and one weak occupied cell. These dyadic stage nodes include the classical RK4 tableau, giving the search a feasible route to order 4 while allowing other A entries and exactly solved b weights."
+ "budget_minutes": 90,
+ "rationale": "Five-stage order-4 candidates have reached the archive, but only one cycle bucket is filled. These fixed nodes retain a feasible RK4 core; zeroing A[4][0] may reduce cycle cost while the fifth stage offers room to improve held-out error."
 }
