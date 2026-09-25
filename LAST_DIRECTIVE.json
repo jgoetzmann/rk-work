@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1301",
+ "directive_id": "D-1302A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 120,
- "rationale": "The pinned-node six-stage family has produced order-4 elites, while its current settings have stalled. A finer dyadic grid and a free A[5][0] vary that family and may fill the empty six-stage cycle bucket 4."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "The five-stage order-4 bucket 2 cell is empty and bucket 3 is weak. These dyadic nodes allow a fourth-order construction; a[4][0]=0 may reduce cycle cost."
 }
