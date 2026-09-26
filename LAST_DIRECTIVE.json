@@ -1,20 +1,25 @@
 {
- "directive_id": "D-1891",
- "hypothesis_id": "H-032",
+ "directive_id": "D-1892",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. These dyadic stage nodes admit a known fourth-order tableau, while leaving A free to search for lower-error candidates and gather evidence for H-032."
+ "budget_minutes": 60,
+ "rationale": "Five-stage order-4 searches have produced six new elites, while the four-stage shape has yielded few order-4 candidates. Vary the node constraints and remove one A entry to seek a lower-cycle five-stage result and gather samples for H-075."
 }
