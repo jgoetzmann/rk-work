@@ -1,21 +1,28 @@
 {
- "directive_id": "D-1745",
- "hypothesis_id": null,
+ "directive_id": "D-1747",
+ "hypothesis_id": "H-069",
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "3/4"
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 five-stage cell has held-out error 3.944e-02 in bucket 3, while bucket 4 is empty. A three-quarter final node varies the fixed-node pattern used in recent searches and retains a feasible classical RK4 core with the fifth stage available for improvement."
+ "budget_minutes": 90,
+ "rationale": "Gather more six-stage order-4 samples for H-069. The prior six-stage shape reached order 4 but has gone 696 islands without a new elite; pinning c[4] and using a finer dyadic grid changes that search while retaining feasible fourth-order layouts."
 }
