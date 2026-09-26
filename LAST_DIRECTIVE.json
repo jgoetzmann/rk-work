@@ -1,27 +1,21 @@
 {
- "directive_id": "D-1793",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1795",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Retain the six-stage node pattern that has produced order-4 candidates, but expand the dyadic grid from 16 to 32. Seek a lower held-out error or an elite in the empty six-stage bucket 4 while gathering samples for H-074."
+ "budget_minutes": 120,
+ "rationale": "The order-4 five-stage cells have only 308 samples and no elite in the last 316 islands at recent settings. Pinning all nodes to a feasible fourth-order pattern while allowing finer dyadic A entries changes that search and gathers samples for H-075."
 }
