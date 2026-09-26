@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1748",
- "hypothesis_id": "H-053",
+ "directive_id": "D-1749S5A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The six-stage order-4 cell is weak and sparsely sampled. Vary the previously productive pinned-node shape by allowing a[5][0] and finer dyadic A entries; new order-4 samples can test H-053."
+ "rationale": "The order-4 five-stage archive has only 236 samples, and its bucket-4 cell is empty. Adapt the half-step and endpoint nodes from the six-stage shape that produced order-4 candidates, while leaving most A entries free to explore lower-error tableaus."
 }
