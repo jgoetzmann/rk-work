@@ -1,19 +1,34 @@
 {
- "directive_id": "D-1873",
- "hypothesis_id": "H-032",
+ "directive_id": "D-1874",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
+   "2": "1/2",
    "3": "1"
   },
-  "b_nonneg": false
+  "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage archive has only four candidates and a weak best held-out error. Fixing two nodes retains a feasible classical tableau while leaving the middle node and weights free to explore dyadic variants and gather samples for H-032."
+ "budget_minutes": 30,
+ "rationale": "Only four order-4, four-stage candidates have been found, and its sole occupied cell is weak. These nodes and zeros define the sparse classical RK4 structure, giving the search an exactly feasible order-4 region with few A multiplications."
 }
