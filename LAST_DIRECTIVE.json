@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1700",
- "hypothesis_id": null,
+ "directive_id": "D-1702",
+ "hypothesis_id": "H-033",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -23,5 +17,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The six-stage order-4 search has reached order 4, but its current settings have gone 552 islands without a new elite. A denominator of 32 retains the feasible 16-grid coefficients while allowing new A values; the six-stage bucket-4 cell is empty."
+ "rationale": "The six-stage order-4 search has reached order 4, but its bucket 4 is empty. Keep the productive fixed nodes while allowing a finer dyadic grid and an unconstrained final-stage A row to explore that cell and gather samples for H-033."
 }
