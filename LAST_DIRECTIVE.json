@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1698",
- "hypothesis_id": "H-040",
+ "directive_id": "D-1700",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The pinned six-stage shape has reached order 4. A denominator of 32 expands its dyadic search grid; six-stage order-4 cells remain sparse, including empty bucket 4. More samples also test H-040."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 search has reached order 4, but its current settings have gone 552 islands without a new elite. A denominator of 32 retains the feasible 16-grid coefficients while allowing new A values; the six-stage bucket-4 cell is empty."
 }
