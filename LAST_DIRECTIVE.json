@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1756",
- "hypothesis_id": "H-075",
+ "directive_id": "D-1757",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
@@ -22,5 +22,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "Order-4 five-stage cells have produced elites but remain sparse. Pinning the first three nodes to a feasible RK4 pattern and varying the fifth node explores new tableaus; a[2][0]=0 can reduce cycle cost. Gather samples for H-075."
+ "rationale": "The order-4 four-stage cell has only four samples and held-out error 6.976e-02. Pinned classical nodes and one zero entry make exact order-4 solutions easier to reach while leaving the final row free to search for a better Q15 result. This also gathers samples for H-032."
 }
