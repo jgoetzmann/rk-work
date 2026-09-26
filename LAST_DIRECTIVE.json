@@ -1,25 +1,34 @@
 {
- "directive_id": "D-1892",
- "hypothesis_id": "H-075",
+ "directive_id": "D-1894",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    4,
+    2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
-   "4": "1"
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "Five-stage order-4 searches have produced six new elites, while the four-stage shape has yielded few order-4 candidates. Vary the node constraints and remove one A entry to seek a lower-cycle five-stage result and gather samples for H-075."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints specify the classical four-stage RK4 A tableau. Its sparse dyadic entries give a feasible order-4 candidate for the weak four-stage cell and a sample for H-032."
 }
