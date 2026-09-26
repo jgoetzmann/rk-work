@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1757",
+ "directive_id": "D-1759A",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -21,6 +21,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The order-4 four-stage cell has only four samples and held-out error 6.976e-02. Pinned classical nodes and one zero entry make exact order-4 solutions easier to reach while leaving the final row free to search for a better Q15 result. This also gathers samples for H-032."
+ "budget_minutes": 60,
+ "rationale": "The order-4 four-stage bucket-2 cell has only four samples and held-out error 6.976e-02. These dyadic node constraints include a feasible classical RK4 structure while leaving later A entries free to search for a better elite and gather samples for H-032."
 }
