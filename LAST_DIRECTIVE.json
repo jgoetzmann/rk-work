@@ -1,27 +1,27 @@
 {
- "directive_id": "D-1694",
- "hypothesis_id": "H-037",
+ "directive_id": "D-1696",
+ "hypothesis_id": "H-033",
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    4,
-    0
+    5,
+    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket-2 cell is weak. Pinning dyadic stage nodes and removing one A multiply narrows the search toward lower-cycle tableaus while gathering samples for H-037."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 search previously reached its target with these pinned nodes, but its current settings have stalled. Moving the forced zero and widening the dyadic grid explores a different cost pattern, with a chance to fill its empty bucket 4 cell and add samples for H-033."
 }
