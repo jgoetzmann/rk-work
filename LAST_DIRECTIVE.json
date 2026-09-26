@@ -1,8 +1,9 @@
 {
- "directive_id": "D-1888",
- "hypothesis_id": "H-032",
- "target_order": 4,
+ "directive_id": "D-1889",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
+  3,
   4
  ],
  "constraints": {
@@ -10,25 +11,16 @@
    [
     2,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "2": "3/4"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "The order-4 four-stage cell has only four samples and weak held-out error. These constraints admit classical RK4 with dyadic A, providing a feasible order-4 candidate and another sample for H-032."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "The three-stage order-3 cell has no entries below bucket 2. These dyadic nodes permit an exact third-order solution with a[2][0]=0, reducing one A multiply. The four-stage search retains freedom to improve its weak bucket-2 cell."
 }
