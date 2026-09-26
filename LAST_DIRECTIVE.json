@@ -1,27 +1,34 @@
 {
- "directive_id": "D-1696",
- "hypothesis_id": "H-033",
+ "directive_id": "D-1697RK4",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
     1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 search previously reached its target with these pinned nodes, but its current settings have stalled. Moving the forced zero and widening the dyadic grid explores a different cost pattern, with a chance to fill its empty bucket 4 cell and add samples for H-033."
+ "islands": 2,
+ "budget_minutes": 15,
+ "rationale": "These constraints specify the sparse classical RK4 tableau, giving the search an exact fourth-order candidate for the weak four-stage cell and adding samples for H-032."
 }
