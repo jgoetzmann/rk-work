@@ -1,18 +1,12 @@
 {
- "directive_id": "D-1759A",
+ "directive_id": "D-1760A",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -21,6 +15,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage bucket-2 cell has only four samples and held-out error 6.976e-02. These dyadic node constraints include a feasible classical RK4 structure while leaving later A entries free to search for a better elite and gather samples for H-032."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage cell has only four samples and held-out error 6.976e-02. Pinning dyadic nodes to a feasible fourth-order pattern may yield more candidates and test H-032."
 }
