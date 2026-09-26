@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1726",
+ "directive_id": "D-1727",
  "hypothesis_id": "H-053",
  "target_order": 4,
  "stages": [
@@ -12,17 +12,16 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 six-stage bucket-4 cell is empty. Pinning the previously free fourth stage node to 1/2 changes a productive six-stage shape while retaining a feasible fourth-order layout. New samples also test H-053."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 search has reached its target order, but its current settings have gone 656 islands without a new elite. A denominator of 32 explores finer dyadic A coefficients while retaining the node pins that produced order-4 candidates. The six-stage bucket 4 cell is empty, and new samples can test H-053."
 }
