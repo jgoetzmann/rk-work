@@ -1,28 +1,18 @@
 {
- "directive_id": "D-1807",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1808",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "1": "1/4"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The prior six-stage order-4 shape has gone 816 islands without a new elite. Fixing the remaining node at 1/2 and allowing denominator 32 explores a distinct feasible family while gathering samples for H-074."
+ "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. Pinning the first node at 1/4 explores a different dyadic region while leaving later nodes free, and gathers samples for H-032."
 }
