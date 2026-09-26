@@ -1,27 +1,25 @@
 {
- "directive_id": "D-1709",
- "hypothesis_id": "H-033",
- "target_order": 4,
+ "directive_id": "D-1711",
+ "hypothesis_id": "H-047",
+ "target_order": 3,
  "stages": [
-  6
+  3
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "2": "3/4"
   },
-  "b_nonneg": false
+  "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 shape has reached the target order, but its current settings have gone 592 islands without a new elite. A finer dyadic grid and unrestricted b weights explore new tableaux for the empty cycle bucket 4 and gather samples for H-033."
+ "islands": 2,
+ "budget_minutes": 15,
+ "rationale": "This sparse three-stage order-3 tableau has dyadic A and an exact nonnegative b solution. It may reach the empty low-cycle cells for order 3, stage 3, while adding samples for H-047."
 }
