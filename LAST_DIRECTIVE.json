@@ -1,12 +1,20 @@
 {
- "directive_id": "D-1649",
- "hypothesis_id": "H-026",
- "target_order": 2,
+ "directive_id": "D-1659A",
+ "hypothesis_id": "H-032",
+ "target_order": 4,
  "stages": [
-  2
+  4
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 256,
+  "c_fixed": {
+   "1": "1/4",
+   "2": "1/2",
+   "3": "1"
+  },
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Unpinned two-stage searches produced two recent elites, including the latest. Gather more order-2 samples to improve the weak two-stage cells and test H-026."
+ "rationale": "The order-4 four-stage archive cell has only four samples and a weak held-out result. Try different dyadic stage nodes to seek a new elite and gather samples for H-032."
 }
