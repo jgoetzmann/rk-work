@@ -1,18 +1,20 @@
 {
- "directive_id": "D-1808",
+ "directive_id": "D-1809A",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. Pinning the first node at 1/4 explores a different dyadic region while leaving later nodes free, and gathers samples for H-032."
+ "rationale": "Only four order-4 four-stage candidates have been observed. These dyadic stage nodes admit fourth-order methods and may improve the weak (4, bucket 2) cell while gathering samples for H-032."
 }
