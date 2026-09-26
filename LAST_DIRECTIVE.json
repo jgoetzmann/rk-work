@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1856",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1858",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -16,7 +16,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -24,7 +24,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only four samples. These node values admit the classical RK4 tableau; the two zero entries narrow the search while leaving variation in the final stage. More samples can test H-074 and may improve this weak cell."
+ "islands": 4,
+ "budget_minutes": 45,
+ "rationale": "The order-4 four-stage cell has only four fast held-out samples and weak error. These dyadic nodes admit a feasible fourth-order tableau; the two zero entries reduce stage cost while leaving A[3][1] free for search. Additional four-stage samples also inform H-032."
 }
