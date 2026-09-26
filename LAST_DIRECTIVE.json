@@ -1,27 +1,38 @@
 {
- "directive_id": "D-1817A",
- "hypothesis_id": "H-075",
- "target_order": 4,
+ "directive_id": "D-1819",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
+  4,
   5
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
     4,
     0
+   ],
+   [
+    4,
+    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1"
+   "2": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Order-4 five-stage searches have produced elites, while only two of their cycle buckets are filled. Pin dyadic nodes and remove one stage multiply to seek a lower-cost five-stage candidate and gather samples for H-075."
+ "rationale": "The order-2 four- and five-stage cells have the lowest held-out errors in the archive. Sparse A rows may reduce cycles enough to improve the four-stage bucket-2 cell or fill the empty five-stage bucket-1 cell; a finer dyadic grid varies the search from recent settings."
 }
