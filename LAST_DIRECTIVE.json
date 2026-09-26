@@ -1,27 +1,24 @@
 {
- "directive_id": "D-1736",
- "hypothesis_id": "H-053",
- "target_order": 4,
+ "directive_id": "D-1738",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
-  6
+  3
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. A finer dyadic grid varies a previously productive node pattern and may find new order-4 candidates while adding samples for H-053."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "Explore a sparse three-stage order-3 family with the first node fixed at 1/2 and the second node free. The 3/4 second node is feasible within this family. Fewer nonzero A entries may reach a cheaper bucket or improve the weak three-stage cells."
 }
