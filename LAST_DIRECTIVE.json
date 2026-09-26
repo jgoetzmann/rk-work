@@ -1,30 +1,19 @@
 {
- "directive_id": "D-1825",
+ "directive_id": "D-1826",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage bucket-2 cell has only four samples and held-out error 6.976e-02. These nodes admit a fourth-order tableau; the zero entries reduce stage arithmetic while leaving feasible coefficients. Gather samples for H-032."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage cell has only four samples and held-out error 0.06976. Keep the first and last nodes fixed while allowing the middle node and A entries to vary, gathering samples for H-032."
 }
