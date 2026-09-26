@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1707",
+ "directive_id": "D-1709",
  "hypothesis_id": "H-033",
  "target_order": 4,
  "stages": [
@@ -12,17 +12,16 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
-  "b_nonneg": true
+  "b_nonneg": false
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has reached the target order, but its current settings have gone 584 islands without a new elite. Pinning stage 4 at 1/2 changes that shape while retaining dyadic nodes and the known feasible structure. More order-4 six-stage samples also inform H-033."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 shape has reached the target order, but its current settings have gone 592 islands without a new elite. A finer dyadic grid and unrestricted b weights explore new tableaux for the empty cycle bucket 4 and gather samples for H-033."
 }
