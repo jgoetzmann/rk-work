@@ -1,22 +1,27 @@
 {
- "directive_id": "D-1799",
+ "directive_id": "D-1801",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 shape has gone 784 islands without a new elite. Pinning c4 to 1/2, allowing denominator 32, and leaving A unconstrained explores a different feasible family that may fill the empty (6,4) cell and add samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 shape has produced valid candidates, but its current settings have stalled. A finer dyadic grid and a different zero entry may find a lower-error elite or fill an empty cycle bucket while adding samples for H-074."
 }
