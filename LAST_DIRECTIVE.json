@@ -1,14 +1,14 @@
 {
- "directive_id": "D-1719A",
- "hypothesis_id": "H-039",
+ "directive_id": "D-1721",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    4,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "Order-4 six-stage results remain sparse, and this node pattern previously produced order-4 candidates and new elites. A finer dyadic grid explores nearby tableaux for the empty six-stage bucket-4 cell and adds samples for H-039."
+ "budget_minutes": 90,
+ "rationale": "The order-4 five-stage bucket 4 cell is empty. Pinned dyadic nodes admit a feasible fourth-order tableau, while the extra stage leaves room to improve held-out error. Forcing A[4][0]=0 removes one stage multiply."
 }
