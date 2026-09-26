@@ -1,27 +1,21 @@
 {
- "directive_id": "D-1865",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1867",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The six-stage order-4 archive has only bucket 3 filled. Refine a node pattern that has produced order-4 candidates from a 1/16 to a 1/32 dyadic grid to seek a new elite and gather samples for H-074."
+ "rationale": "The five-stage order-4 search has produced six new elites, while its bucket-4 cell remains empty. Pinning dyadic stage nodes supports exact order conditions; the finer A grid leaves room to explore new tableaus and gather samples for H-075."
 }
