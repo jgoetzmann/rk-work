@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1723",
- "hypothesis_id": "H-053",
+ "directive_id": "D-1724",
+ "hypothesis_id": "H-033",
  "target_order": 4,
  "stages": [
   6
@@ -17,11 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 cell has only 68 samples and held-out error 2.953e-02. This node pattern previously reached order 4; a finer dyadic grid may find a better tableau or fill an empty cycle bucket while gathering samples for H-053."
+ "budget_minutes": 120,
+ "rationale": "The order-4 six-stage archive has only 68 samples, and its bucket 4 is empty. Fixing the fifth node at 1/2 and using a finer dyadic grid varies a previously productive shape while gathering evidence for H-033."
 }
