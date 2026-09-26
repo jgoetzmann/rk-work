@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1894",
- "hypothesis_id": "H-032",
+ "directive_id": "D-1895A",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -14,21 +14,18 @@
    [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "These constraints specify the classical four-stage RK4 A tableau. Its sparse dyadic entries give a feasible order-4 candidate for the weak four-stage cell and a sample for H-032."
+ "islands": 8,
+ "budget_minutes": 45,
+ "rationale": "The five-stage order-4 cells remain weak, and H-075 awaits samples. These nodes admit a classical fourth-order core while leaving the fifth stage and part of the fourth stage free to improve held-out error."
 }
