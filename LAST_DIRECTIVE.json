@@ -1,21 +1,15 @@
 {
- "directive_id": "D-1765",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-1766",
+ "hypothesis_id": "H-060",
+ "target_order": 2,
  "stages": [
-  6
+  2
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
+  "dyadic_denominator_max": 64,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "A pinned-node six-stage shape previously produced order-4 elites. Allowing a[5][0] and using denominator 32 varies that spent setting and may reach the empty six-stage bucket 4 while gathering samples for H-074."
+ "budget_minutes": 45,
+ "rationale": "The two-stage order-2 search has produced 6 new elites, with only 40 islands since the latest. Explore finer dyadic A values to improve its weak bucket-1 cell and gather samples for H-060."
 }
