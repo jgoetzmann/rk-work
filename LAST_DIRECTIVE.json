@@ -1,21 +1,34 @@
 {
- "directive_id": "D-1705",
- "hypothesis_id": null,
+ "directive_id": "D-1706",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has produced candidates, but its current settings have gone 576 islands without a new elite. A finer dyadic grid and removal of the forced zero vary that productive shape while targeting the empty cycle bucket 4 cell and the weak bucket 3 cell."
+ "islands": 2,
+ "budget_minutes": 15,
+ "rationale": "The four-stage order-4 archive has only four samples and one filled cell. These constraints specify a sparse classical RK4 tableau, providing a feasible order-4 candidate and more evidence for H-032."
 }
