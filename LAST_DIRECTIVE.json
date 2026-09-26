@@ -1,20 +1,35 @@
 {
- "directive_id": "D-1831",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1832A",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The four-stage order-4 row has only four samples and an empty bucket 3. These pinned nodes admit an exact dyadic order-4 tableau with nonnegative b, giving H-074 a distinct four-stage family to test."
+ "budget_minutes": 60,
+ "rationale": "Test H-075 with five-stage order-4 methods. The fixed nodes and sparse first four stages retain a feasible classical RK4 core, while the fifth stage offers room to improve the weak five-stage cells."
 }
