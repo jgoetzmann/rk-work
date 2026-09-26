@@ -1,15 +1,26 @@
 {
- "directive_id": "D-1732",
- "hypothesis_id": "H-060",
- "target_order": 2,
+ "directive_id": "D-1733",
+ "hypothesis_id": "H-032",
+ "target_order": 4,
  "stages": [
-  2
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Two-stage order-2 searches produced a new elite recently. A denominator of 64 permits c1=43/64, close to the Ralston node 2/3, while sampling for H-060 and seeking a lower held-out error in the existing two-stage cells."
+ "budget_minutes": 120,
+ "rationale": "The order-4 four-stage cells are weakly sampled. These dyadic stage nodes admit a fourth-order tableau; the zero entry saves a multiply. Search this constrained family for a lower held-out error and gather samples for H-032."
 }
