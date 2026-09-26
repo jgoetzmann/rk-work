@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1783",
+ "directive_id": "D-1784",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -12,16 +12,17 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "3/4",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The six-stage order-4 cell has the best held-out error among order-4 cells, but only 85 candidates and one filled bucket. A related node pattern previously reached order 4 and produced two elites; the finer dyadic grid explores new coefficients for the open six-versus-four-stage comparison."
+ "rationale": "The six-stage order-4 cell has lower held-out error than the four-stage cell, but few order-4 samples. Pinning c4 to 3/4 explores a new region around the previously productive six-stage shape and may improve the weak bucket-3 cell or fill bucket 4 while gathering samples for H-074."
 }
