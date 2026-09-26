@@ -1,21 +1,28 @@
 {
- "directive_id": "D-1712",
+ "directive_id": "D-1714",
  "hypothesis_id": "H-033",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "These stage nodes previously yielded order-4 candidates. A finer dyadic grid and an unconstrained A[5][0] vary that spent shape, with a chance to fill the empty six-stage bucket 4 and gather samples for H-033."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 cell has only 66 samples and is relevant to H-033. Pinning stage 4 at 1/2 changes the search region after 608 islands without a new elite; denominator 32 permits finer dyadic A entries."
 }
