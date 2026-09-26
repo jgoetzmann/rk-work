@@ -1,9 +1,9 @@
 {
- "directive_id": "D-1795",
- "hypothesis_id": "H-075",
+ "directive_id": "D-1796",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "dyadic_denominator_max": 32,
@@ -11,11 +11,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The order-4 five-stage cells have only 308 samples and no elite in the last 316 islands at recent settings. Pinning all nodes to a feasible fourth-order pattern while allowing finer dyadic A entries changes that search and gathers samples for H-075."
+ "rationale": "The six-stage order-4 bucket 4 is empty. Fixing the previously productive nodes and adding c4=1/2 explores a distinct exact-order family while gathering samples for H-074."
 }
