@@ -1,27 +1,12 @@
 {
- "directive_id": "D-1674",
- "hypothesis_id": "H-033",
- "target_order": 4,
+ "directive_id": "D-1676",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  6
+  2
  ],
- "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 cell has only 60 samples. Retain the node pattern that previously reached order 4, and widen the dyadic grid from 16 to 32 to explore new tableaux and gather samples for H-033."
+ "budget_minutes": 60,
+ "rationale": "The two-stage order-2 shape produced six new elites, with the latest only eight islands ago. Its cycle buckets 0 and 2 remain weak, so continue searching this productive shape."
 }
