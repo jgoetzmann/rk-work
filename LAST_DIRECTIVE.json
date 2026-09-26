@@ -1,29 +1,21 @@
 {
- "directive_id": "D-1772",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-1774",
+ "hypothesis_id": "H-075",
+ "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "3": "1"
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-2 search has produced 15 new elites. Its bucket-1 cell remains weaker than bucket 2; two zero A entries reduce coefficient operations while the pinned nodes retain room to vary the remaining stages."
+ "budget_minutes": 90,
+ "rationale": "The order-4 five-stage bucket 4 cell is empty. Pinning dyadic stage nodes gives the exact order-condition solver a feasible fourth-order structure while leaving A free to explore an additional stage and gather samples for H-075."
 }
