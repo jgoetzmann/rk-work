@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1702",
+ "directive_id": "D-1703",
  "hypothesis_id": "H-033",
  "target_order": 4,
  "stages": [
@@ -11,11 +11,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The six-stage order-4 search has reached order 4, but its bucket 4 is empty. Keep the productive fixed nodes while allowing a finer dyadic grid and an unconstrained final-stage A row to explore that cell and gather samples for H-033."
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. A productive six-stage shape reached order 4 with pinned nodes; pinning stage 4 at 1/2 and using a finer dyadic grid explores a different family for H-033."
 }
