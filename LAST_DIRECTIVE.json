@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1681A",
+ "directive_id": "D-1682",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -14,7 +14,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage archive has only four samples and a weak held-out result. Pinning dyadic nodes compatible with classical RK4 should increase exact-order candidates and gather evidence for H-032."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "The order-4 four-stage cell has only four held-out samples and a weak best error. Pinning the classical dyadic stage nodes gives the search a feasible order-4 region while varying A; more samples also test H-032."
 }
