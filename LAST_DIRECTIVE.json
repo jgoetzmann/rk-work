@@ -1,34 +1,27 @@
 {
- "directive_id": "D-1792",
- "hypothesis_id": "H-032",
+ "directive_id": "D-1793",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "The four-stage order-4 cell is weak and has only four samples. These constraints specify a sparse, dyadic classical RK4 tableau with nonnegative weights, adding a feasible point for the open four-stage comparison."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Retain the six-stage node pattern that has produced order-4 candidates, but expand the dyadic grid from 16 to 32. Seek a lower held-out error or an elite in the empty six-stage bucket 4 while gathering samples for H-074."
 }
