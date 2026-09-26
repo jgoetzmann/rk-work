@@ -1,12 +1,20 @@
 {
- "directive_id": "D-C1679",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-1681A",
+ "hypothesis_id": "H-032",
+ "target_order": 4,
  "stages": [
-  2
+  4
  ],
- "constraints": {},
+ "constraints": {
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
+  "b_nonneg": true
+ },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Two-stage order-2 searches produced 6 new elites in 95 islands, with only 16 islands since the latest. Search for lower held-out error in its occupied low-cycle cells."
+ "rationale": "The order-4 four-stage archive has only four samples and a weak held-out result. Pinning dyadic nodes compatible with classical RK4 should increase exact-order candidates and gather evidence for H-032."
 }
