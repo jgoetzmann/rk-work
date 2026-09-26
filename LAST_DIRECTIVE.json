@@ -1,14 +1,14 @@
 {
- "directive_id": "D-1859",
- "hypothesis_id": "H-075",
+ "directive_id": "D-1861",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    4,
+    5,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Order-4 five-stage searches have produced elites, while four-stage order-4 sampling remains sparse. This pinned-node variant explores a different five-stage family and gathers samples for H-075."
+ "rationale": "This six-stage constraint shape previously produced order-4 candidates and two new elites in 16 islands. Search it again to improve the order-4 six-stage cell and gather samples for H-074."
 }
