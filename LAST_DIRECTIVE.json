@@ -1,21 +1,12 @@
 {
- "directive_id": "D-1678",
+ "directive_id": "D-C1679",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  5
+  2
  ],
- "constraints": {
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1"
-  },
-  "b_nonneg": true
- },
+ "constraints": {},
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 five-stage bucket 4 is empty, and bucket 3 has held-out error 3.944e-2. Half-step and endpoint nodes admit a feasible fourth-order tableau while leaving the fifth stage free to explore Q15 rounding behavior."
+ "budget_minutes": 60,
+ "rationale": "Two-stage order-2 searches produced 6 new elites in 95 islands, with only 16 islands since the latest. Search for lower held-out error in its occupied low-cycle cells."
 }
