@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1769",
+ "directive_id": "D-1771",
  "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
@@ -17,5 +17,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The order-4 five-stage bucket-4 cell is empty. These dyadic stage nodes admit order-4 solutions while allowing the fifth stage to vary. Sampling this shape also tests the open five-stage versus four-stage hypothesis."
+ "rationale": "The order-4 five-stage bucket-4 cell is empty, and only 248 five-stage candidates have reached order 4. Use feasible dyadic stage nodes with a finer A grid to seek a new elite and gather samples for H-075."
 }
