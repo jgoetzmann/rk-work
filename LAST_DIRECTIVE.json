@@ -1,24 +1,12 @@
 {
- "directive_id": "D-1751",
- "hypothesis_id": "H-072",
- "target_order": 2,
+ "directive_id": "D-1753",
+ "hypothesis_id": "H-071",
+ "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
    [
     5,
     0
@@ -27,11 +15,13 @@
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2"
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-2 archive has no bucket-2 cell and its bucket-3 held-out error is 3.286e-02. Sparse stage dependencies may reduce cycles while gathering samples for H-072."
+ "budget_minutes": 60,
+ "rationale": "The related six-stage shape produced order-4 elites. A denominator of 32 explores new Q15 coefficients while retaining its productive node pattern; the search can improve the weak six-stage, bucket-3 cell and add samples for H-071."
 }
