@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1727",
+ "directive_id": "D-1729",
  "hypothesis_id": "H-053",
  "target_order": 4,
  "stages": [
@@ -9,6 +9,10 @@
   "force_zero": [
    [
     5,
+    0
+   ],
+   [
+    4,
     0
    ]
   ],
@@ -22,6 +26,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 search has reached its target order, but its current settings have gone 656 islands without a new elite. A denominator of 32 explores finer dyadic A coefficients while retaining the node pins that produced order-4 candidates. The six-stage bucket 4 cell is empty, and new samples can test H-053."
+ "budget_minutes": 45,
+ "rationale": "Six-stage order-4 searches have reached the target order, but the recent shape has gone 664 islands without a new elite. A finer dyadic grid and one additional zero vary that search while retaining its successful fixed nodes. This may improve the weak six-stage cell and gather samples for H-053."
 }
