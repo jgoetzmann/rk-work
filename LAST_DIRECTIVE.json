@@ -1,22 +1,26 @@
 {
- "directive_id": "D-1754",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1756",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "3/4",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 six-stage cell has only 85 held-out samples and an open comparison with four stages. Pinning an additional dyadic node and using a finer A grid changes the spent six-stage search settings while retaining known order-4-compatible nodes."
+ "budget_minutes": 120,
+ "rationale": "Order-4 five-stage cells have produced elites but remain sparse. Pinning the first three nodes to a feasible RK4 pattern and varying the fifth node explores new tableaus; a[2][0]=0 can reduce cycle cost. Gather samples for H-075."
 }
