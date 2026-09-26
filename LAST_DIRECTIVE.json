@@ -1,14 +1,14 @@
 {
- "directive_id": "D-1816",
- "hypothesis_id": "H-030",
+ "directive_id": "D-1817A",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    4,
     0
    ]
   ],
@@ -16,11 +16,12 @@
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only four samples. Midpoint and endpoint nodes with A[3][0]=0 retain a dyadic family of fourth-order methods while narrowing the search; new samples can test H-030."
+ "rationale": "Order-4 five-stage searches have produced elites, while only two of their cycle buckets are filled. Pin dyadic nodes and remove one stage multiply to seek a lower-cost five-stage candidate and gather samples for H-075."
 }
