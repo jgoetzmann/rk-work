@@ -1,7 +1,7 @@
 {
- "directive_id": "D-1775",
- "hypothesis_id": "H-075",
- "target_order": 4,
+ "directive_id": "D-1777",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
   5
  ],
@@ -14,18 +14,22 @@
    [
     3,
     0
+   ],
+   [
+    4,
+    0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 five-stage bucket 4 is empty. These nodes and zeros admit an exact order-4 tableau while leaving the fifth stage available to improve held-out error. A denominator of 32 broadens the dyadic choices for this underfilled order-4 search."
+ "budget_minutes": 45,
+ "rationale": "The five-stage order-2 bucket 1 cell is empty, while bucket 2 has the lowest held-out error in the order-2 grid. Sparse A rows and simple dyadic nodes may reduce cycles enough to reach the empty cell while retaining freedom to improve held-out error."
 }
