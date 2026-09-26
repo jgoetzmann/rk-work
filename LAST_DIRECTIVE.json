@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1685",
+ "directive_id": "D-1686",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -14,10 +14,6 @@
    [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
   "dyadic_denominator_max": 16,
@@ -28,7 +24,7 @@
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 15,
- "rationale": "The four-stage order-4 archive has only four candidates. These constraints admit the sparse classical RK4 tableau and focus sampling on its low-cycle cell for the open four-stage comparison."
+ "islands": 8,
+ "budget_minutes": 45,
+ "rationale": "The four-stage order-4 cell has only four candidates and weak held-out error. These nodes and zeros include classical RK4 while reducing stage arithmetic. Gather order-4 samples for H-032 and seek a better four-stage elite."
 }
