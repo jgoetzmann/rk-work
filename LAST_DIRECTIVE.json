@@ -1,21 +1,28 @@
 {
- "directive_id": "D-1811",
+ "directive_id": "D-1813A",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 cell has reached order 4 but has no elite in bucket 4. Keep the productive node pattern, allow a finer dyadic grid, and release the previously forced zero to explore denser tableaus and gather samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "Pinning the fourth stage at 1/2 explores a new branch of the six-stage family that has produced order-4 candidates. The added half-step stage may improve Q15 held-out error and supply samples for H-074."
 }
