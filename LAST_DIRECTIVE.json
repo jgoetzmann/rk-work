@@ -1,15 +1,37 @@
 {
- "directive_id": "D-1689A",
+ "directive_id": "D-1691",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
-  2
+  4,
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The two-stage order-2 shape produced 6 new elites recently, with only 24 islands since the latest. Its bucket-0 and bucket-2 held-out errors remain weaker than bucket 1. Explore nonnegative weights on a moderate dyadic grid for further improvements."
+ "budget_minutes": 90,
+ "rationale": "Search sparse four- and five-stage tableaus to improve the weak order-2 four-stage bucket-1 cell and seek a five-stage bucket-1 elite. The zero entries reduce stage arithmetic, while the half-step node leaves room to solve the order-2 weights exactly."
 }
