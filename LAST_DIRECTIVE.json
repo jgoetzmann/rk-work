@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1840",
- "hypothesis_id": "H-075",
+ "directive_id": "D-1844",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "3/4",
+   "3": "1",
    "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Five-stage order-4 searches are still producing new elites. Try quarter-step nodes on a dyadic grid to seek a lower-error five-stage cell and gather samples for H-075."
+ "budget_minutes": 120,
+ "rationale": "Five-stage order-4 searches are still producing new elites, while the stage-5 cycle-bucket-4 cell is empty. Fixed nodes retain a feasible RK4 structure; the finer dyadic grid allows more A choices, and one forced zero can reduce stage cost."
 }
