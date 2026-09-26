@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1724",
- "hypothesis_id": "H-033",
+ "directive_id": "D-1726",
+ "hypothesis_id": "H-053",
  "target_order": 4,
  "stages": [
   6
@@ -12,7 +12,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -23,6 +23,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The order-4 six-stage archive has only 68 samples, and its bucket 4 is empty. Fixing the fifth node at 1/2 and using a finer dyadic grid varies a previously productive shape while gathering evidence for H-033."
+ "budget_minutes": 90,
+ "rationale": "The order-4 six-stage bucket-4 cell is empty. Pinning the previously free fourth stage node to 1/2 changes a productive six-stage shape while retaining a feasible fourth-order layout. New samples also test H-053."
 }
