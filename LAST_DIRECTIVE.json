@@ -1,25 +1,11 @@
 {
- "directive_id": "D-1778",
+ "directive_id": "D-1779A",
  "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -30,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The four-stage RK4 skeleton guarantees a feasible order-4 starting point. A fifth stage can vary the weights and Q15 rounding behavior while sparse A keeps cycle cost competitive. This changes the five-stage constraints after 292 islands without a new elite and gathers samples for H-075."
+ "budget_minutes": 120,
+ "rationale": "The order-4 five-stage cell has a weak held-out elite. Pinning the nodes to a dyadic pattern that admits a classical four-stage core keeps order 4 reachable while the fifth stage offers room to improve error and gather samples for H-075."
 }
