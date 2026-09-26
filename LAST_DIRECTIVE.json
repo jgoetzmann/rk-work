@@ -1,28 +1,27 @@
 {
- "directive_id": "D-1714",
- "hypothesis_id": "H-033",
+ "directive_id": "D-1715",
+ "hypothesis_id": "H-050",
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 cell has only 66 samples and is relevant to H-033. Pinning stage 4 at 1/2 changes the search region after 608 islands without a new elite; denominator 32 permits finer dyadic A entries."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 cells remain weak, and H-050 awaits samples. These dyadic nodes admit a classical fourth-order core; forcing A[2][0]=0 narrows the search toward sparse tableaux with fewer stage multiplies."
 }
