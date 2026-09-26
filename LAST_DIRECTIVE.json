@@ -1,21 +1,31 @@
 {
- "directive_id": "D-1774",
+ "directive_id": "D-1775",
  "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The order-4 five-stage bucket 4 cell is empty. Pinning dyadic stage nodes gives the exact order-condition solver a feasible fourth-order structure while leaving A free to explore an additional stage and gather samples for H-075."
+ "rationale": "The order-4 five-stage bucket 4 is empty. These nodes and zeros admit an exact order-4 tableau while leaving the fifth stage available to improve held-out error. A denominator of 32 broadens the dyadic choices for this underfilled order-4 search."
 }
