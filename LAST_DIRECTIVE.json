@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1805",
+ "directive_id": "D-1807",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -8,7 +8,7 @@
  "constraints": {
   "force_zero": [
    [
-    4,
+    5,
     0
    ]
   ],
@@ -17,11 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 search has gone 808 islands without a new elite. Vary its sparsity constraint and dyadic grid while retaining the pinned nodes that have yielded order-4 candidates; gather samples for H-074 and seek an empty six-stage bucket."
+ "budget_minutes": 60,
+ "rationale": "The prior six-stage order-4 shape has gone 816 islands without a new elite. Fixing the remaining node at 1/2 and allowing denominator 32 explores a distinct feasible family while gathering samples for H-074."
 }
