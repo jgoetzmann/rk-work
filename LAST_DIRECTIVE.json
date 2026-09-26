@@ -1,21 +1,15 @@
 {
- "directive_id": "D-1730",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-1732",
+ "hypothesis_id": "H-060",
+ "target_order": 2,
  "stages": [
-  5
+  2
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1"
-  },
+  "dyadic_denominator_max": 64,
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket-4 cell is empty. These nodes admit a classical fourth-order core, while the fifth stage leaves room to improve held-out error. A denominator of 32 varies the dyadic grid used in earlier searches."
+ "rationale": "Two-stage order-2 searches produced a new elite recently. A denominator of 64 permits c1=43/64, close to the Ralston node 2/3, while sampling for H-060 and seeking a lower held-out error in the existing two-stage cells."
 }
