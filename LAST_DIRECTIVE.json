@@ -1,25 +1,21 @@
 {
- "directive_id": "D-1711",
- "hypothesis_id": "H-047",
- "target_order": 3,
+ "directive_id": "D-1712",
+ "hypothesis_id": "H-033",
+ "target_order": 4,
  "stages": [
-  3
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 4,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "3/4"
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 15,
- "rationale": "This sparse three-stage order-3 tableau has dyadic A and an exact nonnegative b solution. It may reach the empty low-cycle cells for order 3, stage 3, while adding samples for H-047."
+ "islands": 8,
+ "budget_minutes": 120,
+ "rationale": "These stage nodes previously yielded order-4 candidates. A finer dyadic grid and an unconstrained A[5][0] vary that spent shape, with a chance to fill the empty six-stage bucket 4 and gather samples for H-033."
 }
