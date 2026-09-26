@@ -1,14 +1,14 @@
 {
- "directive_id": "D-1885",
+ "directive_id": "D-1886",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    4,
     0
    ]
   ],
@@ -17,12 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced elites, but its current settings have stalled. Pinning stage 4 at 1/2 and allowing denominator 32 changes that search while retaining known productive nodes; the six-stage bucket 4 cell is empty."
+ "rationale": "The five-stage order-4 cells remain weak, and the current pinned-node settings have gone 144 islands without a new elite. Move the fifth stage node to 1/2 and use a finer dyadic grid to explore a different feasible family."
 }
