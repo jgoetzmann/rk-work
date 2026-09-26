@@ -1,26 +1,28 @@
 {
- "directive_id": "D-1802A",
- "hypothesis_id": "H-075",
+ "directive_id": "D-1804",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage archive has only four candidates and a weak best held-out error of 6.976e-02. These nodes admit an exact fourth-order tableau; the dyadic grid leaves room to search alternatives and gather samples for H-075."
+ "budget_minutes": 120,
+ "rationale": "The prior six-stage node pattern reached order 4, but has gone 800 islands without a new elite. Pinning c4 to 1/2 changes that search shape while retaining an order-4-feasible node pattern. Seek an elite in the empty six-stage bucket 4 and gather samples for H-074."
 }
