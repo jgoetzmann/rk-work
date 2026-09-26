@@ -1,31 +1,21 @@
 {
- "directive_id": "D-1729",
- "hypothesis_id": "H-053",
+ "directive_id": "D-1730",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ],
-   [
-    4,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Six-stage order-4 searches have reached the target order, but the recent shape has gone 664 islands without a new elite. A finer dyadic grid and one additional zero vary that search while retaining its successful fixed nodes. This may improve the weak six-stage cell and gather samples for H-053."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 bucket-4 cell is empty. These nodes admit a classical fourth-order core, while the fifth stage leaves room to improve held-out error. A denominator of 32 varies the dyadic grid used in earlier searches."
 }
