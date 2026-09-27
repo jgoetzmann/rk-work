@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2057",
+ "directive_id": "D-2059",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -16,10 +16,9 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
-  "b_nonneg": true
+  "dyadic_denominator_max": 32
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "Five-stage order-2 searches have produced recent elites. Vary the sparse A pattern to seek lower-cycle candidates for the empty (5,1) cell and improve the weak (5,3) cell."
+ "rationale": "Five-stage order-2 searches without fixed nodes recently produced eight new elites. Zeroing two late-stage coefficients explores lower-cycle variants for the weak five-stage bucket-3 cell while retaining freedom in the remaining A entries."
 }
