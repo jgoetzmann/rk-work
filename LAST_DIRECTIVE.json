@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2012",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2014",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -23,6 +23,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage shape has produced order-4 elites, but has gone 120 islands without a new one. Pinning the previously free fifth node at 1/2 and using a finer dyadic grid explores a new feasible shape for the empty six-stage bucket-4 cell and gathers samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 shape has produced elites, but its current settings have gone 128 islands without one. Pinning the fourth node and expanding the dyadic grid changes that search while targeting the weak six-stage cells."
 }
