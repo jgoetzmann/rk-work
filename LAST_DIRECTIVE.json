@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1925",
- "hypothesis_id": null,
+ "directive_id": "D-1927A",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -23,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The six-stage order-4 bucket-4 cell is empty. This node pattern has produced order-4 candidates and new elites; a finer dyadic grid explores different coefficients and cycle costs."
+ "rationale": "The six-stage pinned-node shape has produced order-4 elites. A finer dyadic grid may improve its weak bucket-3 cell or fill an empty bucket-4 cell while gathering samples for H-074."
 }
