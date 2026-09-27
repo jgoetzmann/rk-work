@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2053A",
+ "directive_id": "D-2054",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-2. These dyadic stage nodes preserve a feasible fourth-order construction while the finer A grid and sparse final row explore alternatives that may improve it."
+ "budget_minutes": 60,
+ "rationale": "The order-4 five-stage bucket 4 cell is empty. Five-stage searches have reached order 4 and produced elites, but the recent setting has gone 240 islands without one. Vary the dyadic grid and remove a[4][0] to explore a sparse endpoint stage."
 }
