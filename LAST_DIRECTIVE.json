@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2078",
- "hypothesis_id": null,
+ "directive_id": "D-2079",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -12,17 +12,17 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
+   "3": "1/2",
+   "4": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 search has produced elites, but its current settings have gone 320 islands without a new one. Pinning the previously free fourth node to 1/2 narrows that productive family and may reach an empty cycle bucket or improve its weak cells."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 search has yielded few candidates and has gone 328 islands without a new elite. This changes its pinned nodes and dyadic grid while retaining a sparse final stage; additional order-4 samples can test H-074."
 }
