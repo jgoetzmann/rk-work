@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2011",
- "hypothesis_id": null,
+ "directive_id": "D-2012",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -17,11 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "The six-stage pinned-node shape has produced order-4 candidates and two new elites, but its denominator-16 setting has stalled. A denominator of 32 explores additional dyadic A values while retaining the known feasible node pattern, aiming to improve the weak bucket-3 cell or fill bucket 4."
+ "rationale": "The six-stage shape has produced order-4 elites, but has gone 120 islands without a new one. Pinning the previously free fifth node at 1/2 and using a finer dyadic grid explores a new feasible shape for the empty six-stage bucket-4 cell and gathers samples for H-074."
 }
