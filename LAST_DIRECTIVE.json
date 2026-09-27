@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1939",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1940",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage shape has reached order 4 and produced new elites. A finer dyadic grid explores coefficients beyond the prior denominator-16 setting while gathering samples for the open six-stage versus four-stage held-out comparison."
+ "budget_minutes": 45,
+ "rationale": "The six-stage order-4 shape has produced elites, while its current settings have gone 152 islands without one. A denominator of 32 explores new dyadic A values while retaining the node pins and sparsity pattern of a successful shape. The six-stage order-4 bucket 4 cell is empty."
 }
