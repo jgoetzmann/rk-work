@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2068",
+ "directive_id": "D-2069",
  "hypothesis_id": "H-201",
  "target_order": 4,
  "stages": [
@@ -17,12 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "3/4",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 cell is weak and has only one filled cycle bucket. A productive node pattern has stalled; adding a 3/4 node and allowing denominator 32 explores a distinct feasible family for H-201."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 cell is weak and H-201 remains open. The prior six-stage shape produced order-4 candidates but has gone 296 islands without a new elite; pinning stage 4 at 1/2 and using a finer dyadic grid changes that search region."
 }
