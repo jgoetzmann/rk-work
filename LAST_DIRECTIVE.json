@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2075",
- "hypothesis_id": null,
+ "directive_id": "D-2077",
+ "hypothesis_id": "H-210",
  "target_order": 3,
  "stages": [
   3
@@ -12,13 +12,14 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "3/4"
   },
   "b_nonneg": true
  },
- "islands": 6,
- "budget_minutes": 45,
- "rationale": "The order-3 three-stage bucket-1 cell is empty. A sparse second stage can reduce cycle cost; the dyadic grid includes c[2]=3/4, which permits an exact third-order tableau with nonnegative weights."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints select a sparse three-stage order-3 tableau with dyadic A and nonnegative exact b. Evaluate whether it fills the empty low-cycle cell and adds samples for H-210."
 }
