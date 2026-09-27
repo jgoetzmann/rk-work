@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2006",
- "hypothesis_id": null,
+ "directive_id": "D-2008",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -16,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 search has produced elites, but its current settings have gone 88 islands without one. Keep the proven fixed nodes while allowing finer A coefficients and removing the forced zero to explore the empty cycle bucket 4."
+ "budget_minutes": 120,
+ "rationale": "A nearby six-stage shape produced order-4 elites. Expanding its dyadic grid and freeing a[5][0] may reach the empty six-stage cycle bucket 4 and add samples for H-074."
 }
