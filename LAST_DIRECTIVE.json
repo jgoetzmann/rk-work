@@ -1,9 +1,9 @@
 {
- "directive_id": "D-2063",
+ "directive_id": "D-2065",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 2,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -14,17 +14,28 @@
    [
     3,
     0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
    ]
   ],
   "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "3/4",
-   "3": "1"
-  },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-3 four-stage bucket-2 cell has held-out error 4.283e-02. Sparse A entries may lower cycles while the pinned dyadic nodes leave b to be solved exactly for order 3."
+ "rationale": "The order-2 five-stage search has produced seven new elites, while its cycle bucket 1 is empty. A sparse stage chain reduces coefficient operations and may reach that bucket; the dyadic grid and nonnegative weights retain feasible order-2 methods."
 }
