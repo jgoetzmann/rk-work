@@ -1,28 +1,21 @@
 {
- "directive_id": "D-2031",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2033",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
+   "3": "3/4",
    "5": "1"
   },
-  "b_nonneg": false
+  "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. The earlier six-stage settings produced order-4 elites but have since stalled; pinning the fourth node and widening the dyadic grid explores a different feasible region while gathering samples for H-074."
+ "budget_minutes": 120,
+ "rationale": "The prior six-stage order-4 shape has gone 216 islands without a new elite. Different dyadic stage nodes and a finer A grid may reach the empty six-stage cycle bucket 4 or improve the weak bucket 3 cell."
 }
