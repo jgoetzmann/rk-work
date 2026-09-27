@@ -1,21 +1,19 @@
 {
- "directive_id": "D-2042",
+ "directive_id": "D-2044",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  6
+  2,
+  3
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "1": "11/16"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage pinned-node shape has produced order-4 elites, but its current settings have stalled. A finer dyadic grid and removal of the forced zero broaden the feasible tableaus, with a chance to fill the empty six-stage cycle bucket 4."
+ "budget_minutes": 60,
+ "rationale": "Explore a dyadic stage node near the Ralston two-stage value of 2/3. The two- and three-stage order-2 cells have received relatively little recent search, and this pin leaves the remaining coefficients free for held-out improvement."
 }
