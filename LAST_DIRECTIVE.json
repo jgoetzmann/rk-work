@@ -1,34 +1,22 @@
 {
- "directive_id": "D-2110",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2111A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 20,
- "rationale": "These constraints give the sparse classical four-stage RK4 tableau. Evaluate its Q15 held-out error and cycle bucket to add a focused order-4 four-stage sample for H-032."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Six-stage order-4 searches have produced new elites, but the prior settings have gone 120 islands without one. Pinning the remaining stage node and using a finer dyadic grid explores a different feasible region for the weak bucket-4 cell and empty higher-cycle cells."
 }
