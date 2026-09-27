@@ -1,14 +1,14 @@
 {
- "directive_id": "D-2096",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2098A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    4,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "This six-stage shape has produced order-4 elites. A finer dyadic grid retains its feasible coefficients while exploring variants for the weak six-stage cells and gathering samples for H-074."
+ "budget_minutes": 90,
+ "rationale": "The five-stage order-4 bucket-4 cell is empty. Vary the node-constrained five-stage search with a finer dyadic grid and one sparse entry; this shape has reached order 4 and produced elites."
 }
