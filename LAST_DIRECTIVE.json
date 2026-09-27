@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1949",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1951",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -17,11 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 shape has produced new elites. A finer dyadic grid explores variants around that feasible node pattern and may improve its occupied bucket-3 cell while gathering samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The order-4 six-stage bucket-4 cell is empty. Pinning the fourth node at 1/2 and allowing denominator 32 changes the productive six-stage shape after 192 islands without a new elite."
 }
