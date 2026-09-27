@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2030",
+ "directive_id": "D-2031",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -12,7 +12,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -20,9 +20,9 @@
    "4": "1/2",
    "5": "1"
   },
-  "b_nonneg": true
+  "b_nonneg": false
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Pinning the previously free fifth stage node to 1/2 varies the six-stage shape that has produced order-4 elites. Gather samples for the open six-stage versus four-stage order-4 held-out comparison."
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. The earlier six-stage settings produced order-4 elites but have since stalled; pinning the fourth node and widening the dyadic grid explores a different feasible region while gathering samples for H-074."
 }
