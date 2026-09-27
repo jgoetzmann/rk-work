@@ -1,11 +1,17 @@
 {
- "directive_id": "D-1988",
+ "directive_id": "D-1990",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -17,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has produced an elite, but its current settings have gone 296 islands without another. Retain the productive fixed nodes while allowing a finer dyadic grid and freeing a[5][0] to explore new tableaus and the empty higher-cycle cells."
+ "rationale": "Six-stage searches are still producing order-4 elites. Retain the node pattern that reached order 4 and expand the dyadic grid from 16 to 32 to explore new coefficients, including the empty six-stage bucket-4 cell."
 }
