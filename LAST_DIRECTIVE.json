@@ -1,19 +1,19 @@
 {
- "directive_id": "D-2044",
+ "directive_id": "D-2045",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 3,
  "stages": [
-  2,
   3
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
-   "1": "11/16"
+   "1": "1",
+   "2": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Explore a dyadic stage node near the Ralston two-stage value of 2/3. The two- and three-stage order-2 cells have received relatively little recent search, and this pin leaves the remaining coefficients free for held-out improvement."
+ "rationale": "The three-stage order-3 bucket 1 cell is empty, and bucket 2 has held-out error 4.107e-02. These dyadic nodes admit a nonnegative third-order tableau with sparse coefficients; search for a cheaper candidate or a better bucket 2 elite."
 }
