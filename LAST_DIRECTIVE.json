@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1978",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1979",
+ "hypothesis_id": "H-170",
  "target_order": 4,
  "stages": [
   6
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage shape has produced order-4 candidates and a new elite. A denominator of 32 retains its feasible A coefficients while adding nearby dyadic choices. Gather samples for the open six-stage versus four-stage held-out comparison."
+ "budget_minutes": 90,
+ "rationale": "The six-stage shape has produced order-4 elites, but has gone 272 islands without a new one. A finer dyadic grid varies its search while retaining its fixed nodes. Seek an improved six-stage cell and gather samples for H-170."
 }
