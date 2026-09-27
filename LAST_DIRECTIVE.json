@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1915",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1919",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage pinned-node shape has reached order 4 and recently produced an elite. A denominator of 32 explores additional exact dyadic A values, with potential to improve the weak six-stage cell or fill its empty bucket 4 while gathering samples for H-074."
+ "budget_minutes": 90,
+ "rationale": "The pinned six-stage shape has reached order 4 and produced new elites. A denominator of 32 explores additional dyadic coefficients around that feasible shape, seeking a lower held-out error in the six-stage archive."
 }
