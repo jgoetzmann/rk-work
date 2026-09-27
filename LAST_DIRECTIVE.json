@@ -1,32 +1,21 @@
 {
- "directive_id": "D-2041",
+ "directive_id": "D-2042",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Order-2 five-stage searches have recently produced new elites. Sparse A rows may reduce cycles and improve the stage-5 bucket-2 cell, whose best held-out error is 1.356e-02."
+ "budget_minutes": 120,
+ "rationale": "The six-stage pinned-node shape has produced order-4 elites, but its current settings have stalled. A finer dyadic grid and removal of the forced zero broaden the feasible tableaus, with a chance to fill the empty six-stage cycle bucket 4."
 }
