@@ -1,39 +1,27 @@
 {
- "directive_id": "D-2034",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2036",
+ "hypothesis_id": "H-074",
+ "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    4,
+    5,
     1
-   ],
-   [
-    4,
-    2
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-2 cycle bucket 1 is empty, while bucket 2 has the best held-out error for this order. Sparse later rows may reduce cycles enough to fill bucket 1; fixed dyadic nodes retain feasible order-2 candidates."
+ "budget_minutes": 120,
+ "rationale": "The pinned six-stage shape has produced order-4 elites, but its recent settings have stalled. Change the zero entry and allow finer dyadic A values to explore a different cost and error region, including the empty six-stage bucket 4 cell, while gathering samples for H-074."
 }
