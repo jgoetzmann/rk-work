@@ -1,30 +1,21 @@
 {
- "directive_id": "D-2060",
- "hypothesis_id": null,
- "target_order": 3,
+ "directive_id": "D-2062",
+ "hypothesis_id": "H-201",
+ "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-3 cells remain weak and have had little search. These nodes and sparse A entries leave a dyadic family of feasible third-order methods, allowing the remaining coefficients to vary while reducing multiplication cost."
+ "rationale": "The proven six-stage node pattern has reached order 4, but its current shape has gone 272 islands without a new elite. Allowing a[5][0] to vary changes that shape and may reach the empty six-stage cycle bucket 4 while gathering samples for H-201."
 }
