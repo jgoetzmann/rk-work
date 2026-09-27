@@ -1,11 +1,17 @@
 {
- "directive_id": "D-2048",
+ "directive_id": "D-2050",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -17,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "Six-stage order-4 has only bucket 3 filled. Keep the node pins from the shape that reached order 4, but remove its forced zero and use a 1/32 grid to explore higher-cycle cells and gather samples for H-074."
+ "rationale": "The corresponding denominator-16 shape reached order 4 and produced two new elites, but has gone 256 islands without another. A denominator of 32 explores finer A coefficients while retaining its viable node pattern; samples also inform H-074."
 }
