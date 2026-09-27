@@ -1,27 +1,33 @@
 {
- "directive_id": "D-2050",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2051",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The corresponding denominator-16 shape reached order 4 and produced two new elites, but has gone 256 islands without another. A denominator of 32 explores finer A coefficients while retaining its viable node pattern; samples also inform H-074."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-2 bucket-1 cell is empty, while bucket 2 has the best held-out error for order 2. Sparse A rows may reduce cycles enough to reach bucket 1; removing fixed nodes changes the settings used in recent five-stage searches."
 }
