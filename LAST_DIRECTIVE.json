@@ -1,22 +1,12 @@
 {
- "directive_id": "D-1973",
+ "directive_id": "D-1975",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -26,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "A closely related six-stage shape reached order 4 and produced elites. Zeroing one additional A entry may reduce cycles while gathering samples for the open six-stage versus four-stage held-out comparison."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 cell has the lowest held-out error among order-4 cells, but only bucket 3 is filled. Varying the proven node-pinning shape and allowing denominator 32 may reach an empty cycle bucket while gathering samples for H-074."
 }
