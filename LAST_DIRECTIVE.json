@@ -1,27 +1,20 @@
 {
- "directive_id": "D-1982",
+ "directive_id": "D-1984",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage pinned-node shape has reached order 4 and produced elites. A denominator of 32 retains its feasible dyadic coefficients while allowing finer A values to seek a lower held-out error or fill an empty cycle bucket."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 bucket 4 cell is empty. Pinning three nodes preserves room to vary the fourth-stage node and A entries; the finer dyadic grid may reach a new cycle bucket."
 }
