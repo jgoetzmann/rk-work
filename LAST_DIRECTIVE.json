@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2069",
- "hypothesis_id": "H-201",
+ "directive_id": "D-2071",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -17,12 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 cell is weak and H-201 remains open. The prior six-stage shape produced order-4 candidates but has gone 296 islands without a new elite; pinning stage 4 at 1/2 and using a finer dyadic grid changes that search region."
+ "budget_minutes": 120,
+ "rationale": "The known six-stage fourth-order shape produced two elites but has stalled at denominator 16. A denominator-32 grid explores additional A values around its productive fixed nodes and sparsity, gathering samples for H-074."
 }
