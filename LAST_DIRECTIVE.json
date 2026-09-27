@@ -1,20 +1,27 @@
 {
- "directive_id": "D-2099A",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2101",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The order-4 four-stage cell has only four archived samples and a weak best held-out error. Pinning the stage nodes to a dyadic order-4 pattern should increase feasible samples and test H-030."
+ "budget_minutes": 60,
+ "rationale": "The corresponding denominator-16 shape produced order-4 candidates and two new elites in 16 islands. A denominator of 32 retains those feasible tableaus while testing finer A coefficients for the weak six-stage order-4 cells."
 }
