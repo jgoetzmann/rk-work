@@ -1,21 +1,27 @@
 {
- "directive_id": "D-1924A",
+ "directive_id": "D-1925",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket-4 cell is empty. These nodes retain a known feasible four-stage order-4 structure while allowing the fifth stage to contribute. A finer dyadic grid and unrestricted A sparsity vary the stalled five-stage settings."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 bucket-4 cell is empty. This node pattern has produced order-4 candidates and new elites; a finer dyadic grid explores different coefficients and cycle costs."
 }
