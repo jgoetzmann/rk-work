@@ -1,22 +1,12 @@
 {
- "directive_id": "D-2004A",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2006",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ],
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -26,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The related six-stage shape produced order-4 elites. Adding one zero coefficient explores a lower-cycle variant while gathering samples for H-074."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 search has produced elites, but its current settings have gone 88 islands without one. Keep the proven fixed nodes while allowing finer A coefficients and removing the forced zero to explore the empty cycle bucket 4."
 }
