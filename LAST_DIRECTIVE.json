@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2108",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2110",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -8,11 +8,19 @@
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 four-stage cell has only four held-out samples and a weak incumbent. These dyadic nodes admit exact fourth-order tableaus; searching their coefficient variants can improve the cell and gather samples for H-030."
+ "islands": 1,
+ "budget_minutes": 20,
+ "rationale": "These constraints give the sparse classical four-stage RK4 tableau. Evaluate its Q15 held-out error and cycle bucket to add a focused order-4 four-stage sample for H-032."
 }
