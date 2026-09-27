@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2105",
+ "directive_id": "D-2107",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,7 +9,7 @@
   "force_zero": [
    [
     5,
-    0
+    1
    ]
   ],
   "dyadic_denominator_max": 32,
@@ -23,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The pinned six-stage shape has produced fourth-order elites. A finer dyadic grid retains those feasible tableaus while allowing new coefficients to improve the weak six-stage cells or fill an empty cycle bucket."
+ "rationale": "The six-stage order-4 search has produced elites, but its current settings have gone 112 islands without one. Use a finer dyadic grid and a different zero in the last row to explore new tableaus for the weak bucket-4 cell and empty bucket-5 cell."
 }
