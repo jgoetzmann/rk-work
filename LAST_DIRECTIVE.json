@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2104",
+ "directive_id": "D-2105",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -7,10 +7,6 @@
  ],
  "constraints": {
   "force_zero": [
-   [
-    4,
-    0
-   ],
    [
     5,
     0
@@ -27,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced new elites. Add a zero in stage 4 to reduce cycle cost, and use a finer dyadic grid to explore coefficients for the weak six-stage cells."
+ "rationale": "The pinned six-stage shape has produced fourth-order elites. A finer dyadic grid retains those feasible tableaus while allowing new coefficients to improve the weak six-stage cells or fill an empty cycle bucket."
 }
