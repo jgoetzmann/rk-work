@@ -1,27 +1,25 @@
 {
- "directive_id": "D-2056",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2057",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    3,
+    0
+   ],
+   [
+    4,
     0
    ]
   ],
   "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
-  "b_nonneg": false
+  "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "Order-4 six-stage bucket 4 is empty. A related pinned-node shape previously reached order 4; a finer dyadic grid and unrestricted b vary that spent setting while gathering samples for H-074."
+ "budget_minutes": 45,
+ "rationale": "Five-stage order-2 searches have produced recent elites. Vary the sparse A pattern to seek lower-cycle candidates for the empty (5,1) cell and improve the weak (5,3) cell."
 }
