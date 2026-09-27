@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1952",
+ "directive_id": "D-1954",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -7,6 +7,10 @@
  ],
  "constraints": {
   "force_zero": [
+   [
+    2,
+    0
+   ],
    [
     3,
     0
@@ -16,14 +20,13 @@
     1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The four-stage order-2 bucket-1 cell has held-out error 2.164e-02. Sparse final-stage coupling may lower cycles while leaving the second stage and exact b weights free to improve that cell."
+ "budget_minutes": 90,
+ "rationale": "The four-stage order-2 shape has produced 15 new elites. Search sparse stage chains to reduce cycle cost and improve its weak bucket-1 cell while solving b exactly."
 }
