@@ -1,14 +1,14 @@
 {
- "directive_id": "D-2054",
- "hypothesis_id": null,
+ "directive_id": "D-2056",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    4,
+    5,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1"
+   "5": "1"
   },
-  "b_nonneg": true
+  "b_nonneg": false
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket 4 cell is empty. Five-stage searches have reached order 4 and produced elites, but the recent setting has gone 240 islands without one. Vary the dyadic grid and remove a[4][0] to explore a sparse endpoint stage."
+ "budget_minutes": 90,
+ "rationale": "Order-4 six-stage bucket 4 is empty. A related pinned-node shape previously reached order 4; a finer dyadic grid and unrestricted b vary that spent setting while gathering samples for H-074."
 }
