@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1929A",
+ "directive_id": "D-1931",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The pinned six-stage shape has produced order-4 elites. A denominator of 32 explores additional coefficients while retaining its successful node pattern and sparse final stage; more samples can test H-074."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. Retain the stage nodes from a shape that reached order 4, while allowing a finer dyadic grid and freeing a[5][0] to explore new tableaus and gather samples for H-074."
 }
