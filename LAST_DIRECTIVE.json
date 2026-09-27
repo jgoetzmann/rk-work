@@ -1,21 +1,30 @@
 {
- "directive_id": "D-2062",
- "hypothesis_id": "H-201",
- "target_order": 4,
+ "directive_id": "D-2063",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
-  6
+  4
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "2": "3/4",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The proven six-stage node pattern has reached order 4, but its current shape has gone 272 islands without a new elite. Allowing a[5][0] to vary changes that shape and may reach the empty six-stage cycle bucket 4 while gathering samples for H-201."
+ "rationale": "The order-3 four-stage bucket-2 cell has held-out error 4.283e-02. Sparse A entries may lower cycles while the pinned dyadic nodes leave b to be solved exactly for order 3."
 }
