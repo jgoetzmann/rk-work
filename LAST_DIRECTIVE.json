@@ -1,22 +1,27 @@
 {
- "directive_id": "D-1903",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1904",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "1/2",
-   "4": "3/4",
-   "5": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket 4 cell is empty. These dyadic nodes change the constraints of the spent six-stage shape while retaining a feasible fourth-order embedding; additional candidates also test H-074."
+ "rationale": "Five-stage order-4 searches have produced elites, while the four-stage archive has only four samples. These pinned nodes retain a feasible fourth-order structure; a[2][0]=0 removes one stage combination. Sample the five-stage cell to test H-075."
 }
