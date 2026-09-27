@@ -1,30 +1,21 @@
 {
- "directive_id": "D-1922A",
+ "directive_id": "D-1924A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ],
-   [
-    4,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
+   "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 cell has the best order-4 held-out error but only one filled cycle bucket. Relaxing the second node pin and adding a zero coefficient changes the spent search shape while favoring lower-cycle candidates."
+ "rationale": "The order-4 five-stage bucket-4 cell is empty. These nodes retain a known feasible four-stage order-4 structure while allowing the fifth stage to contribute. A finer dyadic grid and unrestricted A sparsity vary the stalled five-stage settings."
 }
