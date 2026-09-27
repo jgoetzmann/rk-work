@@ -1,26 +1,25 @@
 {
- "directive_id": "D-1963",
- "hypothesis_id": "H-160",
+ "directive_id": "D-1964A",
+ "hypothesis_id": null,
  "target_order": 3,
  "stages": [
-  4
+  3
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
    "1": "1/2",
-   "2": "3/4",
-   "3": "1"
+   "2": "3/4"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-3 four-stage archive has a strong held-out result but only 5,543 samples. Pinning dyadic stage nodes and removing a[3][0] explores a sparse, lower-cycle region while gathering samples for H-160."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "The three-stage order-3 bucket 1 cell is empty. These dyadic nodes and a[2][0]=0 admit exact order-3 weights while removing one A multiply; test whether the resulting sparse tableau reaches that cycle bucket."
 }
