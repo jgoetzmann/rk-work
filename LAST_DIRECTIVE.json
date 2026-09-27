@@ -1,17 +1,11 @@
 {
- "directive_id": "D-2101",
- "hypothesis_id": null,
+ "directive_id": "D-2102",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The corresponding denominator-16 shape produced order-4 candidates and two new elites in 16 islands. A denominator of 32 retains those feasible tableaus while testing finer A coefficients for the weak six-stage order-4 cells."
+ "budget_minutes": 90,
+ "rationale": "Six-stage order-4 searches have produced recent elites. Retain the productive node pins while allowing finer dyadic A coefficients and a free a[5][0] to seek a better held-out result and gather samples for H-074."
 }
