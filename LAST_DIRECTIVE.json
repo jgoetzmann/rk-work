@@ -1,33 +1,27 @@
 {
- "directive_id": "D-2051",
+ "directive_id": "D-2053A",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
     4,
     0
-   ],
-   [
-    4,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-2 bucket-1 cell is empty, while bucket 2 has the best held-out error for order 2. Sparse A rows may reduce cycles enough to reach bucket 1; removing fixed nodes changes the settings used in recent five-stage searches."
+ "budget_minutes": 90,
+ "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-2. These dyadic stage nodes preserve a feasible fourth-order construction while the finer A grid and sparse final row explore alternatives that may improve it."
 }
