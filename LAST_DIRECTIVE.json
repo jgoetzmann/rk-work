@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1954",
+ "directive_id": "D-1955",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -20,13 +20,10 @@
     1
    ]
   ],
-  "dyadic_denominator_max": 32,
-  "c_fixed": {
-   "1": "1/2"
-  },
+  "dyadic_denominator_max": 16,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The four-stage order-2 shape has produced 15 new elites. Search sparse stage chains to reduce cycle cost and improve its weak bucket-1 cell while solving b exactly."
+ "budget_minutes": 45,
+ "rationale": "The four-stage order-2 bucket-0 cell is empty. A sparse stage chain may lower cycle cost; leaving c unfixed varies the recently searched four-stage shape."
 }
