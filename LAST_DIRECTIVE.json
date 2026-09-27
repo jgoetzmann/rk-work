@@ -1,24 +1,21 @@
 {
- "directive_id": "D-2038A",
+ "directive_id": "D-2039",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  3
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "11/16"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The three-stage order-2 bucket-0 cell is weak. Fixing c1 near the Ralston node and removing a[2][0] explores sparse, lower-cycle tableaus while leaving a[2][1] and the exact output weights free."
+ "budget_minutes": 45,
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. Keep the node pattern that has produced order-4 candidates, while allowing a nonzero a[5][0] and a finer dyadic grid to explore tableaus with different cycle costs."
 }
