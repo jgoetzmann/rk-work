@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1919",
+ "directive_id": "D-1922A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -10,18 +10,21 @@
    [
     5,
     0
+   ],
+   [
+    4,
+    0
    ]
   ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
    "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The pinned six-stage shape has reached order 4 and produced new elites. A denominator of 32 explores additional dyadic coefficients around that feasible shape, seeking a lower held-out error in the six-stage archive."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 cell has the best order-4 held-out error but only one filled cycle bucket. Relaxing the second node pin and adding a zero coefficient changes the spent search shape while favoring lower-cycle candidates."
 }
