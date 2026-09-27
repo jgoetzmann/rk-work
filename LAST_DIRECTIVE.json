@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2071",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2072",
+ "hypothesis_id": "H-201",
  "target_order": 4,
  "stages": [
   6
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The known six-stage fourth-order shape produced two elites but has stalled at denominator 16. A denominator-32 grid explores additional A values around its productive fixed nodes and sparsity, gathering samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The six-stage pinned-node shape has produced order-4 elites, but its denominator-16 search has stalled. A denominator-32 grid retains those feasible coefficients while allowing new tableaus; order-4 six-stage samples also inform H-201."
 }
