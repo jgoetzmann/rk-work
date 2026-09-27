@@ -1,5 +1,5 @@
 {
- "directive_id": "D-1934",
+ "directive_id": "D-1936",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -16,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket-4 cell is empty. Keep the node pattern that has reached order 4, while allowing a finer dyadic grid and an unconstrained A[5][0] to explore different coefficients and cycle costs."
+ "budget_minutes": 120,
+ "rationale": "The pinned six-stage shape has reached order 4, but its current settings have gone 136 islands without a new elite. A finer dyadic grid and an unconstrained A[5][0] explore additional tableaus for the empty six-stage bucket 4 cell."
 }
