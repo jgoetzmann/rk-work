@@ -1,6 +1,6 @@
 {
- "directive_id": "D-1994A",
- "hypothesis_id": "H-033",
+ "directive_id": "D-2004A",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -10,9 +10,13 @@
    [
     5,
     0
+   ],
+   [
+    4,
+    0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -22,6 +26,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage order-4 shape has produced new elites recently. A finer dyadic grid may improve its held-out error or fill an empty cycle bucket while adding samples for H-033."
+ "budget_minutes": 60,
+ "rationale": "The related six-stage shape produced order-4 elites. Adding one zero coefficient explores a lower-cycle variant while gathering samples for H-074."
 }
