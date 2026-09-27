@@ -1,29 +1,21 @@
 {
- "directive_id": "D-1955",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-1957",
+ "hypothesis_id": "H-074",
+ "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The four-stage order-2 bucket-0 cell is empty. A sparse stage chain may lower cycle cost; leaving c unfixed varies the recently searched four-stage shape."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 shape has produced new elites, but its current settings have gone 200 islands without one. A finer dyadic grid and a free A[5][0] vary that shape while retaining its pinned nodes. The order-4 six-stage bucket-4 cell is empty."
 }
