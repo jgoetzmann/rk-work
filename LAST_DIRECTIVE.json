@@ -1,21 +1,22 @@
 {
- "directive_id": "D-2018",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2019",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/4",
    "2": "1/2",
    "3": "3/4",
-   "4": "1"
+   "4": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The five-stage order-4 cells remain weak or empty. Distinct dyadic nodes and a finer A grid explore a different family after the previous pinned-node settings went 224 islands without a new elite. Nonnegative b keeps the search focused on stable weights while gathering samples for H-075."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 cell has a held-out error of 2.787e-2, while its bucket-4 cell is empty. A different set of pinned dyadic nodes and denominator 32 explores a new feasible region and gathers samples for H-074."
 }
