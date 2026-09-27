@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1958",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1960",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage pinned shape has reached order 4 and produced new elites. A finer dyadic grid explores different A coefficients while retaining those feasible stage nodes, with a chance to improve the weak (6,3) cell or fill (6,4)."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 cell has produced candidates, but bucket 4 is empty and the current shape has gone 216 islands without a new elite. Retain its productive node pattern while allowing a finer dyadic grid and dense A to explore higher-cycle tableaus."
 }
