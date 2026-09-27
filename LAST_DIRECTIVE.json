@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2021",
+ "directive_id": "D-2023",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -22,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The pinned-node six-stage shape has produced order-4 elites. A finer dyadic grid may improve its held-out error or fill the empty six-stage cycle bucket 4 while gathering samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 search has produced elites, but its current settings have stalled. A finer dyadic grid retains the successful node pattern while exploring new coefficients for the weak bucket-3 cell and empty bucket-4 cell."
 }
