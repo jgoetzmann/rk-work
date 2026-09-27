@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2079",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2084",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -16,13 +16,12 @@
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1/2",
-   "4": "1",
+   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has yielded few candidates and has gone 328 islands without a new elite. This changes its pinned nodes and dyadic grid while retaining a sparse final stage; additional order-4 samples can test H-074."
+ "budget_minutes": 45,
+ "rationale": "The six-stage order-4 shape recently produced new elites. A finer dyadic grid retains its productive stage nodes while exploring coefficients that may improve the weak bucket-4 cell or fill an empty cell."
 }
