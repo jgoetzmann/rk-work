@@ -1,24 +1,30 @@
 {
- "directive_id": "D-2059",
+ "directive_id": "D-2060",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 3,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    2,
     0
    ],
    [
-    4,
+    3,
     0
    ]
   ],
-  "dyadic_denominator_max": 32
+  "dyadic_denominator_max": 64,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
+  },
+  "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Five-stage order-2 searches without fixed nodes recently produced eight new elites. Zeroing two late-stage coefficients explores lower-cycle variants for the weak five-stage bucket-3 cell while retaining freedom in the remaining A entries."
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-3 cells remain weak and have had little search. These nodes and sparse A entries leave a dyadic family of feasible third-order methods, allowing the remaining coefficients to vary while reducing multiplication cost."
 }
