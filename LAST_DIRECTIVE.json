@@ -1,21 +1,28 @@
 {
- "directive_id": "D-2066A",
+ "directive_id": "D-2068",
  "hypothesis_id": "H-201",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "3/4",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 120,
- "rationale": "These node pins previously yielded order-4 six-stage candidates. Allowing a[5][0] to vary explores new tableaus for the empty six-stage bucket 4 and gathers samples for H-201."
+ "rationale": "The six-stage order-4 cell is weak and has only one filled cycle bucket. A productive node pattern has stalled; adding a 3/4 node and allowing denominator 32 explores a distinct feasible family for H-201."
 }
