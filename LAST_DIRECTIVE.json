@@ -1,27 +1,26 @@
 {
- "directive_id": "D-2107",
- "hypothesis_id": null,
+ "directive_id": "D-2108",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
-    1
+    3,
+    0
    ]
   ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has produced elites, but its current settings have gone 112 islands without one. Use a finer dyadic grid and a different zero in the last row to explore new tableaus for the weak bucket-4 cell and empty bucket-5 cell."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage cell has only four held-out samples and a weak incumbent. These dyadic nodes admit exact fourth-order tableaus; searching their coefficient variants can improve the cell and gather samples for H-030."
 }
