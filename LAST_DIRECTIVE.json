@@ -1,11 +1,17 @@
 {
- "directive_id": "D-2015",
- "hypothesis_id": "H-121",
+ "directive_id": "D-2017",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -17,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Six-stage pinned-node searches have reached order 4 and produced new elites. A finer dyadic grid and an unforced A[5][0] explore new tableaus for the weak (6,3) cell and may fill (6,4), while adding samples for H-121."
+ "rationale": "The six-stage shape has produced order-4 elites, but its current denominator-16 setting has gone 144 islands without a new one. A denominator of 32 expands the coefficient choices while retaining its productive node constraints; the order-4 six-stage bucket 4 remains empty."
 }
