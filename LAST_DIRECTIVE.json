@@ -1,19 +1,34 @@
 {
- "directive_id": "D-2045",
- "hypothesis_id": null,
- "target_order": 3,
+ "directive_id": "D-2047",
+ "hypothesis_id": "H-032",
+ "target_order": 4,
  "stages": [
-  3
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 4,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1",
-   "2": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The three-stage order-3 bucket 1 cell is empty, and bucket 2 has held-out error 4.107e-02. These dyadic nodes admit a nonnegative third-order tableau with sparse coefficients; search for a cheaper candidate or a better bucket 2 elite."
+ "islands": 4,
+ "budget_minutes": 30,
+ "rationale": "The four-stage order-4 cell has only four samples and held-out error 0.06976. These constraints admit classical RK4 with sparse, shift-friendly A coefficients, providing targeted samples for H-032."
 }
