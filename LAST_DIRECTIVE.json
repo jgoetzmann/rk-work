@@ -1,22 +1,16 @@
 {
- "directive_id": "D-1901",
- "hypothesis_id": "H-141",
+ "directive_id": "D-1903",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1",
+   "3": "1/2",
    "4": "3/4",
    "5": "1"
   },
@@ -24,5 +18,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Vary the successful six-stage order-4 shape by fixing c4=3/4. Seek improvement beyond its bucket-3 elite, explore the empty bucket-4 cell, and gather samples for H-141."
+ "rationale": "The six-stage order-4 bucket 4 cell is empty. These dyadic nodes change the constraints of the spent six-stage shape while retaining a feasible fourth-order embedding; additional candidates also test H-074."
 }
