@@ -385,3 +385,7 @@
 {"effect_size": 1000000000.0, "id": "H-210", "n_samples": 527, "resolved_cycle": 2077, "verdict": "refuted"}
 {"control": "Under the slow cost model, the order-3 five-stage cell should retain its held-out advantage but lose its cycle advantage.", "cycle_proposed": 2079, "effect_size": null, "id": "H-211", "mechanism": "The higher-order method needs fewer rounding-sensitive operations to reach comparable accuracy, offsetting its per-stage cost.", "min_samples": 1200, "n_samples": null, "predicate": "avr_approx.p3s5.heldout < avr_approx.p2s6.heldout AND avr_approx.p3s5.cycles < avr_approx.p2s6.cycles AND slow.p3s5.heldout < slow.p2s6.heldout AND slow.p3s5.cycles >= slow.p2s6.cycles", "resolved_cycle": null, "statement": "Under the AVR approximation cost model, the order-3 five-stage archive cell does better than the order-2 six-stage cell on held-out error and cycles.", "verdict": null}
 {"effect_size": 0.021507689443367093, "id": "H-211", "n_samples": 1231, "resolved_cycle": 2079, "verdict": "inconclusive"}
+{"effect_size": 0.6987600896352992, "id": "H-033", "n_samples": 209, "resolved_cycle": 2082, "verdict": "supported"}
+{"effect_size": 1.299751261173199, "id": "H-039", "n_samples": 209, "resolved_cycle": 2082, "verdict": "supported"}
+{"effect_size": 0.48766652502612945, "id": "H-084", "n_samples": 209, "resolved_cycle": 2082, "verdict": "refuted"}
+{"effect_size": 0.48766652502612945, "id": "H-201", "n_samples": 209, "resolved_cycle": 2082, "verdict": "supported"}
