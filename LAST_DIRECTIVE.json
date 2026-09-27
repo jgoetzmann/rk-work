@@ -1,20 +1,24 @@
 {
- "directive_id": "D-2074",
- "hypothesis_id": "H-032",
- "target_order": 4,
+ "directive_id": "D-2075",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
-  4
+  3
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only four samples and a weak held-out best of 6.976e-02. These nodes admit a dyadic fourth-order tableau, so fixing them may yield more valid candidates and gather evidence for H-032."
+ "islands": 6,
+ "budget_minutes": 45,
+ "rationale": "The order-3 three-stage bucket-1 cell is empty. A sparse second stage can reduce cycle cost; the dyadic grid includes c[2]=3/4, which permits an exact third-order tableau with nonnegative weights."
 }
