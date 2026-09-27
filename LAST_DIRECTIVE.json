@@ -1,28 +1,22 @@
 {
- "directive_id": "D-2024",
+ "directive_id": "D-2025S6A",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "3/4",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 cell has only 156 fast held-out samples and one filled cycle bucket. Pinning stage 4 at 3/4 explores a distinct node pattern while retaining nodes from the productive order-4 shape; denominator 32 permits finer A coefficients. This also gathers samples for H-074."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 cell has the lowest held-out error among order-4 cells but only 156 samples. Keep the node pattern from the one shape that reached order 4, pin stage 4 at 1/2, and release its forced zero to explore new tableaus for H-074."
 }
