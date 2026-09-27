@@ -1,25 +1,21 @@
 {
- "directive_id": "D-1964A",
- "hypothesis_id": null,
- "target_order": 3,
+ "directive_id": "D-1965",
+ "hypothesis_id": "H-075",
+ "target_order": 4,
  "stages": [
-  3
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 4,
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/2",
-   "2": "3/4"
+   "1": "1/4",
+   "2": "1/2",
+   "3": "1/2",
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "The three-stage order-3 bucket 1 cell is empty. These dyadic nodes and a[2][0]=0 admit exact order-3 weights while removing one A multiply; test whether the resulting sparse tableau reaches that cycle bucket."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The order-4 five-stage bucket 4 cell is empty. These dyadic nodes admit a fourth-order tableau with nonnegative weights and leave room to search for lower held-out error; the samples also inform H-075."
 }
