@@ -1,17 +1,11 @@
 {
- "directive_id": "D-1933",
- "hypothesis_id": "H-074",
+ "directive_id": "D-1934",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -23,5 +17,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape previously produced two new elites but has stalled at denominator 16. A finer dyadic grid preserves its pinned nodes while exploring new coefficients and gathering samples for H-074."
+ "rationale": "The six-stage order-4 bucket-4 cell is empty. Keep the node pattern that has reached order 4, while allowing a finer dyadic grid and an unconstrained A[5][0] to explore different coefficients and cycle costs."
 }
