@@ -1,27 +1,24 @@
 {
- "directive_id": "D-2036",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2038A",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  6
+  3
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
-    1
+    2,
+    0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "1": "11/16"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The pinned six-stage shape has produced order-4 elites, but its recent settings have stalled. Change the zero entry and allow finer dyadic A values to explore a different cost and error region, including the empty six-stage bucket 4 cell, while gathering samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The three-stage order-2 bucket-0 cell is weak. Fixing c1 near the Ralston node and removing a[2][0] explores sparse, lower-cycle tableaus while leaving a[2][1] and the exact output weights free."
 }
