@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2023",
+ "directive_id": "D-2024",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -17,11 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "3/4",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has produced elites, but its current settings have stalled. A finer dyadic grid retains the successful node pattern while exploring new coefficients for the weak bucket-3 cell and empty bucket-4 cell."
+ "rationale": "The six-stage order-4 cell has only 156 fast held-out samples and one filled cycle bucket. Pinning stage 4 at 3/4 explores a distinct node pattern while retaining nodes from the productive order-4 shape; denominator 32 permits finer A coefficients. This also gathers samples for H-074."
 }
