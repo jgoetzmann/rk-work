@@ -1,22 +1,27 @@
 {
- "directive_id": "D-2019",
+ "directive_id": "D-2021",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "3/4",
-   "4": "1",
+   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 cell has a held-out error of 2.787e-2, while its bucket-4 cell is empty. A different set of pinned dyadic nodes and denominator 32 explores a new feasible region and gathers samples for H-074."
+ "budget_minutes": 120,
+ "rationale": "The pinned-node six-stage shape has produced order-4 elites. A finer dyadic grid may improve its held-out error or fill the empty six-stage cycle bucket 4 while gathering samples for H-074."
 }
