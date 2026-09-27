@@ -1,11 +1,17 @@
 {
- "directive_id": "D-1960",
- "hypothesis_id": null,
+ "directive_id": "D-1961",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -16,6 +22,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 cell has produced candidates, but bucket 4 is empty and the current shape has gone 216 islands without a new elite. Retain its productive node pattern while allowing a finer dyadic grid and dense A to explore higher-cycle tableaus."
+ "budget_minutes": 120,
+ "rationale": "The pinned six-stage shape has reached order 4 and produced elites. Raising the dyadic denominator limit from 16 to 32 explores additional Q15 coefficients while gathering samples for H-074 and the empty order-4 six-stage bucket 4."
 }
