@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2264",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2265",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
@@ -8,19 +8,11 @@
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +20,7 @@
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "These constraints select the sparse classical RK4 tableau. Evaluate it in the weak four-stage order-4 cell to gather evidence for H-075."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The order-4 four-stage cell has only four samples and held-out error 6.976e-02. Fixed half-step nodes admit fourth-order methods; removing a[3][0] may reduce cycles while a finer dyadic grid explores variants. Additional samples address H-030."
 }
