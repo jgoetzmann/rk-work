@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2276",
- "hypothesis_id": null,
+ "directive_id": "D-2277",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
@@ -8,19 +8,11 @@
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +20,7 @@
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "These constraints specify the sparse classical four-stage RK4 A tableau. Its exact order-four weights provide a focused attempt to improve the weak four-stage order-four cell."
+ "islands": 8,
+ "budget_minutes": 90,
+ "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. These nodes admit classical RK4; leaving other A entries free permits additional dyadic tableaus while removing one multiply. Gather samples for H-030."
 }
