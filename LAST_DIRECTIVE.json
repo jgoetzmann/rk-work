@@ -1,33 +1,26 @@
 {
- "directive_id": "D-2392",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2393A",
+ "hypothesis_id": "H-032",
+ "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
     3,
-    0
-   ],
-   [
-    4,
     0
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1"
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-2 bucket 1 cell is empty. Sparse stage dependencies may reduce cycles below the current five-stage minimum of 55 while retaining feasible second-order weights."
+ "budget_minutes": 120,
+ "rationale": "The order-4 four-stage archive has only five candidates and a weak bucket-2 elite. These fixed nodes admit a family of exact order-4 methods; searching its dyadic A coefficients can improve that cell and gather samples for H-032."
 }
