@@ -1,20 +1,25 @@
 {
- "directive_id": "D-2528A",
- "hypothesis_id": "H-032",
- "target_order": 4,
+ "directive_id": "D-2530",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
   4
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "2": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "These node values admit the classical four-stage order-4 tableau while leaving A entries free to vary on the dyadic grid. Seek a lower held-out error in the weak four-stage cell and gather samples for H-032."
+ "budget_minutes": 60,
+ "rationale": "The order-3 four-stage bucket-1 cell is empty. Fixing two dyadic stage nodes and removing a[2][0] focuses the search on sparse tableaus that may reach this lower cycle bucket."
 }
