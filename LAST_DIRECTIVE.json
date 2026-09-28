@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2542",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2543A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
@@ -17,11 +17,12 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage shape previously produced order-4 elites. A denominator of 32 explores finer dyadic A values around that productive structure and may improve the weak six-stage cells while adding samples for H-074."
+ "rationale": "The six-stage order-4 shape has produced elites, but its recent settings have stalled. Pinning stage 4 at 1/2 changes the search region while preserving feasible order-4 tableaus; the finer dyadic grid may improve held-out error in the occupied bucket-3 cell."
 }
