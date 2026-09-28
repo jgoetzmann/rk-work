@@ -1,12 +1,20 @@
 {
- "directive_id": "D-2188",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2189",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
    [
     4,
     0
@@ -16,17 +24,17 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
+   "3": "1/2",
+   "4": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 bucket-2 cell is empty. This varies the previously productive node pattern and removes two A terms to seek lower-cycle candidates while gathering samples for H-074."
+ "rationale": "The six-stage order-2 search has produced nine new elites recently, while its bucket-2 held-out error remains weak at 4.660e-02. Sparse rows and dyadic nodes may reduce cycles and improve that cell."
 }
