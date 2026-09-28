@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2215",
+ "directive_id": "D-2219A",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -8,21 +8,29 @@
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
     0
    ],
    [
     5,
-    1
+    0
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "5": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-2 shape has produced 16 new elites recently. Its bucket-3 cell is weaker than bucket 2; sparse final-stage coefficients may reduce cycles while leaving enough freedom to improve held-out error."
+ "rationale": "The six-stage order-2 search has produced recent elites, but its cycle bucket 1 is empty. Sparse early-stage couplings may reduce cycle cost while retaining enough freedom to satisfy the order conditions."
 }
