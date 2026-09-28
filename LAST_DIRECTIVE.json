@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2189",
+ "directive_id": "D-2190Q",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -16,25 +16,49 @@
     0
    ],
    [
+    3,
+    1
+   ],
+   [
     4,
     0
    ],
    [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
     5,
     0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1/2",
-   "4": "1",
+   "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-2 search has produced nine new elites recently, while its bucket-2 held-out error remains weak at 4.660e-02. Sparse rows and dyadic nodes may reduce cycles and improve that cell."
+ "rationale": "Order-2 six-stage searches have produced nine new elites, but its bucket-2 cell remains weak. This sparse stage chain fixes five simple dyadic nodes and limits nonzero A entries, seeking lower cycle cost while leaving b to be solved exactly."
 }
