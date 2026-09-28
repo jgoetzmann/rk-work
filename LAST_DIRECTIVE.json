@@ -1,28 +1,34 @@
 {
- "directive_id": "D-2119",
- "hypothesis_id": null,
+ "directive_id": "D-2120",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 search has produced elites, but its recent settings have stalled. Pinning stage 4 at a half step varies the productive node pattern while retaining a feasible sparse family. Seek a lower held-out error in the occupied six-stage cycle cells."
+ "islands": 4,
+ "budget_minutes": 30,
+ "rationale": "Only four order-4 four-stage candidates have been recorded. These nodes and sparse A admit the classical fourth-order tableau, giving a feasible way to sample the weak cell and test H-032."
 }
