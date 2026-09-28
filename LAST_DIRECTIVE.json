@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2405",
+ "directive_id": "D-2407",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -8,19 +8,19 @@
  "constraints": {
   "force_zero": [
    [
-    2,
+    3,
     0
    ]
   ],
-  "dyadic_denominator_max": 4,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The four-stage order-4 archive has only five samples. These dyadic nodes define a distinct exact order-4 family; the zero entry narrows the search. More four-stage samples can test H-032 and may improve the weak filled cell or occupy an empty cycle bucket."
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 cell has only five samples. These dyadic stage nodes admit exact fourth-order solutions; the zero entry and coarse grid narrow the search while gathering samples for H-032."
 }
