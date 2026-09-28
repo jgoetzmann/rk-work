@@ -1,25 +1,27 @@
 {
- "directive_id": "D-2146",
+ "directive_id": "D-2147",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 4,
  "stages": [
-  3
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 4,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "3/4"
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 30,
- "rationale": "These constraints specify a sparse three-stage, third-order tableau with two nonzero A entries. Search for a lower-cycle cell; the current order-3 three-stage archive fills only buckets 2 and 3."
+ "budget_minutes": 90,
+ "rationale": "This six-stage node pattern has produced order-4 candidates and new elites. A denominator of 32 explores additional dyadic coefficients for the weak six-stage cells."
 }
