@@ -1,21 +1,27 @@
 {
- "directive_id": "D-2389",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2390",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "3/4",
-   "4": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "Order-4 five-stage searches have gone 472 islands without a new elite. Quarter-spaced dyadic nodes probe different tableaus for the empty cycle bucket 4 or an improvement to bucket 3, while gathering samples for H-075."
+ "budget_minutes": 90,
+ "rationale": "This six-stage structure has reached order 4 and produced new elites. A denominator of 32 expands its dyadic choices to seek a lower held-out error in the occupied six-stage cells."
 }
