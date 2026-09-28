@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2249",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2259",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
@@ -10,25 +10,17 @@
    [
     2,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The order-4 four-stage cell has only four samples and a weak held-out elite. These feasible classical RK4 nodes and sparse A entries focus sampling on a low-cycle tableau while gathering evidence for H-074."
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 archive has only four samples and one filled cell. These dyadic nodes admit an exact fourth-order tableau with nonnegative weights, providing a distinct search region and more samples for H-030."
 }
