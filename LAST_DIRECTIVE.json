@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2527",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2528A",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -15,6 +15,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage cell has only five samples and a held-out error of 0.06949. Dyadic half-step and endpoint nodes give a feasible fourth-order family to sample while gathering evidence for H-030."
+ "budget_minutes": 120,
+ "rationale": "These node values admit the classical four-stage order-4 tableau while leaving A entries free to vary on the dyadic grid. Seek a lower held-out error in the weak four-stage cell and gather samples for H-032."
 }
