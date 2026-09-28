@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2269",
+ "directive_id": "D-2270",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -28,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 15,
- "rationale": "The four-stage order-4 cell has only four held-out samples and weak error. These nodes and sparse rows admit the classical fourth-order tableau with dyadic A, giving the search a feasible low-cost candidate and more evidence for H-074."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints specify the sparse classical four-stage RK4 A matrix. Its exact order-4 weights are feasible, and the four-stage order-4 cell has only four samples. Evaluate this point to gather evidence for H-074."
 }
