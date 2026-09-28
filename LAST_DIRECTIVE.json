@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2574",
+ "directive_id": "D-2576",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -9,24 +9,17 @@
  "constraints": {
   "force_zero": [
    [
-    3,
-    0
-   ],
-   [
-    4,
+    2,
     0
    ]
   ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
-   "3": "3/4",
-   "4": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The order-2 five- and six-stage shape produced three new elites, with only 48 islands since the latest. Quarter-step nodes and two zero entries explore lower-cycle variants of its occupied cells."
+ "budget_minutes": 60,
+ "rationale": "Recent five- and six-stage order-2 searches produced three new elites. The six-stage bucket-2 cell remains weaker than its five-stage counterpart; a sparse A entry may lower cycle cost while the finer dyadic grid explores new coefficients."
 }
