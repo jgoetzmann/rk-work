@@ -1,21 +1,29 @@
 {
- "directive_id": "D-2419A",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2420",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The six-stage, order-4 cell has the lowest held-out error among order-4 cells. Retain the node pattern that has produced order-4 candidates, allow a finer dyadic grid and vary the final-stage sparsity to seek a new elite and gather samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "Six-stage order-2 searches have produced recent elites, including the lowest held-out error in the grid. Pinning two nodes and removing two final-stage terms explores cheaper six-stage tableaus for the weak bucket-3 cell."
 }
