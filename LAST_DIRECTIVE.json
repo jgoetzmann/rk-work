@@ -1,35 +1,20 @@
 {
- "directive_id": "D-2339",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2341",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The five-stage order-4 archive has an empty bucket 4. A sparse four-stage RK4 prefix preserves a feasible fourth-order route while the extra midpoint stage allows distinct Q15 roundoff behavior; this also gathers samples for H-075."
+ "rationale": "Only five four-stage order-4 candidates have been recorded, and its cycle bucket 3 is empty. Fixed dyadic nodes support feasible fourth-order tableaus; leaving A free explores variants and gathers samples for H-032."
 }
