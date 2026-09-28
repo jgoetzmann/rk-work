@@ -1,44 +1,20 @@
 {
- "directive_id": "D-2395",
+ "directive_id": "D-2396",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    4,
-    1
-   ],
-   [
-    4,
-    2
-   ]
-  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/4",
+   "2": "1/2",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The order-2 five-stage bucket-1 cell is empty. A sparse stage chain removes six A multiplications while retaining enough freedom to satisfy order 2 and search for a low-cycle tableau."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 bucket-2 cell has held-out error 6.057e-02. Its previous pinned-node searches have gone 480 islands without a new elite; these dyadic nodes change that search region while leaving the third internal node free."
 }
