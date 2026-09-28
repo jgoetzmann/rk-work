@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2450",
+ "directive_id": "D-2452",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
   6
  ],
@@ -15,13 +15,11 @@
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage node pattern has produced order-4 candidates and new elites. A finer dyadic grid explores new coefficients while retaining a known feasible structure; the order-4 six-stage bucket-4 cell remains weak."
+ "rationale": "The six-stage order-2 bucket-2 cell has the lowest held-out error in the grid. Explore finer dyadic A values with midpoint and endpoint nodes; a[5][0]=0 may reduce cycles while retaining enough freedom to improve that cell."
 }
