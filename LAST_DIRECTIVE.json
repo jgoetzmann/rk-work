@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2342",
+ "directive_id": "D-2343RK4",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -30,5 +30,5 @@
  },
  "islands": 4,
  "budget_minutes": 30,
- "rationale": "The order-4 four-stage cell has only five samples and a held-out error of 6.949e-02. These constraints specify the classical RK4 stage structure with Q15-friendly dyadic A entries, providing a focused sample for H-032."
+ "rationale": "These constraints produce the sparse classical RK4 A matrix. The order-4 four-stage archive has only five samples; evaluating this tableau may improve its weak bucket-2 cell and provide evidence for H-032."
 }
