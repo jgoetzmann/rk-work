@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2365A",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2366",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   4
@@ -10,17 +10,9 @@
    [
     2,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +20,7 @@
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 20,
- "rationale": "These constraints admit the classical four-stage RK4 tableau exactly. The order-4 four-stage cell is weak and has only five samples; this targeted run can improve it and gather evidence for H-074."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 bucket-2 cell is weak. Classical RK4 lies within these dyadic node and sparsity constraints; allowing the remaining A entries to vary may find a tableau with lower held-out Q15 error at this cycle cost."
 }
