@@ -1,19 +1,26 @@
 {
- "directive_id": "D-2359",
- "hypothesis_id": null,
+ "directive_id": "D-2360",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
+   "2": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "The four-stage order-4 cell has only five samples and held-out error 6.949e-02. Pinning the first and final stage nodes keeps a known feasible fourth-order structure while leaving the middle node and A entries free to search for a better tableau."
+ "rationale": "Order-4 four-stage cells have only five held-out samples and weak bucket-2 error. These dyadic nodes admit classical RK4; the zero entry can reduce cycles while allowing variation in the final stage. More four-stage samples also inform H-030."
 }
