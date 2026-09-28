@@ -1,20 +1,25 @@
 {
- "directive_id": "D-2581",
- "hypothesis_id": "H-030",
- "target_order": 4,
+ "directive_id": "D-2582",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  5,
+  6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only five samples and held-out error 0.06949. Pinning the classical stage nodes while leaving A entries free tests H-030 and may improve this weak cell."
+ "rationale": "The order-2 five- and six-stage shape has produced recent new elites. Varying its dyadic grid and sparsity may improve the weak six-stage bucket-2 cell or fill a lower-cycle cell."
 }
