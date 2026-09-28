@@ -1,26 +1,19 @@
 {
- "directive_id": "D-2315",
+ "directive_id": "D-2319A",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
+   "1": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Test dyadic quarter-step nodes for a four-stage order-4 tableau. This changes the node pattern of the heavily sampled four-stage searches and may add samples for H-032 or fill the empty stage-4 cycle bucket 3."
+ "budget_minutes": 60,
+ "rationale": "The order-4 four-stage bucket-3 cell is empty and has few samples. Fixing two nodes preserves the classical RK4 tableau while leaving the middle node and A coefficients free to seek a new elite and gather samples for H-032."
 }
