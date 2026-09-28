@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2343RK4",
+ "directive_id": "D-2345",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -8,19 +8,11 @@
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +20,7 @@
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 30,
- "rationale": "These constraints produce the sparse classical RK4 A matrix. The order-4 four-stage archive has only five samples; evaluating this tableau may improve its weak bucket-2 cell and provide evidence for H-032."
+ "islands": 8,
+ "budget_minutes": 120,
+ "rationale": "The order-4 four-stage cell has only five samples and is needed to resolve H-032. These dyadic stage nodes permit a family of fourth-order methods; the zero entry and coarse grid favor lower cycle costs."
 }
