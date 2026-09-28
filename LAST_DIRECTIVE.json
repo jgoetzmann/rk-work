@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2307",
+ "directive_id": "D-2309",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,16 +12,16 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "1/2",
+   "3": "1",
    "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 cells have held-out error of 0.06057 and 0.03717. A quarter-step node changes the search shape while the remaining nodes retain a feasible classical RK4 limit; the zero entry may reduce cycle cost."
+ "budget_minutes": 120,
+ "rationale": "The five-stage order-4 cells remain weak or empty. Pinning dyadic nodes supports exact order conditions; a[4][0]=0 removes one multiply while leaving other coefficients free to improve held-out error."
 }
