@@ -1,24 +1,28 @@
 {
- "directive_id": "D-2459",
+ "directive_id": "D-2461",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  3
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The three-stage, order-2 bucket-1 cell has held-out error 0.02386 at 29 cycles. A sparse second stage removes one A coefficient while leaving its node free, giving the search room to improve this cell at a similar cycle cost."
+ "rationale": "The six-stage order-4 shape previously produced new elites but has stalled. Pinning stage 4 at 1/2 explores a different dyadic tableau family while retaining node settings that have reached order 4."
 }
