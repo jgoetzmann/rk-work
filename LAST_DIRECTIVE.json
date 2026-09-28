@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2461",
+ "directive_id": "D-2462",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,7 +12,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -23,6 +23,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape previously produced new elites but has stalled. Pinning stage 4 at 1/2 explores a different dyadic tableau family while retaining node settings that have reached order 4."
+ "budget_minutes": 90,
+ "rationale": "The known six-stage shape reaches order 4, but has gone 496 islands without a new elite. Pinning c4 to 1/2 explores a different stage layout while retaining its feasible nodes; denominator 32 allows finer dyadic A coefficients."
 }
