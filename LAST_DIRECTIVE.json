@@ -1,21 +1,19 @@
 {
- "directive_id": "D-2349A",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2351",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 256,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2"
-  },
-  "b_nonneg": true
+   "3": "1"
+  }
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket-3 cell is occupied, but its 3.717e-02 held-out error leaves room to improve. Changing the final node to 1/2 explores a new dyadic family while retaining nodes that admit exact order-4 solutions and gathers samples for H-075."
+ "budget_minutes": 90,
+ "rationale": "The four-stage order-4 bucket 3 cell is empty. Fixed nodes retain a feasible order-4 structure, while the finer dyadic grid can explore coefficients beyond the sparse bucket 2 incumbent."
 }
