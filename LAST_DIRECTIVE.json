@@ -1,31 +1,34 @@
 {
- "directive_id": "D-2132",
- "hypothesis_id": "H-224",
+ "directive_id": "D-2134",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ],
    [
-    4,
+    3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The six-stage pinned-node shape has produced order-4 elites. An additional zero coefficient may reduce cycles and explore a different region while gathering samples for H-224."
+ "budget_minutes": 60,
+ "rationale": "Only four order-4 four-stage records exist. These pins and zeros admit the classical RK4 tableau, giving the exact b solver a feasible sparse structure to sample for H-030 and the weak four-stage cell."
 }
