@@ -1,34 +1,28 @@
 {
- "directive_id": "D-2402",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2403",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 four-stage bucket-2 cell is weak and has only five samples. Search a sparse half-grid tableau with classical fourth-order stage nodes to gather samples for H-032 and seek a lower held-out error at that cycle cost."
+ "rationale": "The six-stage order-4 shape has produced elites, but its current node settings have gone 392 islands without another. Pinning stage 4 at 1/2 explores a different dyadic node layout while retaining a feasible fourth-order four-stage core."
 }
