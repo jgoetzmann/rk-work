@@ -1,11 +1,17 @@
 {
- "directive_id": "D-2446",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2447",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
+  "force_zero": [
+   [
+    3,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 64,
   "c_fixed": {
    "1": "1/2",
@@ -15,6 +21,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 four-stage archive has only five candidates and one filled cycle bucket. These nodes admit a dyadic fourth-order tableau; search this constrained region for a lower held-out error and more samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 cell has only five samples. These dyadic nodes admit classical RK4, while fixing a[3][0]=0 leaves other coefficients available for search. Gather samples for H-030 and seek a lower held-out error."
 }
