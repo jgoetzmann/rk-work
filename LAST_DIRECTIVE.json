@@ -1,14 +1,14 @@
 {
- "directive_id": "D-2543A",
- "hypothesis_id": null,
+ "directive_id": "D-2545",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
@@ -16,13 +16,11 @@
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced elites, but its recent settings have stalled. Pinning stage 4 at 1/2 changes the search region while preserving feasible order-4 tableaus; the finer dyadic grid may improve held-out error in the occupied bucket-3 cell."
+ "budget_minutes": 45,
+ "rationale": "The order-4 four-stage cell has only five samples and held-out error 0.06949. Pinning classical stage nodes supports exact fourth-order solutions; varying the remaining dyadic coefficients may improve this weak cell and supply samples for H-074."
 }
