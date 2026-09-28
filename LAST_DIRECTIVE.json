@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2192",
+ "directive_id": "D-2199",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -8,15 +8,11 @@
  "constraints": {
   "force_zero": [
    [
-    4,
-    0
-   ],
-   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 8,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "5": "1"
@@ -24,6 +20,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-2 search has produced nine new elites, but its bucket-2 held-out error remains 4.660e-02 and bucket 1 is empty. A coarser dyadic grid and two zero coefficients may reduce cycles while leaving other coefficients free to improve error."
+ "budget_minutes": 45,
+ "rationale": "Six-stage order-2 searches are still producing new elites. The sparse final stage may reduce cycles, while fixed dyadic nodes leave room to improve the weak six-stage bucket-3 cell."
 }
