@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2137",
+ "directive_id": "D-2138",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,7 +12,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -23,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The six-stage shape has produced order-4 elites. Refining its dyadic A grid from denominator 16 to 32 explores new coefficients while retaining the node constraints that reached order 4. Search for a lower held-out error in its occupied cycle buckets."
+ "rationale": "The six-stage, fourth-order shape has produced elites, but its current denominator-16 setting has gone 192 islands without one. A denominator-8 grid tests cheaper coefficients while retaining the node pattern that reached order 4; seek improvement in the weak stage-6 cells."
 }
