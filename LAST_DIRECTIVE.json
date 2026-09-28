@@ -1,9 +1,8 @@
 {
- "directive_id": "D-2521",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2522",
+ "hypothesis_id": "H-074",
+ "target_order": 4,
  "stages": [
-  5,
   6
  ],
  "constraints": {
@@ -13,18 +12,24 @@
     0
    ],
    [
-    4,
+    5,
+    0
+   ],
+   [
+    5,
     1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "4": "1"
+   "2": "1/2",
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The order-2 five-stage bucket-3 cell has held-out error 0.03179, versus 0.01356 in bucket 2. Sparse final-stage coefficients may reduce cycle cost while the broader dyadic grid leaves room to improve held-out error in five- and six-stage cells."
+ "rationale": "The six-stage order-4 shape has produced elites, while its cycle bucket 2 remains empty. Additional zero entries may lower cycle cost; the fixed nodes retain the previously productive order-4 setting and gather samples for H-074."
 }
