@@ -1,34 +1,29 @@
 {
- "directive_id": "D-2584",
- "hypothesis_id": "H-030",
- "target_order": 4,
+ "directive_id": "D-2585",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  5,
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
     3,
     0
    ],
    [
-    3,
-    1
+    4,
+    0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 30,
- "rationale": "The four-stage order-4 cell has only five samples. These dyadic nodes and sparse A entries admit the classical RK4 tableau, giving a focused way to gather samples for H-030."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The order-2 five- and six-stage search recently produced new elites. Sparse A rows may lower cycle cost while the finer dyadic grid explores coefficients beyond the current low-cost cells."
 }
