@@ -1,9 +1,9 @@
 {
- "directive_id": "D-2532",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2534",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
@@ -18,27 +18,17 @@
    [
     3,
     1
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    4,
-    1
-   ],
-   [
-    4,
-    2
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-2 bucket-1 cell is empty. A sparse stage chain reduces coefficient work while leaving later stage locations free to improve held-out error."
+ "islands": 4,
+ "budget_minutes": 30,
+ "rationale": "These constraints specify the sparse classical RK4 stages. The four-stage order-4 archive has only five samples and a weak held-out best; this search gathers samples for H-030."
 }
