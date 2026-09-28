@@ -1,12 +1,17 @@
 {
- "directive_id": "D-2578",
+ "directive_id": "D-2579",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
+  5,
   6
  ],
  "constraints": {
   "force_zero": [
+   [
+    4,
+    0
+   ],
    [
     5,
     0
@@ -15,14 +20,11 @@
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "2": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The related six-stage pinned shape has reached order 4 and produced elites. Fixing c4 at 1/2 explores a narrower subfamily; a denominator of 32 permits finer A coefficients that may improve the weak six-stage bucket-4 cell."
+ "budget_minutes": 60,
+ "rationale": "The five- and six-stage order-2 search produced three new elites in 240 islands, with only 80 islands since the latest. Sparse late stages and pinned dyadic nodes may improve the weak six-stage bucket-2 cell or reach a cheaper bucket."
 }
