@@ -1,12 +1,12 @@
 {
- "directive_id": "D-2435",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2437",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -16,5 +16,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 four-stage cell has only five fast held-out samples and a weak best error. These dyadic nodes admit an exact fourth-order tableau; search this constrained family to gather samples for H-032 and improve the cell."
+ "rationale": "The order-4 four-stage archive has only five records and several empty cycle cells. These nodes admit classical RK4, giving the search a feasible fourth-order starting pattern while allowing other dyadic A entries. Additional four-stage samples can test H-074."
 }
