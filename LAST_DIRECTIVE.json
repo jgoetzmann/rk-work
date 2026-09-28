@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2362",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2363A",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -8,16 +8,8 @@
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
   "dyadic_denominator_max": 16,
@@ -30,5 +22,5 @@
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "The order-4 four-stage cell has only five samples and held-out error 0.06949. These sparse dyadic nodes admit classical RK4 and may improve that cell while gathering evidence for H-075."
+ "rationale": "The four-stage order-4 cell is weak and has few samples. Pinned dyadic nodes and a sparse final row focus the search on feasible low-cycle tableaus while allowing internal coefficients to vary."
 }
