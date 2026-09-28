@@ -1,9 +1,10 @@
 {
- "directive_id": "D-2559RK4",
- "hypothesis_id": "H-030",
- "target_order": 4,
+ "directive_id": "D-2564",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  4,
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -16,19 +17,17 @@
     0
    ],
    [
-    3,
-    1
+    4,
+    0
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "The four-stage order-4 archive has only five samples and a weak best cell. These constraints give the classical RK4 stage matrix, providing a low-cost exact-order candidate and another sample for H-030."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Order-2 cells (4,0) and (5,1) are empty. Sparse A rows and a coarse dyadic grid may reduce cycles enough to reach them while retaining freedom to solve b exactly."
 }
