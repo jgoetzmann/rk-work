@@ -1,34 +1,29 @@
 {
- "directive_id": "D-2290",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2291",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    4,
     0
    ],
    [
-    3,
+    5,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 10,
- "rationale": "These constraints specify the classical four-stage RK4 A matrix, giving a feasible order-4 candidate for the sparsely sampled four-stage cell and gathering evidence for H-074."
+ "islands": 8,
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-2 shape has produced 16 new elites, and its bucket-3 held-out error remains above its bucket-2 best. Pin two nodes and remove two A entries to explore a distinct, cheaper sparse family."
 }
