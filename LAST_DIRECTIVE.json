@@ -1,21 +1,34 @@
 {
- "directive_id": "D-2489",
- "hypothesis_id": null,
+ "directive_id": "D-2500",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2"
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket 4 cell is empty, and bucket 3 is weak. Pinning dyadic stage nodes changes the recent five-stage search settings while retaining the classical four-stage RK4 construction as a feasible base."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "Test the sparse classical RK4 stage structure to improve the weak order-4, four-stage cell and gather evidence for H-032. Its nonzero A entries are dyadic, and the exact order conditions determine b."
 }
