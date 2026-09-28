@@ -1,27 +1,20 @@
 {
- "directive_id": "D-2157A",
- "hypothesis_id": null,
+ "directive_id": "D-2159",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1"
+   "1": "1/4",
+   "2": "3/4",
+   "3": "1"
   },
+  "dyadic_denominator_max": 64,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 75,
- "rationale": "Five-stage order-4 searches have produced new elites. Pinning dyadic stage nodes supports exact order conditions; a[4][0]=0 may reduce cycles. The finer A grid explores tableaus beyond the spent settings, aiming to improve the five-stage cells."
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. Dyadic nodes 1/4, 3/4, 1 give a distinct nonnegative-weight family; search it to gather evidence for H-030 and improve the cell."
 }
