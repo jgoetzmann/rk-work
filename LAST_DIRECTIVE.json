@@ -1,34 +1,28 @@
 {
- "directive_id": "D-2453",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2454A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "3/4",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 15,
- "rationale": "The order-4 four-stage cell is weak and sparsely sampled. These constraints specify the sparse classical RK4 stage structure, yielding an exact fourth-order candidate while gathering a sample for H-030."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 cell at cycle bucket 4 is weak. This varies the previously productive six-stage shape by pinning its free node at 3/4 and allowing a finer dyadic grid."
 }
