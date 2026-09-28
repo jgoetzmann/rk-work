@@ -1,27 +1,30 @@
 {
- "directive_id": "D-2549",
+ "directive_id": "D-2551",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
+  5,
   6
  ],
  "constraints": {
   "force_zero": [
    [
+    4,
+    0
+   ],
+   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "1": "1/4",
+   "3": "3/4"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "This six-stage node pattern previously reached order 4 and produced two new elites. A finer dyadic grid varies the spent settings while preserving their feasible structure, with room to improve the weak six-stage order-4 cells."
+ "budget_minutes": 60,
+ "rationale": "The order-2 five- and six-stage cells have the lowest held-out errors and have recently produced new elites. Varying the pinned nodes and removing two A entries explores lower-cycle tableaus for their bucket-2 and bucket-3 cells."
 }
