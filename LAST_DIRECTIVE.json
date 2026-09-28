@@ -1,12 +1,18 @@
 {
- "directive_id": "D-2380",
- "hypothesis_id": null,
+ "directive_id": "D-2381",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -15,6 +21,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-02. Keep three feasible stage nodes pinned while leaving the fifth node free, and use a finer dyadic grid to seek a lower-error tableau at the same cycle bucket."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage archive has only five candidates and a weak best held-out error. These nodes admit a sparse fourth-order tableau; fixing a[2][0]=0 reduces cycle cost. More samples also test open hypothesis H-032."
 }
