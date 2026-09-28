@@ -1,27 +1,21 @@
 {
- "directive_id": "D-2126",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2128",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "5": "1"
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 shape has produced new elites. Retain its feasible stage nodes and sparsity while refining the A grid from sixteenths to thirty-seconds to seek lower held-out error and gather samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "The order-4 five-stage bucket-4 cell is empty. Pinning dyadic stage nodes preserves a feasible fourth-order family while changing the constraints of a five-stage search that has gone 256 islands without a new elite."
 }
