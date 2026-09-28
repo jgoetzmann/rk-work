@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2504",
+ "directive_id": "D-2505",
  "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
@@ -14,13 +14,9 @@
    [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +24,7 @@
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "This sparse classical RK4 structure gives an exact order-4 candidate with shift-friendly A coefficients. Test whether it improves the weak four-stage cell or fills a lower cycle bucket."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "Only five four-stage order-4 tableaus have fast held-out statistics, leaving H-030 short of samples. Classical dyadic stage nodes and two zero A entries narrow the search toward feasible, lower-cycle tableaus."
 }
