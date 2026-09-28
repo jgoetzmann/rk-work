@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2113",
+ "directive_id": "D-2114A",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -10,17 +10,9 @@
    [
     2,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +20,7 @@
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 15,
- "rationale": "These constraints specify the sparse classical four-stage RK4 A matrix. Evaluate its Q15 held-out error and cycle bucket to strengthen the sparsely sampled four-stage order-4 archive cell and gather evidence for H-032."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. These nodes admit the classical RK4 tableau, while leaving other A entries free for search. More samples also test H-032."
 }
