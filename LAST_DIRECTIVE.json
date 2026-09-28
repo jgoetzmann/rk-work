@@ -1,28 +1,29 @@
 {
- "directive_id": "D-2441A",
+ "directive_id": "D-2443",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
    [
+    4,
+    0
+   ],
+   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "3/4",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 75,
- "rationale": "The six-stage order-4 cells are weak or empty. Pinning stage 4 at 3/4 varies the previously productive node pattern while retaining dyadic A, nonnegative b, and a zero coefficient that can reduce cycles."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-2 search has produced 16 new elites, while its bucket-3 held-out error remains 0.01415. Pinning the first and final nodes and removing two A products explores a different sparse, low-cycle region."
 }
