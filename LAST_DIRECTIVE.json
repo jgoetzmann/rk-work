@@ -1,21 +1,29 @@
 {
- "directive_id": "D-2299A",
+ "directive_id": "D-2300",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  5
+  5,
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "force_zero": [
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
-   "3": "3/4",
-   "4": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-02. Quarter-step nodes explore a different dyadic family at that stage count while retaining freedom in A for exact order conditions."
+ "rationale": "Order-2 six-stage searches have produced the most recent new elites. Sparse late-stage rows may reduce cycles and improve the occupied bucket-2 cells at five and six stages; the pinned first node preserves an easy exact order-2 construction."
 }
