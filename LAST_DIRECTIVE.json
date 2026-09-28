@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2174",
+ "directive_id": "D-2183",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
   6
  ],
@@ -15,13 +15,11 @@
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 120,
- "rationale": "The pinned six-stage shape has produced order-4 candidates and elites, but has gone 224 islands without a new elite. A denominator of 32 retains its feasible coefficients while allowing finer A values to improve the weak six-stage order-4 cells."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-2 shape recently produced nine new elites, but its bucket-2 held-out error remains 4.660e-02. Search a sparse final stage with finer dyadic A coefficients to improve that weak cell."
 }
