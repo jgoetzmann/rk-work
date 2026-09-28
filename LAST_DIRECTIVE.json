@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2366",
- "hypothesis_id": null,
+ "directive_id": "D-2368",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -21,6 +21,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 bucket-2 cell is weak. Classical RK4 lies within these dyadic node and sparsity constraints; allowing the remaining A entries to vary may find a tableau with lower held-out Q15 error at this cycle cost."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage bucket-2 cell is weak at 6.949e-02 held-out error. Fixed half-step nodes support fourth-order solutions; zeroing a[2][0] reduces one stage multiply while leaving later coefficients free. This also gathers samples for H-032."
 }
