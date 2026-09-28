@@ -1,26 +1,12 @@
 {
- "directive_id": "D-2279RK4",
+ "directive_id": "D-2280",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +14,7 @@
   },
   "b_nonneg": true
  },
- "islands": 2,
- "budget_minutes": 15,
- "rationale": "Pin the four-stage A matrix to the classical RK4 structure so the exact order-condition solve can produce a known order-4 tableau. Test whether it improves the weak four-stage order-4 cell and supplies samples for H-032."
+ "islands": 8,
+ "budget_minutes": 45,
+ "rationale": "The four-stage order-4 cell is weak and has only four samples. These dyadic stage nodes admit an exact fourth-order tableau; sampling this constrained region may improve the cell and provide evidence for H-032."
 }
