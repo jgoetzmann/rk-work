@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2480",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2482",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
@@ -8,11 +8,19 @@
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage cell has only five samples and held-out error 0.06949. These pinned nodes admit fourth-order tableaus; fixing a[3][0]=0 narrows the search while leaving coefficients free. New samples can test H-032 and improve the weak cell."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "The four-stage order-4 cell has only five candidates and weak held-out error. These constraints specify the classical fourth-order tableau exactly, providing a focused sample for H-030."
 }
