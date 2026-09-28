@@ -1,26 +1,36 @@
 {
- "directive_id": "D-2407",
- "hypothesis_id": "H-032",
- "target_order": 4,
+ "directive_id": "D-2408",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only five samples. These dyadic stage nodes admit exact fourth-order solutions; the zero entry and coarse grid narrow the search while gathering samples for H-032."
+ "rationale": "Order-2 six-stage searches have recently produced new elites. Removing four first-stage dependencies explores sparser tableaus that may fill the empty six-stage bucket 1 cell or improve the occupied bucket 2 cell."
 }
