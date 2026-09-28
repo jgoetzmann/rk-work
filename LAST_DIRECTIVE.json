@@ -1,36 +1,20 @@
 {
- "directive_id": "D-2408",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2410",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Order-2 six-stage searches have recently produced new elites. Removing four first-stage dependencies explores sparser tableaus that may fill the empty six-stage bucket 1 cell or improve the occupied bucket 2 cell."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage archive has only five records and one filled cell. These stage nodes admit a classical fourth-order tableau; a finer dyadic grid may yield more feasible candidates and samples for H-030."
 }
