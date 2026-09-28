@@ -1,27 +1,21 @@
 {
- "directive_id": "D-2147",
+ "directive_id": "D-2149",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 64,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "3/4",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "This six-stage node pattern has produced order-4 candidates and new elites. A denominator of 32 explores additional dyadic coefficients for the weak six-stage cells."
+ "budget_minutes": 60,
+ "rationale": "The order-4 five-stage bucket 4 cell is empty. Quarter-step nodes and a finer dyadic grid vary the constraints of the recently spent five-stage shape while allowing denser A tableaus to reach a higher cycle bucket."
 }
