@@ -1,27 +1,20 @@
 {
- "directive_id": "D-2422",
- "hypothesis_id": null,
+ "directive_id": "D-2423",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The pinned six-stage shape previously yielded order-4 candidates and new elites. A denominator of 32 expands its dyadic A grid to search for lower held-out error in the occupied six-stage cells."
+ "budget_minutes": 120,
+ "rationale": "Only five four-stage order-4 candidates have reached the archive. Pinning dyadic stage nodes gives the search a feasible fourth-order structure while leaving A free to vary. More samples can improve the weak four-stage cell and test H-074."
 }
