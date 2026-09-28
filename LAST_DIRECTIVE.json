@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2530",
- "hypothesis_id": null,
- "target_order": 3,
+ "directive_id": "D-2531",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
   4
  ],
@@ -10,16 +10,25 @@
    [
     2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2"
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-3 four-stage bucket-1 cell is empty. Fixing two dyadic stage nodes and removing a[2][0] focuses the search on sparse tableaus that may reach this lower cycle bucket."
+ "budget_minutes": 45,
+ "rationale": "Order-4, four-stage cells have only five candidates and a weak bucket-2 elite. Pinning classical RK4 stage nodes and sparse A entries gives a feasible exact-order shape while gathering samples for H-030."
 }
