@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2222",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2224",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
   6
  ],
@@ -14,15 +14,10 @@
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
-  },
-  "b_nonneg": true
+   "1": "3/4"
+  }
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 shape previously produced new elites, but recent searches at its current settings have stalled. Pinning c[4] to 1/2 explores a narrower node pattern while gathering samples for H-074."
+ "budget_minutes": 60,
+ "rationale": "Six-stage order-2 searches have produced 16 new elites, but the current settings have gone 80 islands without one. Pinning the first node at 3/4 explores a different dyadic region; setting A[5][0] to zero may reduce cycles in the weak six-stage bucket-3 cell."
 }
