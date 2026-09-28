@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2227",
- "hypothesis_id": null,
+ "directive_id": "D-2228",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   6
@@ -17,12 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 scaffold has produced elites, but its current settings have stalled. Pinning stage 4 at 1/2 and allowing denominator 32 explores a different feasible coefficient set for the weak six-stage cells."
+ "rationale": "The pinned six-stage shape has reached order 4 and produced elites. A denominator limit of 32 explores a different coefficient grid after 304 islands without a new elite at the recent settings, while gathering samples for the open six-versus-four-stage comparison."
 }
