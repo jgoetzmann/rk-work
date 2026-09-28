@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2277",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2279RK4",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -8,11 +8,19 @@
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 90,
- "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. These nodes admit classical RK4; leaving other A entries free permits additional dyadic tableaus while removing one multiply. Gather samples for H-030."
+ "islands": 2,
+ "budget_minutes": 15,
+ "rationale": "Pin the four-stage A matrix to the classical RK4 structure so the exact order-condition solve can produce a known order-4 tableau. Test whether it improves the weak four-stage order-4 cell and supplies samples for H-032."
 }
