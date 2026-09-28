@@ -1,18 +1,14 @@
 {
- "directive_id": "D-2432",
- "hypothesis_id": "H-075",
+ "directive_id": "D-2434A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
-    3,
+    5,
     0
    ]
   ],
@@ -21,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket-3 cell is weak. An extra midpoint stage permits a distinct Q15 rounding path while retaining a feasible RK4 structure; gather samples for H-075."
+ "rationale": "The six-stage order-4 cell has the lowest held-out error at this order. The previously productive node pattern has stalled at denominator 16; a denominator of 32 explores different dyadic coefficients while retaining its feasible structure."
 }
