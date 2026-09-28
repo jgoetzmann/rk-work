@@ -1,21 +1,33 @@
 {
- "directive_id": "D-2241",
- "hypothesis_id": null,
- "target_order": 4,
+ "directive_id": "D-2243",
+ "hypothesis_id": "H-248",
+ "target_order": 2,
  "stages": [
-  5
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
-   "3": "3/4",
-   "4": "1"
+   "1": "1/2",
+   "2": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 five-stage bucket-3 cell is weak and bucket 4 is empty. This new dyadic node pattern changes the stalled five-stage search while leaving A free for exact order conditions."
+ "budget_minutes": 60,
+ "rationale": "Six-stage order-2 searches have recently produced new elites. Sparse later stages may lower cycle cost while improving the weak bucket-3 cell; additional six-stage samples also test H-248."
 }
