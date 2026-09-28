@@ -1,25 +1,21 @@
 {
- "directive_id": "D-2372",
+ "directive_id": "D-2373",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 4,
  "stages": [
-  3
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "3/4"
+   "1": "1/4",
+   "2": "1/2",
+   "3": "3/4",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The three-stage order-3 cell has no entry below cycle bucket 2. These nodes and the zero A entry admit an exact third-order tableau with two nonzero A entries, giving the search a sparse route toward a cheaper cell."
+ "budget_minutes": 60,
+ "rationale": "The order-4 five-stage bucket-3 cell has held-out error 3.717e-02. Search quarter-spaced dyadic stage nodes to explore a different feasible tableau family while retaining inexpensive Q15 coefficients."
 }
