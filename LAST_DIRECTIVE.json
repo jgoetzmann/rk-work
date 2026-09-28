@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2265",
+ "directive_id": "D-2267",
  "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
@@ -8,13 +8,13 @@
  "constraints": {
   "force_zero": [
    [
-    3,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
    "3": "1"
   },
@@ -22,5 +22,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 four-stage cell has only four samples and held-out error 6.976e-02. Fixed half-step nodes admit fourth-order methods; removing a[3][0] may reduce cycles while a finer dyadic grid explores variants. Additional samples address H-030."
+ "rationale": "Probe a dyadic four-stage order-4 family with different nodes from classical RK4. The fixed nodes and zero entry admit an exact order-4 solution with nonnegative b; its coefficient costs may fill the empty (4,3) cell and add samples for H-030."
 }
