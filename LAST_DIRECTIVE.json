@@ -1,11 +1,17 @@
 {
- "directive_id": "D-2116",
- "hypothesis_id": "H-214",
+ "directive_id": "D-2117",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
@@ -17,5 +23,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Six-stage order-4 searches have produced new elites. Keep the attainable node pattern, use a finer dyadic grid, and leave A[5][0] free to explore additional tableaus and gather samples for H-214."
+ "rationale": "Six-stage order-4 searches have produced new elites, but the current settings have gone 136 islands without one. A finer dyadic grid explores new coefficients while retaining the node constraints that have reached order 4; the six-stage bucket-4 cell remains weaker than bucket 3."
 }
