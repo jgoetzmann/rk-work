@@ -1,26 +1,27 @@
 {
- "directive_id": "D-2285",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2287",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Only four order-4 four-stage records exist, and its bucket-2 cell is weak. Pinning classical RK4 nodes and removing a[3][0] focuses the search on feasible, lower-cost tableaus while gathering samples for H-030."
+ "rationale": "This six-stage node pattern has reached order 4 and produced elites. A denominator of 32 explores additional dyadic A values while retaining the proven node constraints, seeking lower held-out error in the weak order-4 six-stage cells."
 }
