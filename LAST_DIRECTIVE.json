@@ -1,28 +1,34 @@
 {
- "directive_id": "D-2129",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2131RK4",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "3/4",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced new elites. Pinning the previously free fourth node at 3/4 explores a different dyadic slice and gathers samples for the open six-stage versus four-stage held-out comparison."
+ "islands": 2,
+ "budget_minutes": 10,
+ "rationale": "These constraints fix A to the classical four-stage RK4 structure, which admits exact order-four weights. Test this sparse structure in the weak order-four, four-stage cell and gather samples for H-032."
 }
