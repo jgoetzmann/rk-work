@@ -1,14 +1,14 @@
 {
- "directive_id": "D-2448A",
+ "directive_id": "D-2450",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  5
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ]
   ],
@@ -17,11 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2"
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 five-stage bucket-3 cell has held-out error 0.03717. A fifth stage at c=1/2 allows new weight and stage couplings while the first four stages retain a feasible classical RK4 core. This changes the node pattern of a shape that has stalled at its previous settings."
+ "budget_minutes": 60,
+ "rationale": "The six-stage node pattern has produced order-4 candidates and new elites. A finer dyadic grid explores new coefficients while retaining a known feasible structure; the order-4 six-stage bucket-4 cell remains weak."
 }
