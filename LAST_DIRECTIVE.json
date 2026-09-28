@@ -1,26 +1,21 @@
 {
- "directive_id": "D-2114A",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2116",
+ "hypothesis_id": "H-214",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. These nodes admit the classical RK4 tableau, while leaving other A entries free for search. More samples also test H-032."
+ "rationale": "Six-stage order-4 searches have produced new elites. Keep the attainable node pattern, use a finer dyadic grid, and leave A[5][0] free to explore additional tableaus and gather samples for H-214."
 }
