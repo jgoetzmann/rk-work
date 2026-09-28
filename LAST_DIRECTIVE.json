@@ -1,34 +1,21 @@
 {
- "directive_id": "D-2303",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2304A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1"
+   "3": "3/4",
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 4,
+ "islands": 8,
  "budget_minutes": 45,
- "rationale": "Focus on the four-stage fourth-order cell, which has only four fast held-out samples and one filled bucket. These dyadic nodes and sparse A entries admit the classical RK4 tableau; sampling it can improve the cell and provide evidence for H-032."
+ "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-2. Quartile stage nodes explore a different dyadic family while leaving A free for exact order conditions."
 }
