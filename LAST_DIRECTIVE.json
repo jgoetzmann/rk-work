@@ -1,25 +1,34 @@
 {
- "directive_id": "D-2452",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2453",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
-   "5": "1"
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-2 bucket-2 cell has the lowest held-out error in the grid. Explore finer dyadic A values with midpoint and endpoint nodes; a[5][0]=0 may reduce cycles while retaining enough freedom to improve that cell."
+ "islands": 1,
+ "budget_minutes": 15,
+ "rationale": "The order-4 four-stage cell is weak and sparsely sampled. These constraints specify the sparse classical RK4 stage structure, yielding an exact fourth-order candidate while gathering a sample for H-030."
 }
