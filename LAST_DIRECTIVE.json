@@ -1,34 +1,27 @@
 {
- "directive_id": "D-2507",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2508",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "These constraints specify the classical four-stage fourth-order A tableau, guaranteeing a feasible order-4 candidate. Evaluate it in the weak four-stage archive cell and gather evidence for H-030."
+ "islands": 8,
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 shape has produced elites, but its denominator-16 setting has stalled. A denominator of 32 explores new coefficients while retaining the stage nodes that yielded order-4 candidates. Additional six-stage samples can test H-074 and improve its weak cells."
 }
