@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2505",
+ "directive_id": "D-2507",
  "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
@@ -14,9 +14,13 @@
    [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 8,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -24,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "Only five four-stage order-4 tableaus have fast held-out statistics, leaving H-030 short of samples. Classical dyadic stage nodes and two zero A entries narrow the search toward feasible, lower-cycle tableaus."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints specify the classical four-stage fourth-order A tableau, guaranteeing a feasible order-4 candidate. Evaluate it in the weak four-stage archive cell and gather evidence for H-030."
 }
