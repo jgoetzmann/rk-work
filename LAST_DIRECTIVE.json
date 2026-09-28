@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2267",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2269",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   4
@@ -10,17 +10,25 @@
    [
     2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "Probe a dyadic four-stage order-4 family with different nodes from classical RK4. The fixed nodes and zero entry admit an exact order-4 solution with nonnegative b; its coefficient costs may fill the empty (4,3) cell and add samples for H-030."
+ "islands": 2,
+ "budget_minutes": 15,
+ "rationale": "The four-stage order-4 cell has only four held-out samples and weak error. These nodes and sparse rows admit the classical fourth-order tableau with dyadic A, giving the search a feasible low-cost candidate and more evidence for H-074."
 }
