@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2204",
+ "directive_id": "D-2215",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -10,16 +10,19 @@
    [
     5,
     0
+   ],
+   [
+    5,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "Recent six-stage order-2 searches are still producing new elites. The bucket-3 cell has higher held-out error than bucket 2; a zero coefficient and a coarse dyadic grid may find a cheaper tableau that improves it."
+ "rationale": "The six-stage order-2 shape has produced 16 new elites recently. Its bucket-3 cell is weaker than bucket 2; sparse final-stage coefficients may reduce cycles while leaving enough freedom to improve held-out error."
 }
