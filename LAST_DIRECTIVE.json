@@ -1,34 +1,29 @@
 {
- "directive_id": "D-2467",
+ "directive_id": "D-2468A",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
    ],
    [
-    3,
-    0
-   ],
-   [
-    3,
+    5,
     1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/4",
+   "2": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 20,
- "rationale": "The four-stage order-4 cell has only five candidates and weak held-out error. These nodes and zeros specify the sparse classical RK4 A tableau, giving the exact b solver a feasible order-4 candidate to evaluate."
+ "islands": 8,
+ "budget_minutes": 75,
+ "rationale": "The six-stage order-2 search has produced 16 new elites, and its bucket-3 cell remains weaker than bucket 2. Vary the pinned nodes and remove two final-stage products to search for a lower-cycle tableau with better held-out error."
 }
