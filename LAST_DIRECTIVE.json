@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2259",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2261",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -12,7 +12,7 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 4,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/4",
    "2": "1/2",
@@ -21,6 +21,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 archive has only four samples and one filled cell. These dyadic nodes admit an exact fourth-order tableau with nonnegative weights, providing a distinct search region and more samples for H-030."
+ "budget_minutes": 45,
+ "rationale": "These dyadic nodes and a[2][0]=0 admit an exact four-stage, fourth-order tableau with nonnegative b. Explore this feasible family to gather more order-4 four-stage samples and potentially fill an empty cycle bucket."
 }
