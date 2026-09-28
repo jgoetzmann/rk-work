@@ -1,20 +1,21 @@
 {
- "directive_id": "D-2159",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2161",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/4",
-   "2": "3/4",
-   "3": "1"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1"
   },
-  "dyadic_denominator_max": 64,
-  "b_nonneg": true
+  "b_nonneg": false
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. Dyadic nodes 1/4, 3/4, 1 give a distinct nonnegative-weight family; search it to gather evidence for H-030 and improve the cell."
+ "rationale": "The five-stage order-4 cells remain weak. Fixing dyadic stage nodes while allowing signed weights explores a different five-stage family for lower held-out error at the same cycle budget."
 }
