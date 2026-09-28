@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2368",
+ "directive_id": "D-2369",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -10,9 +10,17 @@
    [
     2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 four-stage bucket-2 cell is weak at 6.949e-02 held-out error. Fixed half-step nodes support fourth-order solutions; zeroing a[2][0] reduces one stage multiply while leaving later coefficients free. This also gathers samples for H-032."
+ "islands": 1,
+ "budget_minutes": 10,
+ "rationale": "The four-stage order-4 cell has only five samples and a held-out error of 6.949e-02. These constraints select the classical RK4 stage structure, providing an exact-order Q15 candidate for that weak cell and a sample for H-032."
 }
