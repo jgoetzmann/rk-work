@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2551",
+ "directive_id": "D-2552",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -17,14 +17,13 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
-   "3": "3/4"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-2 five- and six-stage cells have the lowest held-out errors and have recently produced new elites. Varying the pinned nodes and removing two A entries explores lower-cycle tableaus for their bucket-2 and bucket-3 cells."
+ "budget_minutes": 45,
+ "rationale": "The five- and six-stage order-2 shape produced a recent new elite, but has since gone 96 islands without one. Sparse late stages may reach cheaper cycle buckets; the finer dyadic grid leaves room to improve held-out error."
 }
