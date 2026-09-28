@@ -1,34 +1,27 @@
 {
- "directive_id": "D-2273",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2274",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    4,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 15,
- "rationale": "The four-stage order-4 cell has only four samples and a held-out error of 6.976e-02. These constraints specify the sparse classical RK4 A matrix, providing a feasible order-4 candidate for that weak cell and a sample for H-032."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The prior six-stage order-4 shape reached the target order and produced elites, but has stalled. Move the forced zero to a different row and use a finer dyadic grid to explore new tableaus while gathering samples for H-074."
 }
