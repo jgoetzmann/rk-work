@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2518",
+ "directive_id": "D-2519",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -10,12 +10,11 @@
   "c_fixed": {
    "1": "1/4",
    "2": "1/2",
-   "3": "1/2",
    "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The five-stage order-4 cells have reached 0.03717 held-out error, but bucket 4 is empty and the current pinned-node shape has gone 600 islands without a new elite. These dyadic nodes provide a different feasible fourth-order family while retaining nonnegative weights."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 bucket-4 cell is empty. Try different fixed nodes and a finer dyadic grid; leave the fourth stage node free to preserve feasible order-4 tableaus."
 }
