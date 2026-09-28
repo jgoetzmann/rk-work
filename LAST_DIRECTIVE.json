@@ -1,17 +1,11 @@
 {
- "directive_id": "D-2282",
+ "directive_id": "D-2284",
  "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    3,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
@@ -22,5 +16,5 @@
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "The order-4 four-stage cell has only four samples and a weak held-out best. Fixed dyadic nodes and a[3][0]=0 retain feasible fourth-order families while reducing the search space and cycle cost; additional samples inform H-030."
+ "rationale": "The order-4 four-stage bucket-2 cell is weak and has only four fast held-out samples. Pinning the classical RK4 stage nodes gives the exact-order solver a feasible region while leaving A free to search for lower Q15 held-out error and gather samples for H-030."
 }
