@@ -1,28 +1,37 @@
 {
- "directive_id": "D-2425",
+ "directive_id": "D-2426",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "2": "3/4"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 search has produced elites, but its current settings have stalled. Pinning the remaining internal node at 1/2 focuses the search on a different dyadic subfamily; denominator 32 permits finer A coefficients while retaining the successful stage pattern."
+ "rationale": "The order-3 six-stage bucket-2 cell is empty. Sparse first-column entries may reduce cycles; pinning two dyadic stage nodes preserves room to satisfy third-order conditions."
 }
