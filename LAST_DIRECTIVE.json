@@ -1,21 +1,34 @@
 {
- "directive_id": "D-2239",
- "hypothesis_id": null,
+ "directive_id": "D-2240",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 search has produced elites, but its current settings have gone 312 islands without one. A finer dyadic grid and fixed stage nodes vary that shape while targeting its empty cycle buckets and the weak bucket-2 cell."
+ "islands": 4,
+ "budget_minutes": 30,
+ "rationale": "Pin the sparse classical RK4 A tableau, whose fourth-order weights can be solved exactly. The four-stage order-4 archive has only four samples and empty lower-cycle cells; this adds a feasible low-cost shape for H-030."
 }
