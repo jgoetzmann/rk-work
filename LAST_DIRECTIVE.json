@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2155",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2156RK4",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   4
@@ -28,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 45,
- "rationale": "The four-stage order-4 cell has only four samples and weak held-out error. These sparse dyadic nodes admit the classical fourth-order tableau and provide samples for the open four-stage comparison."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints yield the sparse classical RK4 tableau, which satisfies order 4 exactly. Evaluate it for the weak four-stage cell and gather a sample for H-074."
 }
