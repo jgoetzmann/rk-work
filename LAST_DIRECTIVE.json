@@ -1,12 +1,18 @@
 {
- "directive_id": "D-2123",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2125A",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 64,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -16,5 +22,5 @@
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell is weak and has only four order-4 samples. These abscissae admit the classical RK4 tableau; a finer dyadic grid allows other feasible A values. Gather samples for H-074."
+ "rationale": "The order-4 four-stage archive has only four candidates and a weak filled cell. Pinning feasible RK4 nodes and a sparse stage link while using a finer dyadic grid may improve that cell and supply samples for H-030."
 }
