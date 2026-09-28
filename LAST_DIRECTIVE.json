@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2117",
+ "directive_id": "D-2119",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,16 +12,17 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Six-stage order-4 searches have produced new elites, but the current settings have gone 136 islands without one. A finer dyadic grid explores new coefficients while retaining the node constraints that have reached order 4; the six-stage bucket-4 cell remains weaker than bucket 3."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 search has produced elites, but its recent settings have stalled. Pinning stage 4 at a half step varies the productive node pattern while retaining a feasible sparse family. Seek a lower held-out error in the occupied six-stage cycle cells."
 }
