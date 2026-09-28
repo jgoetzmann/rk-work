@@ -1,37 +1,21 @@
 {
- "directive_id": "D-2485",
+ "directive_id": "D-2489",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  5,
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 8,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The order-2 five- and six-stage bucket-2 cells are competitive. Sparse later rows may reduce cycle cost while leaving enough freedom to improve held-out error."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 bucket 4 cell is empty, and bucket 3 is weak. Pinning dyadic stage nodes changes the recent five-stage search settings while retaining the classical four-stage RK4 construction as a feasible base."
 }
