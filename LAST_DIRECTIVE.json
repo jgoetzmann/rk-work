@@ -1,26 +1,27 @@
 {
- "directive_id": "D-2447",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2448A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only five samples. These dyadic nodes admit classical RK4, while fixing a[3][0]=0 leaves other coefficients available for search. Gather samples for H-030 and seek a lower held-out error."
+ "budget_minutes": 90,
+ "rationale": "The order-4 five-stage bucket-3 cell has held-out error 0.03717. A fifth stage at c=1/2 allows new weight and stage couplings while the first four stages retain a feasible classical RK4 core. This changes the node pattern of a shape that has stalled at its previous settings."
 }
