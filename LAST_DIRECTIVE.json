@@ -1,15 +1,36 @@
 {
- "directive_id": "D-2522",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2524",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
+  5,
   6
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
     4,
     0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
    ],
    [
     5,
@@ -18,18 +39,20 @@
    [
     5,
     1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
    ]
   ],
   "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
-  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 shape has produced elites, while its cycle bucket 2 remains empty. Additional zero entries may lower cycle cost; the fixed nodes retain the previously productive order-4 setting and gather samples for H-074."
+ "budget_minutes": 45,
+ "rationale": "The five-stage bucket 1 and six-stage bucket 1 cells are empty. A sparse stage chain removes A multiplies while leaving free dyadic coefficients and exactly solved order-2 weights."
 }
