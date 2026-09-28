@@ -1,33 +1,27 @@
 {
- "directive_id": "D-2169",
+ "directive_id": "D-2174",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
+   "2": "1/2",
+   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Six-stage order-2 searches are still producing new elites, while the bucket-2 cell has weak held-out error. Pinning dyadic nodes and removing three A entries focuses the search on low-cycle candidates for that cell."
+ "budget_minutes": 120,
+ "rationale": "The pinned six-stage shape has produced order-4 candidates and elites, but has gone 224 islands without a new elite. A denominator of 32 retains its feasible coefficients while allowing finer A values to improve the weak six-stage order-4 cells."
 }
