@@ -1,10 +1,9 @@
 {
- "directive_id": "D-2564",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2570",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
-  4,
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
@@ -17,17 +16,19 @@
     0
    ],
    [
-    4,
-    0
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 8,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "Order-2 cells (4,0) and (5,1) are empty. Sparse A rows and a coarse dyadic grid may reduce cycles enough to reach them while retaining freedom to solve b exactly."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints specify the classical four-stage RK tableau, which satisfies order four with exact rational weights. Evaluate it in the weak four-stage cell and gather a sample for H-030."
 }
