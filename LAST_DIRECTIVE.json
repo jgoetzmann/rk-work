@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2428",
+ "directive_id": "D-2429",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
@@ -17,12 +17,11 @@
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 cell has the lowest held-out error among order-4 cells. Pinning stage 4 at 1/2 changes the previously productive node pattern while retaining a feasible fourth-order family; denominator 32 allows finer A coefficients."
+ "rationale": "This six-stage node pattern has produced fourth-order candidates. A finer dyadic grid explores new tableaus for the occupied six-stage cells and gathers samples for H-074."
 }
