@@ -1,34 +1,28 @@
 {
- "directive_id": "D-2439RK4",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2441A",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    5,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "3/4",
+   "5": "1"
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 30,
- "rationale": "These constraints specify the classical four-stage RK4 A matrix. The order-4 four-stage grid has only one filled cell, so this feasible dyadic tableau may fill a cheaper cell and supply a sample for H-074."
+ "islands": 8,
+ "budget_minutes": 75,
+ "rationale": "The six-stage order-4 cells are weak or empty. Pinning stage 4 at 3/4 varies the previously productive node pattern while retaining dyadic A, nonnegative b, and a zero coefficient that can reduce cycles."
 }
