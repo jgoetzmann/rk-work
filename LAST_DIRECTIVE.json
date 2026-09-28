@@ -1,21 +1,21 @@
 {
- "directive_id": "D-2464",
+ "directive_id": "D-2465",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2"
+   "3": "3/4",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The five-stage order-4 cells remain weak or empty. An additional half-step stage preserves a feasible classical RK4 subtableau while allowing a different Q15 rounding path; the pinned nodes give the exact order solver a tractable starting shape."
+ "budget_minutes": 60,
+ "rationale": "The order-4 five-stage bucket-2 cell has held-out error 0.06057. Quarter-spaced dyadic nodes change the heavily sampled pinned-node shape while preserving exact order-condition solving and nonnegative weights; the search may improve that weak cell."
 }
