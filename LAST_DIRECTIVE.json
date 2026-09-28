@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2420",
+ "directive_id": "D-2422",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   6
  ],
@@ -10,20 +10,18 @@
    [
     5,
     0
-   ],
-   [
-    5,
-    1
    ]
   ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
+   "2": "1/2",
+   "3": "1",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Six-stage order-2 searches have produced recent elites, including the lowest held-out error in the grid. Pinning two nodes and removing two final-stage terms explores cheaper six-stage tableaus for the weak bucket-3 cell."
+ "budget_minutes": 90,
+ "rationale": "The pinned six-stage shape previously yielded order-4 candidates and new elites. A denominator of 32 expands its dyadic A grid to search for lower held-out error in the occupied six-stage cells."
 }
