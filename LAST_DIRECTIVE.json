@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2236",
+ "directive_id": "D-2237",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -9,19 +9,20 @@
   "force_zero": [
    [
     5,
-    1
+    0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 search has produced elites, but its previous constraints have stalled. Move the forced zero from A[5][0] to A[5][1] and use a finer dyadic grid to explore distinct feasible tableaus, including the empty six-stage cycle bucket 2."
+ "budget_minutes": 120,
+ "rationale": "The six-stage order-4 shape has produced new elites, but its current settings have gone 320 islands without one. Pinning the remaining free node at c4=1/2 changes the search while retaining the node pattern that reached order 4; seek improvement in the weak bucket-3 or bucket-4 cells."
 }
