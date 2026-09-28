@@ -1,20 +1,30 @@
 {
- "directive_id": "D-2519",
+ "directive_id": "D-2521",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  5
+  5,
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "force_zero": [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
+   "1": "1/2",
    "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket-4 cell is empty. Try different fixed nodes and a finer dyadic grid; leave the fourth stage node free to preserve feasible order-4 tableaus."
+ "budget_minutes": 90,
+ "rationale": "The order-2 five-stage bucket-3 cell has held-out error 0.03179, versus 0.01356 in bucket 2. Sparse final-stage coefficients may reduce cycle cost while the broader dyadic grid leaves room to improve held-out error in five- and six-stage cells."
 }
