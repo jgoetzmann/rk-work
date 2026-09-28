@@ -1,14 +1,14 @@
 {
- "directive_id": "D-2294",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2296",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    5,
     0
    ]
   ],
@@ -16,11 +16,13 @@
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 four-stage archive has only four samples and one filled cycle bucket. These nodes admit exact fourth-order dyadic tableaus, including classical RK4. Sample this sparse family to improve the weak cell and gather evidence for H-032."
+ "rationale": "The six-stage order-4 shape has produced elites, but its current settings have stalled. Fixing the previously free fifth-stage node at 1/2 explores a narrower family while gathering samples for H-074."
 }
