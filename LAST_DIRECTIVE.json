@@ -1,58 +1,32 @@
 {
- "directive_id": "D-2524",
+ "directive_id": "D-2525",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
-  5,
   6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ],
-   [
     4,
     0
    ],
    [
-    4,
-    1
-   ],
-   [
-    4,
-    2
-   ],
-   [
     5,
     0
-   ],
-   [
-    5,
-    1
-   ],
-   [
-    5,
-    2
-   ],
-   [
-    5,
-    3
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
+  "c_fixed": {
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The five-stage bucket 1 and six-stage bucket 1 cells are empty. A sparse stage chain removes A multiplies while leaving free dyadic coefficients and exactly solved order-2 weights."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 bucket 2 cell is empty, and bucket 3 has held-out error 0.02787. Pinning the previously free fifth node and removing another coupling explores a sparser branch of a shape that has reached order 4."
 }
