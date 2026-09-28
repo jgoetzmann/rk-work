@@ -1,29 +1,20 @@
 {
- "directive_id": "D-2378A",
+ "directive_id": "D-2380",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1"
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-3 five-stage bucket-2 cell has held-out error 0.06314, above the four-stage bucket-2 cell's 0.04220. Sparse later rows and dyadic nodes may reduce cycle cost while allowing an exact third-order solution."
+ "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-02. Keep three feasible stage nodes pinned while leaving the fifth node free, and use a finer dyadic grid to seek a lower-error tableau at the same cycle bucket."
 }
