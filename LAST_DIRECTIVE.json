@@ -1,36 +1,31 @@
 {
- "directive_id": "D-2431",
- "hypothesis_id": "H-322",
- "target_order": 2,
+ "directive_id": "D-2432",
+ "hypothesis_id": "H-075",
+ "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "3/4",
-   "4": "1",
-   "5": "1"
+   "3": "1",
+   "4": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-2 bucket-2 elite has 0.01291 held-out error at 58 cycles. Sparse dyadic stages may improve its error or reach a cheaper empty cell while gathering samples for H-322."
+ "rationale": "The five-stage order-4 bucket-3 cell is weak. An extra midpoint stage permits a distinct Q15 rounding path while retaining a feasible RK4 structure; gather samples for H-075."
 }
