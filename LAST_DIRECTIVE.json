@@ -1,21 +1,25 @@
 {
- "directive_id": "D-2370",
+ "directive_id": "D-2372",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
-  5
+  3
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2"
+   "2": "3/4"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five-stage order-4 search has reached order 4, but its current settings have gone 440 islands without a new elite. Changing the fifth node to 1/2 and allowing denominator 32 explores a different dyadic family for the weak five-stage cells."
+ "budget_minutes": 45,
+ "rationale": "The three-stage order-3 cell has no entry below cycle bucket 2. These nodes and the zero A entry admit an exact third-order tableau with two nonzero A entries, giving the search a sparse route toward a cheaper cell."
 }
