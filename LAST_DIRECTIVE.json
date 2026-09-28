@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2199",
+ "directive_id": "D-2204",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -20,6 +20,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Six-stage order-2 searches are still producing new elites. The sparse final stage may reduce cycles, while fixed dyadic nodes leave room to improve the weak six-stage bucket-3 cell."
+ "budget_minutes": 60,
+ "rationale": "Recent six-stage order-2 searches are still producing new elites. The bucket-3 cell has higher held-out error than bucket 2; a zero coefficient and a coarse dyadic grid may find a cheaper tableau that improves it."
 }
