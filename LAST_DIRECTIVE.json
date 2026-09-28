@@ -1,27 +1,33 @@
 {
- "directive_id": "D-2390",
+ "directive_id": "D-2392",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "2": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "This six-stage structure has reached order 4 and produced new elites. A denominator of 32 expands its dyadic choices to seek a lower held-out error in the occupied six-stage cells."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-2 bucket 1 cell is empty. Sparse stage dependencies may reduce cycles below the current five-stage minimum of 55 while retaining feasible second-order weights."
 }
