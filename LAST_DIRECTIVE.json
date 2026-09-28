@@ -1,28 +1,26 @@
 {
- "directive_id": "D-2403",
- "hypothesis_id": null,
+ "directive_id": "D-2405",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced elites, but its current node settings have gone 392 islands without another. Pinning stage 4 at 1/2 explores a different dyadic node layout while retaining a feasible fourth-order four-stage core."
+ "budget_minutes": 120,
+ "rationale": "The four-stage order-4 archive has only five samples. These dyadic nodes define a distinct exact order-4 family; the zero entry narrows the search. More four-stage samples can test H-032 and may improve the weak filled cell or occupy an empty cycle bucket."
 }
