@@ -1,27 +1,25 @@
 {
- "directive_id": "D-2144",
+ "directive_id": "D-2146",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
-  6
+  3
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    2,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 4,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "5": "1"
+   "2": "3/4"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage shape has produced order-4 elites, but its current settings have gone 200 islands without a new one. A denominator of 32 explores additional dyadic coefficients while retaining the node pattern that reached order 4, aiming to improve the occupied six-stage cells."
+ "budget_minutes": 30,
+ "rationale": "These constraints specify a sparse three-stage, third-order tableau with two nonzero A entries. Search for a lower-cycle cell; the current order-3 three-stage archive fills only buckets 2 and 3."
 }
