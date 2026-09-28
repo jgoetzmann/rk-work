@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2135",
+ "directive_id": "D-2137",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -12,17 +12,16 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The six-stage order-4 shape has produced new elites, but its current settings have gone 176 islands without one. Fixing c[4]=1/2 explores a narrower node pattern while retaining the settings known to reach order 4."
+ "rationale": "The six-stage shape has produced order-4 elites. Refining its dyadic A grid from denominator 16 to 32 explores new coefficients while retaining the node constraints that reached order 4. Search for a lower held-out error in its occupied cycle buckets."
 }
