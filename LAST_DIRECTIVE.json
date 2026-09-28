@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2360",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2362",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
   4
@@ -10,6 +10,14 @@
    [
     2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
@@ -22,5 +30,5 @@
  },
  "islands": 8,
  "budget_minutes": 45,
- "rationale": "Order-4 four-stage cells have only five held-out samples and weak bucket-2 error. These dyadic nodes admit classical RK4; the zero entry can reduce cycles while allowing variation in the final stage. More four-stage samples also inform H-030."
+ "rationale": "The order-4 four-stage cell has only five samples and held-out error 0.06949. These sparse dyadic nodes admit classical RK4 and may improve that cell while gathering evidence for H-075."
 }
