@@ -1,9 +1,9 @@
 {
- "directive_id": "D-2537",
- "hypothesis_id": null,
+ "directive_id": "D-2539",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
-  5
+  4
  ],
  "constraints": {
   "force_zero": [
@@ -16,12 +16,11 @@
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 90,
- "rationale": "The five-stage order-4 bucket-2 cell has held-out error 0.06057, versus 0.03717 in bucket 3. A fifth stage at c=1/2 leaves room to improve the tableau; pinning dyadic nodes and one zero entry narrows the search after the prior five-stage settings stopped producing elites."
+ "rationale": "Only five four-stage order-4 candidates have been found, and its bucket 3 is empty. Pinning classical dyadic stage nodes and one sparse A entry may make exact order-4 solutions easier to reach while gathering samples for H-030."
 }
