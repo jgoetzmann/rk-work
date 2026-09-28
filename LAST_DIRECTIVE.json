@@ -1,18 +1,12 @@
 {
- "directive_id": "D-2348",
- "hypothesis_id": null,
+ "directive_id": "D-2349A",
+ "hypothesis_id": "H-075",
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    4,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -22,6 +16,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The five-stage order-4 bucket-2 cell has held-out error 0.06057. A half-step fifth stage and one zero coefficient vary the stale five-stage search while retaining a feasible dyadic RK4 backbone and a chance to reduce cycle cost."
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-4 bucket-3 cell is occupied, but its 3.717e-02 held-out error leaves room to improve. Changing the final node to 1/2 explores a new dyadic family while retaining nodes that admit exact order-4 solutions and gathers samples for H-075."
 }
