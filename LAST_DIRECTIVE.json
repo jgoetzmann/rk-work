@@ -1,21 +1,29 @@
 {
- "directive_id": "D-2233",
+ "directive_id": "D-2234A",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 3,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    3,
+    0
+   ],
+   [
+    4,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
+  "c_fixed": {
+   "1": "1/2",
+   "4": "1"
+  },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The six-stage order-2 shape produced 16 recent elites, but has gone 96 islands without another. Vary its constraints to seek a lower held-out error in the occupied cycle buckets or a candidate for an empty bucket."
+ "budget_minutes": 60,
+ "rationale": "The order-3 five-stage bucket-2 cell has held-out error 6.314e-02, much weaker than its bucket-3 cell at 2.551e-02. Sparse later rows and a coarse dyadic grid may reduce cycles while the pinned nodes leave room to improve error."
 }
