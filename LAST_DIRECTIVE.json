@@ -1,24 +1,12 @@
 {
- "directive_id": "D-2219A",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2222",
+ "hypothesis_id": "H-074",
+ "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
    [
     5,
     0
@@ -26,11 +14,15 @@
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-2 search has produced recent elites, but its cycle bucket 1 is empty. Sparse early-stage couplings may reduce cycle cost while retaining enough freedom to satisfy the order conditions."
+ "budget_minutes": 90,
+ "rationale": "The six-stage order-4 shape previously produced new elites, but recent searches at its current settings have stalled. Pinning c[4] to 1/2 explores a narrower node pattern while gathering samples for H-074."
 }
