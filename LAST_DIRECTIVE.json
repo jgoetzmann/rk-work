@@ -1,21 +1,37 @@
 {
- "directive_id": "D-2411",
+ "directive_id": "D-2413",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
-  5
+  6
  ],
  "constraints": {
-  "dyadic_denominator_max": 32,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/4",
-   "2": "1/2",
-   "3": "3/4",
-   "4": "1"
+   "1": "1/2",
+   "2": "3/4"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The five-stage order-4 bucket-3 cell has held-out error 3.717e-02. Quarter-spaced fixed nodes and a denominator of 32 explore a different coefficient region after the recent pinned-node searches stopped producing elites."
+ "rationale": "The order-3 six-stage cycle bucket 2 is empty. The pinned early nodes admit a sparse third-order core; removing four A entries may lower cycle cost while leaving later stages available to improve held-out error."
 }
