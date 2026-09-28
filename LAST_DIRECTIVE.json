@@ -1,19 +1,34 @@
 {
- "directive_id": "D-2351",
- "hypothesis_id": null,
+ "directive_id": "D-2353",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "dyadic_denominator_max": 256,
+  "force_zero": [
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1"
-  }
+  },
+  "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 90,
- "rationale": "The four-stage order-4 bucket 3 cell is empty. Fixed nodes retain a feasible order-4 structure, while the finer dyadic grid can explore coefficients beyond the sparse bucket 2 incumbent."
+ "islands": 2,
+ "budget_minutes": 30,
+ "rationale": "These constraints admit the classical four-stage fourth-order tableau, providing a feasible Q15 candidate where only five order-4 four-stage samples exist. Gather samples for H-030 and test whether this sparse tableau improves the weak four-stage cell."
 }
