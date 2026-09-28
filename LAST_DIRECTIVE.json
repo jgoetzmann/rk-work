@@ -1,26 +1,12 @@
 {
- "directive_id": "D-2121",
+ "directive_id": "D-2123",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -28,7 +14,7 @@
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 30,
- "rationale": "These constraints define the classical four-stage RK tableau, giving the search an exact order-4 candidate for the sparsely sampled four-stage cell and gathering evidence for H-074."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The four-stage order-4 cell is weak and has only four order-4 samples. These abscissae admit the classical RK4 tableau; a finer dyadic grid allows other feasible A values. Gather samples for H-074."
 }
