@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2270",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2271",
+ "hypothesis_id": null,
+ "target_order": 3,
  "stages": [
   4
  ],
@@ -14,21 +14,17 @@
    [
     3,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "2": "1",
+   "3": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "These constraints specify the sparse classical four-stage RK4 A matrix. Its exact order-4 weights are feasible, and the four-stage order-4 cell has only four samples. Evaluate this point to gather evidence for H-074."
+ "islands": 8,
+ "budget_minutes": 45,
+ "rationale": "The order-3 four-stage bucket-2 cell has held-out error 0.0422. These dyadic stage times admit sparse, nonnegative order-3 methods; zeroing two A entries may reduce cycles while leaving coefficients for the search to optimize."
 }
