@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2571",
+ "directive_id": "D-2573A",
  "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
@@ -8,11 +8,19 @@
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only five candidates and held-out error 0.06949. Pinning dyadic nodes to a feasible fourth-order pattern while allowing finer A coefficients may yield more candidates and test H-032."
+ "islands": 4,
+ "budget_minutes": 30,
+ "rationale": "These sparse dyadic A constraints define the classical four-stage RK4 structure, allowing exact fourth-order b weights. The order-4 four-stage archive has only five candidates; this search can add samples for H-032 and may improve its weak occupied cell."
 }
