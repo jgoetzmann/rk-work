@@ -1,21 +1,27 @@
 {
- "directive_id": "D-2149",
+ "directive_id": "D-2150A",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "force_zero": [
+   [
+    4,
+    0
+   ]
+  ],
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/4",
+   "1": "1/2",
    "2": "1/2",
-   "3": "3/4",
+   "3": "1",
    "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 five-stage bucket 4 cell is empty. Quarter-step nodes and a finer dyadic grid vary the constraints of the recently spent five-stage shape while allowing denser A tableaus to reach a higher cycle bucket."
+ "rationale": "The order-4 five-stage bucket 4 cell is empty, and recent five-stage settings have gone 272 islands without a new elite. Endpoint nodes preserve a feasible fourth-order structure; a finer dyadic grid and a sparse final stage explore a different region."
 }
