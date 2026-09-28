@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2120",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2121",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   4
@@ -20,7 +20,7 @@
     1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
@@ -30,5 +30,5 @@
  },
  "islands": 4,
  "budget_minutes": 30,
- "rationale": "Only four order-4 four-stage candidates have been recorded. These nodes and sparse A admit the classical fourth-order tableau, giving a feasible way to sample the weak cell and test H-032."
+ "rationale": "These constraints define the classical four-stage RK tableau, giving the search an exact order-4 candidate for the sparsely sampled four-stage cell and gathering evidence for H-074."
 }
