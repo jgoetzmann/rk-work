@@ -1,33 +1,20 @@
 {
- "directive_id": "D-2243",
- "hypothesis_id": "H-248",
- "target_order": 2,
+ "directive_id": "D-2245",
+ "hypothesis_id": "H-032",
+ "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    3,
-    0
-   ],
-   [
-    4,
-    0
-   ],
-   [
-    5,
-    0
-   ]
-  ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2"
+   "1": "1/4",
+   "2": "3/4",
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "Six-stage order-2 searches have recently produced new elites. Sparse later stages may lower cycle cost while improving the weak bucket-3 cell; additional six-stage samples also test H-248."
+ "budget_minutes": 90,
+ "rationale": "The four-stage order-4 archive has only four fast held-out samples and one filled cell. These dyadic nodes explore a different fourth-order family and can gather samples for H-032."
 }
