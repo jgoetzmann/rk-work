@@ -1,37 +1,27 @@
 {
- "directive_id": "D-2413",
+ "directive_id": "D-2414",
  "hypothesis_id": null,
- "target_order": 3,
+ "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
     4,
-    0
-   ],
-   [
-    5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
-   "2": "3/4"
+   "2": "1/2",
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-3 six-stage cycle bucket 2 is empty. The pinned early nodes admit a sparse third-order core; removing four A entries may lower cycle cost while leaving later stages available to improve held-out error."
+ "rationale": "The five-stage order-4 bucket 4 is empty. These dyadic stage nodes admit an exact fourth-order construction; the finer A grid explores variants, while a[4][0]=0 removes one coefficient operation."
 }
