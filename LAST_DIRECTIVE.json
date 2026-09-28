@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2231",
+ "directive_id": "D-2233",
  "hypothesis_id": null,
  "target_order": 2,
  "stages": [
@@ -8,21 +8,14 @@
  "constraints": {
   "force_zero": [
    [
-    4,
-    0
-   ],
-   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
-  "c_fixed": {
-   "1": "1/2"
-  },
+  "dyadic_denominator_max": 32,
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-2 search has produced recent new elites, and its bucket-2 held-out error is 0.01291. Sparse late rows may lower cycle cost while the fixed half-step node leaves room to solve the order-2 weights exactly."
+ "budget_minutes": 45,
+ "rationale": "The six-stage order-2 shape produced 16 recent elites, but has gone 96 islands without another. Vary its constraints to seek a lower held-out error in the occupied cycle buckets or a candidate for an empty bucket."
 }
