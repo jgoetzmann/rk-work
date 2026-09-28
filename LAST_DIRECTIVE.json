@@ -1,26 +1,19 @@
 {
- "directive_id": "D-2357",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2359",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
    "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The four-stage order-4 cell has only five samples and a held-out error of 6.949e-02. Classical RK4 satisfies these node and zero constraints, so this search retains a feasible order-4 tableau while sampling nearby dyadic A values for H-032."
+ "budget_minutes": 45,
+ "rationale": "The four-stage order-4 cell has only five samples and held-out error 6.949e-02. Pinning the first and final stage nodes keeps a known feasible fourth-order structure while leaving the middle node and A entries free to search for a better tableau."
 }
