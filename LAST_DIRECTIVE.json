@@ -1,28 +1,21 @@
 {
- "directive_id": "D-2296",
- "hypothesis_id": "H-074",
+ "directive_id": "D-2297",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  6
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
    "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced elites, but its current settings have stalled. Fixing the previously free fifth-stage node at 1/2 explores a narrower family while gathering samples for H-074."
+ "rationale": "The five-stage order-4 bucket-4 cell is empty. These nodes admit an order-4 tableau, while the finer dyadic grid leaves room to explore coefficients beyond the recent five-stage settings."
 }
