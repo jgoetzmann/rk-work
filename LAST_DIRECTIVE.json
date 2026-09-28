@@ -1,34 +1,27 @@
 {
- "directive_id": "D-2535",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2537",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
    [
     2,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "These constraints specify the sparse classical RK4 A tableau; solve b exactly and evaluate its Q15 held-out error and cycles. The order-4 four-stage cell has only five candidates and a weak incumbent."
+ "islands": 8,
+ "budget_minutes": 90,
+ "rationale": "The five-stage order-4 bucket-2 cell has held-out error 0.06057, versus 0.03717 in bucket 3. A fifth stage at c=1/2 leaves room to improve the tableau; pinning dyadic nodes and one zero entry narrows the search after the prior five-stage settings stopped producing elites."
 }
