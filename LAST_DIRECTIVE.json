@@ -1,26 +1,24 @@
 {
- "directive_id": "D-2458",
- "hypothesis_id": "H-030",
- "target_order": 4,
+ "directive_id": "D-2459",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  3
  ],
  "constraints": {
   "force_zero": [
    [
-    3,
+    2,
     0
    ]
   ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 four-stage cell is weak, and H-030 awaits samples. Pinning classical RK4 stage times preserves a feasible fourth-order path; allowing denominator 32 and only one forced zero leaves room to seek lower held-out error or a cheaper cycle bucket."
+ "rationale": "The three-stage, order-2 bucket-1 cell has held-out error 0.02386 at 29 cycles. A sparse second stage removes one A coefficient while leaving its node free, giving the search room to improve this cell at a similar cycle cost."
 }
