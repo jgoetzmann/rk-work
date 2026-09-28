@@ -1,20 +1,27 @@
 {
- "directive_id": "D-2437",
+ "directive_id": "D-2438",
  "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  4
+  6
  ],
  "constraints": {
+  "force_zero": [
+   [
+    5,
+    0
+   ]
+  ],
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The order-4 four-stage archive has only five records and several empty cycle cells. These nodes admit classical RK4, giving the search a feasible fourth-order starting pattern while allowing other dyadic A entries. Additional four-stage samples can test H-074."
+ "rationale": "This six-stage node pattern previously produced order-4 candidates and new elites. A finer dyadic grid explores nearby tableaus for the order-4 six-stage cells and gathers samples for H-074."
 }
