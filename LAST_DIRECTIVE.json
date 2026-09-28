@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2363A",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2365A",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
   4
@@ -8,8 +8,16 @@
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 45,
- "rationale": "The four-stage order-4 cell is weak and has few samples. Pinned dyadic nodes and a sparse final row focus the search on feasible low-cycle tableaus while allowing internal coefficients to vary."
+ "islands": 2,
+ "budget_minutes": 20,
+ "rationale": "These constraints admit the classical four-stage RK4 tableau exactly. The order-4 four-stage cell is weak and has only five samples; this targeted run can improve it and gather evidence for H-074."
 }
