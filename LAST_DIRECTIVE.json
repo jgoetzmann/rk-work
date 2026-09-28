@@ -1,19 +1,21 @@
 {
- "directive_id": "D-2319A",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2324",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "dyadic_denominator_max": 64,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
-   "3": "1"
+   "1": "1/4",
+   "2": "1/2",
+   "3": "3/4",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The order-4 four-stage bucket-3 cell is empty and has few samples. Fixing two nodes preserves the classical RK4 tableau while leaving the middle node and A coefficients free to seek a new elite and gather samples for H-032."
+ "budget_minutes": 90,
+ "rationale": "The current five-stage fixed-node shape has gone 368 islands without a new elite. Quarter-spaced nodes change that search region while retaining exact dyadic A values; seek an elite in the weak bucket-2 or bucket-3 cell or the empty bucket-4 cell."
 }
