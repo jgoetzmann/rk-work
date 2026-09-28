@@ -1,28 +1,29 @@
 {
- "directive_id": "D-2376",
+ "directive_id": "D-2378A",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 3,
  "stages": [
-  6
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    5,
+    3,
+    0
+   ],
+   [
+    4,
     0
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
    "1": "1/2",
-   "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "2": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The six-stage shape previously produced fourth-order candidates and new elites, but has since stalled. Pinning stage 4 at 1/2 explores a narrower dyadic family while retaining the previously productive nodes and sparsity."
+ "rationale": "The order-3 five-stage bucket-2 cell has held-out error 0.06314, above the four-stage bucket-2 cell's 0.04220. Sparse later rows and dyadic nodes may reduce cycle cost while allowing an exact third-order solution."
 }
