@@ -1,5 +1,5 @@
 {
- "directive_id": "D-2225",
+ "directive_id": "D-2227",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
@@ -23,6 +23,6 @@
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-4 shape previously produced new elites, but has gone 288 islands without another. Pinning the free fourth node at 1/2 and allowing denominator 32 explores a different dyadic slice for its weak and empty cells."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 scaffold has produced elites, but its current settings have stalled. Pinning stage 4 at 1/2 and allowing denominator 32 explores a different feasible coefficient set for the weak six-stage cells."
 }
