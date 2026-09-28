@@ -1,26 +1,37 @@
 {
- "directive_id": "D-2483A",
- "hypothesis_id": "H-074",
- "target_order": 4,
+ "directive_id": "D-2485",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
+  5,
   6
  ],
  "constraints": {
   "force_zero": [
    [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
     5,
     0
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
-   "1": "1/2",
-   "3": "1",
-   "5": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The prior six-stage shape produced order-4 elites, but has gone 512 islands without a new one. Freeing stage 2 and using a finer dyadic grid explores nearby tableaus while retaining the successful node pattern; this may improve the weak order-4 six-stage cells and gather samples for H-074."
+ "budget_minutes": 45,
+ "rationale": "The order-2 five- and six-stage bucket-2 cells are competitive. Sparse later rows may reduce cycle cost while leaving enough freedom to improve held-out error."
 }
