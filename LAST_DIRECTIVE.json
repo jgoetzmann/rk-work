@@ -1,28 +1,20 @@
 {
- "directive_id": "D-2444",
- "hypothesis_id": null,
+ "directive_id": "D-2446",
+ "hypothesis_id": "H-074",
  "target_order": 4,
  "stages": [
-  6
+  4
  ],
  "constraints": {
-  "force_zero": [
-   [
-    5,
-    0
-   ]
-  ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 64,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1",
-   "4": "1/2",
-   "5": "1"
+   "3": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 60,
- "rationale": "The six-stage order-4 shape has produced new elites, but its current settings have gone 464 islands without one. Pinning c4 at 1/2 and using a finer dyadic grid explores a new feasible region while retaining the node pattern that reached order 4."
+ "budget_minutes": 90,
+ "rationale": "The order-4 four-stage archive has only five candidates and one filled cycle bucket. These nodes admit a dyadic fourth-order tableau; search this constrained region for a lower held-out error and more samples for H-074."
 }
