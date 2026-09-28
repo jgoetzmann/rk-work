@@ -1,9 +1,9 @@
 {
- "directive_id": "D-2416",
- "hypothesis_id": "H-032",
- "target_order": 4,
+ "directive_id": "D-2417",
+ "hypothesis_id": null,
+ "target_order": 2,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
@@ -16,19 +16,21 @@
     0
    ],
    [
-    3,
+    4,
+    0
+   ],
+   [
+    4,
     1
    ]
   ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 8,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 20,
- "rationale": "These nodes and zeros admit the classical four-stage order-4 tableau with dyadic A and exact nonnegative b. The order-4 four-stage archive has only five candidates and a weak best held-out error; this search can improve that cell and gather evidence for H-032."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The five-stage order-2 bucket-1 cell is empty. Sparse A rows and a small dyadic grid may reduce cycles enough to fill it while leaving the remaining coefficients free for exact order-2 weights."
 }
