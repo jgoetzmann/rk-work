@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2381",
- "hypothesis_id": "H-032",
+ "directive_id": "D-2383",
+ "hypothesis_id": "H-030",
  "target_order": 4,
  "stages": [
   4
@@ -10,6 +10,14 @@
    [
     2,
     0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
    ]
   ],
   "dyadic_denominator_max": 16,
@@ -20,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 90,
- "rationale": "The order-4 four-stage archive has only five candidates and a weak best held-out error. These nodes admit a sparse fourth-order tableau; fixing a[2][0]=0 reduces cycle cost. More samples also test open hypothesis H-032."
+ "islands": 4,
+ "budget_minutes": 30,
+ "rationale": "The order-4 four-stage cell has only five samples and weak held-out error. These constraints admit the classical RK4 stage structure and reduce stage arithmetic, giving H-030 a stronger four-stage comparison."
 }
