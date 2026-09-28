@@ -1,34 +1,28 @@
 {
- "directive_id": "D-2229A",
+ "directive_id": "D-2231",
  "hypothesis_id": null,
- "target_order": 4,
+ "target_order": 2,
  "stages": [
-  4
+  6
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    4,
     0
    ],
    [
-    3,
+    5,
     0
-   ],
-   [
-    3,
-    1
    ]
   ],
   "dyadic_denominator_max": 16,
   "c_fixed": {
-   "1": "1/2",
-   "2": "1/2",
-   "3": "1"
+   "1": "1/2"
   },
   "b_nonneg": true
  },
- "islands": 1,
- "budget_minutes": 5,
- "rationale": "The four-stage order-4 cell is weak and has only four held-out records. These constraints specify the classical RK4 A matrix, giving the archive a concrete low-cost order-4 candidate to evaluate in Q15."
+ "islands": 8,
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-2 search has produced recent new elites, and its bucket-2 held-out error is 0.01291. Sparse late rows may lower cycle cost while the fixed half-step node leaves room to solve the order-2 weights exactly."
 }
