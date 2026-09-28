@@ -1,6 +1,6 @@
 {
- "directive_id": "D-2534",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2535",
+ "hypothesis_id": "H-032",
  "target_order": 4,
  "stages": [
   4
@@ -28,7 +28,7 @@
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 30,
- "rationale": "These constraints specify the sparse classical RK4 stages. The four-stage order-4 archive has only five samples and a weak held-out best; this search gathers samples for H-030."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "These constraints specify the sparse classical RK4 A tableau; solve b exactly and evaluate its Q15 held-out error and cycles. The order-4 four-stage cell has only five candidates and a weak incumbent."
 }
