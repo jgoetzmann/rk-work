@@ -1,21 +1,21 @@
 {
- "directive_id": "D-2161",
+ "directive_id": "D-2162",
  "hypothesis_id": null,
  "target_order": 4,
  "stages": [
   5
  ],
  "constraints": {
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1",
+   "3": "3/4",
    "4": "1"
   },
-  "b_nonneg": false
+  "b_nonneg": true
  },
  "islands": 8,
  "budget_minutes": 60,
- "rationale": "The five-stage order-4 cells remain weak. Fixing dyadic stage nodes while allowing signed weights explores a different five-stage family for lower held-out error at the same cycle budget."
+ "rationale": "The five-stage order-4 bucket-4 cell is empty, and the current five-stage settings have gone 304 islands without a new elite. Quarter-step nodes provide a distinct dyadic search region while retaining exact order-condition solves."
 }
