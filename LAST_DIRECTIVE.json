@@ -1,7 +1,7 @@
 {
- "directive_id": "D-2473",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2474",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
   4
  ],
@@ -20,13 +20,15 @@
     1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 45,
- "rationale": "The four-stage order-2 bucket 1 cell has held-out error 0.02164, above bucket 2's 0.01582. Sparse stage couplings may reduce cycles while leaving the weights free to satisfy order 2 exactly."
+ "islands": 1,
+ "budget_minutes": 10,
+ "rationale": "These constraints select the classical four-stage RK4 tableau, giving the sparsely sampled order-4 four-stage cell a known feasible candidate and gathering evidence for H-030."
 }
