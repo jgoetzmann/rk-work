@@ -1,16 +1,12 @@
 {
- "directive_id": "D-2443",
+ "directive_id": "D-2444",
  "hypothesis_id": null,
- "target_order": 2,
+ "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
-   [
-    4,
-    0
-   ],
    [
     5,
     0
@@ -19,11 +15,14 @@
   "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2",
    "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 90,
- "rationale": "The six-stage order-2 search has produced 16 new elites, while its bucket-3 held-out error remains 0.01415. Pinning the first and final nodes and removing two A products explores a different sparse, low-cycle region."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 shape has produced new elites, but its current settings have gone 464 islands without one. Pinning c4 at 1/2 and using a finer dyadic grid explores a new feasible region while retaining the node pattern that reached order 4."
 }
