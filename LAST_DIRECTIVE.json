@@ -1,10 +1,9 @@
 {
- "directive_id": "D-2502A",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2504",
+ "hypothesis_id": "H-030",
+ "target_order": 4,
  "stages": [
-  5,
-  6
+  4
  ],
  "constraints": {
   "force_zero": [
@@ -15,15 +14,21 @@
    [
     3,
     0
+   ],
+   [
+    3,
+    1
    ]
   ],
-  "dyadic_denominator_max": 32,
+  "dyadic_denominator_max": 2,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1"
   },
   "b_nonneg": true
  },
- "islands": 8,
- "budget_minutes": 60,
- "rationale": "The five- and six-stage order-2 search recently produced a new elite. Zeroing two A entries may reduce cycles and reach empty lower-cost cells; a finer dyadic grid leaves room to improve held-out error."
+ "islands": 1,
+ "budget_minutes": 5,
+ "rationale": "This sparse classical RK4 structure gives an exact order-4 candidate with shift-friendly A coefficients. Test whether it improves the weak four-stage cell or fills a lower cycle bucket."
 }
