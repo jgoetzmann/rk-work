@@ -1,34 +1,21 @@
 {
- "directive_id": "D-2240",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2241",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
-  "force_zero": [
-   [
-    2,
-    0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
-   ]
-  ],
-  "dyadic_denominator_max": 2,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2",
+   "1": "1/4",
    "2": "1/2",
-   "3": "1"
+   "3": "3/4",
+   "4": "1"
   },
   "b_nonneg": true
  },
- "islands": 4,
- "budget_minutes": 30,
- "rationale": "Pin the sparse classical RK4 A tableau, whose fourth-order weights can be solved exactly. The four-stage order-4 archive has only four samples and empty lower-cycle cells; this adds a feasible low-cost shape for H-030."
+ "islands": 8,
+ "budget_minutes": 90,
+ "rationale": "The order-4 five-stage bucket-3 cell is weak and bucket 4 is empty. This new dyadic node pattern changes the stalled five-stage search while leaving A free for exact order conditions."
 }
