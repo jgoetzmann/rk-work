@@ -1,16 +1,12 @@
 {
- "directive_id": "D-2186",
- "hypothesis_id": null,
- "target_order": 2,
+ "directive_id": "D-2188",
+ "hypothesis_id": "H-074",
+ "target_order": 4,
  "stages": [
   6
  ],
  "constraints": {
   "force_zero": [
-   [
-    3,
-    0
-   ],
    [
     4,
     0
@@ -20,13 +16,17 @@
     0
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
-   "1": "1/2"
+   "1": "1/2",
+   "2": "1/2",
+   "3": "1",
+   "4": "1/2",
+   "5": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "Recent six-stage order-2 searches produced nine new elites, but the bucket-2 and bucket-3 cells remain weak. Sparse late rows may reduce cycles; fixing the first node at 1/2 and requiring nonnegative weights keeps the search focused on Q15-friendly tableaus."
+ "budget_minutes": 60,
+ "rationale": "The six-stage order-4 bucket-2 cell is empty. This varies the previously productive node pattern and removes two A terms to seek lower-cycle candidates while gathering samples for H-074."
 }
