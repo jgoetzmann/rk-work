@@ -1,34 +1,27 @@
 {
- "directive_id": "D-2152",
- "hypothesis_id": "H-030",
+ "directive_id": "D-2153",
+ "hypothesis_id": null,
  "target_order": 4,
  "stages": [
-  4
+  5
  ],
  "constraints": {
   "force_zero": [
    [
-    2,
+    4,
     0
-   ],
-   [
-    3,
-    0
-   ],
-   [
-    3,
-    1
    ]
   ],
-  "dyadic_denominator_max": 16,
+  "dyadic_denominator_max": 32,
   "c_fixed": {
    "1": "1/2",
    "2": "1/2",
-   "3": "1"
+   "3": "1",
+   "4": "1"
   },
   "b_nonneg": true
  },
  "islands": 8,
- "budget_minutes": 45,
- "rationale": "The order-4 four-stage cell has only four records and a held-out error of 6.976e-02. These constraints admit the classical RK4 tableau and remove three A multiplies, providing focused samples for H-030."
+ "budget_minutes": 120,
+ "rationale": "The five-stage order-4 cell at bucket 3 has held-out error 3.717e-02. Pinned nodes retain a feasible fourth-order construction; the finer dyadic grid and zero entry explore lower-cost variants after the current settings have gone 280 islands without a new elite."
 }
