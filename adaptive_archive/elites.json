@@ -21,14 +21,14 @@
   "elite_cap": 32,
   "elite_target": 0.0009765625,
   "elite_target_key": "0.0009765625",
-  "generated_cycle": 3458,
-  "generated_ts": "2026-09-29T09:48:42Z",
+  "generated_cycle": 3461,
+  "generated_ts": "2026-09-29T09:51:57Z",
   "lane": "adaptive",
   "lanesearch_code_hash": "d99e4d2dbe284c58",
   "n_elites": 32,
-  "n_input": 154,
-  "n_measured": 182818,
-  "n_ranked": 154,
+  "n_input": 165,
+  "n_measured": 182951,
+  "n_ranked": 165,
   "not_a_page_source": "the traceability rule admits this lane's elites.json and not the per-day records behind it; nothing here is scored, order-verified, Q15 or comparable with a record in rk-work/archive/, so a number quoted from the elites document is rendered with its cycles-to-tolerance metric and its float64 arithmetic",
   "not_comparable": "a record here is not comparable with a record in rk-work/archive/. The scored archive scores error at a fixed 65536-cycle budget through the pinned evaluator on the seven frozen problems; this measures cycles to tolerance on the axis-T ladder over the eight validation problems, every run is float64, and nothing here passes through verifier.py or holds an archive cell",
   "schema": "lane-elites/1"
@@ -3136,7 +3136,7 @@
   },
   {
    "controller": {
-    "alpha": "1/8",
+    "alpha": "3/8",
     "beta": "0",
     "clamp_hi": "2",
     "clamp_lo": "1/4",
@@ -3145,7 +3145,7 @@
      "clamp_hi",
      "table_bits"
     ],
-    "safety": "7/8",
+    "safety": "15/16",
     "searched": [
      "alpha",
      "beta",
@@ -3154,9 +3154,9 @@
     "table_bits": 14
    },
    "cost_basis": "float_trajectory_q15_attempt_cost",
-   "cycle": 370,
-   "index": 11928,
-   "key": "7dcd6fb2dbebd9e0",
+   "cycle": 3461,
+   "index": 205418,
+   "key": "4502388f4590459e",
    "method": {
     "A": [
      [
@@ -3166,49 +3166,49 @@
       "0"
      ],
      [
-      "-1",
+      "1/2",
       "0",
       "0",
       "0"
      ],
      [
       "1/2",
+      "1/2",
+      "0",
+      "0"
+     ],
+     [
       "-1/2",
-      "0",
-      "0"
-     ],
-     [
       "1/2",
-      "1/2",
-      "1",
+      "-1",
       "0"
      ]
     ],
     "b": [
-     "11/18",
-     "-2/9",
-     "17/36",
-     "5/36"
+     "2/3",
+     "0",
+     "5/12",
+     "-1/12"
     ],
     "b_exact": false,
     "b_hat": [
-     "3/2",
-     "-1/2",
+     "0",
+     "1",
      "0",
      "0"
     ],
     "b_hat_exact": true,
     "c": [
      "0",
-     "-1",
-     "0",
-     "2"
+     "1/2",
+     "1",
+     "-1"
     ],
     "d": [
-     "-8/9",
-     "5/18",
-     "17/36",
-     "5/36"
+     "2/3",
+     "-1",
+     "5/12",
+     "-1/12"
     ],
     "d_exact": false,
     "family": "embedded_pair_s4_dyadic",
@@ -3218,23 +3218,23 @@
     "order_hat": 2,
     "stages": 4
    },
-   "record_hash": "d442fe497a8421d2",
-   "results_digest": "19634a0859afb225",
+   "record_hash": "4bd0446c6a6b0ba2",
+   "results_digest": "62b68f005aede21b",
    "score": {
-    "best_achieved_error": 4.234244383335739e-06,
+    "best_achieved_error": 1.1340542160803632e-05,
     "elite_target": 0.0009765625,
     "elite_target_key": "0.0009765625",
     "median_cycles_at_target": 3840.0,
     "problems_at_elite_target": 8,
-    "reached_at_elite_target": 7,
-    "targets_reached": 30,
+    "reached_at_elite_target": 8,
+    "targets_reached": 32,
     "targets_total": 32,
-    "worst_status": "never_reached"
+    "worst_status": "reached"
    },
    "shell": 0,
-   "ts": "2026-09-23T21:14:04Z"
+   "ts": "2026-09-29T09:51:57Z"
   }
  ],
  "rule": "lowest median cycles at the elite target across the problems where the status is reached; a candidate that reached the elite target nowhere ranks below every candidate that reached it somewhere; ties broken by the count of targets reached, highest leading, then by record_hash. No clock is read and no value is sampled, so the order is total and two runs over the same records agree",
- "statement": "The adaptive lane archive holds 182818 measured candidates under the current code hash, of which this document ranked 154. The leading candidate shows a median of 3400 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
+ "statement": "The adaptive lane archive holds 182951 measured candidates under the current code hash, of which this document ranked 165. The leading candidate shows a median of 3400 cycles at the elite target over 7 of 8 problems. These records are off the scored path and are not comparable with a scored archive record."
 }
