@@ -1,8 +1,8 @@
 {
  "_meta": {
   "cycles_schema": "schedule-cycles/1",
-  "generated_cycle": 3527,
-  "generated_ts": "2026-09-29T11:04:50Z",
+  "generated_cycle": 3528,
+  "generated_ts": "2026-09-29T11:05:42Z",
   "lane_max_seconds": 72.0,
   "lanes": [
    "explicit",
@@ -29,8 +29,8 @@
   "window_cycles": 200
  },
  "drift": {
-  "adaptive": 0.11997505079855475,
-  "explicit": -0.11997505079855464,
+  "adaptive": 0.12000387714938388,
+  "explicit": -0.12000387714938376,
   "implicit": 0.0
  },
  "lanes": {
@@ -41,16 +41,16 @@
    "productive_seconds": 4943.411243365874,
    "records_appended": 0,
    "seconds": 5817.095057273982,
-   "share": 0.45330838413188806
+   "share": 0.4533372104827172
   },
   "explicit": {
    "cycles": 133,
    "lane_records_appended": 0,
    "points_measured": 0,
    "productive_seconds": 0.0,
-   "records_appended": 3745,
-   "seconds": 7015.438513474015,
-   "share": 0.546691615868112
+   "records_appended": 3738,
+   "seconds": 7014.622531229048,
+   "share": 0.5466627895172829
   },
   "implicit": {
    "cycles": 0,
@@ -67,13 +67,13 @@
   "explicit": 0.6666666666666666,
   "implicit": 0.0
  },
- "statement": "Over 200 recorded cycles and 12832.5 recorded seconds the measured split was explicit 54.6692, adaptive 45.3308, implicit 0.0000 percent. The schedule 'EEA' asks for explicit 66.6667, adaptive 33.3333, implicit 0.0000 percent.",
+ "statement": "Over 200 recorded cycles and 12831.7 recorded seconds the measured split was explicit 54.6663, adaptive 45.3337, implicit 0.0000 percent. The schedule 'EEA' asks for explicit 66.6667, adaptive 33.3333, implicit 0.0000 percent.",
  "window": {
-  "first_cycle": 3328,
-  "first_ts": "2026-09-29T07:30:43Z",
-  "last_cycle": 3527,
-  "last_ts": "2026-09-29T11:04:50Z",
-  "span_seconds": 12847.0,
-  "wall_seconds": 12832.533570747997
+  "first_cycle": 3329,
+  "first_ts": "2026-09-29T07:32:09Z",
+  "last_cycle": 3528,
+  "last_ts": "2026-09-29T11:05:42Z",
+  "span_seconds": 12813.0,
+  "wall_seconds": 12831.71758850303
  }
 }
